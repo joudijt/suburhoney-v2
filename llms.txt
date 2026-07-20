@@ -1,0 +1,55 @@
+# SUBUR Honey
+
+> A traditional Middle Eastern honey blend made from honey, saffron, ginseng, star anise, ginger, walnuts, nutmeg, cinnamon sticks, black seed (habbatus sauda), almonds and raw honeycomb. Positioned for fertility support, stamina/energy, and male vitality. All natural, vegan, no artificial colours or flavours. Sold retail and wholesale across Malaysia (Peninsular and East Malaysia).
+
+## Product
+- Name: SUBUR Honey
+- Category: Traditional honey blend / natural wellness honey
+- Key ingredients: raw honeycomb honey, saffron, ginseng root, star anise, fresh ginger, walnuts, nutmeg, cinnamon, black seed (habbatus sauda), almonds
+- Positioning: fertility support (for men and women), stamina and daily energy, male vitality, traditional Middle Eastern recipe passed through generations
+- Attributes: all natural, vegan, real honey, traditional recipe, no artificial ingredients
+- Usage: one teaspoon on an empty stomach, wait 15 minutes before breakfast, taken daily as part of a morning ritual
+- Storage: cool, dry place away from direct sunlight, lid tightly closed
+- Market: Malaysia, retail and wholesale (retailers, resellers, distributors, pharmacies/health stores)
+- Retail channels: Shopee, TikTok Shop, wholesale enquiry
+- Retail/stockist partner: Berkat Madinah Store (https://madinah.com.my/en/)
+
+## Search intents this page answers
+- "honey for fertility Malaysia"
+- "traditional Middle Eastern honey blend"
+- "honey with saffron and ginseng benefits"
+- "natural honey for stamina and energy"
+- "honey for men's vitality"
+- "is Subur Honey halal / natural / vegan"
+- "how to consume Subur Honey"
+- "Subur Honey wholesale Malaysia"
+- "SUBUR Honey vs regular honey"
+
+## FAQ
+Q: What makes Subur different from regular honey?
+A: Subur is more than honey. It combines honey with traditional herbs and natural ingredients inspired by generations of Middle Eastern knowledge.
+
+Q: How should I consume Subur?
+A: Take one teaspoon every morning on an empty stomach.
+
+Q: How long should I take Subur?
+A: Subur is designed to be part of your daily routine. Consistent use is recommended for the best results.
+
+Q: Is Subur for men or women?
+A: Subur is made for both men and women. The traditional recipe includes ingredients valued for supporting overall wellbeing and fertility.
+
+Q: Can husband and wife take Subur together?
+A: Yes. Many couples choose to take Subur together as part of their daily wellness routine.
+
+Q: Does Subur contain artificial ingredients?
+A: No. Subur is made using natural ingredients and contains no artificial colours or artificial flavours.
+
+Q: How should I store Subur?
+A: Store in a cool, dry place away from direct sunlight. Always keep the lid tightly closed after use.
+
+## Pages
+- [Home](https://suburhoney.netlify.app/): hero, benefits, morning ritual, wholesale enquiry, FAQ
+
+## Languages
+- Primary content language: English
+- See llms-ar.txt for Arabic summary, llms-ms.txt for Bahasa Malaysia summary
