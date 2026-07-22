@@ -14,7 +14,6 @@ export function initHero() {
   const jarImg = document.querySelector<HTMLElement>(".hero-jar");
   const jarTilt = document.querySelector<HTMLElement>(".jar-tilt");
   const scrollCue = document.querySelector<HTMLElement>(".scroll-cue");
-  const ingredients = document.querySelectorAll<HTMLElement>(".ingredient");
 
   const intro = gsap.timeline({ defaults: { ease: "power3.out" } });
 
@@ -25,12 +24,11 @@ export function initHero() {
     .from(".hero-desc", { y: 16, opacity: 0, duration: 0.7 }, 0.75)
     .from(".hero-badges > *", { y: 12, opacity: 0, duration: 0.5, stagger: 0.06 }, 0.85)
     .from(".hero-cta", { y: 14, opacity: 0, duration: 0.6 }, 0.95)
-    .to(ingredients, { opacity: 0.95, duration: 1, stagger: 0.08 }, 0.7)
     .to(scrollCue, { opacity: 1, duration: 0.8 }, 1.3);
 
   if (prefersReducedMotion) {
     gsap.set(
-      [jarImg, ".hero-line", ".hero-line-accent", ".hero-desc", ".hero-badges > *", ".hero-cta", ingredients, scrollCue],
+      [jarImg, ".hero-line", ".hero-line-accent", ".hero-desc", ".hero-badges > *", ".hero-cta", scrollCue],
       { opacity: 1, y: 0, scale: 1 }
     );
     return;
@@ -40,16 +38,6 @@ export function initHero() {
     if (jarTilt) {
       gsap.to(jarTilt, { y: -14, rotate: 1.5, duration: 3.2, ease: "sine.inOut", yoyo: true, repeat: -1 });
     }
-    ingredients.forEach((el, i) => {
-      gsap.to(el, {
-        y: i % 2 === 0 ? -10 : 10,
-        rotate: i % 2 === 0 ? 6 : -6,
-        duration: 3.5 + i * 0.6,
-        ease: "sine.inOut",
-        yoyo: true,
-        repeat: -1,
-      });
-    });
   });
 
   if (jarTilt) {
@@ -67,7 +55,7 @@ export function initHero() {
     });
   }
 
-  // Jar and ingredients drift and softly dissolve as Hero scrolls out.
+  // Jar drifts and softly dissolves as Hero scrolls out.
   if (jarWrapper) {
     gsap
       .timeline({
