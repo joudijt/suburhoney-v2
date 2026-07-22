@@ -30,7 +30,6 @@ export function initHero() {
   const jarTilt = document.querySelector<HTMLElement>(".jar-tilt");
   const stream = document.querySelector<HTMLElement>(".honey-stream");
   const ripples = document.querySelectorAll<HTMLElement>(".ripple");
-  const bees = document.querySelectorAll<HTMLElement>(".bee");
   const scrollCue = document.querySelector<HTMLElement>(".scroll-cue");
   const dipper = document.querySelector<HTMLElement>("#dipper");
   const dripsHost = document.querySelector<HTMLElement>("#dipper-drips");
@@ -53,12 +52,11 @@ export function initHero() {
     .from(".hero-desc", { y: 16, opacity: 0, duration: 0.7 }, 1.55)
     .from(".hero-badges > *", { y: 12, opacity: 0, duration: 0.5, stagger: 0.06 }, 1.65)
     .from(".hero-cta", { y: 14, opacity: 0, duration: 0.6 }, 1.75)
-    .to(bees, { opacity: 0.9, duration: 0.8, stagger: 0.2 }, 1.6)
     .to(scrollCue, { opacity: 1, duration: 0.8 }, 2.1);
 
   if (prefersReducedMotion) {
     gsap.set(
-      [jarImg, ".hero-line", ".hero-line-accent", ".hero-desc", ".hero-badges > *", ".hero-cta", bees, scrollCue],
+      [jarImg, ".hero-line", ".hero-line-accent", ".hero-desc", ".hero-badges > *", ".hero-cta", scrollCue],
       { opacity: 1, y: 0, scale: 1, filter: "none" }
     );
     return;
@@ -66,18 +64,6 @@ export function initHero() {
 
   intro.call(() => {
     gsap.to(jarTilt, { y: -14, rotate: 1.5, duration: 3.2, ease: "sine.inOut", yoyo: true, repeat: -1 });
-
-    bees.forEach((el, i) => {
-      gsap.to(el, {
-        x: i % 2 === 0 ? 26 : -22,
-        y: i % 2 === 0 ? -16 : 14,
-        rotate: i % 2 === 0 ? 6 : -6,
-        duration: 4 + i * 1.3,
-        ease: "sine.inOut",
-        yoyo: true,
-        repeat: -1,
-      });
-    });
   });
 
   if (jarTilt) {

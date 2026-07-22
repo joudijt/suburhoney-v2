@@ -14,30 +14,4 @@ const { lang } = Astro.props;
     <img src="/logo-8.png" alt="Subur Logo" width="140" height="47" class="h-9 w-auto object-contain md:h-10" />
   </a>
   <LanguageSwitcher lang={lang} />
-  <img
-    id="header-drip"
-    src="/images/honey-drip.png"
-    alt=""
-    aria-hidden="true"
-    class="pointer-events-none absolute left-1/2 top-full h-9 w-auto -translate-x-1/2 -translate-y-3 opacity-0 transition-all duration-700 ease-out md:h-12"
-  />
 </header>
-
-<script>
-  const drip = document.querySelector<HTMLElement>("#header-drip");
-  if (drip) {
-    const THRESHOLD = 80;
-    let shown = false;
-    const update = () => {
-      const shouldShow = window.scrollY > THRESHOLD;
-      if (shouldShow === shown) return;
-      shown = shouldShow;
-      drip.classList.toggle("opacity-0", !shouldShow);
-      drip.classList.toggle("-translate-y-3", !shouldShow);
-      drip.classList.toggle("opacity-100", shouldShow);
-      drip.classList.toggle("-translate-y-0", shouldShow);
-    };
-    update();
-    window.addEventListener("scroll", update, { passive: true });
-  }
-</script>
