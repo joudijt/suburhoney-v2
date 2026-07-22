@@ -40,6 +40,106 @@ h1, h2, h3, h4 {
   transform: scaleX(-1);
 }
 
+.honeycomb-texture {
+  opacity: 0.06;
+  background-image:
+    linear-gradient(30deg, var(--color-honey-dark) 12%, transparent 12.5%, transparent 87%, var(--color-honey-dark) 87.5%, var(--color-honey-dark)),
+    linear-gradient(150deg, var(--color-honey-dark) 12%, transparent 12.5%, transparent 87%, var(--color-honey-dark) 87.5%, var(--color-honey-dark)),
+    linear-gradient(30deg, var(--color-honey-dark) 12%, transparent 12.5%, transparent 87%, var(--color-honey-dark) 87.5%, var(--color-honey-dark)),
+    linear-gradient(150deg, var(--color-honey-dark) 12%, transparent 12.5%, transparent 87%, var(--color-honey-dark) 87.5%, var(--color-honey-dark)),
+    linear-gradient(60deg, var(--color-honey-dark) 25%, transparent 25.5%, transparent 75%, var(--color-honey-dark) 75%, var(--color-honey-dark)),
+    linear-gradient(60deg, var(--color-honey-dark) 25%, transparent 25.5%, transparent 75%, var(--color-honey-dark) 75%, var(--color-honey-dark));
+  background-size: 40px 70px;
+  background-position: 0 0, 0 0, 20px 35px, 20px 35px, 0 0, 20px 35px;
+}
+
+.hex-cell {
+  padding: 1.4%;
+  cursor: pointer;
+  border: none;
+  background: none;
+  -webkit-tap-highlight-color: transparent;
+}
+.hex-shape {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.35rem;
+  overflow: hidden;
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  background: linear-gradient(160deg, var(--color-cream-soft), var(--color-sand));
+  box-shadow: inset 0 0 0 1px rgba(184, 117, 24, 0.25), 0 8px 20px -10px rgba(64, 37, 21, 0.25);
+  transition: box-shadow 0.35s ease;
+  will-change: transform;
+}
+.hex-icon {
+  width: 32%;
+  height: 32%;
+  object-fit: contain;
+  filter: drop-shadow(0 4px 8px rgba(64, 37, 21, 0.15));
+  pointer-events: none;
+}
+.hex-name {
+  font-family: var(--font-display);
+  font-size: clamp(0.58rem, 1.6vw, 0.85rem);
+  color: var(--color-brown);
+  text-align: center;
+  line-height: 1.15;
+  padding: 0 10%;
+  pointer-events: none;
+}
+.hex-shape.is-hovered {
+  box-shadow: inset 0 0 0 1px rgba(230, 168, 38, 0.65), 0 20px 45px -14px rgba(230, 168, 38, 0.55), 0 0 0 4px rgba(230, 168, 38, 0.14);
+}
+.hex-shimmer {
+  position: absolute;
+  top: -20%;
+  left: -60%;
+  width: 40%;
+  height: 140%;
+  background: linear-gradient(100deg, transparent, rgba(255, 255, 255, 0.6), transparent);
+  transform: translateX(-150%) rotate(8deg);
+  pointer-events: none;
+}
+
+.hc-droplet {
+  width: 8px;
+  height: 8px;
+  background: linear-gradient(160deg, #F2C862, #B87518);
+  border-radius: 0 50% 50% 50%;
+  transform: rotate(45deg);
+  box-shadow: 0 0 5px rgba(230, 168, 38, 0.4);
+  animation: hc-bob 4s ease-in-out infinite;
+}
+@keyframes hc-bob {
+  0%, 100% { transform: rotate(45deg) translateY(0); }
+  50% { transform: rotate(45deg) translateY(-8px); }
+}
+
+.hc-dust {
+  width: 3px;
+  height: 3px;
+  filter: blur(0.3px);
+  box-shadow: 0 0 5px 1px rgba(230, 168, 38, 0.55);
+  animation: hc-drift 8s ease-in-out infinite;
+}
+.hc-dust-0 { left: 6%; top: 8%; animation-delay: 0s; }
+.hc-dust-1 { left: 92%; top: 18%; animation-delay: 1s; }
+.hc-dust-2 { left: 15%; top: 45%; animation-delay: 2s; }
+.hc-dust-3 { left: 85%; top: 40%; animation-delay: 0.5s; }
+.hc-dust-4 { left: 10%; top: 82%; animation-delay: 1.5s; }
+.hc-dust-5 { left: 90%; top: 88%; animation-delay: 2.5s; }
+.hc-dust-6 { left: 50%; top: 4%; animation-delay: 3s; }
+.hc-dust-7 { left: 48%; top: 94%; animation-delay: 1.2s; }
+@keyframes hc-drift {
+  0%, 100% { transform: translateY(0); opacity: 0.5; }
+  50% { transform: translateY(-14px); opacity: 0.9; }
+}
+
 @layer components {
   .btn-primary {
     @apply rounded-xl bg-gold px-9 py-4 text-sm font-semibold uppercase tracking-widest text-cream-soft shadow-soft transition-all duration-300 hover:brightness-110 active:scale-95;
