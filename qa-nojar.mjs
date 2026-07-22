@@ -1,0 +1,12 @@
+import { chromium } from "playwright";
+const shots = "C:/Users/joudi/AppData/Local/Temp/claude/C--Users-joudi-AppData-Roaming-npm/0d8059aa-77d8-4c85-a1c4-17280b459916/scratchpad";
+const browser = await chromium.launch();
+const page = await browser.newPage({ viewport: { width: 1440, height: 900 } });
+const errors = [];
+page.on("console", (m) => { if (m.type() === "error" && !m.text().includes("Astro background")) errors.push(m.text()); });
+page.on("pageerror", (e) => errors.push("pageerror: " + e.message));
+await page.goto("http://localhost:5182/en", { waitUntil: "networkidle" });
+await page.waitForTimeout(2800);
+await page.screenshot({ path: `${shots}/hero-no-jar.png` });
+console.log("errors:", errors);
+await browser.close();
