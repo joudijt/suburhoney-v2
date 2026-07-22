@@ -26,16 +26,24 @@ const { heading, subheading, steps } = Astro.props;
         <h2 class="font-display text-4xl text-brown md:text-5xl lg:text-6xl">{heading}</h2>
         <p class="max-w-xl text-lg leading-relaxed text-brown/70">{subheading}</p>
       </div>
-      <div class="space-y-7">
+      <div id="ritual-steps" class="space-y-7">
         {steps.map((step, i) => (
-          <div class="flex items-center gap-5">
-            <div class="flex h-11 w-11 flex-shrink-0 items-center justify-center rounded-full border border-gold/50 bg-cream-soft/80 font-display text-base text-honey-dark backdrop-blur-sm">
+          <div class="ritual-step relative flex items-center gap-5">
+            <div class="relative z-10 flex h-11 w-11 flex-shrink-0 items-center justify-center rounded-full border border-gold/50 bg-cream-soft/80 font-display text-base text-honey-dark backdrop-blur-sm">
               {i + 1}
             </div>
-            <p class="font-display text-lg italic text-brown md:text-xl">{step}</p>
+            {i < steps.length - 1 && (
+              <span class="ritual-line absolute left-[21px] top-11 h-7 w-0.5 origin-top scale-y-0 bg-gold/50"></span>
+            )}
+            <p class="ritual-text font-display text-lg italic text-brown opacity-0 md:text-xl">{step}</p>
           </div>
         ))}
       </div>
     </div>
   </div>
 </section>
+
+<script>
+  import { initRitual } from "../../scripts/ritual-motion";
+  initRitual();
+</script>
