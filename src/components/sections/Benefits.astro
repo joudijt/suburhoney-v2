@@ -1,0 +1,43 @@
+---
+interface Card {
+  label: string;
+  title: string;
+  description: string;
+}
+interface Props {
+  heading: string;
+  subheading: string;
+  cards: Card[];
+  ctaPrimary: string;
+  ctaSecondary: string;
+}
+const { heading, subheading, cards, ctaPrimary, ctaSecondary } = Astro.props;
+---
+
+<section id="benefits" class="relative bg-cream-soft px-6 py-28 md:py-36" data-reveal-group>
+  <div class="mx-auto max-w-7xl">
+    <div class="mx-auto mb-20 max-w-2xl space-y-5 text-center" data-reveal>
+      <p class="kicker">Wellness, Naturally</p>
+      <h2 class="font-display text-3xl text-brown md:text-5xl">{heading}</h2>
+      <p class="text-lg text-brown/70">{subheading}</p>
+    </div>
+
+    <div class="grid grid-cols-1 gap-8 md:grid-cols-3 md:gap-10">
+      {cards.map((card) => (
+        <div
+          data-reveal
+          class="group rounded-3xl border border-brown/10 bg-cream p-9 shadow-softer transition-all duration-500 hover:-translate-y-1.5 hover:border-gold/40 hover:shadow-soft"
+        >
+          <p class="mb-3 text-[10px] font-bold uppercase tracking-[0.25em] text-brown/45">{card.label}</p>
+          <h3 class="mb-4 font-display text-2xl text-brown transition-colors group-hover:text-honey-dark">{card.title}</h3>
+          <p class="text-sm leading-relaxed text-brown/70">{card.description}</p>
+        </div>
+      ))}
+    </div>
+
+    <div class="mt-16 flex flex-col justify-center gap-5 sm:flex-row" data-reveal>
+      <button class="btn-primary">{ctaPrimary}</button>
+      <button class="btn-secondary">{ctaSecondary}</button>
+    </div>
+  </div>
+</section>

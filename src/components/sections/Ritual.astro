@@ -1,0 +1,51 @@
+---
+interface Props {
+  heading: string;
+  subheading: string;
+  steps: string[];
+}
+const { heading, subheading, steps } = Astro.props;
+---
+
+<section id="ritual" class="relative overflow-hidden bg-sand/40 px-6 py-24 md:py-32" data-reveal-group>
+  <div class="mx-auto grid max-w-7xl grid-cols-1 items-center gap-16 lg:grid-cols-2">
+    <div class="space-y-12" data-reveal>
+      <div class="space-y-5">
+        <p class="kicker">A Simple Daily Habit</p>
+        <h2 class="font-display text-4xl text-brown md:text-5xl lg:text-6xl">{heading}</h2>
+        <p class="max-w-xl text-lg leading-relaxed text-brown/70">{subheading}</p>
+      </div>
+      <div class="space-y-7">
+        {steps.map((step, i) => (
+          <div class="flex items-center gap-5">
+            <div class="flex h-11 w-11 flex-shrink-0 items-center justify-center rounded-full border border-gold/50 font-display text-base text-honey-dark">
+              {i + 1}
+            </div>
+            <p class="font-display text-lg italic text-brown md:text-xl">{step}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+
+    <div class="relative hidden h-[560px] lg:block" data-reveal data-parallax="0.08">
+      <div class="ritual-jar absolute inset-0 flex items-center justify-center">
+        <img
+          src="/jarncap.png"
+          alt="Subur Honey Jar"
+          loading="lazy"
+          class="h-full w-full object-contain drop-shadow-[0_25px_60px_rgba(64,37,21,0.18)]"
+        />
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .ritual-jar img {
+    animation: ritual-float 6s ease-in-out infinite;
+  }
+  @keyframes ritual-float {
+    0%, 100% { transform: translateY(0) rotate(0deg); }
+    50% { transform: translateY(-16px) rotate(1deg); }
+  }
+</style>

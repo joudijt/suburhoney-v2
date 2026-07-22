@@ -1,0 +1,136 @@
+{
+  "seo": {
+    "title": "Madu SUBUR | Campuran Madu Timur Tengah Tradisional untuk Vitaliti",
+    "description": "Beli Madu SUBUR, campuran madu Timur Tengah tradisional dengan kunyit bunga (saffron), ginseng, habbatus sauda dan sarang lebah untuk kesuburan, vitaliti dan kekuatan. Semula jadi sepenuhnya, vegan. Runcit dan borong di seluruh Malaysia."
+  },
+  "nav": {
+    "benefits": "Manfaat",
+    "ritual": "Amalan Harian",
+    "ingredients": "Ramuan",
+    "wholesale": "Borong",
+    "faq": "Soalan Lazim"
+  },
+  "hero": {
+    "heading": "Resipi tradisional alam semula jadi,",
+    "headingAccent": "Disempurnakan sejak turun-temurun.",
+    "description": "Campuran madu Timur Tengah tradisional yang dihasilkan daripada pengetahuan turun-temurun untuk kesuburan, vitaliti, dan kekuatan.",
+    "badges": ["SEMULA JADI SEPENUHNYA", "RESIPI TRADISIONAL", "MADU TULEN", "VEGAN"],
+    "ctaPrimary": "Beli Runcit",
+    "ctaSecondary": "Pertanyaan Borong"
+  },
+  "benefits": {
+    "heading": "Kenapa Madu Subur Sesuai Untuk Anda",
+    "subheading": "Resipi tradisional daripada ramuan yang dipercayai keluarga Timur Tengah sejak turun-temurun.",
+    "cards": [
+      {
+        "label": "Untuk Dia & Dia",
+        "title": "Sokongan Kesuburan",
+        "description": "Diperbuat daripada herba tradisional dan ramuan semula jadi yang telah lama digunakan untuk menyokong kesuburan dan kesihatan reproduktif bagi lelaki dan wanita."
+      },
+      {
+        "label": "Prestasi Harian",
+        "title": "Tenaga & Stamina",
+        "description": "Campuran ramuan kaya nutrien yang digunakan secara tradisional untuk menyokong tenaga, stamina, dan kesejahteraan harian."
+      },
+      {
+        "label": "Kesejahteraan Lelaki",
+        "title": "Vitaliti Lelaki",
+        "description": "Mengandungi ramuan tradisional yang dihargai turun-temurun untuk menyokong vitaliti, kekuatan dan kesejahteraan keseluruhan lelaki."
+      }
+    ]
+  },
+  "ritual": {
+    "heading": "Amalan Waktu Pagi",
+    "subheading": "Sejak turun-temurun, campuran madu seperti Subur diambil sebagai sebahagian daripada rutin harian yang mudah.",
+    "steps": [
+      "Ambil satu sudu teh semasa perut kosong.",
+      "Tunggu 15 minit sebelum sarapan.",
+      "Simpan di tempat yang sejuk dan kering."
+    ]
+  },
+  "ingredients": {
+    "heading": "Ramuan Tradisional Dalam Setiap Balang",
+    "subheading": "Sepuluh ramuan semula jadi yang dipilih atas sebab yang diwarisi turun-temurun.",
+    "items": [
+      { "name": "Bunga Lawang", "alt": "Bunga lawang, rempah tradisional yang digunakan dalam campuran Madu Subur", "description": "Digunakan secara tradisional untuk menyokong penghadaman dan kehangatan badan.", "icon": "/icons/ingrediant_01.png" },
+      { "name": "Kunyit Bunga (Saffron)", "alt": "Benang saffron, ramuan semula jadi premium dalam Madu Subur", "description": "Rempah bernilai tinggi yang dihargai secara tradisional untuk menyokong mood dan vitaliti.", "icon": "/icons/ingrediant_02.png" },
+      { "name": "Halia Segar", "alt": "Akar halia segar, ramuan tradisional dalam Madu Subur", "description": "Menambah kehangatan semula jadi dan digunakan secara tradisional untuk menyokong peredaran darah.", "icon": "/icons/ingrediant_03.png" },
+      { "name": "Walnut", "alt": "Walnut, ramuan semula jadi dalam campuran Madu Subur", "description": "Kekacang padat nutrien yang dikaitkan secara tradisional dengan tenaga harian.", "icon": "/icons/ingrediant_04.png" },
+      { "name": "Buah Pala", "alt": "Biji buah pala, rempah tradisional dalam Madu Subur", "description": "Rempah tradisional yang disertakan untuk kesejahteraan keseluruhan.", "icon": "/icons/ingrediant_05.png" },
+      { "name": "Kayu Manis", "alt": "Batang kayu manis, rempah tradisional dalam Madu Subur", "description": "Rempah yang memberi kehangatan, digunakan secara tradisional untuk menyokong stamina.", "icon": "/icons/ingrediant_06.png" },
+      { "name": "Habbatus Sauda", "alt": "Habbatus sauda, ramuan tradisional dalam Madu Subur", "description": "Biji tradisional yang telah lama dihargai untuk sokongan imun dan vitaliti.", "icon": "/icons/ingrediant_07.png" },
+      { "name": "Sarang Lebah Mentah", "alt": "Sarang lebah mentah, asas madu semula jadi Madu Subur", "description": "Asas madu semula jadi Madu Subur, dituai secara mentah.", "icon": "/icons/ingrediant_08.png" },
+      { "name": "Badam", "alt": "Badam, ramuan semula jadi dalam campuran Madu Subur", "description": "Sumber nutrien semula jadi yang menyokong tenaga harian.", "icon": "/icons/ingrediant_09.png" },
+      { "name": "Akar Ginseng", "alt": "Akar ginseng, ramuan tradisional dalam Madu Subur", "description": "Akar yang telah lama dihargai dalam perubatan tradisional untuk stamina dan vitaliti.", "icon": "/icons/ingrediant_10.png" }
+    ],
+    "footerNote": {
+      "before": "Madu SUBUR sesuai bersama",
+      "wholesaleLink": "program borong kami",
+      "middle": ", dan turut tersedia melalui rangkaian rakan runcit kami, termasuk",
+      "madinahLink": "Berkat Madinah Store",
+      "after": ". Lihat",
+      "faqLink": "Soalan Lazim penuh kami",
+      "end": "."
+    }
+  },
+  "wholesale": {
+    "kicker": "UNTUK PERNIAGAAN",
+    "heading": "Berkerjasama dengan Madu Subur",
+    "description": "Bawakan resipi madu tradisional Timur Tengah kepada pelanggan anda. Sertai rangkaian peruncit, pengedar, dan peniaga semula kami yang semakin berkembang di seluruh Malaysia.",
+    "features": [
+      { "title": "Harga Pukal Tersedia", "description": "Harga istimewa untuk peruncit, peniaga semula, dan pengedar." },
+      { "title": "Penghantaran Seluruh Negara", "description": "Penghantaran tersedia di seluruh Semenanjung dan Malaysia Timur." },
+      { "title": "Pasukan Jualan Khusus", "description": "Pasukan kami akan membantu anda mencari penyelesaian borong yang sesuai untuk perniagaan anda." }
+    ],
+    "form": {
+      "heading": "Borang Pertanyaan Borong",
+      "fullName": "Nama Penuh *",
+      "fullNamePlaceholder": "Ahmad bin Hassan",
+      "phone": "Nombor Telefon *",
+      "phonePlaceholder": "+60 12 345 6789",
+      "email": "Alamat E-mel *",
+      "emailPlaceholder": "you@business.com",
+      "business": "Nama Perniagaan / Syarikat *",
+      "businessPlaceholder": "My Health Store Sdn Bhd",
+      "businessType": "Jenis Perniagaan *",
+      "businessTypeOptions": ["Pilih jenis", "Kedai Runcit", "Penjual Dalam Talian", "Pengedar", "Farmasi / Kedai Kesihatan", "Lain-lain"],
+      "volume": "Jumlah Pesanan Bulanan *",
+      "volumeOptions": ["Anggaran kuantiti", "10-50 unit", "50+ unit"],
+      "location": "Negeri / Lokasi",
+      "locationPlaceholder": "cth. Pahang, Selangor...",
+      "message": "Mesej Tambahan",
+      "messagePlaceholder": "Ceritakan lebih lanjut tentang perniagaan anda atau keperluan anda...",
+      "submit": "Hantar Pertanyaan →"
+    }
+  },
+  "faq": {
+    "heading": "Soalan Lazim",
+    "items": [
+      { "q": "Apa yang membezakan Subur daripada madu biasa?", "a": "Subur lebih daripada sekadar madu. Ia menggabungkan madu dengan herba tradisional dan ramuan semula jadi yang diilhamkan daripada pengetahuan turun-temurun Timur Tengah." },
+      { "q": "Bagaimana saya patut mengambil Subur?", "a": "Ambil satu sudu teh setiap pagi semasa perut kosong." },
+      { "q": "Berapa lama saya patut mengambil Subur?", "a": "Subur direka untuk menjadi sebahagian daripada rutin harian anda. Penggunaan berterusan disyorkan untuk hasil terbaik." },
+      { "q": "Adakah Subur untuk lelaki atau wanita?", "a": "Subur dibuat untuk lelaki dan wanita. Resipi tradisional ini mengandungi ramuan yang dihargai untuk menyokong kesejahteraan keseluruhan dan kesuburan." },
+      { "q": "Bolehkah suami isteri mengambil Subur bersama?", "a": "Ya. Ramai pasangan memilih untuk mengambil Subur bersama sebagai sebahagian daripada rutin kesejahteraan harian mereka." },
+      { "q": "Adakah Subur mengandungi ramuan tiruan?", "a": "Tidak. Subur dibuat menggunakan ramuan semula jadi dan tidak mengandungi pewarna atau perisa tiruan." },
+      { "q": "Bagaimana saya patut simpan Subur?", "a": "Simpan di tempat yang sejuk dan kering, jauh daripada cahaya matahari langsung. Sentiasa pastikan penutup ditutup rapat selepas digunakan." },
+      { "q": "Di mana saya boleh beli Madu Subur di Malaysia?", "a": "Madu Subur tersedia melalui rangkaian rakan runcit kami termasuk Berkat Madinah Store, serta melalui saluran rasmi Shopee dan TikTok Shop kami." }
+    ]
+  },
+  "finalCta": {
+    "heading": "Bersedia untuk bermula?",
+    "subheading": "Temui resipi tradisional Timur Tengah yang dibina atas pengetahuan yang terkumpul sejak turun-temurun.",
+    "ctaPrimary": "Beli Runcit",
+    "ctaSecondary": "Pertanyaan Borong",
+    "ratingText": "Dipercayai oleh lebih 5,000 pelanggan"
+  },
+  "footer": {
+    "brand": "MADU SUBUR",
+    "description": "Campuran madu Timur Tengah tradisional yang diilhamkan daripada pengetahuan turun-temurun dan diperbuat daripada ramuan semula jadi terpilih.",
+    "badges": ["SEMULA JADI SEPENUHNYA", "RESIPI TRADISIONAL", "MADU TULEN", "VEGAN"],
+    "shopHeading": "BELI-BELAH DENGAN KAMI",
+    "shopLinks": ["Shopee", "TikTok Shop", "Pertanyaan Borong"],
+    "copyright": "Madu Subur. Resipi Tradisional. Pengetahuan Turun-Temurun.",
+    "privacy": "Dasar Privasi",
+    "terms": "Terma Perkhidmatan"
+  }
+}

@@ -1,0 +1,106 @@
+---
+interface Feature {
+  title: string;
+  description: string;
+}
+interface Form {
+  heading: string;
+  fullName: string;
+  fullNamePlaceholder: string;
+  phone: string;
+  phonePlaceholder: string;
+  email: string;
+  emailPlaceholder: string;
+  business: string;
+  businessPlaceholder: string;
+  businessType: string;
+  businessTypeOptions: string[];
+  volume: string;
+  volumeOptions: string[];
+  location: string;
+  locationPlaceholder: string;
+  message: string;
+  messagePlaceholder: string;
+  submit: string;
+}
+interface Props {
+  kicker: string;
+  heading: string;
+  description: string;
+  features: Feature[];
+  form: Form;
+}
+const { kicker, heading, description, features, form } = Astro.props;
+---
+
+<section id="wholesale" class="relative bg-brown px-6 py-24 text-cream-soft md:py-32" data-reveal-group>
+  <div class="mx-auto grid max-w-7xl grid-cols-1 items-start gap-14 lg:grid-cols-2 lg:gap-24">
+    <div class="space-y-12" data-reveal>
+      <div class="space-y-4">
+        <span class="text-xs font-bold uppercase tracking-[0.3em] text-gold">{kicker}</span>
+        <h2 class="font-display text-4xl leading-tight md:text-6xl">{heading}</h2>
+        <p class="max-w-lg text-lg leading-relaxed text-cream-soft/75">{description}</p>
+      </div>
+      <div class="space-y-9">
+        {features.map((f) => (
+          <div class="flex items-start gap-5">
+            <span class="mt-1 h-2 w-2 flex-shrink-0 rounded-full bg-gold"></span>
+            <div class="space-y-1.5">
+              <h3 class="text-xl font-semibold">{f.title}</h3>
+              <p class="leading-relaxed text-cream-soft/60">{f.description}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+
+    <div class="rounded-3xl border border-white/10 bg-black/15 p-8 shadow-2xl md:p-12" data-reveal>
+      <h3 class="mb-10 font-display text-2xl md:text-3xl">{form.heading}</h3>
+      <form class="space-y-6">
+        <div class="grid grid-cols-1 gap-6 md:grid-cols-2">
+          <div class="space-y-2">
+            <label class="text-[10px] font-bold uppercase tracking-widest opacity-60">{form.fullName}</label>
+            <input type="text" placeholder={form.fullNamePlaceholder} class="w-full rounded-xl border border-white/10 bg-black/20 px-5 py-4 outline-none transition-all placeholder:opacity-20 focus:border-gold" />
+          </div>
+          <div class="space-y-2">
+            <label class="text-[10px] font-bold uppercase tracking-widest opacity-60">{form.phone}</label>
+            <input type="text" placeholder={form.phonePlaceholder} class="w-full rounded-xl border border-white/10 bg-black/20 px-5 py-4 outline-none transition-all placeholder:opacity-20 focus:border-gold" />
+          </div>
+        </div>
+        <div class="space-y-2">
+          <label class="text-[10px] font-bold uppercase tracking-widest opacity-60">{form.email}</label>
+          <input type="email" placeholder={form.emailPlaceholder} class="w-full rounded-xl border border-white/10 bg-black/20 px-5 py-4 outline-none transition-all placeholder:opacity-20 focus:border-gold" />
+        </div>
+        <div class="space-y-2">
+          <label class="text-[10px] font-bold uppercase tracking-widest opacity-60">{form.business}</label>
+          <input type="text" placeholder={form.businessPlaceholder} class="w-full rounded-xl border border-white/10 bg-black/20 px-5 py-4 outline-none transition-all placeholder:opacity-20 focus:border-gold" />
+        </div>
+        <div class="grid grid-cols-1 gap-6 md:grid-cols-2">
+          <div class="space-y-2">
+            <label class="text-[10px] font-bold uppercase tracking-widest opacity-60">{form.businessType}</label>
+            <select class="w-full cursor-pointer appearance-none rounded-xl border border-white/10 bg-black/20 px-5 py-4 text-cream-soft/80 outline-none transition-all focus:border-gold">
+              {form.businessTypeOptions.map((opt) => <option>{opt}</option>)}
+            </select>
+          </div>
+          <div class="space-y-2">
+            <label class="text-[10px] font-bold uppercase tracking-widest opacity-60">{form.volume}</label>
+            <select class="w-full cursor-pointer appearance-none rounded-xl border border-white/10 bg-black/20 px-5 py-4 outline-none transition-all focus:border-gold">
+              {form.volumeOptions.map((opt) => <option>{opt}</option>)}
+            </select>
+          </div>
+        </div>
+        <div class="space-y-2">
+          <label class="text-[10px] font-bold uppercase tracking-widest opacity-60">{form.location}</label>
+          <input type="text" placeholder={form.locationPlaceholder} class="w-full rounded-xl border border-white/10 bg-black/20 px-5 py-4 outline-none transition-all placeholder:opacity-20 focus:border-gold" />
+        </div>
+        <div class="space-y-2">
+          <label class="text-[10px] font-bold uppercase tracking-widest opacity-60">{form.message}</label>
+          <textarea rows="4" placeholder={form.messagePlaceholder} class="w-full resize-none rounded-xl border border-white/10 bg-black/20 px-5 py-4 outline-none transition-all placeholder:opacity-20 focus:border-gold"></textarea>
+        </div>
+        <button type="submit" class="w-full rounded-xl bg-gold py-5 font-bold uppercase tracking-[0.2em] text-cream-soft shadow-xl shadow-gold/20 transition-all hover:brightness-110">
+          {form.submit}
+        </button>
+      </form>
+    </div>
+  </div>
+</section>

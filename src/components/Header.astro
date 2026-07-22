@@ -1,0 +1,17 @@
+---
+import LanguageSwitcher from "./LanguageSwitcher.astro";
+import type { Locale } from "../config/site";
+
+interface Props {
+  lang: Locale;
+}
+
+const { lang } = Astro.props;
+---
+
+<header class="fixed inset-x-0 top-0 z-50 flex h-20 items-center justify-between px-6 md:px-10">
+  <a href={`/${lang}`} class="flex items-center gap-2">
+    <img src="/logo-8.png" alt="Subur Logo" width="140" height="47" class="h-9 w-auto object-contain md:h-10" />
+  </a>
+  <LanguageSwitcher lang={lang} />
+</header>

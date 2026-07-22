@@ -1,0 +1,27 @@
+---
+interface Props {
+  heading: string;
+  subheading: string;
+  ctaPrimary: string;
+  ctaSecondary: string;
+  ratingText: string;
+}
+const { heading, subheading, ctaPrimary, ctaSecondary, ratingText } = Astro.props;
+---
+
+<section class="relative border-t border-brown/5 bg-cream px-6 py-28 text-center md:py-36" data-reveal-group>
+  <div class="mx-auto max-w-3xl space-y-10">
+    <h2 class="font-display text-5xl leading-[1.1] text-brown md:text-7xl" data-reveal>{heading}</h2>
+    <p class="text-xl leading-relaxed text-brown/70" data-reveal>{subheading}</p>
+    <div class="flex flex-col justify-center gap-5 pt-4 sm:flex-row" data-reveal>
+      <button class="btn-primary">{ctaPrimary}</button>
+      <button class="btn-secondary">{ctaSecondary}</button>
+    </div>
+    <div class="flex flex-col items-center gap-2 pt-6" data-reveal>
+      <div class="flex gap-1 text-gold" aria-hidden="true">
+        {Array.from({ length: 5 }).map(() => <span class="text-xl">★</span>)}
+      </div>
+      <p class="text-sm font-bold uppercase tracking-widest text-brown/55">{ratingText}</p>
+    </div>
+  </div>
+</section>

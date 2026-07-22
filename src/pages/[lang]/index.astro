@@ -1,0 +1,85 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import Header from "../../components/Header.astro";
+import Hero from "../../components/sections/Hero.astro";
+import Benefits from "../../components/sections/Benefits.astro";
+import Ritual from "../../components/sections/Ritual.astro";
+import Ingredients from "../../components/sections/Ingredients.astro";
+import Wholesale from "../../components/sections/Wholesale.astro";
+import Faq from "../../components/sections/Faq.astro";
+import FinalCta from "../../components/sections/FinalCta.astro";
+import Footer from "../../components/Footer.astro";
+import { LOCALES, type Locale } from "../../config/site";
+
+import en from "../../i18n/locales/en/common.json";
+import ar from "../../i18n/locales/ar/common.json";
+import ms from "../../i18n/locales/ms/common.json";
+
+const content = { en, ar, ms } as const;
+
+export function getStaticPaths() {
+  return LOCALES.map((lang) => ({ params: { lang } }));
+}
+
+const { lang } = Astro.params as { lang: Locale };
+const t = content[lang];
+---
+
+<Layout lang={lang} title={t.seo.title} description={t.seo.description} faqItems={t.faq.items}>
+  <Header lang={lang} />
+  <main>
+    <Hero
+      lang={lang}
+      heading={t.hero.heading}
+      headingAccent={t.hero.headingAccent}
+      description={t.hero.description}
+      badges={t.hero.badges}
+      ctaPrimary={t.hero.ctaPrimary}
+      ctaSecondary={t.hero.ctaSecondary}
+    />
+    <Benefits
+      heading={t.benefits.heading}
+      subheading={t.benefits.subheading}
+      cards={t.benefits.cards}
+      ctaPrimary={t.hero.ctaPrimary}
+      ctaSecondary={t.hero.ctaSecondary}
+    />
+    <Ritual heading={t.ritual.heading} subheading={t.ritual.subheading} steps={t.ritual.steps} />
+    <Ingredients
+      heading={t.ingredients.heading}
+      subheading={t.ingredients.subheading}
+      items={t.ingredients.items}
+      footerNote={t.ingredients.footerNote}
+    />
+    <Wholesale
+      kicker={t.wholesale.kicker}
+      heading={t.wholesale.heading}
+      description={t.wholesale.description}
+      features={t.wholesale.features}
+      form={t.wholesale.form}
+    />
+    <Faq heading={t.faq.heading} items={t.faq.items} />
+    <FinalCta
+      heading={t.finalCta.heading}
+      subheading={t.finalCta.subheading}
+      ctaPrimary={t.finalCta.ctaPrimary}
+      ctaSecondary={t.finalCta.ctaSecondary}
+      ratingText={t.finalCta.ratingText}
+    />
+  </main>
+  <Footer
+    brand={t.footer.brand}
+    description={t.footer.description}
+    badges={t.footer.badges}
+    shopHeading={t.footer.shopHeading}
+    shopLinks={t.footer.shopLinks}
+    copyright={t.footer.copyright}
+    privacy={t.footer.privacy}
+    terms={t.footer.terms}
+  />
+</Layout>
+
+<script>
+  import { initReveal } from "../../scripts/reveal";
+  initReveal();
+</script>

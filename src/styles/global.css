@@ -1,0 +1,87 @@
+@import "tailwindcss";
+@import "@fontsource-variable/playfair-display";
+@import "@fontsource-variable/inter";
+
+@theme {
+  --color-cream: #F8F4EC;
+  --color-cream-soft: #FFFDF8;
+  --color-sand: #EFE5D4;
+  --color-gold: #E6A826;
+  --color-honey-dark: #B87518;
+  --color-brown: #402515;
+  --color-ink: #2B221A;
+
+  --font-display: "Playfair Display Variable", ui-serif, Georgia, serif;
+  --font-body: "Inter Variable", ui-sans-serif, system-ui, sans-serif;
+
+  --shadow-soft: 0 20px 60px -20px rgba(64, 37, 21, 0.18);
+  --shadow-softer: 0 10px 30px -12px rgba(64, 37, 21, 0.12);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+section[id] {
+  scroll-margin-top: 6rem;
+}
+
+body {
+  background-color: var(--color-cream);
+  color: var(--color-ink);
+  font-family: var(--font-body);
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-display);
+}
+
+[dir="rtl"] .flip-rtl {
+  transform: scaleX(-1);
+}
+
+@layer components {
+  .btn-primary {
+    @apply rounded-xl bg-gold px-9 py-4 text-sm font-semibold uppercase tracking-widest text-cream-soft shadow-soft transition-all duration-300 hover:brightness-110 active:scale-95;
+  }
+  .btn-secondary {
+    @apply rounded-xl border-2 border-brown/70 px-9 py-4 text-sm font-semibold uppercase tracking-widest text-brown transition-all duration-300 hover:bg-brown hover:text-cream-soft active:scale-95;
+  }
+  .kicker {
+    @apply text-xs font-bold uppercase tracking-[0.35em] text-gold;
+  }
+}
+
+@keyframes dust-drift {
+  0% { transform: translate(0, 0); opacity: 0; }
+  15% { opacity: 0.8; }
+  50% { transform: translate(var(--dx, 12px), var(--dy, -40px)); opacity: 0.5; }
+  85% { opacity: 0.7; }
+  100% { transform: translate(0, 0); opacity: 0; }
+}
+
+.dust {
+  width: 4px;
+  height: 4px;
+  filter: blur(0.3px);
+  box-shadow: 0 0 6px 1px rgba(230, 168, 38, 0.6);
+  animation: dust-drift 9s ease-in-out infinite;
+}
+.dust-0 { left: 8%; top: 20%; --dx: 14px; --dy: -50px; animation-delay: 0s; }
+.dust-1 { left: 22%; top: 65%; --dx: -10px; --dy: -35px; animation-delay: 1.1s; }
+.dust-2 { left: 38%; top: 12%; --dx: 16px; --dy: -60px; animation-delay: 2.2s; }
+.dust-3 { left: 62%; top: 78%; --dx: -14px; --dy: -45px; animation-delay: 0.6s; }
+.dust-4 { left: 78%; top: 30%; --dx: 12px; --dy: -55px; animation-delay: 3.1s; }
+.dust-5 { left: 88%; top: 58%; --dx: -16px; --dy: -40px; animation-delay: 1.8s; }
+.dust-6 { left: 50%; top: 85%; --dx: 10px; --dy: -50px; animation-delay: 2.6s; }
+
+.drip-drop {
+  position: absolute;
+  top: 4%;
+  width: 10px;
+  height: 10px;
+  background: linear-gradient(160deg, #F2C862, #B87518);
+  border-radius: 0 50% 50% 50%;
+  transform: translateX(-50%) rotate(45deg);
+  box-shadow: 0 0 6px rgba(230, 168, 38, 0.5);
+}

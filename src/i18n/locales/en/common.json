@@ -1,0 +1,136 @@
+{
+  "seo": {
+    "title": "SUBUR Honey | Traditional Middle Eastern Honey Blend for Vitality",
+    "description": "Shop SUBUR Honey, a traditional Middle Eastern honey blend with saffron, ginseng, black seed and honeycomb for fertility, vitality and strength. All natural, vegan. Retail and wholesale across Malaysia."
+  },
+  "nav": {
+    "benefits": "Benefits",
+    "ritual": "Ritual",
+    "ingredients": "Ingredients",
+    "wholesale": "Wholesale",
+    "faq": "FAQ"
+  },
+  "hero": {
+    "heading": "Nature's traditional recipe,",
+    "headingAccent": "Perfected through generations.",
+    "description": "A traditional Middle Eastern honey blend made from generations of knowledge for fertility, vitality, and strength.",
+    "badges": ["ALL NATURAL", "TRADITIONAL RECIPE", "REAL HONEY", "VEGAN"],
+    "ctaPrimary": "Buy Retail",
+    "ctaSecondary": "Wholesale Inquiry"
+  },
+  "benefits": {
+    "heading": "Why Subur Honey is for you",
+    "subheading": "A traditional recipe made from ingredients trusted by Middle Eastern families for generations.",
+    "cards": [
+      {
+        "label": "For Him & Her",
+        "title": "Fertility Support",
+        "description": "Made with traditional herbs and natural ingredients that have long been used to support fertility and reproductive health in both men and women."
+      },
+      {
+        "label": "Daily Performance",
+        "title": "Stamina & Energy",
+        "description": "A blend of nutrient-rich ingredients traditionally used to support energy, stamina, and daily wellbeing."
+      },
+      {
+        "label": "Men's Wellness",
+        "title": "Male Vitality",
+        "description": "Contains traditional ingredients valued for generations for supporting male vitality, strength, and overall wellness."
+      }
+    ]
+  },
+  "ritual": {
+    "heading": "The Morning Ritual",
+    "subheading": "For generations, honey blends like Subur were taken as part of a simple daily routine.",
+    "steps": [
+      "Take one teaspoon on an empty stomach.",
+      "Wait 15 minutes before breakfast.",
+      "Store in a cool and dry place."
+    ]
+  },
+  "ingredients": {
+    "heading": "Traditional Ingredients Inside Every Jar",
+    "subheading": "Ten natural ingredients chosen for a reason passed down through generations.",
+    "items": [
+      { "name": "Star Anise", "alt": "Star anise, a traditional spice used in the Subur Honey blend", "description": "Traditionally used to support digestion and warmth.", "icon": "/icons/ingrediant_01.png" },
+      { "name": "Saffron", "alt": "Saffron threads, a premium natural ingredient in Subur Honey", "description": "A prized spice traditionally valued for mood and vitality support.", "icon": "/icons/ingrediant_02.png" },
+      { "name": "Fresh Ginger", "alt": "Fresh ginger root, a traditional ingredient in Subur Honey", "description": "Adds natural warmth and is traditionally used to support circulation.", "icon": "/icons/ingrediant_03.png" },
+      { "name": "Walnuts", "alt": "Walnuts, a natural ingredient in the Subur Honey blend", "description": "A nutrient-dense nut traditionally linked to daily energy.", "icon": "/icons/ingrediant_04.png" },
+      { "name": "Nutmeg", "alt": "Nutmeg seed, a traditional spice in Subur Honey", "description": "A traditional spice included for overall wellness.", "icon": "/icons/ingrediant_05.png" },
+      { "name": "Cinnamon", "alt": "Cinnamon sticks, a traditional spice in Subur Honey", "description": "A warming spice traditionally used to support stamina.", "icon": "/icons/ingrediant_06.png" },
+      { "name": "Black Seed (Habbatus Sauda)", "alt": "Black seed (habbatus sauda), a traditional ingredient in Subur Honey", "description": "A traditional seed long valued for immune and vitality support.", "icon": "/icons/ingrediant_07.png" },
+      { "name": "Raw Honeycomb", "alt": "Raw honeycomb, the natural honey base of Subur Honey", "description": "The natural honey base of Subur Honey, harvested raw.", "icon": "/icons/ingrediant_08.png" },
+      { "name": "Almonds", "alt": "Almonds, a natural ingredient in the Subur Honey blend", "description": "A natural source of nutrients that supports daily energy.", "icon": "/icons/ingrediant_09.png" },
+      { "name": "Ginseng Root", "alt": "Ginseng root, a traditional ingredient in Subur Honey", "description": "A root long valued in traditional medicine for stamina and vitality.", "icon": "/icons/ingrediant_10.png" }
+    ],
+    "footerNote": {
+      "before": "SUBUR Honey pairs naturally with our",
+      "wholesaleLink": "wholesale programme",
+      "middle": ", and is also available through our retail partner network, including",
+      "madinahLink": "Berkat Madinah Store",
+      "after": ". See our",
+      "faqLink": "full FAQ",
+      "end": "."
+    }
+  },
+  "wholesale": {
+    "kicker": "FOR BUSINESSES",
+    "heading": "Partner with Subur Honey",
+    "description": "Bring a traditional Middle Eastern honey recipe to your customers. Join our growing network of retailers, distributors, and resellers across Malaysia.",
+    "features": [
+      { "title": "Bulk Pricing Available", "description": "Special pricing for retailers, resellers, and distributors." },
+      { "title": "Nationwide Delivery", "description": "Delivery available throughout Peninsular and East Malaysia." },
+      { "title": "Dedicated Sales Team", "description": "Our team will help you find the right wholesale solution for your business." }
+    ],
+    "form": {
+      "heading": "Wholesale Enquiry Form",
+      "fullName": "Full Name *",
+      "fullNamePlaceholder": "Ahmad bin Hassan",
+      "phone": "Phone Number *",
+      "phonePlaceholder": "+60 12 345 6789",
+      "email": "Email Address *",
+      "emailPlaceholder": "you@business.com",
+      "business": "Business / Company Name *",
+      "businessPlaceholder": "My Health Store Sdn Bhd",
+      "businessType": "Business Type *",
+      "businessTypeOptions": ["Select type", "Retail Shop", "Online Seller", "Distributor", "Pharmacy / Health Store", "Other"],
+      "volume": "Monthly Order Volume *",
+      "volumeOptions": ["Estimated qty", "10-50 units", "50+ units"],
+      "location": "State / Location",
+      "locationPlaceholder": "e.g. Pahang, Selangor...",
+      "message": "Additional Message",
+      "messagePlaceholder": "Tell us more about your business or what you need...",
+      "submit": "Submit Enquiry →"
+    }
+  },
+  "faq": {
+    "heading": "Common Questions",
+    "items": [
+      { "q": "What makes Subur different from regular honey?", "a": "Subur is more than honey. It combines honey with traditional herbs and natural ingredients inspired by generations of Middle Eastern knowledge." },
+      { "q": "How should I consume Subur?", "a": "Take one teaspoon every morning on an empty stomach." },
+      { "q": "How long should I take Subur?", "a": "Subur is designed to be part of your daily routine. Consistent use is recommended for the best results." },
+      { "q": "Is Subur for men or women?", "a": "Subur is made for both men and women. The traditional recipe includes ingredients valued for supporting overall wellbeing and fertility." },
+      { "q": "Can husband and wife take Subur together?", "a": "Yes. Many couples choose to take Subur together as part of their daily wellness routine." },
+      { "q": "Does Subur contain artificial ingredients?", "a": "No. Subur is made using natural ingredients and contains no artificial colours or artificial flavours." },
+      { "q": "How should I store Subur?", "a": "Store in a cool, dry place away from direct sunlight. Always keep the lid tightly closed after use." },
+      { "q": "Where can I buy Subur Honey in Malaysia?", "a": "Subur Honey is available through our retail partner network including Berkat Madinah Store, as well as via our official Shopee and TikTok Shop channels." }
+    ]
+  },
+  "finalCta": {
+    "heading": "Ready to begin?",
+    "subheading": "Discover a traditional Middle Eastern recipe built on generations of accumulated knowledge.",
+    "ctaPrimary": "Buy Retail",
+    "ctaSecondary": "Wholesale Inquiry",
+    "ratingText": "Trusted by more than 5,000 customers"
+  },
+  "footer": {
+    "brand": "SUBUR HONEY",
+    "description": "A traditional Middle Eastern honey blend inspired by generations of knowledge and made with carefully selected natural ingredients.",
+    "badges": ["ALL NATURAL", "TRADITIONAL RECIPE", "REAL HONEY", "VEGAN"],
+    "shopHeading": "SHOP WITH US",
+    "shopLinks": ["Shopee", "TikTok Shop", "Wholesale Enquiry"],
+    "copyright": "Subur Honey. Traditional Recipe. Generational Knowledge.",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service"
+  }
+}

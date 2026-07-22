@@ -1,0 +1,26 @@
+---
+import "../styles/global.css";
+import SEO from "../components/SEO.astro";
+import { LOCALE_META, type Locale } from "../config/site";
+
+interface Props {
+  lang: Locale;
+  title: string;
+  description: string;
+  faqItems: { q: string; a: string }[];
+}
+
+const { lang, title, description, faqItems } = Astro.props;
+const dir = LOCALE_META[lang].dir;
+---
+
+<!doctype html>
+<html lang={lang} dir={dir}>
+  <head>
+    <SEO lang={lang} title={title} description={description} faqItems={faqItems} />
+    <meta name="generator" content={Astro.generator} />
+  </head>
+  <body class="bg-cream text-ink font-body antialiased">
+    <slot />
+  </body>
+</html>

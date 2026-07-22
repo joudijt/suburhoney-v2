@@ -1,0 +1,51 @@
+---
+interface Item {
+  name: string;
+  alt: string;
+  description: string;
+  icon: string;
+}
+interface FooterNote {
+  before: string;
+  wholesaleLink: string;
+  middle: string;
+  madinahLink: string;
+  after: string;
+  faqLink: string;
+  end: string;
+}
+interface Props {
+  heading: string;
+  subheading: string;
+  items: Item[];
+  footerNote: FooterNote;
+}
+const { heading, subheading, items, footerNote } = Astro.props;
+---
+
+<section id="ingredients" class="relative bg-cream-soft px-6 py-28 md:py-36" data-reveal-group>
+  <div class="mx-auto max-w-7xl">
+    <div class="mx-auto mb-20 max-w-2xl space-y-5 text-center" data-reveal>
+      <p class="kicker">Ten Ingredients, One Recipe</p>
+      <h2 id="ingredients-heading" class="font-display text-3xl text-brown md:text-5xl">{heading}</h2>
+      <p class="text-lg text-brown/70">{subheading}</p>
+    </div>
+
+    <div class="grid grid-cols-1 gap-7 sm:grid-cols-2 lg:grid-cols-3">
+      {items.map((item) => (
+        <div data-reveal class="rounded-3xl border border-brown/10 bg-cream p-8 transition-all duration-500 hover:border-gold/40 hover:shadow-softer">
+          <img src={item.icon} alt={item.alt} loading="lazy" width="56" height="56" class="mb-4 h-14 w-14 object-contain" />
+          <h3 class="mb-3 font-display text-xl text-brown">{item.name}</h3>
+          <p class="text-sm leading-relaxed text-brown/70">{item.description}</p>
+        </div>
+      ))}
+    </div>
+
+    <p class="mx-auto mt-16 max-w-2xl text-center text-sm text-brown/70" data-reveal>
+      {footerNote.before}
+      {" "}<a href="#wholesale" class="font-semibold text-honey-dark underline underline-offset-4 hover:text-gold">{footerNote.wholesaleLink}</a>{footerNote.middle}
+      {" "}<a href="https://madinah.com.my/en/" target="_blank" rel="noopener noreferrer" class="font-semibold text-honey-dark underline underline-offset-4 hover:text-gold">{footerNote.madinahLink}</a>{footerNote.after}
+      {" "}<a href="#faq" class="font-semibold text-honey-dark underline underline-offset-4 hover:text-gold">{footerNote.faqLink}</a>{footerNote.end}
+    </p>
+  </div>
+</section>
