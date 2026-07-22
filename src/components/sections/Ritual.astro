@@ -7,9 +7,20 @@ interface Props {
 const { heading, subheading, steps } = Astro.props;
 ---
 
-<section id="ritual" class="relative overflow-hidden bg-sand/40 px-6 py-24 md:py-32" data-reveal-group>
-  <div class="mx-auto grid max-w-7xl grid-cols-1 items-center gap-16 lg:grid-cols-2">
-    <div class="space-y-12" data-reveal>
+<section id="ritual" class="relative overflow-hidden px-6 py-28 md:py-36" data-reveal-group>
+  <div class="absolute inset-0 -z-20" data-parallax="0.06">
+    <img
+      src="/images/ritual-showcase.jpg"
+      alt=""
+      aria-hidden="true"
+      loading="lazy"
+      class="h-[130%] w-full object-cover object-center"
+    />
+  </div>
+  <div class="absolute inset-0 -z-10 bg-gradient-to-r from-cream via-cream/85 to-cream/25 rtl:bg-gradient-to-l"></div>
+
+  <div class="mx-auto max-w-7xl">
+    <div class="max-w-xl space-y-12" data-reveal>
       <div class="space-y-5">
         <p class="kicker">A Simple Daily Habit</p>
         <h2 class="font-display text-4xl text-brown md:text-5xl lg:text-6xl">{heading}</h2>
@@ -18,7 +29,7 @@ const { heading, subheading, steps } = Astro.props;
       <div class="space-y-7">
         {steps.map((step, i) => (
           <div class="flex items-center gap-5">
-            <div class="flex h-11 w-11 flex-shrink-0 items-center justify-center rounded-full border border-gold/50 font-display text-base text-honey-dark">
+            <div class="flex h-11 w-11 flex-shrink-0 items-center justify-center rounded-full border border-gold/50 bg-cream-soft/80 font-display text-base text-honey-dark backdrop-blur-sm">
               {i + 1}
             </div>
             <p class="font-display text-lg italic text-brown md:text-xl">{step}</p>
@@ -26,28 +37,5 @@ const { heading, subheading, steps } = Astro.props;
         ))}
       </div>
     </div>
-
-    <div class="relative hidden h-[560px] lg:block" data-reveal data-parallax="0.08">
-      <div class="ritual-jar absolute inset-0 overflow-hidden rounded-[2rem] shadow-soft">
-        <img
-          src="/images/ritual-showcase.jpg"
-          alt="Subur Honey jar surrounded by saffron, ginger, almonds, walnuts and raw honeycomb"
-          loading="lazy"
-          width="1200"
-          height="800"
-          class="h-full w-full object-cover"
-        />
-      </div>
-    </div>
   </div>
 </section>
-
-<style>
-  .ritual-jar {
-    animation: ritual-float 7s ease-in-out infinite;
-  }
-  @keyframes ritual-float {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-14px); }
-  }
-</style>
