@@ -60,42 +60,42 @@ const { kicker, heading, description, features, form } = Astro.props;
         <div class="grid grid-cols-1 gap-6 md:grid-cols-2">
           <div class="space-y-2">
             <label class="text-[10px] font-bold uppercase tracking-widest opacity-60">{form.fullName}</label>
-            <input type="text" placeholder={form.fullNamePlaceholder} class="w-full rounded-xl border border-white/10 bg-black/20 px-5 py-4 outline-none transition-all placeholder:opacity-20 focus:border-gold" />
+            <input type="text" placeholder={form.fullNamePlaceholder} class="w-full rounded-xl border border-brown/10 bg-cream-soft px-5 py-4 text-brown outline-none transition-all placeholder:text-brown/35 focus:border-gold" />
           </div>
           <div class="space-y-2">
             <label class="text-[10px] font-bold uppercase tracking-widest opacity-60">{form.phone}</label>
-            <input type="text" placeholder={form.phonePlaceholder} class="w-full rounded-xl border border-white/10 bg-black/20 px-5 py-4 outline-none transition-all placeholder:opacity-20 focus:border-gold" />
+            <input type="text" placeholder={form.phonePlaceholder} class="w-full rounded-xl border border-brown/10 bg-cream-soft px-5 py-4 text-brown outline-none transition-all placeholder:text-brown/35 focus:border-gold" />
           </div>
         </div>
         <div class="space-y-2">
           <label class="text-[10px] font-bold uppercase tracking-widest opacity-60">{form.email}</label>
-          <input type="email" placeholder={form.emailPlaceholder} class="w-full rounded-xl border border-white/10 bg-black/20 px-5 py-4 outline-none transition-all placeholder:opacity-20 focus:border-gold" />
+          <input type="email" placeholder={form.emailPlaceholder} class="w-full rounded-xl border border-brown/10 bg-cream-soft px-5 py-4 text-brown outline-none transition-all placeholder:text-brown/35 focus:border-gold" />
         </div>
         <div class="space-y-2">
           <label class="text-[10px] font-bold uppercase tracking-widest opacity-60">{form.business}</label>
-          <input type="text" placeholder={form.businessPlaceholder} class="w-full rounded-xl border border-white/10 bg-black/20 px-5 py-4 outline-none transition-all placeholder:opacity-20 focus:border-gold" />
+          <input type="text" placeholder={form.businessPlaceholder} class="w-full rounded-xl border border-brown/10 bg-cream-soft px-5 py-4 text-brown outline-none transition-all placeholder:text-brown/35 focus:border-gold" />
         </div>
         <div class="grid grid-cols-1 gap-6 md:grid-cols-2">
           <div class="space-y-2">
             <label class="text-[10px] font-bold uppercase tracking-widest opacity-60">{form.businessType}</label>
-            <select class="w-full cursor-pointer appearance-none rounded-xl border border-white/10 bg-black/20 px-5 py-4 text-cream-soft/80 outline-none transition-all focus:border-gold">
+            <select class="w-full cursor-pointer appearance-none rounded-xl border border-brown/10 bg-cream-soft px-5 py-4 text-brown outline-none transition-all focus:border-gold">
               {form.businessTypeOptions.map((opt) => <option>{opt}</option>)}
             </select>
           </div>
           <div class="space-y-2">
             <label class="text-[10px] font-bold uppercase tracking-widest opacity-60">{form.volume}</label>
-            <select class="w-full cursor-pointer appearance-none rounded-xl border border-white/10 bg-black/20 px-5 py-4 outline-none transition-all focus:border-gold">
+            <select class="w-full cursor-pointer appearance-none rounded-xl border border-brown/10 bg-cream-soft px-5 py-4 text-brown outline-none transition-all focus:border-gold">
               {form.volumeOptions.map((opt) => <option>{opt}</option>)}
             </select>
           </div>
         </div>
         <div class="space-y-2">
           <label class="text-[10px] font-bold uppercase tracking-widest opacity-60">{form.location}</label>
-          <input type="text" placeholder={form.locationPlaceholder} class="w-full rounded-xl border border-white/10 bg-black/20 px-5 py-4 outline-none transition-all placeholder:opacity-20 focus:border-gold" />
+          <input type="text" placeholder={form.locationPlaceholder} class="w-full rounded-xl border border-brown/10 bg-cream-soft px-5 py-4 text-brown outline-none transition-all placeholder:text-brown/35 focus:border-gold" />
         </div>
         <div class="space-y-2">
           <label class="text-[10px] font-bold uppercase tracking-widest opacity-60">{form.message}</label>
-          <textarea rows="4" placeholder={form.messagePlaceholder} class="w-full resize-none rounded-xl border border-white/10 bg-black/20 px-5 py-4 outline-none transition-all placeholder:opacity-20 focus:border-gold"></textarea>
+          <textarea rows="4" placeholder={form.messagePlaceholder} class="w-full resize-none rounded-xl border border-brown/10 bg-cream-soft px-5 py-4 text-brown outline-none transition-all placeholder:text-brown/35 focus:border-gold"></textarea>
         </div>
         <button type="submit" class="w-full rounded-xl bg-gold py-5 font-bold uppercase tracking-[0.2em] text-cream-soft shadow-xl shadow-gold/20 transition-all hover:brightness-110">
           {form.submit}
