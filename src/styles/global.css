@@ -120,16 +120,6 @@ h1, h2, h3, h4 {
   50% { transform: rotate(45deg) translateY(-8px); }
 }
 
-.benefits-bee-img {
-  transform-box: fill-box;
-  transform-origin: center;
-  animation: benefits-bee-flutter 0.15s ease-in-out infinite alternate;
-}
-@keyframes benefits-bee-flutter {
-  from { transform: scaleY(1); }
-  to { transform: scaleY(0.9); }
-}
-
 @media (hover: hover) and (pointer: fine) {
   html.cursor-bee-active,
   html.cursor-bee-active * {
