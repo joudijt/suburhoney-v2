@@ -49,28 +49,11 @@ const positions = [
       <!-- ambient background texture -->
       <div class="honeycomb-texture pointer-events-none absolute inset-0 -z-10" aria-hidden="true"></div>
 
-      <!-- decorative pollen / droplets / bees -->
+      <!-- decorative droplets -->
       <div class="pointer-events-none absolute inset-0 -z-0" aria-hidden="true">
-        {Array.from({ length: 8 }).map((_, i) => (
-          <span class={`hc-dust hc-dust-${i % 8} absolute rounded-full bg-gold/70`}></span>
-        ))}
         <span class="hc-droplet absolute" style="left:4%; top:12%;"></span>
         <span class="hc-droplet absolute" style="left:92%; top:70%;"></span>
         <span class="hc-droplet absolute" style="left:8%; top:78%;"></span>
-        <svg class="hc-bee absolute left-[-4%] top-[20%] h-6 w-6" viewBox="0 0 24 24">
-          <ellipse cx="12" cy="12" rx="6" ry="4.5" fill="#402515" />
-          <rect x="8" y="8.2" width="8" height="1.6" rx="0.8" fill="#E6A826" />
-          <rect x="8" y="11.2" width="8" height="1.6" rx="0.8" fill="#E6A826" />
-          <rect x="8" y="14.2" width="8" height="1.6" rx="0.8" fill="#E6A826" />
-          <ellipse cx="4.5" cy="9" rx="3.2" ry="2.4" fill="white" opacity="0.55" />
-        </svg>
-        <svg class="hc-bee absolute right-[-4%] top-[62%] h-5 w-5" viewBox="0 0 24 24">
-          <ellipse cx="12" cy="12" rx="6" ry="4.5" fill="#402515" />
-          <rect x="8" y="8.2" width="8" height="1.6" rx="0.8" fill="#E6A826" />
-          <rect x="8" y="11.2" width="8" height="1.6" rx="0.8" fill="#E6A826" />
-          <rect x="8" y="14.2" width="8" height="1.6" rx="0.8" fill="#E6A826" />
-          <ellipse cx="4.5" cy="9" rx="3.2" ry="2.4" fill="white" opacity="0.55" />
-        </svg>
       </div>
 
       <div id="honeycomb" class="honeycomb relative mx-auto w-full" style="aspect-ratio: 1.386;">

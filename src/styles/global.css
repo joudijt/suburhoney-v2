@@ -120,26 +120,6 @@ h1, h2, h3, h4 {
   50% { transform: rotate(45deg) translateY(-8px); }
 }
 
-.hc-dust {
-  width: 3px;
-  height: 3px;
-  filter: blur(0.3px);
-  box-shadow: 0 0 5px 1px rgba(230, 168, 38, 0.55);
-  animation: hc-drift 8s ease-in-out infinite;
-}
-.hc-dust-0 { left: 6%; top: 8%; animation-delay: 0s; }
-.hc-dust-1 { left: 92%; top: 18%; animation-delay: 1s; }
-.hc-dust-2 { left: 15%; top: 45%; animation-delay: 2s; }
-.hc-dust-3 { left: 85%; top: 40%; animation-delay: 0.5s; }
-.hc-dust-4 { left: 10%; top: 82%; animation-delay: 1.5s; }
-.hc-dust-5 { left: 90%; top: 88%; animation-delay: 2.5s; }
-.hc-dust-6 { left: 50%; top: 4%; animation-delay: 3s; }
-.hc-dust-7 { left: 48%; top: 94%; animation-delay: 1.2s; }
-@keyframes hc-drift {
-  0%, 100% { transform: translateY(0); opacity: 0.5; }
-  50% { transform: translateY(-14px); opacity: 0.9; }
-}
-
 @layer components {
   .btn-primary {
     @apply rounded-xl bg-gold px-9 py-4 text-sm font-semibold uppercase tracking-widest text-cream-soft shadow-soft transition-all duration-300 hover:brightness-110 active:scale-95;

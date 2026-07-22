@@ -121,21 +121,6 @@ export function initHoneycomb() {
     }, 3200);
   }
 
-  // Decorative bees drifting slowly around the honeycomb.
-  if (!prefersReducedMotion) {
-    section.querySelectorAll<HTMLElement>(".hc-bee").forEach((bee, i) => {
-      gsap.to(bee, {
-        x: i % 2 === 0 ? 30 : -26,
-        y: i % 2 === 0 ? -18 : 16,
-        rotate: i % 2 === 0 ? 6 : -6,
-        duration: 5 + i * 1.4,
-        ease: "sine.inOut",
-        yoyo: true,
-        repeat: -1,
-      });
-    });
-  }
-
   // Detail panel
   const panel = document.querySelector<HTMLElement>("#ingredient-panel");
   const backdrop = panel?.querySelector<HTMLElement>(".ingredient-panel-backdrop");
