@@ -30,7 +30,6 @@ export function initHero() {
   const jarTilt = document.querySelector<HTMLElement>(".jar-tilt");
   const stream = document.querySelector<HTMLElement>(".honey-stream");
   const ripples = document.querySelectorAll<HTMLElement>(".ripple");
-  const botanicals = document.querySelectorAll<HTMLElement>(".botanical");
   const bees = document.querySelectorAll<HTMLElement>(".bee");
   const scrollCue = document.querySelector<HTMLElement>(".scroll-cue");
   const dipper = document.querySelector<HTMLElement>("#dipper");
@@ -54,13 +53,12 @@ export function initHero() {
     .from(".hero-desc", { y: 16, opacity: 0, duration: 0.7 }, 1.55)
     .from(".hero-badges > *", { y: 12, opacity: 0, duration: 0.5, stagger: 0.06 }, 1.65)
     .from(".hero-cta", { y: 14, opacity: 0, duration: 0.6 }, 1.75)
-    .to(botanicals, { opacity: 0.85, duration: 1, stagger: 0.2 }, 1.4)
     .to(bees, { opacity: 0.9, duration: 0.8, stagger: 0.2 }, 1.6)
     .to(scrollCue, { opacity: 1, duration: 0.8 }, 2.1);
 
   if (prefersReducedMotion) {
     gsap.set(
-      [jarImg, ".hero-line", ".hero-line-accent", ".hero-desc", ".hero-badges > *", ".hero-cta", botanicals, bees, scrollCue],
+      [jarImg, ".hero-line", ".hero-line-accent", ".hero-desc", ".hero-badges > *", ".hero-cta", bees, scrollCue],
       { opacity: 1, y: 0, scale: 1, filter: "none" }
     );
     return;
@@ -68,18 +66,6 @@ export function initHero() {
 
   intro.call(() => {
     gsap.to(jarTilt, { y: -14, rotate: 1.5, duration: 3.2, ease: "sine.inOut", yoyo: true, repeat: -1 });
-
-    botanicals.forEach((el, i) => {
-      gsap.to(el, {
-        y: i % 2 === 0 ? -18 : 18,
-        x: i % 2 === 0 ? 8 : -8,
-        rotate: i % 2 === 0 ? 8 : -8,
-        duration: 5 + i,
-        ease: "sine.inOut",
-        yoyo: true,
-        repeat: -1,
-      });
-    });
 
     bees.forEach((el, i) => {
       gsap.to(el, {

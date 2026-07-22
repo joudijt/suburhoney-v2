@@ -19,9 +19,6 @@ const { heading, headingAccent, description, badges, ctaPrimary, ctaSecondary } 
   <div class="pointer-events-none absolute inset-0" aria-hidden="true">
     <div class="hero-glow absolute left-1/2 top-1/2 h-[70vmax] w-[70vmax] -translate-x-1/2 -translate-y-1/2 rounded-full bg-[radial-gradient(circle,rgba(230,168,38,0.22),transparent_65%)]"></div>
     <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(255,253,248,0.6),transparent_55%)]"></div>
-    {Array.from({ length: 14 }).map((_, i) => (
-      <span class={`dust dust-${i % 7} absolute rounded-full bg-gold/70`} style={`--i:${i}`}></span>
-    ))}
   </div>
 
   <div class="relative z-10 mx-auto grid w-full max-w-7xl grid-cols-1 items-center gap-14 px-6 md:px-10 lg:grid-cols-2">
@@ -61,10 +58,6 @@ const { heading, headingAccent, description, badges, ctaPrimary, ctaSecondary } 
         <span class="ripple absolute left-1/2 top-1/2 h-16 w-16 -translate-x-1/2 -translate-y-1/2 rounded-full border-2 border-gold/60 opacity-0"></span>
         <span class="ripple absolute left-1/2 top-1/2 h-16 w-16 -translate-x-1/2 -translate-y-1/2 rounded-full border-2 border-gold/50 opacity-0"></span>
         <span class="ripple absolute left-1/2 top-1/2 h-16 w-16 -translate-x-1/2 -translate-y-1/2 rounded-full border-2 border-gold/40 opacity-0"></span>
-
-        <!-- floating botanicals -->
-        <img src="/icons/ingrediant_02.png" alt="" aria-hidden="true" class="botanical absolute left-[6%] top-[18%] h-12 w-12 opacity-0 md:h-16 md:w-16" />
-        <img src="/icons/ingrediant_01.png" alt="" aria-hidden="true" class="botanical absolute right-[4%] top-[62%] h-10 w-10 opacity-0 md:h-14 md:w-14" />
 
         <!-- bees -->
         <svg class="bee absolute left-[12%] top-[40%] h-6 w-6 opacity-0" viewBox="0 0 24 24" aria-hidden="true">
