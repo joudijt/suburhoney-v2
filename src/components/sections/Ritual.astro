@@ -28,12 +28,14 @@ const { heading, subheading, steps } = Astro.props;
     </div>
 
     <div class="relative hidden h-[560px] lg:block" data-reveal data-parallax="0.08">
-      <div class="ritual-jar absolute inset-0 flex items-center justify-center">
+      <div class="ritual-jar absolute inset-0 overflow-hidden rounded-[2rem] shadow-soft">
         <img
-          src="/jarncap.png"
-          alt="Subur Honey Jar"
+          src="/images/ritual-showcase.jpg"
+          alt="Subur Honey jar surrounded by saffron, ginger, almonds, walnuts and raw honeycomb"
           loading="lazy"
-          class="h-full w-full object-contain drop-shadow-[0_25px_60px_rgba(64,37,21,0.18)]"
+          width="1200"
+          height="800"
+          class="h-full w-full object-cover"
         />
       </div>
     </div>
@@ -41,11 +43,11 @@ const { heading, subheading, steps } = Astro.props;
 </section>
 
 <style>
-  .ritual-jar img {
-    animation: ritual-float 6s ease-in-out infinite;
+  .ritual-jar {
+    animation: ritual-float 7s ease-in-out infinite;
   }
   @keyframes ritual-float {
-    0%, 100% { transform: translateY(0) rotate(0deg); }
-    50% { transform: translateY(-16px) rotate(1deg); }
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-14px); }
   }
 </style>

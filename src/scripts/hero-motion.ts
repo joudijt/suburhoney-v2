@@ -113,14 +113,15 @@ export function initHero() {
   if (dipper) {
     gsap
       .timeline({
-        scrollTrigger: { trigger: "#hero", start: "top top", end: "+=120%", scrub: 1 },
+        scrollTrigger: { trigger: "#hero", start: "top top", end: "+=220%", scrub: 1.4 },
       })
-      .to(dipper, { opacity: 1, y: "34%", rotate: -8, duration: 1, ease: "power2.out" }, 0)
-      .to(dipper, { rotate: -18, duration: 0.6 }, 1)
-      .add(createDrip(dripsHost, "48%"), 1.2)
-      .add(createDrip(dripsHost, "52%"), 1.4)
-      .add(createDrip(dripsHost, "46%"), 1.6)
-      .to(dipper, { y: "-10%", opacity: 0, rotate: -6, duration: 1, ease: "power1.in" }, 2.1);
+      .to(dipper, { opacity: 1, y: "48%", rotate: -3, duration: 1.8, ease: "power2.out" }, 0)
+      .to(dipper, { rotate: -6, duration: 1.1 }, 1.8)
+      .add(createDrip(dripsHost, "50%"), 2.3)
+      .add(createDrip(dripsHost, "53%"), 2.7)
+      .add(createDrip(dripsHost, "48%"), 3.1)
+      .to(dipper, { rotate: -3, duration: 0.6 }, 3.6)
+      .to(dipper, { y: "20%", opacity: 0, rotate: -1, duration: 1.6, ease: "power1.in" }, 4.2);
   }
 
   // Second scroll: the jar drifts and softly dissolves as Hero scrolls out, handing off to Benefits.
