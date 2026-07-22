@@ -1,28 +1,6 @@
 import gsap from "gsap";
 import { MotionPathPlugin } from "gsap/MotionPathPlugin";
 
-interface Pt {
-  x: number;
-  y: number;
-}
-
-function smoothPath(points: Pt[]): string {
-  if (points.length < 2) return "";
-  let d = `M ${points[0].x} ${points[0].y}`;
-  for (let i = 0; i < points.length - 1; i++) {
-    const p0 = points[i - 1] || points[i];
-    const p1 = points[i];
-    const p2 = points[i + 1];
-    const p3 = points[i + 2] || p2;
-    const cp1x = p1.x + (p2.x - p0.x) / 10;
-    const cp1y = p1.y + (p2.y - p0.y) / 10;
-    const cp2x = p2.x - (p3.x - p1.x) / 10;
-    const cp2y = p2.y - (p3.y - p1.y) / 10;
-    d += ` C ${cp1x} ${cp1y}, ${cp2x} ${cp2y}, ${p2.x} ${p2.y}`;
-  }
-  return d;
-}
-
 export function initBenefitsFlightpath() {
   gsap.registerPlugin(MotionPathPlugin);
 
@@ -36,8 +14,8 @@ export function initBenefitsFlightpath() {
   let dashTween: gsap.core.Tween | null = null;
   let motionTween: gsap.core.Tween | null = null;
 
-  const MARGIN = 16;
-  const WAVE = 10;
+  const MARGIN = 14;
+  const LOOP_R = 14;
 
   function buildPath() {
     const cards = Array.from(wrap!.querySelectorAll<HTMLElement>("[data-flight-card]"));
@@ -56,39 +34,51 @@ export function initBenefitsFlightpath() {
       };
     });
 
-    // Row layout (side-by-side): route the path below the whole row, clearing every card's bottom edge.
-    // Stacked layout (mobile column): route the path beside the column, clearing every card's outer edge.
     const xSpread = Math.max(...boxes.map((b) => b.cx)) - Math.min(...boxes.map((b) => b.cx));
     const ySpread = Math.max(...boxes.map((b) => b.cy)) - Math.min(...boxes.map((b) => b.cy));
     const isRow = xSpread >= ySpread;
+    const first = boxes[0];
+    const last = boxes[boxes.length - 1];
 
-    let points: Pt[];
-    if (isRow) {
-      const clearY = Math.max(...boxes.map((b) => b.bottom)) + MARGIN;
-      points = boxes.map((b, i) => ({
-        x: b.cx,
-        y: clearY + (i % 2 === 0 ? 0 : WAVE),
-      }));
-      // pull entry/exit toward the outer bottom corners of the first/last card
-      points[0] = { x: boxes[0].left + (boxes[0].right - boxes[0].left) * 0.18, y: boxes[0].bottom + MARGIN * 0.6 };
-      points[points.length - 1] = {
-        x: boxes[boxes.length - 1].left + (boxes[boxes.length - 1].right - boxes[boxes.length - 1].left) * 0.82,
-        y: boxes[boxes.length - 1].bottom + MARGIN * 0.6,
-      };
-    } else {
-      const clearX = Math.max(...boxes.map((b) => b.right)) + MARGIN;
-      points = boxes.map((b, i) => ({
-        x: clearX + (i % 2 === 0 ? 0 : WAVE),
-        y: b.cy,
-      }));
-      points[0] = { x: boxes[0].right + MARGIN * 0.6, y: boxes[0].top + (boxes[0].bottom - boxes[0].top) * 0.18 };
-      points[points.length - 1] = {
-        x: boxes[boxes.length - 1].right + MARGIN * 0.6,
-        y: boxes[boxes.length - 1].top + (boxes[boxes.length - 1].bottom - boxes[boxes.length - 1].top) * 0.82,
-      };
-    }
+    // u = position along the main flow axis, v = position along the clearance axis.
+    // Row: u=x, v=y (path bows below the row). Stacked: u=y, v=x (path bows to the right of the column).
+    const toXY = isRow ? (u: number, v: number) => ({ x: u, y: v }) : (u: number, v: number) => ({ x: v, y: u });
 
-    path!.setAttribute("d", smoothPath(points));
+    const start = isRow ? { u: first.left, v: first.cy } : { u: first.top, v: first.cx };
+    const end = isRow ? { u: last.right, v: last.cy } : { u: last.bottom, v: last.cx };
+    const clearBase = isRow
+      ? Math.max(...boxes.map((b) => b.bottom)) + MARGIN
+      : Math.max(...boxes.map((b) => b.right)) + MARGIN;
+
+    const loopU = (start.u + end.u) / 2;
+    const loopV = clearBase + LOOP_R;
+    const k = 0.5523 * LOOP_R;
+
+    const A = { u: loopU - LOOP_R, v: loopV };
+    const T = { u: loopU, v: loopV - LOOP_R };
+    const R = { u: loopU + LOOP_R, v: loopV };
+    const Bo = { u: loopU, v: loopV + LOOP_R };
+    const cross = { u: loopU - LOOP_R * 0.85, v: loopV + LOOP_R * 0.35 };
+    const exitPt = { u: loopU + LOOP_R * 1.4, v: clearBase };
+
+    const P = (u: number, v: number) => {
+      const p = toXY(u, v);
+      return `${p.x} ${p.y}`;
+    };
+
+    let d = `M ${P(start.u, start.v)}`;
+    // start -> A: dip away from the card first (down/back) before sweeping toward the loop.
+    d += ` C ${P(start.u - LOOP_R * 0.4, start.v + (clearBase - start.v) * 0.5)}, ${P(A.u - (A.u - start.u) * 0.15, A.v)}, ${P(A.u, A.v)}`;
+    // loop: A -> T -> R -> Bo -> cross (a full decorative swirl)
+    d += ` C ${P(A.u, A.v - k)}, ${P(T.u - k, T.v)}, ${P(T.u, T.v)}`;
+    d += ` C ${P(T.u + k, T.v)}, ${P(R.u, R.v - k)}, ${P(R.u, R.v)}`;
+    d += ` C ${P(R.u, R.v + k)}, ${P(Bo.u + k, Bo.v)}, ${P(Bo.u, Bo.v)}`;
+    d += ` C ${P(Bo.u - k * 0.5, Bo.v + k * 0.2)}, ${P(cross.u + (Bo.u - cross.u) * 0.3, cross.v + (Bo.v - cross.v) * 0.3)}, ${P(cross.u, cross.v)}`;
+    // cross -> exitPt -> end: sweep out and rise into the last card's outer edge from outside it.
+    d += ` C ${P(cross.u + (exitPt.u - cross.u) * 0.3, cross.v)}, ${P(exitPt.u - (exitPt.u - cross.u) * 0.3, exitPt.v)}, ${P(exitPt.u, exitPt.v)}`;
+    d += ` C ${P(exitPt.u + (end.u - exitPt.u) * 0.7, exitPt.v)}, ${P(end.u + LOOP_R * 0.3, end.v + (exitPt.v - end.v) * 0.3)}, ${P(end.u, end.v)}`;
+
+    path!.setAttribute("d", d);
 
     if (prefersReducedMotion) return;
 
@@ -109,7 +99,7 @@ export function initBenefitsFlightpath() {
         autoRotate: true,
         alignOrigin: [0.5, 0.5],
       },
-      duration: 7,
+      duration: 8,
       ease: "sine.inOut",
       yoyo: true,
       repeat: -1,
