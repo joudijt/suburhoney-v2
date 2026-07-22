@@ -120,6 +120,72 @@ h1, h2, h3, h4 {
   50% { transform: rotate(45deg) translateY(-8px); }
 }
 
+@media (hover: hover) and (pointer: fine) {
+  html.cursor-bee-active,
+  html.cursor-bee-active * {
+    cursor: none !important;
+  }
+}
+
+.bee-cursor {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  pointer-events: none;
+  will-change: transform;
+}
+.bee-cursor.is-active {
+  display: block;
+}
+.bee-cursor-img {
+  display: block;
+  width: 34px;
+  height: auto;
+  filter: drop-shadow(0 0 5px rgba(230, 168, 38, 0.45)) drop-shadow(0 0 12px rgba(230, 168, 38, 0.25));
+  transition: filter 0.25s ease, transform 0.18s ease;
+  animation: bee-flutter 0.16s ease-in-out infinite alternate;
+  animation-play-state: paused;
+}
+.bee-cursor-img.is-flying {
+  animation-play-state: running;
+}
+.bee-cursor.is-hovering .bee-cursor-img {
+  filter: drop-shadow(0 0 8px rgba(230, 168, 38, 0.75)) drop-shadow(0 0 20px rgba(230, 168, 38, 0.45));
+}
+.bee-cursor-img.is-clicking {
+  animation: bee-click 0.26s ease-out;
+}
+@keyframes bee-flutter {
+  from { transform: scaleY(1); }
+  to { transform: scaleY(0.92); }
+}
+@keyframes bee-click {
+  0% { transform: scale(1); }
+  35% { transform: scale(0.72, 1.28); }
+  65% { transform: scale(1.18, 0.85); }
+  100% { transform: scale(1); }
+}
+
+.bee-sparkle {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9998;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: radial-gradient(circle, #fffdf8, #E6A826 70%);
+  pointer-events: none;
+  scale: 1;
+  animation: bee-sparkle-pop 0.3s ease-out forwards;
+}
+@keyframes bee-sparkle-pop {
+  0% { opacity: 1; scale: 1; }
+  100% { opacity: 0; scale: 2.4; }
+}
+
 @layer components {
   .btn-primary {
     @apply rounded-xl bg-gold px-9 py-4 text-sm font-semibold uppercase tracking-widest text-cream-soft shadow-soft transition-all duration-300 hover:brightness-110 active:scale-95;

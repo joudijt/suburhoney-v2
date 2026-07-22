@@ -1,6 +1,7 @@
 ---
 import "../styles/global.css";
 import SEO from "../components/SEO.astro";
+import CursorBee from "../components/CursorBee.astro";
 import { LOCALE_META, type Locale } from "../config/site";
 
 interface Props {
@@ -22,5 +23,6 @@ const dir = LOCALE_META[lang].dir;
   </head>
   <body class="bg-cream text-ink font-body antialiased">
     <slot />
+    <CursorBee />
   </body>
 </html>
