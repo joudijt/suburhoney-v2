@@ -17,6 +17,7 @@ export function initHero() {
   const ripples = document.querySelectorAll<HTMLElement>(".ripple");
   const scrollCue = document.querySelector<HTMLElement>(".scroll-cue");
   const dipper = document.querySelector<HTMLElement>("#dipper");
+  const ingredients = document.querySelectorAll<HTMLElement>(".ingredient");
 
   const intro = gsap.timeline({ defaults: { ease: "power3.out" } });
 
@@ -42,11 +43,12 @@ export function initHero() {
     .from(".hero-desc", { y: 16, opacity: 0, duration: 0.7 }, 1.55)
     .from(".hero-badges > *", { y: 12, opacity: 0, duration: 0.5, stagger: 0.06 }, 1.65)
     .from(".hero-cta", { y: 14, opacity: 0, duration: 0.6 }, 1.75)
+    .to(ingredients, { opacity: 0.95, duration: 1, stagger: 0.08 }, 1.5)
     .to(scrollCue, { opacity: 1, duration: 0.8 }, 2.1);
 
   if (prefersReducedMotion) {
     gsap.set(
-      [jarImg, dipper, ".hero-line", ".hero-line-accent", ".hero-desc", ".hero-badges > *", ".hero-cta", scrollCue],
+      [jarImg, dipper, ".hero-line", ".hero-line-accent", ".hero-desc", ".hero-badges > *", ".hero-cta", ingredients, scrollCue],
       { opacity: 1, y: 0, scale: 1, filter: "none" }
     );
     return;
@@ -57,6 +59,16 @@ export function initHero() {
     if (dipper) {
       gsap.to(dipper, { y: -12, rotate: 5, duration: 3.8, ease: "sine.inOut", yoyo: true, repeat: -1 });
     }
+    ingredients.forEach((el, i) => {
+      gsap.to(el, {
+        y: i % 2 === 0 ? -10 : 10,
+        rotate: i % 2 === 0 ? 6 : -6,
+        duration: 3.5 + i * 0.6,
+        ease: "sine.inOut",
+        yoyo: true,
+        repeat: -1,
+      });
+    });
   });
 
   if (jarTilt) {
