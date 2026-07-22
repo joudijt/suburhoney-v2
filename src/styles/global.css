@@ -51,14 +51,3 @@ h1, h2, h3, h4 {
     @apply text-xs font-bold uppercase tracking-[0.35em] text-gold;
   }
 }
-
-.drip-drop {
-  position: absolute;
-  top: 4%;
-  width: 10px;
-  height: 10px;
-  background: linear-gradient(160deg, #F2C862, #B87518);
-  border-radius: 0 50% 50% 50%;
-  transform: translateX(-50%) rotate(45deg);
-  box-shadow: 0 0 6px rgba(230, 168, 38, 0.5);
-}

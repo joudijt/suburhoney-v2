@@ -1,21 +1,6 @@
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-function createDrip(host: Element | null, leftPct: string) {
-  const tl = gsap.timeline();
-  if (!host) return tl;
-  const drop = document.createElement("span");
-  drop.className = "drip-drop";
-  drop.style.left = leftPct;
-  host.appendChild(drop);
-  tl.fromTo(
-    drop,
-    { y: "0%", opacity: 0, scale: 0.6 },
-    { y: "58%", opacity: 1, scale: 1, duration: 0.5, ease: "power1.in" }
-  ).to(drop, { opacity: 0, duration: 0.3 }, "+=0.05");
-  return tl;
-}
-
 export function initHero() {
   if (typeof window === "undefined") return;
   gsap.registerPlugin(ScrollTrigger);
@@ -32,7 +17,6 @@ export function initHero() {
   const ripples = document.querySelectorAll<HTMLElement>(".ripple");
   const scrollCue = document.querySelector<HTMLElement>(".scroll-cue");
   const dipper = document.querySelector<HTMLElement>("#dipper");
-  const dripsHost = document.querySelector<HTMLElement>("#dipper-drips");
 
   const intro = gsap.timeline({ defaults: { ease: "power3.out" } });
 
@@ -47,6 +31,12 @@ export function initHero() {
       { opacity: 1, scale: 1, filter: "blur(0px)", duration: 1.1, ease: "power2.out" },
       1.1
     )
+    .fromTo(
+      dipper,
+      { opacity: 0, y: -20, rotate: 2 },
+      { opacity: 1, y: 0, rotate: 8, duration: 1, ease: "power2.out" },
+      1.3
+    )
     .from(".hero-line", { y: 26, opacity: 0, duration: 0.8 }, 1.3)
     .from(".hero-line-accent", { y: 26, opacity: 0, duration: 0.8 }, 1.42)
     .from(".hero-desc", { y: 16, opacity: 0, duration: 0.7 }, 1.55)
@@ -56,7 +46,7 @@ export function initHero() {
 
   if (prefersReducedMotion) {
     gsap.set(
-      [jarImg, ".hero-line", ".hero-line-accent", ".hero-desc", ".hero-badges > *", ".hero-cta", scrollCue],
+      [jarImg, dipper, ".hero-line", ".hero-line-accent", ".hero-desc", ".hero-badges > *", ".hero-cta", scrollCue],
       { opacity: 1, y: 0, scale: 1, filter: "none" }
     );
     return;
@@ -64,6 +54,9 @@ export function initHero() {
 
   intro.call(() => {
     gsap.to(jarTilt, { y: -14, rotate: 1.5, duration: 3.2, ease: "sine.inOut", yoyo: true, repeat: -1 });
+    if (dipper) {
+      gsap.to(dipper, { y: -12, rotate: 5, duration: 3.8, ease: "sine.inOut", yoyo: true, repeat: -1 });
+    }
   });
 
   if (jarTilt) {
@@ -81,22 +74,7 @@ export function initHero() {
     });
   }
 
-  // First scroll: dipper descends, pours honey, drips land on the jar, exits.
-  if (dipper) {
-    gsap
-      .timeline({
-        scrollTrigger: { trigger: "#hero", start: "top top", end: "+=220%", scrub: 1.4 },
-      })
-      .to(dipper, { opacity: 1, y: "48%", rotate: -3, duration: 1.8, ease: "power2.out" }, 0)
-      .to(dipper, { rotate: -6, duration: 1.1 }, 1.8)
-      .add(createDrip(dripsHost, "50%"), 2.3)
-      .add(createDrip(dripsHost, "53%"), 2.7)
-      .add(createDrip(dripsHost, "48%"), 3.1)
-      .to(dipper, { rotate: -3, duration: 0.6 }, 3.6)
-      .to(dipper, { y: "20%", opacity: 0, rotate: -1, duration: 1.6, ease: "power1.in" }, 4.2);
-  }
-
-  // Second scroll: the jar drifts and softly dissolves as Hero scrolls out, handing off to Benefits.
+  // Jar (and dipper, inside the same wrapper) drift and softly dissolve as Hero scrolls out.
   if (jarWrapper) {
     gsap
       .timeline({
