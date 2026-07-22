@@ -20,5 +20,8 @@ pnpm-debug.log*
 # macOS-specific files
 .DS_Store
 
+# scratch folder for dropping raw assets before processing into public/
+incoming/
+
 # jetbrains setting folder
 .idea/
