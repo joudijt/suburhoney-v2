@@ -46,10 +46,3 @@ A: No. Subur is made using natural ingredients and contains no artificial colour
 
 Q: How should I store Subur?
 A: Store in a cool, dry place away from direct sunlight. Always keep the lid tightly closed after use.
-
-## Pages
-- [Home](https://suburhoney.com/en/): hero, benefits, morning ritual, wholesale enquiry, FAQ
-
-## Languages
-- Primary content language: English
-- See llms-ar.txt for Arabic summary, llms-ms.txt for Bahasa Malaysia summary

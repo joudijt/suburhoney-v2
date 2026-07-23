@@ -20,7 +20,12 @@
     "heading": "Nature's traditional recipe,",
     "headingAccent": "Perfected through generations.",
     "description": "A traditional Middle Eastern honey blend made from generations of knowledge for fertility, vitality, and strength.",
-    "badges": ["ALL NATURAL", "TRADITIONAL RECIPE", "REAL HONEY", "VEGAN"],
+    "badges": [
+      "ALL NATURAL",
+      "TRADITIONAL RECIPE",
+      "REAL HONEY",
+      "VEGAN"
+    ],
     "ctaPrimary": "Buy Retail",
     "ctaSecondary": "Wholesale Inquiry"
   },
@@ -58,16 +63,66 @@
     "heading": "Traditional Ingredients Inside Every Jar",
     "subheading": "Ten natural ingredients chosen for a reason passed down through generations.",
     "items": [
-      { "name": "Star Anise", "alt": "Star anise, a traditional spice used in the Subur Honey blend", "description": "Traditionally used to support digestion and warmth.", "icon": "/icons/ingrediant_01.webp" },
-      { "name": "Saffron", "alt": "Saffron threads, a premium natural ingredient in Subur Honey", "description": "A prized spice traditionally valued for mood and vitality support.", "icon": "/icons/ingrediant_02.webp" },
-      { "name": "Fresh Ginger", "alt": "Fresh ginger root, a traditional ingredient in Subur Honey", "description": "Adds natural warmth and is traditionally used to support circulation.", "icon": "/icons/ingrediant_03.webp" },
-      { "name": "Walnuts", "alt": "Walnuts, a natural ingredient in the Subur Honey blend", "description": "A nutrient-dense nut traditionally linked to daily energy.", "icon": "/icons/ingrediant_04.webp" },
-      { "name": "Nutmeg", "alt": "Nutmeg seed, a traditional spice in Subur Honey", "description": "A traditional spice included for overall wellness.", "icon": "/icons/ingrediant_05.webp" },
-      { "name": "Cinnamon", "alt": "Cinnamon sticks, a traditional spice in Subur Honey", "description": "A warming spice traditionally used to support stamina.", "icon": "/icons/ingrediant_06.webp" },
-      { "name": "Black Seed (Habbatus Sauda)", "alt": "Black seed (habbatus sauda), a traditional ingredient in Subur Honey", "description": "A traditional seed long valued for immune and vitality support.", "icon": "/icons/ingrediant_07.webp" },
-      { "name": "Raw Honeycomb", "alt": "Raw honeycomb, the natural honey base of Subur Honey", "description": "The natural honey base of Subur Honey, harvested raw.", "icon": "/icons/ingrediant_08.webp" },
-      { "name": "Almonds", "alt": "Almonds, a natural ingredient in the Subur Honey blend", "description": "A natural source of nutrients that supports daily energy.", "icon": "/icons/ingrediant_09.webp" },
-      { "name": "Ginseng Root", "alt": "Ginseng root, a traditional ingredient in Subur Honey", "description": "A root long valued in traditional medicine for stamina and vitality.", "icon": "/icons/ingrediant_10.webp" }
+      {
+        "name": "Star Anise",
+        "alt": "Star anise, a traditional spice used in the Subur Honey blend",
+        "description": "Traditionally used to support digestion and warmth.",
+        "icon": "/icons/ingrediant_01.webp"
+      },
+      {
+        "name": "Saffron",
+        "alt": "Saffron threads, a premium natural ingredient in Subur Honey",
+        "description": "A prized spice traditionally valued for mood and vitality support.",
+        "icon": "/icons/ingrediant_02.webp"
+      },
+      {
+        "name": "Fresh Ginger",
+        "alt": "Fresh ginger root, a traditional ingredient in Subur Honey",
+        "description": "Adds natural warmth and is traditionally used to support circulation.",
+        "icon": "/icons/ingrediant_03.webp"
+      },
+      {
+        "name": "Walnuts",
+        "alt": "Walnuts, a natural ingredient in the Subur Honey blend",
+        "description": "A nutrient-dense nut traditionally linked to daily energy.",
+        "icon": "/icons/ingrediant_04.webp"
+      },
+      {
+        "name": "Nutmeg",
+        "alt": "Nutmeg seed, a traditional spice in Subur Honey",
+        "description": "A traditional spice included for overall wellness.",
+        "icon": "/icons/ingrediant_05.webp"
+      },
+      {
+        "name": "Cinnamon",
+        "alt": "Cinnamon sticks, a traditional spice in Subur Honey",
+        "description": "A warming spice traditionally used to support stamina.",
+        "icon": "/icons/ingrediant_06.webp"
+      },
+      {
+        "name": "Black Seed (Habbatus Sauda)",
+        "alt": "Black seed (habbatus sauda), a traditional ingredient in Subur Honey",
+        "description": "A traditional seed long valued for immune and vitality support.",
+        "icon": "/icons/ingrediant_07.webp"
+      },
+      {
+        "name": "Raw Honeycomb",
+        "alt": "Raw honeycomb, the natural honey base of Subur Honey",
+        "description": "The natural honey base of Subur Honey, harvested raw.",
+        "icon": "/icons/ingrediant_08.webp"
+      },
+      {
+        "name": "Almonds",
+        "alt": "Almonds, a natural ingredient in the Subur Honey blend",
+        "description": "A natural source of nutrients that supports daily energy.",
+        "icon": "/icons/ingrediant_09.webp"
+      },
+      {
+        "name": "Ginseng Root",
+        "alt": "Ginseng root, a traditional ingredient in Subur Honey",
+        "description": "A root long valued in traditional medicine for stamina and vitality.",
+        "icon": "/icons/ingrediant_10.webp"
+      }
     ],
     "footerNote": {
       "before": "SUBUR Honey pairs naturally with our",
@@ -84,9 +139,18 @@
     "heading": "Partner with Subur Honey",
     "description": "Bring a traditional Middle Eastern honey recipe to your customers. Join our growing network of retailers, distributors, and resellers across Malaysia.",
     "features": [
-      { "title": "Bulk Pricing Available", "description": "Special pricing for retailers, resellers, and distributors." },
-      { "title": "Nationwide Delivery", "description": "Delivery available throughout Peninsular and East Malaysia." },
-      { "title": "Dedicated Sales Team", "description": "Our team will help you find the right wholesale solution for your business." }
+      {
+        "title": "Bulk Pricing Available",
+        "description": "Special pricing for retailers, resellers, and distributors."
+      },
+      {
+        "title": "Nationwide Delivery",
+        "description": "Delivery available throughout Peninsular and East Malaysia."
+      },
+      {
+        "title": "Dedicated Sales Team",
+        "description": "Our team will help you find the right wholesale solution for your business."
+      }
     ],
     "form": {
       "heading": "Wholesale Enquiry Form",
@@ -99,9 +163,20 @@
       "business": "Business / Company Name *",
       "businessPlaceholder": "My Health Store Sdn Bhd",
       "businessType": "Business Type *",
-      "businessTypeOptions": ["Select type", "Retail Shop", "Online Seller", "Distributor", "Pharmacy / Health Store", "Other"],
+      "businessTypeOptions": [
+        "Select type",
+        "Retail Shop",
+        "Online Seller",
+        "Distributor",
+        "Pharmacy / Health Store",
+        "Other"
+      ],
       "volume": "Monthly Order Volume *",
-      "volumeOptions": ["Estimated qty", "10-50 units", "50+ units"],
+      "volumeOptions": [
+        "Estimated qty",
+        "10-50 units",
+        "50+ units"
+      ],
       "location": "State / Location",
       "locationPlaceholder": "e.g. Pahang, Selangor...",
       "message": "Additional Message",
@@ -112,14 +187,38 @@
   "faq": {
     "heading": "Common Questions",
     "items": [
-      { "q": "What makes Subur different from regular honey?", "a": "Subur is more than honey. It combines honey with traditional herbs and natural ingredients inspired by generations of Middle Eastern knowledge." },
-      { "q": "How should I consume Subur?", "a": "Take one teaspoon every morning on an empty stomach." },
-      { "q": "How long should I take Subur?", "a": "Subur is designed to be part of your daily routine. Consistent use is recommended for the best results." },
-      { "q": "Is Subur for men or women?", "a": "Subur is made for both men and women. The traditional recipe includes ingredients valued for supporting overall wellbeing and fertility." },
-      { "q": "Can husband and wife take Subur together?", "a": "Yes. Many couples choose to take Subur together as part of their daily wellness routine." },
-      { "q": "Does Subur contain artificial ingredients?", "a": "No. Subur is made using natural ingredients and contains no artificial colours or artificial flavours." },
-      { "q": "How should I store Subur?", "a": "Store in a cool, dry place away from direct sunlight. Always keep the lid tightly closed after use." },
-      { "q": "Where can I buy Subur Honey in Malaysia?", "a": "Subur Honey is available through our retail partner network including Berkat Madinah Store, as well as via our official Shopee and TikTok Shop channels." }
+      {
+        "q": "What makes Subur different from regular honey?",
+        "a": "Subur is more than honey. It combines honey with traditional herbs and natural ingredients inspired by generations of Middle Eastern knowledge."
+      },
+      {
+        "q": "How should I consume Subur?",
+        "a": "Take one teaspoon every morning on an empty stomach."
+      },
+      {
+        "q": "How long should I take Subur?",
+        "a": "Subur is designed to be part of your daily routine. Consistent use is recommended for the best results."
+      },
+      {
+        "q": "Is Subur for men or women?",
+        "a": "Subur is made for both men and women. The traditional recipe includes ingredients valued for supporting overall wellbeing and fertility."
+      },
+      {
+        "q": "Can husband and wife take Subur together?",
+        "a": "Yes. Many couples choose to take Subur together as part of their daily wellness routine."
+      },
+      {
+        "q": "Does Subur contain artificial ingredients?",
+        "a": "No. Subur is made using natural ingredients and contains no artificial colours or artificial flavours."
+      },
+      {
+        "q": "How should I store Subur?",
+        "a": "Store in a cool, dry place away from direct sunlight. Always keep the lid tightly closed after use."
+      },
+      {
+        "q": "Where can I buy Subur Honey in Malaysia?",
+        "a": "Subur Honey is available through our retail partner network including Berkat Madinah Store, as well as via our official Shopee and TikTok Shop channels."
+      }
     ]
   },
   "finalCta": {
@@ -132,9 +231,18 @@
   "footer": {
     "brand": "SUBUR HONEY",
     "description": "A traditional Middle Eastern honey blend inspired by generations of knowledge and made with carefully selected natural ingredients.",
-    "badges": ["ALL NATURAL", "TRADITIONAL RECIPE", "REAL HONEY", "VEGAN"],
+    "badges": [
+      "ALL NATURAL",
+      "TRADITIONAL RECIPE",
+      "REAL HONEY",
+      "VEGAN"
+    ],
     "shopHeading": "SHOP WITH US",
-    "shopLinks": ["Shopee", "TikTok Shop", "Wholesale Enquiry"],
+    "shopLinks": [
+      "Shopee",
+      "TikTok Shop",
+      "Wholesale Enquiry"
+    ],
     "blogKicker": "Fresh updates — check our blog!",
     "blogLink": "Blog",
     "copyright": "Subur Honey. Traditional Recipe. Generational Knowledge.",
@@ -142,12 +250,17 @@
     "terms": "Terms of Service"
   },
   "blog": {
-    "seoTitle": "Blog | Subur Honey",
-    "seoDescription": "Stories, rituals and traditions behind Subur Honey. New articles coming soon.",
+    "seoTitle": "Honey Guides for Malaysia | SUBUR Honey",
+    "seoDescription": "Straight answers about couples honey, black seed and how to tell real honey from syrup — written for Malaysian buyers, without the cure promises.",
     "kicker": "From Our Hive",
     "heading": "The Subur Journal",
-    "subheading": "Stories, rituals, and traditions behind every jar. New articles are on their way.",
-    "comingSoon": "Coming Soon",
-    "backHome": "Back to Home"
+    "subheading": "Honest guides for Malaysian buyers — what is really in a jar, and how to judge one before you pay.",
+    "backHome": "Back to Home",
+    "readingMinutes": "min read",
+    "updatedLabel": "Updated",
+    "onThisPage": "On this page",
+    "faqHeading": "Frequently asked questions",
+    "relatedHeading": "Keep reading",
+    "allArticles": "All articles"
   }
 }

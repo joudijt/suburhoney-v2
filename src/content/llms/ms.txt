@@ -23,6 +23,3 @@ J: SUBUR sesuai untuk lelaki dan wanita. Resipi tradisionalnya mengandungi bahan
 
 S: Adakah SUBUR mengandungi bahan tiruan?
 J: Tidak. SUBUR diperbuat daripada bahan semula jadi dan tiada pewarna atau perisa tiruan.
-
-## Bahasa
-Kandungan utama laman web ini dalam Bahasa Inggeris. Rujuk llms.txt untuk versi penuh Bahasa Inggeris.

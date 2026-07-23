@@ -1,0 +1,282 @@
+---
+import Layout from "../../../layouts/Layout.astro";
+import Header from "../../../components/Header.astro";
+import Footer from "../../../components/Footer.astro";
+import Blocks from "../../../components/article/Blocks.astro";
+import { LOCALES, SITE_URL, SITE_NAME, BRAND_SELLER_URL, localeUrl, type Locale } from "../../../config/site";
+import { getArticles, getArticle, getTranslations } from "../../../content/articles";
+
+import en from "../../../i18n/locales/en/common.json";
+import ar from "../../../i18n/locales/ar/common.json";
+import ms from "../../../i18n/locales/ms/common.json";
+
+const content = { en, ar, ms } as const;
+
+export function getStaticPaths() {
+  return LOCALES.flatMap((lang) =>
+    getArticles(lang).map((article) => ({ params: { lang, slug: article.slug } }))
+  );
+}
+
+const { lang, slug } = Astro.params as { lang: Locale; slug: string };
+const t = content[lang];
+const b = t.blog;
+const article = getArticle(lang, slug)!;
+
+const url = localeUrl(lang, `/blog/${slug}/`);
+const blogUrl = localeUrl(lang, "/blog/");
+
+/* hreflang cannot come from the path here: the same article lives at a
+   different slug in each language. */
+const translations = getTranslations(lang, slug);
+const alternates = Object.fromEntries(
+  LOCALES.filter((l) => translations[l]).map((l) => [l, localeUrl(l, `/blog/${translations[l]}/`)])
+) as Partial<Record<Locale, string>>;
+
+const related = article.related
+  .map((s) => getArticle(lang, s))
+  .filter((a): a is NonNullable<typeof a> => Boolean(a));
+
+const headings = article.blocks.filter((block) => block.type === "heading");
+const answer = article.blocks.find((block) => block.type === "answer");
+
+/* Built from the same objects the page renders, so the markup and the structured
+   data cannot drift apart. */
+const schemaGraph = [
+  {
+    "@type": "Organization",
+    "@id": `${SITE_URL}/#organization`,
+    name: SITE_NAME,
+    url: SITE_URL,
+    logo: `${SITE_URL}/logo-8.webp`,
+    sameAs: [BRAND_SELLER_URL],
+  },
+  {
+    "@type": "BlogPosting",
+    "@id": `${url}#article`,
+    headline: article.title,
+    description: article.description,
+    inLanguage: lang,
+    datePublished: article.published,
+    dateModified: article.updated,
+    wordCount: article.blocks
+      .map((block) => JSON.stringify(block).split(/\s+/).length)
+      .reduce((a, c) => a + c, 0),
+    articleSection: article.category,
+    keywords: article.keywords.join(", "),
+    image: [`${SITE_URL}${article.icon}`],
+    author: { "@id": `${SITE_URL}/#organization` },
+    publisher: { "@id": `${SITE_URL}/#organization` },
+    isPartOf: { "@id": `${blogUrl}#blog` },
+    mainEntityOfPage: { "@type": "WebPage", "@id": url },
+    /* Tells assistants which passage to read aloud - the direct answer. */
+    speakable: {
+      "@type": "SpeakableSpecification",
+      cssSelector: ["[data-speakable]"],
+    },
+  },
+  {
+    "@type": "FAQPage",
+    "@id": `${url}#faq`,
+    mainEntity: article.faqs.map((faq) => ({
+      "@type": "Question",
+      name: faq.q,
+      acceptedAnswer: { "@type": "Answer", text: faq.a },
+    })),
+  },
+  {
+    "@type": "BreadcrumbList",
+    "@id": `${url}#breadcrumb`,
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: SITE_NAME, item: localeUrl(lang, "/") },
+      { "@type": "ListItem", position: 2, name: b.heading, item: blogUrl },
+      { "@type": "ListItem", position: 3, name: article.heading, item: url },
+    ],
+  },
+];
+
+const dateFormat = new Intl.DateTimeFormat(lang === "ms" ? "ms-MY" : lang === "ar" ? "ar" : "en-MY", {
+  year: "numeric",
+  month: "long",
+  day: "numeric",
+});
+---
+
+<Layout
+  lang={lang}
+  title={article.title}
+  description={article.description}
+  faqItems={article.faqs}
+  alternates={alternates}
+  schemaGraph={schemaGraph}
+  articleMeta={{
+    published: article.published,
+    updated: article.updated,
+    section: article.category,
+    tags: article.keywords,
+  }}
+>
+  <Header lang={lang} />
+
+  <main>
+    <article class="bg-cream">
+      <!-- header -->
+      <header class="relative overflow-hidden px-6 pb-10 pt-32 md:pt-40">
+        <div
+          class="pointer-events-none absolute left-1/2 top-0 -z-10 h-[52vmax] w-[52vmax] -translate-x-1/2 -translate-y-1/2 rounded-full bg-[radial-gradient(circle,rgba(230,168,38,0.16),transparent_65%)]"
+          aria-hidden="true"
+        >
+        </div>
+
+        <div class="mx-auto max-w-3xl">
+          <!-- py-1.5 keeps each link above the 24px WCAG 2.2 target minimum;
+               at the bare font size they were 17px tall. -->
+          <nav aria-label="Breadcrumb" class="mb-6 text-sm text-brown/55">
+            <ol class="flex flex-wrap items-center gap-x-2">
+              <li>
+                <a href={localeUrl(lang, "/")} class="inline-block py-1.5 hover:text-honey-dark">
+                  {SITE_NAME}
+                </a>
+              </li>
+              <li aria-hidden="true">/</li>
+              <li>
+                <a href={`/${lang}/blog/`} class="inline-block py-1.5 hover:text-honey-dark">
+                  {b.heading}
+                </a>
+              </li>
+            </ol>
+          </nav>
+
+          <p class="kicker">{article.category}</p>
+          <h1 class="mt-4 font-display text-[2rem] leading-[1.18] text-brown sm:text-4xl md:text-5xl">
+            {article.heading}
+          </h1>
+
+          <div class="mt-6 flex flex-wrap items-center gap-x-5 gap-y-2 text-sm text-brown/55">
+            <time datetime={article.updated}>
+              {b.updatedLabel} {dateFormat.format(new Date(article.updated))}
+            </time>
+            <span aria-hidden="true">·</span>
+            <span>{article.readingMinutes} {b.readingMinutes}</span>
+          </div>
+        </div>
+      </header>
+
+      <!-- contents: a plain jump list, cheap and useful on a phone -->
+      {headings.length > 2 && (
+        <nav aria-labelledby="toc-title" class="mx-auto max-w-3xl px-6 pb-2">
+          <div class="rounded-2xl border border-brown/10 bg-cream-soft/70 p-5 sm:p-6">
+            <p id="toc-title" class="mb-3 text-[10px] font-bold uppercase tracking-[0.22em] text-brown/50">
+              {b.onThisPage}
+            </p>
+            <ul class="space-y-2">
+              {headings.map((h) => (
+                <li>
+                  <a
+                    href={`#${h.id}`}
+                    class="inline-block py-1 leading-snug text-brown/75 underline-offset-4 hover:text-honey-dark hover:underline"
+                  >
+                    {h.text}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </nav>
+      )}
+
+      <!-- body -->
+      <div class="mx-auto max-w-3xl px-6 pb-4" data-reveal-group>
+        {answer && <div data-speakable class="sr-only">{answer.answer}</div>}
+        <Blocks blocks={article.blocks} ctaHref={`/${lang}/#ingredients`} />
+      </div>
+
+      <!-- faq -->
+      <section aria-labelledby="faq-heading" class="mx-auto max-w-3xl px-6 py-14" data-reveal-group>
+        <h2 id="faq-heading" class="font-display text-2xl text-brown sm:text-3xl md:text-4xl" data-reveal>
+          {b.faqHeading}
+        </h2>
+        <div class="mt-7 space-y-3">
+          {article.faqs.map((faq) => (
+            <details
+              data-reveal
+              class="group overflow-hidden rounded-2xl border border-brown/10 bg-cream-soft/70 transition-colors open:border-gold/40"
+            >
+              <summary
+                class="flex cursor-pointer list-none items-start justify-between gap-4 p-5 font-semibold text-brown marker:hidden sm:p-6"
+              >
+                <span>{faq.q}</span>
+                <span
+                  class="mt-0.5 flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-full border border-brown/20 text-brown/60 transition-transform duration-300 group-open:rotate-45"
+                  aria-hidden="true"
+                >
+                  +
+                </span>
+              </summary>
+              <p class="px-5 pb-5 leading-[1.75] text-brown/80 sm:px-6 sm:pb-6">{faq.a}</p>
+            </details>
+          ))}
+        </div>
+      </section>
+
+      <!-- related -->
+      {related.length > 0 && (
+        <section aria-labelledby="related-heading" class="mx-auto max-w-5xl px-6 pb-24" data-reveal-group>
+          <h2 id="related-heading" class="font-display text-2xl text-brown sm:text-3xl" data-reveal>
+            {b.relatedHeading}
+          </h2>
+          <div class="mt-7 grid grid-cols-1 gap-5 sm:grid-cols-2">
+            {related.map((r) => (
+              <a
+                data-reveal
+                href={`/${lang}/blog/${r.slug}/`}
+                class="group flex items-start gap-4 rounded-2xl border border-brown/10 bg-cream-soft/70 p-5 transition-all duration-300 hover:-translate-y-0.5 hover:border-gold/40 hover:shadow-softer"
+              >
+                <img
+                  data-src={r.icon}
+                  alt=""
+                  aria-hidden="true"
+                  width="224"
+                  height="224"
+                  decoding="async"
+                  class="h-11 w-11 flex-shrink-0 object-contain"
+                />
+                <span class="min-w-0">
+                  <span class="block text-[10px] font-bold uppercase tracking-[0.2em] text-brown/40">
+                    {r.category}
+                  </span>
+                  <span class="mt-1.5 block font-display text-lg leading-snug text-brown group-hover:text-honey-dark">
+                    {r.heading}
+                  </span>
+                </span>
+              </a>
+            ))}
+          </div>
+
+          <div class="mt-10 flex justify-center">
+            <a href={`/${lang}/blog/`} class="btn-secondary">{b.allArticles}</a>
+          </div>
+        </section>
+      )}
+    </article>
+  </main>
+
+  <Footer
+    lang={lang}
+    brand={t.footer.brand}
+    description={t.footer.description}
+    badges={t.footer.badges}
+    shopHeading={t.footer.shopHeading}
+    shopLinks={t.footer.shopLinks}
+    blogKicker={t.footer.blogKicker}
+    blogLink={t.footer.blogLink}
+    copyright={t.footer.copyright}
+    privacy={t.footer.privacy}
+    terms={t.footer.terms}
+  />
+</Layout>
+
+<script>
+  import { initReveal } from "../../../scripts/reveal";
+  initReveal();
+</script>

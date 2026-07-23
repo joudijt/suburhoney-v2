@@ -10,16 +10,31 @@ interface Props {
   title: string;
   description: string;
   faqItems: { q: string; a: string }[];
+  /** Article pages override these; see SEO.astro for why each exists. */
+  alternates?: Partial<Record<Locale, string>>;
+  schemaGraph?: unknown[];
+  articleMeta?: { published: string; updated: string; section?: string; tags?: string[] };
+  image?: string;
 }
 
-const { lang, title, description, faqItems } = Astro.props;
+const { lang, title, description, faqItems, alternates, schemaGraph, articleMeta, image } =
+  Astro.props;
 const dir = LOCALE_META[lang].dir;
 ---
 
 <!doctype html>
 <html lang={lang} dir={dir}>
   <head>
-    <SEO lang={lang} title={title} description={description} faqItems={faqItems} />
+    <SEO
+      lang={lang}
+      title={title}
+      description={description}
+      faqItems={faqItems}
+      alternates={alternates}
+      schemaGraph={schemaGraph}
+      articleMeta={articleMeta}
+      image={image}
+    />
     <meta name="generator" content={Astro.generator} />
   </head>
   <body class="bg-cream text-ink font-body antialiased">

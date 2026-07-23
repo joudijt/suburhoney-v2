@@ -2,7 +2,8 @@
 import Layout from "../../../layouts/Layout.astro";
 import Header from "../../../components/Header.astro";
 import Footer from "../../../components/Footer.astro";
-import { LOCALES, type Locale } from "../../../config/site";
+import { LOCALES, SITE_URL, SITE_NAME, localeUrl, type Locale } from "../../../config/site";
+import { getArticles } from "../../../content/articles";
 
 import en from "../../../i18n/locales/en/common.json";
 import ar from "../../../i18n/locales/ar/common.json";
@@ -17,11 +18,40 @@ export function getStaticPaths() {
 const { lang } = Astro.params as { lang: Locale };
 const t = content[lang];
 const b = t.blog;
+const articles = getArticles(lang);
+const blogUrl = localeUrl(lang, "/blog/");
 
-const placeholders = [1, 2, 3];
+const schemaGraph = [
+  {
+    "@type": "Blog",
+    "@id": `${blogUrl}#blog`,
+    name: b.heading,
+    description: b.seoDescription,
+    url: blogUrl,
+    inLanguage: lang,
+    publisher: { "@id": `${SITE_URL}/#organization` },
+    blogPost: articles.map((a) => ({
+      "@type": "BlogPosting",
+      "@id": `${localeUrl(lang, `/blog/${a.slug}/`)}#article`,
+      headline: a.title,
+      description: a.description,
+      datePublished: a.published,
+      dateModified: a.updated,
+      url: localeUrl(lang, `/blog/${a.slug}/`),
+    })),
+  },
+  {
+    "@type": "BreadcrumbList",
+    "@id": `${blogUrl}#breadcrumb`,
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: SITE_NAME, item: localeUrl(lang, "/") },
+      { "@type": "ListItem", position: 2, name: b.heading, item: blogUrl },
+    ],
+  },
+];
 ---
 
-<Layout lang={lang} title={b.seoTitle} description={b.seoDescription} faqItems={[]}>
+<Layout lang={lang} title={b.seoTitle} description={b.seoDescription} faqItems={[]} schemaGraph={schemaGraph}>
   <Header lang={lang} />
   <main>
     <section class="relative overflow-hidden bg-cream px-6 pb-24 pt-40 md:pb-32 md:pt-48" data-reveal-group>
@@ -38,35 +68,37 @@ const placeholders = [1, 2, 3];
       </div>
 
       <div class="mx-auto mt-16 grid max-w-6xl grid-cols-1 gap-8 md:grid-cols-3">
-        {placeholders.map((n) => (
-          <div
+        {articles.map((article) => (
+          <a
             data-reveal
-            class="group relative overflow-hidden rounded-3xl border border-brown/10 bg-cream-soft shadow-softer transition-all duration-500 hover:-translate-y-1.5 hover:border-gold/40 hover:shadow-soft"
+            href={`/${lang}/blog/${article.slug}/`}
+            class="group relative flex flex-col overflow-hidden rounded-3xl border border-brown/10 bg-cream-soft shadow-softer transition-all duration-500 hover:-translate-y-1.5 hover:border-gold/40 hover:shadow-soft"
           >
             <div class="relative flex h-44 items-center justify-center overflow-hidden bg-[linear-gradient(160deg,var(--color-sand),var(--color-cream-soft))] md:h-52">
               <img
-                src={`/icons/ingrediant_0${n}.webp`}
+                data-src={article.icon}
                 alt=""
                 aria-hidden="true"
                 width="224"
                 height="224"
-                loading="lazy"
                 decoding="async"
-                class="h-16 w-16 opacity-70 transition-transform duration-500 group-hover:scale-110 md:h-20 md:w-20"
+                class="h-16 w-16 object-contain opacity-80 transition-transform duration-500 group-hover:scale-110 md:h-20 md:w-20"
               />
-              <span class="absolute end-4 top-4 animate-pulse rounded-full bg-gold px-3 py-1 text-[10px] font-bold uppercase tracking-[0.15em] text-cream-soft shadow-soft">
-                {b.comingSoon}
+              <span class="absolute end-4 top-4 rounded-full bg-cream/85 px-3 py-1 text-[10px] font-bold uppercase tracking-[0.15em] text-brown/60 backdrop-blur-sm">
+                {article.category}
               </span>
             </div>
-            <div class="space-y-3 p-7">
-              <p class="text-[10px] font-bold uppercase tracking-[0.25em] text-brown/40">{`0${n}`}</p>
-              <div class="h-4 w-4/5 animate-pulse rounded-full bg-brown/10"></div>
-              <div class="space-y-2 pt-1">
-                <div class="h-2.5 w-full animate-pulse rounded-full bg-brown/10"></div>
-                <div class="h-2.5 w-3/4 animate-pulse rounded-full bg-brown/10"></div>
-              </div>
+
+            <div class="flex flex-1 flex-col gap-3 p-7">
+              <h2 class="font-display text-xl leading-snug text-brown transition-colors group-hover:text-honey-dark">
+                {article.heading}
+              </h2>
+              <p class="text-[0.9375rem] leading-relaxed text-brown/70">{article.description}</p>
+              <p class="mt-auto pt-2 text-xs text-brown/45">
+                {article.readingMinutes} {b.readingMinutes}
+              </p>
             </div>
-          </div>
+          </a>
         ))}
       </div>
 
@@ -75,6 +107,7 @@ const placeholders = [1, 2, 3];
       </div>
     </section>
   </main>
+
   <Footer
     lang={lang}
     brand={t.footer.brand}
