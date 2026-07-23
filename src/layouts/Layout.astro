@@ -26,5 +26,10 @@ const dir = LOCALE_META[lang].dir;
     <slot />
     <CursorBee />
     <StoreModal lang={lang} />
+
+    <script>
+      import { initDeferredImages } from "../scripts/deferred-images";
+      initDeferredImages();
+    </script>
   </body>
 </html>

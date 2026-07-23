@@ -58,16 +58,16 @@
     "heading": "Ramuan Tradisional Dalam Setiap Balang",
     "subheading": "Sepuluh ramuan semula jadi yang dipilih atas sebab yang diwarisi turun-temurun.",
     "items": [
-      { "name": "Bunga Lawang", "alt": "Bunga lawang, rempah tradisional yang digunakan dalam campuran Madu Subur", "description": "Digunakan secara tradisional untuk menyokong penghadaman dan kehangatan badan.", "icon": "/icons/ingrediant_01.png" },
-      { "name": "Kunyit Bunga (Saffron)", "alt": "Benang saffron, ramuan semula jadi premium dalam Madu Subur", "description": "Rempah bernilai tinggi yang dihargai secara tradisional untuk menyokong mood dan vitaliti.", "icon": "/icons/ingrediant_02.png" },
-      { "name": "Halia Segar", "alt": "Akar halia segar, ramuan tradisional dalam Madu Subur", "description": "Menambah kehangatan semula jadi dan digunakan secara tradisional untuk menyokong peredaran darah.", "icon": "/icons/ingrediant_03.png" },
-      { "name": "Walnut", "alt": "Walnut, ramuan semula jadi dalam campuran Madu Subur", "description": "Kekacang padat nutrien yang dikaitkan secara tradisional dengan tenaga harian.", "icon": "/icons/ingrediant_04.png" },
-      { "name": "Buah Pala", "alt": "Biji buah pala, rempah tradisional dalam Madu Subur", "description": "Rempah tradisional yang disertakan untuk kesejahteraan keseluruhan.", "icon": "/icons/ingrediant_05.png" },
-      { "name": "Kayu Manis", "alt": "Batang kayu manis, rempah tradisional dalam Madu Subur", "description": "Rempah yang memberi kehangatan, digunakan secara tradisional untuk menyokong stamina.", "icon": "/icons/ingrediant_06.png" },
-      { "name": "Habbatus Sauda", "alt": "Habbatus sauda, ramuan tradisional dalam Madu Subur", "description": "Biji tradisional yang telah lama dihargai untuk sokongan imun dan vitaliti.", "icon": "/icons/ingrediant_07.png" },
-      { "name": "Sarang Lebah Mentah", "alt": "Sarang lebah mentah, asas madu semula jadi Madu Subur", "description": "Asas madu semula jadi Madu Subur, dituai secara mentah.", "icon": "/icons/ingrediant_08.png" },
-      { "name": "Badam", "alt": "Badam, ramuan semula jadi dalam campuran Madu Subur", "description": "Sumber nutrien semula jadi yang menyokong tenaga harian.", "icon": "/icons/ingrediant_09.png" },
-      { "name": "Akar Ginseng", "alt": "Akar ginseng, ramuan tradisional dalam Madu Subur", "description": "Akar yang telah lama dihargai dalam perubatan tradisional untuk stamina dan vitaliti.", "icon": "/icons/ingrediant_10.png" }
+      { "name": "Bunga Lawang", "alt": "Bunga lawang, rempah tradisional yang digunakan dalam campuran Madu Subur", "description": "Digunakan secara tradisional untuk menyokong penghadaman dan kehangatan badan.", "icon": "/icons/ingrediant_01.webp" },
+      { "name": "Kunyit Bunga (Saffron)", "alt": "Benang saffron, ramuan semula jadi premium dalam Madu Subur", "description": "Rempah bernilai tinggi yang dihargai secara tradisional untuk menyokong mood dan vitaliti.", "icon": "/icons/ingrediant_02.webp" },
+      { "name": "Halia Segar", "alt": "Akar halia segar, ramuan tradisional dalam Madu Subur", "description": "Menambah kehangatan semula jadi dan digunakan secara tradisional untuk menyokong peredaran darah.", "icon": "/icons/ingrediant_03.webp" },
+      { "name": "Walnut", "alt": "Walnut, ramuan semula jadi dalam campuran Madu Subur", "description": "Kekacang padat nutrien yang dikaitkan secara tradisional dengan tenaga harian.", "icon": "/icons/ingrediant_04.webp" },
+      { "name": "Buah Pala", "alt": "Biji buah pala, rempah tradisional dalam Madu Subur", "description": "Rempah tradisional yang disertakan untuk kesejahteraan keseluruhan.", "icon": "/icons/ingrediant_05.webp" },
+      { "name": "Kayu Manis", "alt": "Batang kayu manis, rempah tradisional dalam Madu Subur", "description": "Rempah yang memberi kehangatan, digunakan secara tradisional untuk menyokong stamina.", "icon": "/icons/ingrediant_06.webp" },
+      { "name": "Habbatus Sauda", "alt": "Habbatus sauda, ramuan tradisional dalam Madu Subur", "description": "Biji tradisional yang telah lama dihargai untuk sokongan imun dan vitaliti.", "icon": "/icons/ingrediant_07.webp" },
+      { "name": "Sarang Lebah Mentah", "alt": "Sarang lebah mentah, asas madu semula jadi Madu Subur", "description": "Asas madu semula jadi Madu Subur, dituai secara mentah.", "icon": "/icons/ingrediant_08.webp" },
+      { "name": "Badam", "alt": "Badam, ramuan semula jadi dalam campuran Madu Subur", "description": "Sumber nutrien semula jadi yang menyokong tenaga harian.", "icon": "/icons/ingrediant_09.webp" },
+      { "name": "Akar Ginseng", "alt": "Akar ginseng, ramuan tradisional dalam Madu Subur", "description": "Akar yang telah lama dihargai dalam perubatan tradisional untuk stamina dan vitaliti.", "icon": "/icons/ingrediant_10.webp" }
     ],
     "footerNote": {
       "before": "Madu SUBUR sesuai bersama",

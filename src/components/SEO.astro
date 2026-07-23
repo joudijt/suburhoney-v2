@@ -20,7 +20,7 @@ const jsonLd = {
       "@id": `${SITE_URL}/#organization`,
       name: SITE_NAME,
       url: SITE_URL,
-      logo: `${SITE_URL}/logo-8.png`,
+      logo: `${SITE_URL}/logo-8.webp`,
       sameAs: [BRAND_SELLER_URL],
     },
     {
@@ -34,7 +34,7 @@ const jsonLd = {
     {
       "@type": "Product",
       name: SITE_NAME,
-      image: [`${SITE_URL}/jarncap.png`, `${SITE_URL}/jar.png`],
+      image: [`${SITE_URL}/jarncap.png`, `${SITE_URL}/jarncap.webp`],
       description,
       brand: { "@type": "Brand", name: SITE_NAME },
       category: "Honey",
@@ -82,8 +82,8 @@ const jsonLd = {
 <meta property="og:description" content={description} />
 <meta property="og:url" content={canonical} />
 <meta property="og:image" content={`${SITE_URL}/jarncap.png`} />
-<meta property="og:image:width" content="800" />
-<meta property="og:image:height" content="1000" />
+<meta property="og:image:width" content="400" />
+<meta property="og:image:height" content="639" />
 <meta property="og:locale" content={LOCALE_META[lang].ogLocale} />
 {LOCALES.filter((l) => l !== lang).map((l) => (
   <meta property="og:locale:alternate" content={LOCALE_META[l].ogLocale} />
@@ -93,6 +93,12 @@ const jsonLd = {
 <meta name="twitter:title" content={title} />
 <meta name="twitter:description" content={description} />
 <meta name="twitter:image" content={`${SITE_URL}/jarncap.png`} />
+
+<!--
+  The open jar is the LCP element on every locale. Without a preload the browser
+  only discovers it after the stylesheet parses, which cost ~500ms of LCP.
+-->
+<link rel="preload" as="image" href="/jar.webp" type="image/webp" fetchpriority="high" />
 
 <link rel="shortcut icon" href="/favi.svg" />
 <link rel="icon" href="/favi.svg" />

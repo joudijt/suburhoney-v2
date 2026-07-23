@@ -7,7 +7,8 @@
   },
   "scripts": {
     "dev": "astro dev",
-    "build": "astro build",
+    "optimize:images": "node scripts/optimize-images.mjs",
+    "build": "npm run optimize:images && astro build",
     "preview": "astro preview",
     "astro": "astro"
   },
@@ -25,6 +26,7 @@
     "tailwindcss": "^4.3.3"
   },
   "devDependencies": {
-    "playwright": "^1.61.1"
+    "playwright": "^1.61.1",
+    "sharp": "^0.35.3"
   }
 }

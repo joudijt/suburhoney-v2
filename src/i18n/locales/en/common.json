@@ -58,16 +58,16 @@
     "heading": "Traditional Ingredients Inside Every Jar",
     "subheading": "Ten natural ingredients chosen for a reason passed down through generations.",
     "items": [
-      { "name": "Star Anise", "alt": "Star anise, a traditional spice used in the Subur Honey blend", "description": "Traditionally used to support digestion and warmth.", "icon": "/icons/ingrediant_01.png" },
-      { "name": "Saffron", "alt": "Saffron threads, a premium natural ingredient in Subur Honey", "description": "A prized spice traditionally valued for mood and vitality support.", "icon": "/icons/ingrediant_02.png" },
-      { "name": "Fresh Ginger", "alt": "Fresh ginger root, a traditional ingredient in Subur Honey", "description": "Adds natural warmth and is traditionally used to support circulation.", "icon": "/icons/ingrediant_03.png" },
-      { "name": "Walnuts", "alt": "Walnuts, a natural ingredient in the Subur Honey blend", "description": "A nutrient-dense nut traditionally linked to daily energy.", "icon": "/icons/ingrediant_04.png" },
-      { "name": "Nutmeg", "alt": "Nutmeg seed, a traditional spice in Subur Honey", "description": "A traditional spice included for overall wellness.", "icon": "/icons/ingrediant_05.png" },
-      { "name": "Cinnamon", "alt": "Cinnamon sticks, a traditional spice in Subur Honey", "description": "A warming spice traditionally used to support stamina.", "icon": "/icons/ingrediant_06.png" },
-      { "name": "Black Seed (Habbatus Sauda)", "alt": "Black seed (habbatus sauda), a traditional ingredient in Subur Honey", "description": "A traditional seed long valued for immune and vitality support.", "icon": "/icons/ingrediant_07.png" },
-      { "name": "Raw Honeycomb", "alt": "Raw honeycomb, the natural honey base of Subur Honey", "description": "The natural honey base of Subur Honey, harvested raw.", "icon": "/icons/ingrediant_08.png" },
-      { "name": "Almonds", "alt": "Almonds, a natural ingredient in the Subur Honey blend", "description": "A natural source of nutrients that supports daily energy.", "icon": "/icons/ingrediant_09.png" },
-      { "name": "Ginseng Root", "alt": "Ginseng root, a traditional ingredient in Subur Honey", "description": "A root long valued in traditional medicine for stamina and vitality.", "icon": "/icons/ingrediant_10.png" }
+      { "name": "Star Anise", "alt": "Star anise, a traditional spice used in the Subur Honey blend", "description": "Traditionally used to support digestion and warmth.", "icon": "/icons/ingrediant_01.webp" },
+      { "name": "Saffron", "alt": "Saffron threads, a premium natural ingredient in Subur Honey", "description": "A prized spice traditionally valued for mood and vitality support.", "icon": "/icons/ingrediant_02.webp" },
+      { "name": "Fresh Ginger", "alt": "Fresh ginger root, a traditional ingredient in Subur Honey", "description": "Adds natural warmth and is traditionally used to support circulation.", "icon": "/icons/ingrediant_03.webp" },
+      { "name": "Walnuts", "alt": "Walnuts, a natural ingredient in the Subur Honey blend", "description": "A nutrient-dense nut traditionally linked to daily energy.", "icon": "/icons/ingrediant_04.webp" },
+      { "name": "Nutmeg", "alt": "Nutmeg seed, a traditional spice in Subur Honey", "description": "A traditional spice included for overall wellness.", "icon": "/icons/ingrediant_05.webp" },
+      { "name": "Cinnamon", "alt": "Cinnamon sticks, a traditional spice in Subur Honey", "description": "A warming spice traditionally used to support stamina.", "icon": "/icons/ingrediant_06.webp" },
+      { "name": "Black Seed (Habbatus Sauda)", "alt": "Black seed (habbatus sauda), a traditional ingredient in Subur Honey", "description": "A traditional seed long valued for immune and vitality support.", "icon": "/icons/ingrediant_07.webp" },
+      { "name": "Raw Honeycomb", "alt": "Raw honeycomb, the natural honey base of Subur Honey", "description": "The natural honey base of Subur Honey, harvested raw.", "icon": "/icons/ingrediant_08.webp" },
+      { "name": "Almonds", "alt": "Almonds, a natural ingredient in the Subur Honey blend", "description": "A natural source of nutrients that supports daily energy.", "icon": "/icons/ingrediant_09.webp" },
+      { "name": "Ginseng Root", "alt": "Ginseng root, a traditional ingredient in Subur Honey", "description": "A root long valued in traditional medicine for stamina and vitality.", "icon": "/icons/ingrediant_10.webp" }
     ],
     "footerNote": {
       "before": "SUBUR Honey pairs naturally with our",

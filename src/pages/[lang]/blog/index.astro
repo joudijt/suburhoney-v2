@@ -45,9 +45,13 @@ const placeholders = [1, 2, 3];
           >
             <div class="relative flex h-44 items-center justify-center overflow-hidden bg-[linear-gradient(160deg,var(--color-sand),var(--color-cream-soft))] md:h-52">
               <img
-                src={`/icons/ingrediant_0${n}.png`}
+                src={`/icons/ingrediant_0${n}.webp`}
                 alt=""
                 aria-hidden="true"
+                width="224"
+                height="224"
+                loading="lazy"
+                decoding="async"
                 class="h-16 w-16 opacity-70 transition-transform duration-500 group-hover:scale-110 md:h-20 md:w-20"
               />
               <span class="absolute end-4 top-4 animate-pulse rounded-full bg-gold px-3 py-1 text-[10px] font-bold uppercase tracking-[0.15em] text-cream-soft shadow-soft">

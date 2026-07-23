@@ -1,0 +1,43 @@
+# suburhoney.com — LiteSpeed/Apache. Brotli and the 404 handling are already
+# correct out of the box; this file only fixes caching and adds security headers.
+
+Options -Indexes
+DirectoryIndex index.html
+
+<IfModule mod_headers.c>
+  # Astro fingerprints everything under /_astro/, so those URLs can never go
+  # stale — cache them for a year and skip revalidation entirely.
+  <FilesMatch "\.(js|css|woff2)$">
+    Header set Cache-Control "public, max-age=31536000, immutable"
+  </FilesMatch>
+
+  # Images in public/ are NOT fingerprinted: a redeploy reuses the same filename.
+  # A week of caching with revalidation keeps repeat visits fast without pinning
+  # a replaced jar photo in browsers for a year.
+  <FilesMatch "\.(webp|png|jpe?g|svg|ico)$">
+    Header set Cache-Control "public, max-age=604800, stale-while-revalidate=86400"
+  </FilesMatch>
+
+  # HTML must always be revalidated or a deploy never reaches returning visitors.
+  <FilesMatch "\.html$">
+    Header set Cache-Control "public, max-age=0, must-revalidate"
+  </FilesMatch>
+
+  Header set X-Content-Type-Options "nosniff"
+  Header set Referrer-Policy "strict-origin-when-cross-origin"
+  Header set X-Frame-Options "SAMEORIGIN"
+</IfModule>
+
+<IfModule mod_mime.c>
+  AddType image/webp .webp
+  AddType font/woff2 .woff2
+</IfModule>
+
+# Force HTTPS. Checks X-Forwarded-Proto too because the TLS terminator sits in
+# front of Apache on this host.
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteCond %{HTTPS} !=on
+  RewriteCond %{HTTP:X-Forwarded-Proto} !https
+  RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R=301,L]
+</IfModule>
