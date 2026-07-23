@@ -3,6 +3,9 @@ export const SITE_NAME = "SUBUR Honey";
 export const BRAND_SELLER = "Berkat Madinah Store";
 export const BRAND_SELLER_URL = "https://madinah.com.my/en/";
 
+export const SHOPEE_URL = "https://shopee.com.my/";
+export const TIKTOK_SHOP_URL = "https://www.tiktok.com/ar/";
+
 export const LOCALES = ["en", "ar", "ms"] as const;
 export type Locale = (typeof LOCALES)[number];
 

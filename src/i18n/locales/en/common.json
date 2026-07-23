@@ -10,6 +10,12 @@
     "wholesale": "Wholesale",
     "faq": "FAQ"
   },
+  "storeModal": {
+    "heading": "Choose Your Store",
+    "subheading": "Select your preferred platform to purchase Subur Honey retail.",
+    "shopee": "Shopee",
+    "tiktok": "TikTok Shop"
+  },
   "hero": {
     "heading": "Nature's traditional recipe,",
     "headingAccent": "Perfected through generations.",
@@ -129,8 +135,19 @@
     "badges": ["ALL NATURAL", "TRADITIONAL RECIPE", "REAL HONEY", "VEGAN"],
     "shopHeading": "SHOP WITH US",
     "shopLinks": ["Shopee", "TikTok Shop", "Wholesale Enquiry"],
+    "blogKicker": "Fresh updates — check our blog!",
+    "blogLink": "Blog",
     "copyright": "Subur Honey. Traditional Recipe. Generational Knowledge.",
     "privacy": "Privacy Policy",
     "terms": "Terms of Service"
+  },
+  "blog": {
+    "seoTitle": "Blog | Subur Honey",
+    "seoDescription": "Stories, rituals and traditions behind Subur Honey. New articles coming soon.",
+    "kicker": "From Our Hive",
+    "heading": "The Subur Journal",
+    "subheading": "Stories, rituals, and traditions behind every jar. New articles are on their way.",
+    "comingSoon": "Coming Soon",
+    "backHome": "Back to Home"
   }
 }

@@ -21,33 +21,65 @@ const { heading, headingAccent, description, badges, ctaPrimary, ctaSecondary } 
     <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(255,253,248,0.6),transparent_55%)]"></div>
   </div>
 
-  <div class="relative z-10 mx-auto w-full max-w-3xl px-6 text-center md:px-10">
-    <div class="hero-text">
+  <div class="relative z-10 mx-auto grid w-full max-w-7xl grid-cols-1 items-center gap-14 px-6 md:px-10 lg:grid-cols-2">
+    <!-- text column -->
+    <div class="hero-text order-2 text-center lg:order-1 lg:text-start">
       <h1 class="font-display text-[2.4rem] leading-[1.15] text-brown md:text-6xl lg:text-[4.2rem]">
         <span class="hero-line block">{heading}</span>
         <span class="hero-line-accent block text-gold">{headingAccent}</span>
       </h1>
-      <p class="hero-desc mx-auto mt-6 max-w-md text-base leading-relaxed text-brown/75 md:text-lg">
+      <p class="hero-desc mx-auto mt-6 max-w-md text-base leading-relaxed text-brown/75 md:mx-0 md:text-lg">
         {description}
       </p>
-      <div class="hero-badges mt-8 flex flex-wrap justify-center gap-2">
+      <div class="hero-badges mt-8 flex flex-wrap justify-center gap-2 lg:justify-start">
         {badges.map((b) => (
           <span class="rounded-full border border-brown/15 bg-cream-soft px-4 py-1.5 text-[10px] font-semibold tracking-[0.18em] text-brown/70">
             {b}
           </span>
         ))}
       </div>
-      <div class="hero-cta mt-10 flex flex-col justify-center gap-4 sm:flex-row">
-        <button class="btn-primary">{ctaPrimary}</button>
+      <div class="hero-cta mt-10 flex flex-col justify-center gap-4 sm:flex-row lg:justify-start">
+        <button type="button" data-store-modal-trigger class="btn-primary">{ctaPrimary}</button>
         <button class="btn-secondary">{ctaSecondary}</button>
       </div>
     </div>
-  </div>
 
-  <div class="scroll-cue pointer-events-none absolute bottom-8 left-1/2 -translate-x-1/2 opacity-0" aria-hidden="true">
-    <span class="block h-9 w-5 rounded-full border border-brown/30">
-      <span class="mx-auto mt-1.5 block h-1.5 w-1.5 animate-bounce rounded-full bg-gold"></span>
-    </span>
+    <!-- jar stage -->
+    <div class="order-1 lg:order-2">
+      <div id="hero-jar-wrapper" class="jar-stage relative mx-auto aspect-square w-[78%] max-w-[420px] sm:max-w-[460px] lg:w-full">
+        <!-- invisible target the flying ingredients converge on -->
+        <span id="jar-mouth" class="pointer-events-none absolute left-1/2 top-[16%] h-px w-px" aria-hidden="true"></span>
+
+        <!-- jar: open jar underneath, sealed jar crossfades in once ingredients land -->
+        <div class="jar-tilt absolute inset-0 flex items-center justify-center" style="transform-style: preserve-3d;">
+          <img
+            src="/jar.png"
+            alt=""
+            aria-hidden="true"
+            class="hero-jar-open absolute h-auto w-[64%] object-contain drop-shadow-2xl md:w-[58%]"
+          />
+          <img
+            src="/jarncap.png"
+            alt="Subur Honey, fully sealed jar"
+            width="400"
+            height="639"
+            class="hero-jar-sealed absolute h-auto w-[64%] object-contain opacity-0 drop-shadow-2xl md:w-[58%]"
+          />
+        </div>
+
+        <!-- ingredients: start in a ring above the open jar, then fly down into its mouth -->
+        <img src="/icons/ingrediant_05.png" alt="" aria-hidden="true" class="ingredient absolute h-14 w-14 opacity-0 md:h-20 md:w-20" style="top:-6%; left:18%;" />
+        <img src="/icons/ingrediant_07.png" alt="" aria-hidden="true" class="ingredient absolute h-14 w-14 opacity-0 md:h-20 md:w-20" style="top:2%; left:42%;" />
+        <img src="/icons/ingrediant_03.png" alt="" aria-hidden="true" class="ingredient absolute h-14 w-14 opacity-0 md:h-20 md:w-20" style="top:-4%; left:64%;" />
+        <img src="/icons/ingrediant_01.png" alt="" aria-hidden="true" class="ingredient absolute h-14 w-14 opacity-0 md:h-20 md:w-20" style="top:6%; left:82%;" />
+        <img src="/icons/ingrediant_10.png" alt="" aria-hidden="true" class="ingredient absolute h-12 w-12 opacity-0 md:h-16 md:w-16" style="top:20%; left:92%;" />
+        <img src="/icons/ingrediant_08.png" alt="" aria-hidden="true" class="ingredient absolute h-12 w-12 opacity-0 md:h-16 md:w-16" style="top:34%; left:86%;" />
+        <img src="/icons/ingrediant_09.png" alt="" aria-hidden="true" class="ingredient absolute h-12 w-12 opacity-0 md:h-16 md:w-16" style="top:38%; left:66%;" />
+        <img src="/icons/ingrediant_06.png" alt="" aria-hidden="true" class="ingredient absolute h-12 w-12 opacity-0 md:h-16 md:w-16" style="top:36%; left:38%;" />
+        <img src="/icons/ingrediant_04.png" alt="" aria-hidden="true" class="ingredient absolute h-12 w-12 opacity-0 md:h-16 md:w-16" style="top:32%; left:16%;" />
+        <img src="/icons/ingrediant_02.png" alt="" aria-hidden="true" class="ingredient absolute h-12 w-12 opacity-0 md:h-16 md:w-16" style="top:18%; left:4%;" />
+      </div>
+    </div>
   </div>
 </section>
 

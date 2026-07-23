@@ -46,7 +46,7 @@ const { heading, subheading, cards, ctaPrimary, ctaSecondary } = Astro.props;
     </div>
 
     <div class="mt-16 flex flex-col justify-center gap-5 sm:flex-row" data-reveal>
-      <button class="btn-primary">{ctaPrimary}</button>
+      <button type="button" data-store-modal-trigger class="btn-primary">{ctaPrimary}</button>
       <button class="btn-secondary">{ctaSecondary}</button>
     </div>
   </div>

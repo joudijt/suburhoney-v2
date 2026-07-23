@@ -14,7 +14,7 @@ const { heading, subheading, ctaPrimary, ctaSecondary, ratingText } = Astro.prop
     <h2 class="font-display text-5xl leading-[1.1] text-brown md:text-7xl" data-reveal>{heading}</h2>
     <p class="text-xl leading-relaxed text-brown/70" data-reveal>{subheading}</p>
     <div class="flex flex-col justify-center gap-5 pt-4 sm:flex-row" data-reveal>
-      <button class="btn-primary">{ctaPrimary}</button>
+      <button type="button" data-store-modal-trigger class="btn-primary">{ctaPrimary}</button>
       <button class="btn-secondary">{ctaSecondary}</button>
     </div>
     <div class="flex flex-col items-center gap-2 pt-6" data-reveal>

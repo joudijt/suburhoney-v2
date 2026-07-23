@@ -44,7 +44,7 @@ const t = content[lang];
       ctaPrimary={t.hero.ctaPrimary}
       ctaSecondary={t.hero.ctaSecondary}
     />
-    <Ritual heading={t.ritual.heading} subheading={t.ritual.subheading} steps={t.ritual.steps} />
+    <Ritual lang={lang} heading={t.ritual.heading} subheading={t.ritual.subheading} steps={t.ritual.steps} />
     <Ingredients
       heading={t.ingredients.heading}
       subheading={t.ingredients.subheading}
@@ -68,11 +68,14 @@ const t = content[lang];
     />
   </main>
   <Footer
+    lang={lang}
     brand={t.footer.brand}
     description={t.footer.description}
     badges={t.footer.badges}
     shopHeading={t.footer.shopHeading}
     shopLinks={t.footer.shopLinks}
+    blogKicker={t.footer.blogKicker}
+    blogLink={t.footer.blogLink}
     copyright={t.footer.copyright}
     privacy={t.footer.privacy}
     terms={t.footer.terms}

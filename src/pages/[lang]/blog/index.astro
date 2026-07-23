@@ -1,0 +1,92 @@
+---
+import Layout from "../../../layouts/Layout.astro";
+import Header from "../../../components/Header.astro";
+import Footer from "../../../components/Footer.astro";
+import { LOCALES, type Locale } from "../../../config/site";
+
+import en from "../../../i18n/locales/en/common.json";
+import ar from "../../../i18n/locales/ar/common.json";
+import ms from "../../../i18n/locales/ms/common.json";
+
+const content = { en, ar, ms } as const;
+
+export function getStaticPaths() {
+  return LOCALES.map((lang) => ({ params: { lang } }));
+}
+
+const { lang } = Astro.params as { lang: Locale };
+const t = content[lang];
+const b = t.blog;
+
+const placeholders = [1, 2, 3];
+---
+
+<Layout lang={lang} title={b.seoTitle} description={b.seoDescription} faqItems={[]}>
+  <Header lang={lang} />
+  <main>
+    <section class="relative overflow-hidden bg-cream px-6 pb-24 pt-40 md:pb-32 md:pt-48" data-reveal-group>
+      <div
+        class="pointer-events-none absolute left-1/2 top-0 -z-10 h-[60vmax] w-[60vmax] -translate-x-1/2 -translate-y-1/3 rounded-full bg-[radial-gradient(circle,rgba(230,168,38,0.16),transparent_65%)]"
+        aria-hidden="true"
+      >
+      </div>
+
+      <div class="mx-auto max-w-3xl space-y-5 text-center" data-reveal>
+        <p class="kicker">{b.kicker}</p>
+        <h1 class="font-display text-4xl text-brown md:text-6xl">{b.heading}</h1>
+        <p class="mx-auto max-w-xl text-lg leading-relaxed text-brown/70">{b.subheading}</p>
+      </div>
+
+      <div class="mx-auto mt-16 grid max-w-6xl grid-cols-1 gap-8 md:grid-cols-3">
+        {placeholders.map((n) => (
+          <div
+            data-reveal
+            class="group relative overflow-hidden rounded-3xl border border-brown/10 bg-cream-soft shadow-softer transition-all duration-500 hover:-translate-y-1.5 hover:border-gold/40 hover:shadow-soft"
+          >
+            <div class="relative flex h-44 items-center justify-center overflow-hidden bg-[linear-gradient(160deg,var(--color-sand),var(--color-cream-soft))] md:h-52">
+              <img
+                src={`/icons/ingrediant_0${n}.png`}
+                alt=""
+                aria-hidden="true"
+                class="h-16 w-16 opacity-70 transition-transform duration-500 group-hover:scale-110 md:h-20 md:w-20"
+              />
+              <span class="absolute end-4 top-4 animate-pulse rounded-full bg-gold px-3 py-1 text-[10px] font-bold uppercase tracking-[0.15em] text-cream-soft shadow-soft">
+                {b.comingSoon}
+              </span>
+            </div>
+            <div class="space-y-3 p-7">
+              <p class="text-[10px] font-bold uppercase tracking-[0.25em] text-brown/40">{`0${n}`}</p>
+              <div class="h-4 w-4/5 animate-pulse rounded-full bg-brown/10"></div>
+              <div class="space-y-2 pt-1">
+                <div class="h-2.5 w-full animate-pulse rounded-full bg-brown/10"></div>
+                <div class="h-2.5 w-3/4 animate-pulse rounded-full bg-brown/10"></div>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+
+      <div class="mt-16 flex justify-center" data-reveal>
+        <a href={`/${lang}`} class="btn-secondary">{b.backHome}</a>
+      </div>
+    </section>
+  </main>
+  <Footer
+    lang={lang}
+    brand={t.footer.brand}
+    description={t.footer.description}
+    badges={t.footer.badges}
+    shopHeading={t.footer.shopHeading}
+    shopLinks={t.footer.shopLinks}
+    blogKicker={t.footer.blogKicker}
+    blogLink={t.footer.blogLink}
+    copyright={t.footer.copyright}
+    privacy={t.footer.privacy}
+    terms={t.footer.terms}
+  />
+</Layout>
+
+<script>
+  import { initReveal } from "../../../scripts/reveal";
+  initReveal();
+</script>

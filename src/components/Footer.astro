@@ -1,15 +1,21 @@
 ---
+import { SHOPEE_URL, TIKTOK_SHOP_URL, type Locale } from "../config/site";
+
 interface Props {
+  lang: Locale;
   brand: string;
   description: string;
   badges: string[];
   shopHeading: string;
   shopLinks: string[];
+  blogKicker: string;
+  blogLink: string;
   copyright: string;
   privacy: string;
   terms: string;
 }
-const { brand, description, badges, shopHeading, shopLinks, copyright, privacy, terms } = Astro.props;
+const { lang, brand, description, badges, shopHeading, shopLinks, blogKicker, blogLink, copyright, privacy, terms } =
+  Astro.props;
 const year = new Date().getFullYear();
 ---
 
@@ -28,9 +34,27 @@ const year = new Date().getFullYear();
       <div class="space-y-6">
         <h3 class="text-xs font-bold uppercase tracking-[0.3em] text-white">{shopHeading}</h3>
         <ul class="space-y-4">
-          {shopLinks.map((link) => (
-            <li><button class="text-left text-lg font-medium transition-colors hover:text-gold">{link}</button></li>
+          {shopLinks.map((link, i) => (
+            <li>
+              {i === 0 && (
+                <a href={SHOPEE_URL} target="_blank" rel="noopener noreferrer" class="text-start text-lg font-medium transition-colors hover:text-gold">{link}</a>
+              )}
+              {i === 1 && (
+                <a href={TIKTOK_SHOP_URL} target="_blank" rel="noopener noreferrer" class="text-start text-lg font-medium transition-colors hover:text-gold">{link}</a>
+              )}
+              {i > 1 && (
+                <button class="text-start text-lg font-medium transition-colors hover:text-gold">{link}</button>
+              )}
+            </li>
           ))}
+        </ul>
+      </div>
+      <div class="space-y-6">
+        <h3 class="text-xs font-bold uppercase tracking-[0.3em] text-white">{blogKicker}</h3>
+        <ul class="space-y-4">
+          <li>
+            <a href={`/${lang}/blog`} class="text-start text-lg font-medium transition-colors hover:text-gold">{blogLink}</a>
+          </li>
         </ul>
       </div>
     </div>

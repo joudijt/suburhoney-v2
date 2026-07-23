@@ -10,6 +10,12 @@
     "wholesale": "Borong",
     "faq": "Soalan Lazim"
   },
+  "storeModal": {
+    "heading": "Pilih Kedai Anda",
+    "subheading": "Pilih platform kegemaran anda untuk membeli Madu Subur secara runcit.",
+    "shopee": "Shopee",
+    "tiktok": "TikTok Shop"
+  },
   "hero": {
     "heading": "Resipi tradisional alam semula jadi,",
     "headingAccent": "Disempurnakan sejak turun-temurun.",
@@ -129,8 +135,19 @@
     "badges": ["SEMULA JADI SEPENUHNYA", "RESIPI TRADISIONAL", "MADU TULEN", "VEGAN"],
     "shopHeading": "BELI-BELAH DENGAN KAMI",
     "shopLinks": ["Shopee", "TikTok Shop", "Pertanyaan Borong"],
+    "blogKicker": "Kemas kini terkini — lawati blog kami!",
+    "blogLink": "Blog",
     "copyright": "Madu Subur. Resipi Tradisional. Pengetahuan Turun-Temurun.",
     "privacy": "Dasar Privasi",
     "terms": "Terma Perkhidmatan"
+  },
+  "blog": {
+    "seoTitle": "Blog | Madu Subur",
+    "seoDescription": "Kisah, amalan dan tradisi di sebalik Madu Subur. Artikel baharu akan datang.",
+    "kicker": "Dari Sarang Kami",
+    "heading": "Jurnal Subur",
+    "subheading": "Kisah, amalan, dan tradisi di sebalik setiap balang. Artikel baharu sedang dalam perjalanan.",
+    "comingSoon": "Akan Datang",
+    "backHome": "Kembali ke Laman Utama"
   }
 }
