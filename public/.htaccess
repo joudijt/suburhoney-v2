@@ -33,11 +33,23 @@ DirectoryIndex index.html
   AddType font/woff2 .woff2
 </IfModule>
 
-# Force HTTPS. Checks X-Forwarded-Proto too because the TLS terminator sits in
-# front of Apache on this host.
 <IfModule mod_rewrite.c>
   RewriteEngine On
+
+  # Force HTTPS. Checks X-Forwarded-Proto too because the TLS terminator sits in
+  # front of Apache on this host.
   RewriteCond %{HTTPS} !=on
   RewriteCond %{HTTP:X-Forwarded-Proto} !https
   RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R=301,L]
+
+  # "/" is not a real page - the site starts at /en/. Send visitors there with a
+  # real 301 rather than letting dist/index.html do it.
+  #
+  # That file is Astro's static-mode redirect stub: a 2 SECOND meta refresh with
+  # a visible "Redirecting from / to /en" link in the body. Users saw the stub,
+  # clicked the link, and the pending refresh then fired as well - two
+  # navigations. It also pointed at /en, which this server 301s again to /en/,
+  # so the browser made two hops. This rule removes both problems, and gives
+  # search engines a 301 instead of a meta refresh.
+  RewriteRule ^$ /en/ [R=301,L]
 </IfModule>

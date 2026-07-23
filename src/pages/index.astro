@@ -1,3 +1,31 @@
 ---
-return Astro.redirect("/en");
+// Fallback only. public/.htaccess 301s "/" straight to "/en/", so on the real
+// server this file is never rendered.
+//
+// It exists for environments without that rewrite - `astro dev`, `astro
+// preview`, or a host where mod_rewrite is off - and it deliberately does NOT
+// use Astro.redirect(). In static output that helper emits a 2 second meta
+// refresh plus a visible "Redirecting from / to /en" link, which users saw and
+// clicked, producing a second navigation on top of the one the timer fired.
+//
+// Redirect is instant, targets the trailing-slash URL the server actually
+// serves, and uses location.replace so "/" never enters session history.
+import { localeUrl } from "../config/site";
+
+const target = "/en/";
 ---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="refresh" content={`0;url=${target}`} />
+    <link rel="canonical" href={localeUrl("en")} />
+    <meta name="robots" content="noindex" />
+    <title>SUBUR Honey</title>
+    <script is:inline define:vars={{ target }}>
+      location.replace(target);
+    </script>
+  </head>
+  <body></body>
+</html>
