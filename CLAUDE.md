@@ -55,6 +55,39 @@ apart once already.
 `src/pages/sitemap.xml.ts`), not files in `public/`. Editing them by hand is how the sitemap
 ended up listing a single URL on a domain the site no longer used.
 
+### Articles
+
+Nine guides — three topics × en/ms/ar — under `src/content/articles/{locale}/`.
+
+They are **typed block structures, not markdown** (`types.ts`). Every block renders through
+`src/components/article/Blocks.astro`, so layout cannot drift between articles, and the blocks
+that matter to machines generate the JSON-LD from the same objects the reader sees. Adding a
+block type means extending the union and adding a case to that component.
+
+- **`answer` block comes first in every article.** It is the 40–60 word direct answer, and it is
+  what answer engines quote. It must stand alone out of context.
+- **Slugs differ per locale** on purpose — a Malay reader searches Malay words. hreflang therefore
+  cannot be derived from the path, and comes from `ARTICLE_GROUPS` in
+  `src/content/articles/index.ts`. Adding a translation means adding it to its group.
+- The sitemap and `llms.txt`/`llms-{ar,ms}.txt` are generated from the article registry. Do not
+  hand-maintain them; both went stale that way already.
+- `table` blocks render twice — stacked cards below `sm`, a real table above. A sideways-scrolling
+  table is a bad answer on a 375px screen.
+
+**Content rule: no health claims.** Malaysia's Food Regulations 1985 sub-reg 18(6) prohibits food
+and its advertising from claiming to prevent, treat or cure any condition, and infertility counts.
+Penalty is up to RM10,000 or two years. Every article uses traditional-use framing and says so
+explicitly. Do not let a future article drift into "helps you conceive".
+
+### Reveal animations
+
+`src/scripts/reveal.ts` observes **individual `[data-reveal]` items**, never their group.
+Observing the group breaks on any group taller than the viewport, because IntersectionObserver
+caps the intersection ratio at `viewportHeight / elementHeight` — an ~8000px article body can
+never reach a 0.15 threshold on an 812px phone, and 15 of 25 sections stayed invisible forever.
+Reduced-motion and missing IntersectionObserver both fall back to showing content immediately.
+**Content must never be able to end up permanently invisible.**
+
 ### Images
 
 `public/*.webp` is **generated output** — edit the original in `assets-src/`, then rebuild.
