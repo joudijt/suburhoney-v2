@@ -42,6 +42,13 @@ DirectoryIndex index.html
   RewriteCond %{HTTP:X-Forwarded-Proto} !https
   RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R=301,L]
 
+  # www.suburhoney.com is a CNAME to the apex and was serving the whole site as
+  # a second hostname - the same pages reachable at two addresses. The canonical
+  # tags all say suburhoney.com, so send www there rather than relying on Google
+  # to work it out.
+  RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
+  RewriteRule ^(.*)$ https://%1/$1 [R=301,L]
+
   # "/" is not a real page - the site starts at /en/. Send visitors there with a
   # real 301 rather than letting dist/index.html do it.
   #
