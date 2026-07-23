@@ -6,7 +6,7 @@ import react from '@astrojs/react';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://suburhoney.netlify.app',
+  site: 'https://suburhoney.com',
   server: { port: 5182 },
   i18n: {
     defaultLocale: 'en',

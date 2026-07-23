@@ -1,5 +1,5 @@
 ---
-import { SITE_URL, SITE_NAME, BRAND_SELLER_URL, LOCALES, LOCALE_META, type Locale } from "../config/site";
+import { SITE_URL, SITE_NAME, BRAND_SELLER_URL, LOCALES, LOCALE_META, localeUrl, type Locale } from "../config/site";
 
 interface Props {
   lang: Locale;
@@ -10,7 +10,7 @@ interface Props {
 
 const { lang, title, description, faqItems } = Astro.props;
 const path = Astro.url.pathname.replace(/^\/(en|ar|ms)/, "") || "/";
-const canonical = `${SITE_URL}/${lang}${path === "/" ? "" : path}`;
+const canonical = localeUrl(lang, path);
 
 const jsonLd = {
   "@context": "https://schema.org",
@@ -72,9 +72,9 @@ const jsonLd = {
 <meta name="robots" content="index, follow, max-image-preview:large" />
 
 {LOCALES.map((l) => (
-  <link rel="alternate" hreflang={l} href={`${SITE_URL}/${l}${path === "/" ? "" : path}`} />
+  <link rel="alternate" hreflang={l} href={localeUrl(l, path)} />
 ))}
-<link rel="alternate" hreflang="x-default" href={`${SITE_URL}/en${path === "/" ? "" : path}`} />
+<link rel="alternate" hreflang="x-default" href={localeUrl("en", path)} />
 
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content={SITE_NAME} />
