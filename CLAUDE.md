@@ -37,6 +37,24 @@ scripts/
 public/                   generated .webp, .htaccess, robots.txt, sitemap.xml, llms*.txt
 ```
 
+### Routing
+
+`/` is not a page. `public/.htaccess` 301s it to `/en/`. `src/pages/index.astro` is only a
+fallback for `astro dev`/`astro preview`, where no rewrite exists.
+
+**Do not replace that fallback with `Astro.redirect()`.** In static output there is no server to
+emit an HTTP redirect, so Astro writes a stub page with a *2 second* meta refresh and a visible
+link to the target — users saw the stub, clicked the link, and the pending refresh fired too.
+
+Every URL the site emits carries a trailing slash (`/en/`, `/en/blog/`), because Apache serves
+`en/index.html` and 301s `/en` to `/en/`. Canonical, hreflang and the sitemap all build their
+URLs from `localeUrl()` in `src/config/site.ts` — keep them on that one helper, they drifted
+apart once already.
+
+`robots.txt` and `sitemap.xml` are **generated** (`src/pages/robots.txt.ts`,
+`src/pages/sitemap.xml.ts`), not files in `public/`. Editing them by hand is how the sitemap
+ended up listing a single URL on a domain the site no longer used.
+
 ### Images
 
 `public/*.webp` is **generated output** — edit the original in `assets-src/`, then rebuild.
