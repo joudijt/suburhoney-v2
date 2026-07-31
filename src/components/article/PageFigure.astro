@@ -1,0 +1,75 @@
+---
+/**
+ * Lead image for the standalone pages, sitting between the page header and the
+ * first content block. Renders nothing unless the page has both a figure
+ * registered for its slug and translated alt text, so blog articles - which
+ * share this Article type but have no lead image - are unaffected.
+ *
+ * Optionally carries the page's answer passage inside the frame instead of
+ * leaving it in its own box below. The text stays real HTML, never baked into
+ * the image: it is the passage answer engines are most likely to quote, so it
+ * has to remain crawlable and selectable.
+ */
+import { PAGE_FIGURES } from "../../config/pageFigures";
+
+interface Props {
+  slug: string;
+  alt?: string;
+  question?: string;
+  answer?: string;
+}
+
+const { slug, alt, question, answer } = Astro.props;
+const figure = PAGE_FIGURES[slug];
+const hasOverlay = Boolean(question && answer);
+---
+
+{figure && alt && (
+  <figure class="mb-12 overflow-hidden rounded-[2rem] border border-gold/30 shadow-soft">
+    <div class="relative">
+      {/* No forced aspect ratio: the photo is 3:2 and the two still-lifes are
+          16:9, and cropping either to a shared box cut the subject. Intrinsic
+          width/height are still set so the reading column reserves the space. */}
+      <img
+        src={figure.src}
+        alt={alt}
+        width={figure.width}
+        height={figure.height}
+        loading="lazy"
+        decoding="async"
+        class={
+          figure.mobileCrop
+            ? `w-full ${figure.mobileCrop} lg:aspect-auto lg:h-auto lg:object-fill`
+            : "h-auto w-full"
+        }
+      />
+
+      {hasOverlay && (
+        /* `right-0`, not `end-0`. The subject sits on the physical left of this
+           photo in every locale - the same file is served to all three - so the
+           text panel must stay on the physical right even in RTL, where `end`
+           would flip it back over him.
+           Overlay only from lg up: at phone width the panel would cover the
+           whole frame, so the text sits under the image there instead. */
+        <div
+          class="bg-cream-soft/85 px-6 py-7 lg:absolute lg:inset-y-0 lg:right-0 lg:flex lg:w-[50%] lg:flex-col lg:justify-center lg:bg-transparent lg:px-9"
+        >
+          {/* Display face, not the old uppercase kicker: this reads as the
+              question heading and has to outrank the answer under it. Uppercase
+              + wide tracking also does nothing for Arabic, which sets the same
+              string in all three locales. */}
+          <p
+            class="mb-3 font-display text-2xl leading-snug text-brown lg:text-[28px] lg:[text-shadow:0_1px_10px_rgba(255,253,248,0.95)]"
+          >
+            {question}
+          </p>
+          <p
+            class="text-[15px] leading-relaxed text-brown/85 lg:text-base lg:[text-shadow:0_1px_12px_rgba(255,253,248,0.95)]"
+          >
+            {answer}
+          </p>
+        </div>
+      )}
+    </div>
+  </figure>
+)}

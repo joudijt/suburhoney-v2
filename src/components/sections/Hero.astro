@@ -11,24 +11,60 @@ interface Props {
   ctaSecondary: string;
 }
 
-const { heading, headingAccent, description, badges, ctaPrimary, ctaSecondary } = Astro.props;
+const { lang, heading, headingAccent, description, badges, ctaPrimary, ctaSecondary } = Astro.props;
+
+/* Studio photo, mirrored per locale: hero-bg-latin.webp has the jar on the
+   right with calm empty space on the left (text sits there for en/ms);
+   hero-bg-ar.webp has the jar on the left with calm space on the right
+   (text sits there for ar, aligned with the language switcher). */
+const bg = lang === "ar"
+  ? { src: "/images/hero-bg-ar.webp", position: "object-left" }
+  : { src: "/images/hero-bg-latin.webp", position: "object-right" };
 ---
 
-<section id="hero" class="relative flex min-h-[100svh] w-full items-center overflow-hidden bg-cream pt-20">
-  <!-- ambient background -->
-  <div class="pointer-events-none absolute inset-0" aria-hidden="true">
-    <div class="hero-glow absolute left-1/2 top-1/2 h-[70vmax] w-[70vmax] -translate-x-1/2 -translate-y-1/2 rounded-full bg-[radial-gradient(circle,rgba(230,168,38,0.22),transparent_65%)]"></div>
-    <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(255,253,248,0.6),transparent_55%)]"></div>
+<section id="hero" class="relative isolate flex min-h-[100svh] w-full items-center overflow-hidden bg-cream pt-20">
+  <!-- `isolate` is load-bearing: without its own stacking context, this
+       section's -z children escape to the document root and paint BEHIND
+       the section's own bg-cream instead of behind its content, hiding them
+       under a solid cream fill. -->
+  <!-- background photo, not the LCP element - kept off fetchpriority/preload
+       so it never competes with the hero jar for bandwidth (see CLAUDE.md
+       performance notes on this host's concurrency cliff). -->
+  <div class="absolute inset-0 -z-20" aria-hidden="true">
+    <img
+      src={bg.src}
+      alt=""
+      aria-hidden="true"
+      loading="lazy"
+      class={`h-full w-full object-cover ${bg.position}`}
+    />
+  </div>
+  <!-- ambient glow only - no full-section wash, so the photo stays clear -->
+  <div class="pointer-events-none absolute inset-0 -z-10" aria-hidden="true">
+    <div class="hero-glow absolute left-1/2 top-1/2 h-[70vmax] w-[70vmax] -translate-x-1/2 -translate-y-1/2 rounded-full bg-[radial-gradient(circle,rgba(230,168,38,0.18),transparent_65%)]"></div>
+  </div>
+  <!-- soft white blur, only behind the text zone: centered on mobile, then
+       start-0 (direction-aware) at lg - left for en/ms, right for ar,
+       following the text instead of hazing the whole photo. -->
+  <div class="pointer-events-none absolute inset-0 -z-10" aria-hidden="true">
+    <div class="absolute left-1/2 top-1/2 h-[68%] w-[96%] -translate-x-1/2 -translate-y-1/2 rounded-[3rem] bg-cream-soft/80 blur-3xl lg:start-0 lg:left-auto lg:h-[75%] lg:w-[38%] lg:translate-x-0"></div>
   </div>
 
-  <div class="relative z-10 mx-auto grid w-full max-w-7xl grid-cols-1 items-center gap-14 px-6 md:px-10 lg:grid-cols-2">
-    <!-- text column -->
-    <div class="hero-text order-2 text-center lg:order-1 lg:text-start">
-      <h1 class="font-display text-[2.4rem] leading-[1.15] text-brown md:text-6xl lg:text-[4.2rem]">
+  <!-- No jar illustration - it was removed so the text fills the section
+       against the full-bleed photo instead of sharing it with a floating
+       bottle graphic. The blurred glow above carries legibility now, plus
+       a lighter text-shadow as backup. -->
+  <!-- max-w-7xl + px-6/md:px-10 is the same gutter the header uses, so the
+       text below lines up with the logo's left edge (en/ms) and the
+       language switcher's right edge (ar) - not its own independently
+       centered column. -->
+  <div class="relative z-10 mx-auto w-full max-w-7xl px-6 md:px-10">
+    <div class="hero-text mx-auto max-w-md text-center lg:mx-0 lg:text-start">
+      <h1 class="font-display text-2xl leading-[1.2] text-brown [text-shadow:0_2px_16px_rgba(255,253,248,0.85)] md:text-4xl lg:text-5xl">
         <span class="hero-line block">{heading}</span>
         <span class="hero-line-accent block text-gold">{headingAccent}</span>
       </h1>
-      <p class="hero-desc mx-auto mt-6 max-w-md text-base leading-relaxed text-brown/75 md:mx-0 md:text-lg">
+      <p class="hero-desc mx-auto mt-4 max-w-sm text-sm leading-relaxed text-brown/80 [text-shadow:0_2px_12px_rgba(255,253,248,0.85)] md:text-base lg:mx-0">
         {description}
       </p>
       <div class="hero-badges mt-8 flex flex-wrap justify-center gap-2 lg:justify-start">
@@ -40,50 +76,7 @@ const { heading, headingAccent, description, badges, ctaPrimary, ctaSecondary } 
       </div>
       <div class="hero-cta mt-10 flex flex-col justify-center gap-4 sm:flex-row lg:justify-start">
         <button type="button" data-store-modal-trigger class="btn-primary">{ctaPrimary}</button>
-        <button class="btn-secondary">{ctaSecondary}</button>
-      </div>
-    </div>
-
-    <!-- jar stage -->
-    <div class="order-1 lg:order-2">
-      <div id="hero-jar-wrapper" class="jar-stage relative mx-auto aspect-square w-[78%] max-w-[420px] sm:max-w-[460px] lg:w-full">
-        <!-- invisible target the flying ingredients converge on -->
-        <span id="jar-mouth" class="pointer-events-none absolute left-1/2 top-[16%] h-px w-px" aria-hidden="true"></span>
-
-        <!-- jar: open jar underneath, sealed jar crossfades in once ingredients land -->
-        <div class="jar-tilt absolute inset-0 flex items-center justify-center" style="transform-style: preserve-3d;">
-          <img
-            src="/jar.webp"
-            alt=""
-            aria-hidden="true"
-            width="400"
-            height="639"
-            fetchpriority="high"
-            decoding="async"
-            class="hero-jar-open absolute h-auto w-[64%] object-contain drop-shadow-2xl md:w-[58%]"
-          />
-          <img
-            data-src="/jarncap.webp"
-            alt="Subur Honey, fully sealed jar"
-            width="400"
-            height="639"
-            fetchpriority="high"
-            decoding="async"
-            class="hero-jar-sealed absolute h-auto w-[64%] object-contain opacity-0 drop-shadow-2xl md:w-[58%]"
-          />
-        </div>
-
-        <!-- ingredients: start in a ring above the open jar, then fly down into its mouth -->
-        <img data-src="/icons/ingrediant_05.webp" alt="" aria-hidden="true" width="224" height="224" decoding="async" class="ingredient absolute h-14 w-14 opacity-0 md:h-20 md:w-20" style="top:-6%; left:18%;" />
-        <img data-src="/icons/ingrediant_07.webp" alt="" aria-hidden="true" width="224" height="224" decoding="async" class="ingredient absolute h-14 w-14 opacity-0 md:h-20 md:w-20" style="top:2%; left:42%;" />
-        <img data-src="/icons/ingrediant_03.webp" alt="" aria-hidden="true" width="224" height="224" decoding="async" class="ingredient absolute h-14 w-14 opacity-0 md:h-20 md:w-20" style="top:-4%; left:64%;" />
-        <img data-src="/icons/ingrediant_01.webp" alt="" aria-hidden="true" width="224" height="224" decoding="async" class="ingredient absolute h-14 w-14 opacity-0 md:h-20 md:w-20" style="top:6%; left:82%;" />
-        <img data-src="/icons/ingrediant_10.webp" alt="" aria-hidden="true" width="224" height="224" decoding="async" class="ingredient absolute h-12 w-12 opacity-0 md:h-16 md:w-16" style="top:20%; left:92%;" />
-        <img data-src="/icons/ingrediant_08.webp" alt="" aria-hidden="true" width="224" height="224" decoding="async" class="ingredient absolute h-12 w-12 opacity-0 md:h-16 md:w-16" style="top:34%; left:86%;" />
-        <img data-src="/icons/ingrediant_09.webp" alt="" aria-hidden="true" width="224" height="224" decoding="async" class="ingredient absolute h-12 w-12 opacity-0 md:h-16 md:w-16" style="top:38%; left:66%;" />
-        <img data-src="/icons/ingrediant_06.webp" alt="" aria-hidden="true" width="224" height="224" decoding="async" class="ingredient absolute h-12 w-12 opacity-0 md:h-16 md:w-16" style="top:36%; left:38%;" />
-        <img data-src="/icons/ingrediant_04.webp" alt="" aria-hidden="true" width="224" height="224" decoding="async" class="ingredient absolute h-12 w-12 opacity-0 md:h-16 md:w-16" style="top:32%; left:16%;" />
-        <img data-src="/icons/ingrediant_02.webp" alt="" aria-hidden="true" width="224" height="224" decoding="async" class="ingredient absolute h-12 w-12 opacity-0 md:h-16 md:w-16" style="top:18%; left:4%;" />
+        <a href={`/${lang}/#wholesale`} class="btn-secondary">{ctaSecondary}</a>
       </div>
     </div>
   </div>

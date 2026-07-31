@@ -1,12 +1,14 @@
 ---
+import type { Locale } from "../../config/site";
 interface Props {
+  lang: Locale;
   heading: string;
   subheading: string;
   ctaPrimary: string;
   ctaSecondary: string;
   ratingText: string;
 }
-const { heading, subheading, ctaPrimary, ctaSecondary, ratingText } = Astro.props;
+const { lang, heading, subheading, ctaPrimary, ctaSecondary, ratingText } = Astro.props;
 ---
 
 <section class="relative border-t border-brown/5 bg-cream px-6 py-28 text-center md:py-36" data-reveal-group>
@@ -15,7 +17,7 @@ const { heading, subheading, ctaPrimary, ctaSecondary, ratingText } = Astro.prop
     <p class="text-xl leading-relaxed text-brown/70" data-reveal>{subheading}</p>
     <div class="flex flex-col justify-center gap-5 pt-4 sm:flex-row" data-reveal>
       <button type="button" data-store-modal-trigger class="btn-primary">{ctaPrimary}</button>
-      <button class="btn-secondary">{ctaSecondary}</button>
+      <a href={`/${lang}/#wholesale`} class="btn-secondary">{ctaSecondary}</a>
     </div>
     <div class="flex flex-col items-center gap-2 pt-6" data-reveal>
       <div class="flex gap-1 text-gold" aria-hidden="true">

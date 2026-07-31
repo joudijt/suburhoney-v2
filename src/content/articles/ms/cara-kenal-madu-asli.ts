@@ -24,7 +24,7 @@ export const article: Article = {
       type: "answer",
       question: "Bagaimana nak tahu madu itu asli?",
       answer:
-        "Anda tidak boleh tahu dengan pasti di rumah. Setiap ujian popular — menitiskan madu ke dalam air, membakar mancis, ujian ibu jari — boleh ditipu oleh air gula dengan kepekatan yang betul. Pengesahan sebenar ialah kerja makmal. Apa yang anda boleh semak ialah penjual, pensijilan, harga dan label.",
+        "Anda tidak boleh tahu dengan pasti di rumah. Setiap ujian popular — menitiskan madu ke dalam air, membakar mancis, ujian ibu jari — boleh ditipu oleh air gula dengan kepekatan yang betul. Pengesahan sebenar ialah kerja makmal. Apa yang anda boleh semak ialah penjual, harga dan label.",
     },
     {
       type: "paragraph",
@@ -64,7 +64,7 @@ export const article: Article = {
       items: [
         { term: "Penjual yang boleh dijejaki", text: "Perniagaan berdaftar dengan alamat sebenar dan orang yang menjawab. Senarai marketplace tanpa nama tidak memberi anda apa-apa jalan tuntutan." },
         { term: "Harga yang munasabah", text: "Madu asli ada kos sebenarnya. Madu berharga jauh di bawah pasaran mesti ada sebabnya, dan sebab itu biasanya ada." },
-        { term: "Pensijilan", text: "Sijil halal untuk pengendalian, dan sebarang pengesahan KKM atau makmal yang penjual boleh tunjukkan, bukan sekadar sebut." },
+        { term: "Bukti, bukan sekadar dakwaan", text: "Kenyataan halal yang jelas untuk pengendalian, dan sebarang dokumen KKM atau makmal yang penjual boleh tunjukkan, bukan sekadar sebut." },
         { term: "Label yang lengkap", text: "Sumber atau jenis bunga yang dinamakan, berat bersih, maklumat pembungkus, nombor kelompok atau tarikh luput. Label kabur melindungi penjual, bukan anda." },
         { term: "Kelakuan semula jadi dalam balang", text: "Madu mentah menghablur, berasing dan menjadi gelap dengan masa. Madu yang kekal jernih sempurna dan tidak berubah selama bertahun biasanya telah diproses berat — atau bukan madu." },
       ],
@@ -132,7 +132,7 @@ export const article: Article = {
     },
     {
       q: "Bagaimana nak semak madu itu tulen di Malaysia?",
-      a: "Beli daripada penjual berdaftar yang boleh dijejaki, curiga terhadap harga jauh di bawah pasaran, cari pensijilan halal dan sebarang pengesahan makmal yang penjual boleh tunjukkan, dan baca label untuk sumber, berat bersih, maklumat pembungkus dan kelompok. Di rumah, tiada ujian yang muktamad.",
+      a: "Beli daripada penjual berdaftar yang boleh dijejaki, curiga terhadap harga jauh di bawah pasaran, cari kenyataan halal yang jelas dan sebarang dokumen makmal yang penjual boleh tunjukkan, dan baca label untuk sumber, berat bersih, maklumat pembungkus dan kelompok. Di rumah, tiada ujian yang muktamad.",
     },
     {
       q: "Adakah madu campuran itu madu palsu?",

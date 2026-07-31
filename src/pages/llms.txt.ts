@@ -13,6 +13,10 @@ import { buildLlmsText } from "../content/llms/build";
 export const GET: APIRoute = () => {
   const links = [
     `- [Home](${localeUrl("en")}): the product, its ten ingredients, the morning ritual, wholesale enquiry, FAQ`,
+    `- [Benefits](${localeUrl("en", "/benefits/")}): the traditional-use case for each ingredient - fertility, stamina, male vitality`,
+    `- [Retail](${localeUrl("en", "/retail/")}): every verified retail channel, jar sizes, FAQ`,
+    `- [Why Us](${localeUrl("en", "/why-us/")}): what differentiates Subur from a typical processed honey blend`,
+    `- [Contact](${localeUrl("en", "/contact/")}): current channels to reach Subur Honey`,
     `- [Guides](${localeUrl("en", "/blog/")}): buying guides for Malaysian readers`,
     ...getArticles("en").map(
       (a) => `- [${a.heading}](${localeUrl("en", `/blog/${a.slug}/`)}): ${a.description}`

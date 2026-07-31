@@ -89,7 +89,7 @@ export const article: Article = {
       items: [
         { term: "A named ingredient list", text: "Not \"herba pilihan\" or \"secret recipe\". If a brand will not name what is inside, you cannot compare it to anything." },
         { term: "Where the saffron is", text: "Saffron is the costliest ingredient in this category. If it is listed but the jar is cheap, it is present in trace amounts." },
-        { term: "Halal certification", text: "JAKIM certification or a clear halal statement. For most Malaysian buyers this is not optional." },
+        { term: "A clear halal statement", text: "Stated plainly on the label or by the seller. For most Malaysian buyers this is not optional." },
         { term: "The seller behind it", text: "A registered local business you can contact beats an anonymous marketplace listing. SUBUR is sold through Berkat Madinah Store." },
         { term: "Honest language", text: "Traditional-use wording is legal and normal. Cure and conception promises are neither." },
       ],
@@ -167,11 +167,11 @@ export const article: Article = {
     },
     {
       q: "How do I know if couples honey is genuine?",
-      a: "Look for a fully named ingredient list rather than \"herba pilihan\", halal certification, an identifiable seller you can contact, and traditional-use language rather than cure promises. A blend that will not tell you what is inside cannot be compared to anything.",
+      a: "Look for a fully named ingredient list rather than \"herba pilihan\", a clear halal statement, an identifiable seller you can contact, and traditional-use language rather than cure promises. A blend that will not tell you what is inside cannot be compared to anything.",
     },
     {
       q: "Is couples honey halal?",
-      a: "It depends on the brand, so check for JAKIM certification or a clear halal statement on the jar. Honey and the spices used are themselves halal, but certification confirms how the product was handled and packed.",
+      a: "It depends on the brand, so check for a clear halal statement on the jar or from the seller directly. Honey and the spices used are themselves halal, but how a product is handled and packed varies by brand.",
     },
     {
       q: "How long does a jar last?",

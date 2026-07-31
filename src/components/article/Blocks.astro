@@ -23,12 +23,20 @@ const calloutTone = {
       return (
         <div
           data-reveal
-          class="not-prose my-10 rounded-[1.75rem] border border-gold/30 bg-[linear-gradient(150deg,rgba(230,168,38,0.12),rgba(255,253,248,0.5))] p-6 shadow-softer sm:p-8"
+          class="not-prose relative my-10 rounded-[1.75rem] border border-gold/30 bg-[linear-gradient(150deg,rgba(230,168,38,0.12),rgba(255,253,248,0.5))] p-6 shadow-softer sm:p-8"
         >
-          <p class="mb-3 text-[10px] font-bold uppercase tracking-[0.22em] text-honey-dark">
+          {/* The honey-jar sticker that used to hang off the top corner here was
+              removed at the user's request, site-wide. The question no longer
+              needs `max-w-[80%]` either - that only existed to keep the text
+              clear of the sticker.
+              The question is a display-face heading rather than the old 10px
+              uppercase label, so it outranks the answer under it - matching the
+              treatment on the benefits lead image. Uppercase + wide tracking
+              also did nothing for the Arabic locale. */}
+          <p class="mb-3 font-display text-2xl leading-snug text-brown sm:text-3xl">
             {block.question}
           </p>
-          <p class="text-lg leading-relaxed text-brown sm:text-xl">{block.answer}</p>
+          <p class="text-lg leading-relaxed text-brown/85 sm:text-xl">{block.answer}</p>
         </div>
       );
 
@@ -44,11 +52,15 @@ const calloutTone = {
         </h2>
       );
 
+    /* text may carry inline <strong> / <a> - authored in the content files
+       below, never from user input, so set:html is safe here. */
     case "paragraph":
       return (
-        <p data-reveal class="mt-5 text-[1.0625rem] leading-[1.75] text-brown/80 sm:text-lg sm:leading-[1.8]">
-          {block.text}
-        </p>
+        <p
+          data-reveal
+          class="mt-5 text-[1.0625rem] leading-[1.75] text-brown/80 sm:text-lg sm:leading-[1.8] [&_a]:font-semibold [&_a]:text-honey-dark [&_a]:underline [&_a]:decoration-gold/50 [&_a]:underline-offset-2 [&_a:hover]:decoration-honey-dark [&_strong]:font-semibold [&_strong]:text-brown"
+          set:html={block.text}
+        />
       );
 
     case "list":
@@ -64,11 +76,17 @@ const calloutTone = {
                   class="mt-0.5 flex h-7 w-7 flex-shrink-0 items-center justify-center rounded-full bg-gold/15 text-xs font-bold text-honey-dark"
                   aria-hidden="true"
                 >
-                  {block.ordered ? i + 1 : "•"}
+                  {block.ordered ? (
+                    i + 1
+                  ) : (
+                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <path d="M20 6 9 17l-5-5" />
+                    </svg>
+                  )}
                 </span>
-                <span class="text-[1.0625rem] leading-[1.7] text-brown/80">
+                <span class="text-[1.0625rem] leading-[1.7] text-brown/80 [&_a]:font-semibold [&_a]:text-honey-dark [&_a]:underline [&_a]:decoration-gold/50 [&_a]:underline-offset-2 [&_a:hover]:decoration-honey-dark [&_strong]:font-semibold [&_strong]:text-brown">
                   {item.term && <strong class="font-semibold text-brown">{item.term}. </strong>}
-                  {item.text}
+                  <Fragment set:html={item.text} />
                 </span>
               </li>
             ))}
@@ -176,7 +194,10 @@ const calloutTone = {
             <span class:list={["h-1.5 w-1.5 flex-shrink-0 rounded-full", tone.dot]} aria-hidden="true"></span>
             {block.title}
           </p>
-          <p class="mt-2.5 text-[1.0625rem] leading-[1.7] text-brown/80">{block.text}</p>
+          <p
+            class="mt-2.5 text-[1.0625rem] leading-[1.7] text-brown/80 [&_a]:font-semibold [&_a]:text-honey-dark [&_a]:underline [&_a]:decoration-gold/50 [&_a]:underline-offset-2 [&_a:hover]:decoration-honey-dark [&_strong]:font-semibold [&_strong]:text-brown"
+            set:html={block.text}
+          />
         </aside>
       );
     }

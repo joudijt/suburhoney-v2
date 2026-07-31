@@ -24,7 +24,7 @@ export const article: Article = {
       type: "answer",
       question: "How can you tell if honey is real?",
       answer:
-        "You cannot reliably tell at home. Every popular test — dropping honey in water, burning a matchstick, the thumb test — is defeated by sugar syrup of the right thickness. Genuine verification is laboratory work. What you can check is the seller, the certification, the price and the label.",
+        "You cannot reliably tell at home. Every popular test — dropping honey in water, burning a matchstick, the thumb test — is defeated by sugar syrup of the right thickness. Genuine verification is laboratory work. What you can check is the seller, the price and the label.",
     },
     {
       type: "paragraph",
@@ -64,7 +64,7 @@ export const article: Article = {
       items: [
         { term: "A traceable seller", text: "A registered business with a real address and a person who answers. Anonymous marketplace listings offer you no recourse at all." },
         { term: "Price that makes sense", text: "Real honey costs what it costs. Honey priced far below the market has to be explained by something, and it usually is." },
-        { term: "Certification", text: "Halal certification for handling, and any MOH or laboratory verification the seller can actually show you rather than merely mention." },
+        { term: "Proof, not just claims", text: "A clear halal statement for handling, and any MOH or laboratory documentation the seller can actually show you rather than merely mention." },
         { term: "A full label", text: "Named source or floral type, net weight, packer details, batch or expiry. Vague labels protect the seller, not you." },
         { term: "Natural behaviour in the jar", text: "Raw honey crystallises, separates and darkens with time. Honey that stays perfectly clear and identical for years has usually been processed heavily — or is not honey." },
       ],
@@ -132,7 +132,7 @@ export const article: Article = {
     },
     {
       q: "How can I check if honey is genuine in Malaysia?",
-      a: "Buy from a traceable registered seller, be suspicious of prices far below the market, look for halal certification and any laboratory verification the seller can actually produce, and read the label for source, net weight, packer details and batch. At home, no test is conclusive.",
+      a: "Buy from a traceable registered seller, be suspicious of prices far below the market, look for a clear halal statement and any laboratory documentation the seller can actually produce, and read the label for source, net weight, packer details and batch. At home, no test is conclusive.",
     },
     {
       q: "Is blended honey fake honey?",

@@ -1,29 +1,42 @@
 {
   "seo": {
-    "title": "SUBUR Honey | Traditional Middle Eastern Honey Blend for Vitality",
-    "description": "Shop SUBUR Honey, a traditional Middle Eastern honey blend with saffron, ginseng, black seed and honeycomb for fertility, vitality and strength. All natural, vegan. Retail and wholesale across Malaysia."
+    "title": "SUBUR Honey | Traditional Honey for Married Couples in Malaysia",
+    "description": "Shop SUBUR Honey, a traditional Middle Eastern honey blend made for married couples across Malaysia, with saffron, ginseng, black seed and honeycomb for fertility, vitality and strength. All natural, vegan. Retail and wholesale across Malaysia."
   },
   "nav": {
+    "home": "Home",
     "benefits": "Benefits",
+    "retail": "Retail",
+    "whyUs": "Why Us?",
+    "contact": "Contact",
     "ritual": "Ritual",
     "ingredients": "Ingredients",
     "wholesale": "Wholesale",
-    "faq": "FAQ"
+    "faq": "FAQ",
+    "menu": "Menu",
+    "closeMenu": "Close menu"
+  },
+  "whatsapp": {
+    "label": "Chat with us on WhatsApp",
+    "wholesaleHeading": "New wholesale enquiry from suburhoney.com",
+    "contactHeading": "New message from the suburhoney.com contact page"
   },
   "storeModal": {
     "heading": "Choose Your Store",
     "subheading": "Select your preferred platform to purchase Subur Honey retail.",
     "shopee": "Shopee",
-    "tiktok": "TikTok Shop"
+    "tiktok": "TikTok Shop",
+    "madinah": "Berkat Madinah Store"
   },
   "hero": {
     "heading": "Nature's traditional recipe,",
     "headingAccent": "Perfected through generations.",
-    "description": "A traditional Middle Eastern honey blend made from generations of knowledge for fertility, vitality, and strength.",
+    "description": "A traditional Middle Eastern honey blend made for married couples across Malaysia, built on generations of knowledge for fertility, vitality, and strength.",
     "badges": [
       "ALL NATURAL",
       "TRADITIONAL RECIPE",
       "REAL HONEY",
+      "FOR MARRIED COUPLES",
       "VEGAN"
     ],
     "ctaPrimary": "Buy Retail",
@@ -127,7 +140,7 @@
     "footerNote": {
       "before": "SUBUR Honey pairs naturally with our",
       "wholesaleLink": "wholesale programme",
-      "middle": ", and is also available through our retail partner network, including",
+      "middle": ", and is also available through our official supplier network, including",
       "madinahLink": "Berkat Madinah Store",
       "after": ". See our",
       "faqLink": "full FAQ",
@@ -217,13 +230,13 @@
       },
       {
         "q": "Where can I buy Subur Honey in Malaysia?",
-        "a": "Subur Honey is available through our retail partner network including Berkat Madinah Store, as well as via our official Shopee and TikTok Shop channels."
+        "a": "Subur Honey is available through our official supplier network including Berkat Madinah Store, as well as via our official Shopee and TikTok Shop channels."
       }
     ]
   },
   "finalCta": {
     "heading": "Ready to begin?",
-    "subheading": "Discover a traditional Middle Eastern recipe built on generations of accumulated knowledge.",
+    "subheading": "Discover a traditional Middle Eastern recipe made for married couples across Malaysia, built on generations of accumulated knowledge.",
     "ctaPrimary": "Buy Retail",
     "ctaSecondary": "Wholesale Inquiry",
     "ratingText": "Trusted by more than 5,000 customers"
@@ -237,6 +250,7 @@
       "REAL HONEY",
       "VEGAN"
     ],
+    "exploreHeading": "EXPLORE",
     "shopHeading": "SHOP WITH US",
     "shopLinks": [
       "Shopee",
@@ -248,6 +262,44 @@
     "copyright": "Subur Honey. Traditional Recipe. Generational Knowledge.",
     "privacy": "Privacy Policy",
     "terms": "Terms of Service"
+  },
+  "launchTeaser": {
+    "badge": "Coming Soon",
+    "heading": "New launches & offers are on the way",
+    "text": "We're preparing new products and seasonal discounts for Subur Honey. Follow our official store so you don't miss the announcement.",
+    "cta": "Follow on Shopee"
+  },
+  "contactPage": {
+    "channelsHeading": "Get in Touch",
+    "channelsSub": "Real channels, answered by real people.",
+    "shopeeTitle": "Shopee",
+    "shopeeDesc": "Message our official store for order and product questions.",
+    "tiktokTitle": "TikTok Shop",
+    "tiktokDesc": "Reach us about a video, live sale or order.",
+    "madinahTitle": "Berkat Madinah Store",
+    "madinahDesc": "Our official supplier — Subur Honey is stocked and supplied through them, and they can help with product questions too.",
+    "wholesaleTitle": "Wholesale Enquiry",
+    "wholesaleDesc": "Stocking Subur? Use our dedicated wholesale form.",
+    "followTitle": "Follow Us",
+    "formHeading": "Send Us a Message",
+    "formSub": "Fill in the form and our team will get back to you.",
+    "formFullName": "Full Name",
+    "formFullNamePlaceholder": "Your name",
+    "formEmail": "Email Address",
+    "formEmailPlaceholder": "you@email.com",
+    "formSubject": "What's this about?",
+    "formSubjectOptions": [
+      "Select a topic",
+      "Product question",
+      "Order support",
+      "Wholesale enquiry",
+      "Something else"
+    ],
+    "formMessage": "Your Message",
+    "formMessagePlaceholder": "Tell us more...",
+    "formSend": "Send Message",
+    "whatsappTitle": "WhatsApp",
+    "whatsappDesc": "Message us directly for order, product or availability questions."
   },
   "blog": {
     "seoTitle": "Honey Guides for Malaysia | SUBUR Honey",

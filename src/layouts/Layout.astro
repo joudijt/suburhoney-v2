@@ -3,7 +3,14 @@ import "../styles/global.css";
 import SEO from "../components/SEO.astro";
 import CursorBee from "../components/CursorBee.astro";
 import StoreModal from "../components/StoreModal.astro";
+import WhatsAppButton from "../components/WhatsAppButton.astro";
 import { LOCALE_META, type Locale } from "../config/site";
+
+import en from "../i18n/locales/en/common.json";
+import ar from "../i18n/locales/ar/common.json";
+import ms from "../i18n/locales/ms/common.json";
+
+const content = { en, ar, ms } as const;
 
 interface Props {
   lang: Locale;
@@ -41,10 +48,16 @@ const dir = LOCALE_META[lang].dir;
     <slot />
     <CursorBee />
     <StoreModal lang={lang} />
+    <WhatsAppButton label={content[lang].whatsapp.label} />
 
     <script>
       import { initDeferredImages } from "../scripts/deferred-images";
       initDeferredImages();
+    </script>
+    <script>
+      import { initFormsToWhatsApp } from "../scripts/form-to-whatsapp";
+      import { WHATSAPP_NUMBER } from "../config/site";
+      initFormsToWhatsApp(WHATSAPP_NUMBER);
     </script>
   </body>
 </html>

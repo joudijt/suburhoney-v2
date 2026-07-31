@@ -36,12 +36,30 @@ const TARGETS = [
   // Store modal sticker: md:h-40 => 160px tall.
   { src: "images/honey-sticker.png", height: 320 },
 
+  // Answer-box corner sticker: ~72px tall on the card.
+  { src: "images/honey-jar-sticker.png", height: 144 },
+
   // Cursor bee: 34px wide as a cursor, 18px inside the Benefits SVG flight path.
   { src: "images/bee-cursor.png", width: 96 },
 
-  // Ritual background: full-bleed, object-cover, lazy.
-  { src: "images/ritual-showcase.jpg", width: 1536, quality: 72 },
-  { src: "images/ritual-showcase-latin.jpg", width: 1536, quality: 72 },
+  // Hero background: full-bleed, object-cover, lazy. Per-locale photo -
+  // mirrored compositions, jar on opposite sides to sit clear of the text.
+  { src: "images/hero-bg-ar.png", width: 1536, quality: 78 },
+  { src: "images/hero-bg-latin.png", width: 1536, quality: 78 },
+
+  // Ritual background: full-bleed, object-cover, lazy. Per-locale photo, same
+  // mirrored-pair convention as the hero above - the couple always sits on the
+  // reading-start side so the text box can take the empty half opposite them.
+  { src: "images/ritual-bg-ar.png", width: 1536, quality: 78 },
+  { src: "images/ritual-bg-latin.png", width: 1536, quality: 78 },
+
+  // Lead images above the content blocks on benefits / retail / why-us. Shown
+  // at most 768px wide (the max-w-3xl reading column), so 1536 is the 2x cap.
+  // page-benefits is a photo; the other two are product still-lifes composed
+  // from jarncap + the real ingredient icons - locale-independent, one each.
+  { src: "images/page-benefits.png", width: 1536, quality: 78 },
+  { src: "images/page-retail.png", width: 1536, quality: 82 },
+  { src: "images/page-why-us.png", width: 1536, quality: 82 },
 ];
 
 // Ingredient icons: 80px in the hero (md:h-20), ~51px in the honeycomb, and

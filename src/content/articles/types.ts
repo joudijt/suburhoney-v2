@@ -28,6 +28,7 @@ export interface HeadingBlock {
 
 export interface ParagraphBlock {
   type: "paragraph";
+  /** May contain inline <strong> and <a href> - rendered as trusted HTML, author-controlled only. */
   text: string;
 }
 
@@ -35,6 +36,7 @@ export interface ListBlock {
   type: "list";
   ordered?: boolean;
   title?: string;
+  /** item.text may contain inline <strong> and <a href> - see ParagraphBlock. */
   items: { term?: string; text: string }[];
 }
 
@@ -56,6 +58,7 @@ export interface CalloutBlock {
   type: "callout";
   tone: "note" | "warning" | "tradition";
   title: string;
+  /** May contain inline <strong> and <a href> - see ParagraphBlock. */
   text: string;
 }
 
@@ -112,6 +115,13 @@ export interface Article {
   readingMinutes: number;
   /** Icon from /icons used as the card and hero motif. */
   icon: string;
+  /**
+   * Translated alt text for the lead image shown above the content blocks on the
+   * standalone pages. The image itself is locale-independent, so only the alt
+   * text lives here - the file and its dimensions are in config/pageFigures.ts,
+   * keyed by slug. Blog articles leave this unset and render no lead image.
+   */
+  figureAlt?: string;
   category: string;
   blocks: Block[];
   faqs: Faq[];

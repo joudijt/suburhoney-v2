@@ -89,7 +89,7 @@ export const article: Article = {
       items: [
         { term: "Senarai bahan yang dinamakan", text: "Bukan \"herba pilihan\" atau \"resipi rahsia\". Kalau jenama enggan menamakan isinya, anda tidak boleh bandingkan dengan apa-apa." },
         { term: "Di mana safronnya", text: "Safron ialah bahan termahal dalam kategori ini. Kalau ia disenaraikan tetapi balangnya murah, ia hadir dalam jumlah yang amat sedikit." },
-        { term: "Pensijilan halal", text: "Sijil JAKIM atau kenyataan halal yang jelas. Bagi kebanyakan pembeli Malaysia, ini bukan pilihan." },
+        { term: "Kenyataan halal yang jelas", text: "Dinyatakan dengan terang pada label atau oleh penjual. Bagi kebanyakan pembeli Malaysia, ini bukan pilihan." },
         { term: "Penjual di sebaliknya", text: "Perniagaan tempatan berdaftar yang boleh dihubungi lebih baik daripada senarai marketplace tanpa nama. SUBUR dijual menerusi Berkat Madinah Store." },
         { term: "Bahasa yang jujur", text: "Perkataan penggunaan tradisional adalah sah dan biasa. Janji penyembuhan dan kehamilan tidak." },
       ],
@@ -167,11 +167,11 @@ export const article: Article = {
     },
     {
       q: "Bagaimana saya tahu madu suami isteri itu tulen?",
-      a: "Cari senarai bahan yang dinamakan sepenuhnya dan bukan \"herba pilihan\", pensijilan halal, penjual yang boleh dikenal pasti dan dihubungi, serta bahasa penggunaan tradisional dan bukan janji penyembuhan. Campuran yang enggan memberitahu isinya tidak boleh dibandingkan dengan apa-apa.",
+      a: "Cari senarai bahan yang dinamakan sepenuhnya dan bukan \"herba pilihan\", kenyataan halal yang jelas, penjual yang boleh dikenal pasti dan dihubungi, serta bahasa penggunaan tradisional dan bukan janji penyembuhan. Campuran yang enggan memberitahu isinya tidak boleh dibandingkan dengan apa-apa.",
     },
     {
       q: "Adakah madu suami isteri halal?",
-      a: "Ia bergantung kepada jenama, jadi semak sijil JAKIM atau kenyataan halal yang jelas pada balang. Madu dan rempah yang digunakan itu sendiri halal, tetapi pensijilan mengesahkan cara produk dikendalikan dan dibungkus.",
+      a: "Ia bergantung kepada jenama, jadi semak kenyataan halal yang jelas pada balang atau terus daripada penjual. Madu dan rempah yang digunakan itu sendiri halal, tetapi cara produk dikendalikan dan dibungkus berbeza mengikut jenama.",
     },
     {
       q: "Berapa lama sebalang boleh bertahan?",

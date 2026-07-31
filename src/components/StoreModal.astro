@@ -1,6 +1,6 @@
 ---
 import type { Locale } from "../config/site";
-import { SHOPEE_URL, TIKTOK_SHOP_URL } from "../config/site";
+import { SHOPEE_URL, TIKTOK_SHOP_URL, BRAND_SELLER_URL } from "../config/site";
 import en from "../i18n/locales/en/common.json";
 import ar from "../i18n/locales/ar/common.json";
 import ms from "../i18n/locales/ms/common.json";
@@ -45,6 +45,14 @@ const t = content[lang].storeModal;
 
     <div class="relative z-[1] mt-8 space-y-4">
       <a
+        href={BRAND_SELLER_URL}
+        target="_blank"
+        rel="noopener noreferrer"
+        class="btn-primary block w-full rounded-xl text-center normal-case tracking-normal"
+      >
+        {t.madinah}
+      </a>
+      <a
         href={SHOPEE_URL}
         target="_blank"
         rel="noopener noreferrer"
@@ -56,7 +64,7 @@ const t = content[lang].storeModal;
         href={TIKTOK_SHOP_URL}
         target="_blank"
         rel="noopener noreferrer"
-        class="btn-primary block w-full rounded-xl text-center normal-case tracking-normal"
+        class="btn-secondary block w-full rounded-xl text-center normal-case tracking-normal"
       >
         {t.tiktok}
       </a>

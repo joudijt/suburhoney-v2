@@ -1,5 +1,5 @@
 ---
-import { SITE_URL, SITE_NAME, BRAND_SELLER_URL, LOCALES, LOCALE_META, localeUrl, type Locale } from "../config/site";
+import { SITE_URL, SITE_NAME, BRAND_SELLER_URL, INSTAGRAM_URL, FACEBOOK_URL, SHOPEE_URL, TIKTOK_SHOP_URL, LOCALES, LOCALE_META, localeUrl, type Locale } from "../config/site";
 
 interface Props {
   lang: Locale;
@@ -48,7 +48,7 @@ const jsonLd = {
       name: SITE_NAME,
       url: SITE_URL,
       logo: `${SITE_URL}/logo-8.webp`,
-      sameAs: [BRAND_SELLER_URL],
+      sameAs: [BRAND_SELLER_URL, INSTAGRAM_URL, FACEBOOK_URL, SHOPEE_URL, TIKTOK_SHOP_URL],
     },
     {
       "@type": "WebSite",
@@ -131,14 +131,16 @@ const jsonLd = {
 <meta name="twitter:image" content={socialImage} />
 
 <!--
-  The open jar is the LCP element on the landing pages. Without a preload the
+  The sealed jar is the LCP element on the homepage (it's a static image now -
+  the flying-ingredients animation moved to the Ritual section, which is
+  below the fold and lazy-loaded there instead). Without a preload the
   browser only discovers it after the stylesheet parses, which cost ~500ms of
-  LCP. Article pages have no jar, so preloading there would just put a competing
-  request on the critical path - see CLAUDE.md on why request count is expensive
-  on this host.
+  LCP. Article/inner pages have no jar, so preloading there would just put a
+  competing request on the critical path - see CLAUDE.md on why request count
+  is expensive on this host.
 -->
 {!articleMeta && (
-  <link rel="preload" as="image" href="/jar.webp" type="image/webp" fetchpriority="high" />
+  <link rel="preload" as="image" href="/jarncap.webp" type="image/webp" fetchpriority="high" />
 )}
 
 <link rel="shortcut icon" href="/favi.svg" />

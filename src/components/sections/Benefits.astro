@@ -1,17 +1,19 @@
 ---
+import type { Locale } from "../../config/site";
 interface Card {
   label: string;
   title: string;
   description: string;
 }
 interface Props {
+  lang: Locale;
   heading: string;
   subheading: string;
   cards: Card[];
   ctaPrimary: string;
   ctaSecondary: string;
 }
-const { heading, subheading, cards, ctaPrimary, ctaSecondary } = Astro.props;
+const { lang, heading, subheading, cards, ctaPrimary, ctaSecondary } = Astro.props;
 ---
 
 <section id="benefits" class="relative bg-cream-soft px-6 py-28 md:py-36" data-reveal-group>
@@ -47,7 +49,7 @@ const { heading, subheading, cards, ctaPrimary, ctaSecondary } = Astro.props;
 
     <div class="mt-16 flex flex-col justify-center gap-5 sm:flex-row" data-reveal>
       <button type="button" data-store-modal-trigger class="btn-primary">{ctaPrimary}</button>
-      <button class="btn-secondary">{ctaSecondary}</button>
+      <a href={`/${lang}/#wholesale`} class="btn-secondary">{ctaSecondary}</a>
     </div>
   </div>
 </section>

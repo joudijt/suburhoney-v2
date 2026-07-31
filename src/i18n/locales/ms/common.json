@@ -1,29 +1,42 @@
 {
   "seo": {
-    "title": "Madu SUBUR | Campuran Madu Timur Tengah Tradisional untuk Vitaliti",
-    "description": "Beli Madu SUBUR, campuran madu Timur Tengah tradisional dengan kunyit bunga (saffron), ginseng, habbatus sauda dan sarang lebah untuk kesuburan, vitaliti dan kekuatan. Semula jadi sepenuhnya, vegan. Runcit dan borong di seluruh Malaysia."
+    "title": "Madu SUBUR | Madu Tradisional untuk Pasangan Suami Isteri di Malaysia",
+    "description": "Beli Madu SUBUR, campuran madu Timur Tengah tradisional untuk pasangan suami isteri di seluruh Malaysia, dengan kunyit bunga (saffron), ginseng, habbatus sauda dan sarang lebah untuk kesuburan, vitaliti dan kekuatan. Semula jadi sepenuhnya, vegan. Runcit dan borong di seluruh Malaysia."
   },
   "nav": {
+    "home": "Laman Utama",
     "benefits": "Manfaat",
+    "retail": "Runcit",
+    "whyUs": "Kenapa Kami?",
+    "contact": "Hubungi",
     "ritual": "Amalan Harian",
     "ingredients": "Ramuan",
     "wholesale": "Borong",
-    "faq": "Soalan Lazim"
+    "faq": "Soalan Lazim",
+    "menu": "Menu",
+    "closeMenu": "Tutup menu"
+  },
+  "whatsapp": {
+    "label": "Berbual dengan kami di WhatsApp",
+    "wholesaleHeading": "Pertanyaan borong baharu daripada suburhoney.com",
+    "contactHeading": "Mesej baharu daripada halaman hubungi suburhoney.com"
   },
   "storeModal": {
     "heading": "Pilih Kedai Anda",
     "subheading": "Pilih platform kegemaran anda untuk membeli Madu Subur secara runcit.",
     "shopee": "Shopee",
-    "tiktok": "TikTok Shop"
+    "tiktok": "TikTok Shop",
+    "madinah": "Berkat Madinah Store"
   },
   "hero": {
     "heading": "Resipi tradisional alam semula jadi,",
     "headingAccent": "Disempurnakan sejak turun-temurun.",
-    "description": "Campuran madu Timur Tengah tradisional yang dihasilkan daripada pengetahuan turun-temurun untuk kesuburan, vitaliti, dan kekuatan.",
+    "description": "Campuran madu Timur Tengah tradisional untuk pasangan suami isteri di seluruh Malaysia, dibina atas pengetahuan turun-temurun untuk kesuburan, vitaliti, dan kekuatan.",
     "badges": [
       "SEMULA JADI SEPENUHNYA",
       "RESIPI TRADISIONAL",
       "MADU TULEN",
+      "UNTUK PASANGAN",
       "VEGAN"
     ],
     "ctaPrimary": "Beli Runcit",
@@ -127,7 +140,7 @@
     "footerNote": {
       "before": "Madu SUBUR sesuai bersama",
       "wholesaleLink": "program borong kami",
-      "middle": ", dan turut tersedia melalui rangkaian rakan runcit kami, termasuk",
+      "middle": ", dan turut tersedia melalui rangkaian pembekal rasmi kami, termasuk",
       "madinahLink": "Berkat Madinah Store",
       "after": ". Lihat",
       "faqLink": "Soalan Lazim penuh kami",
@@ -217,13 +230,13 @@
       },
       {
         "q": "Di mana saya boleh beli Madu Subur di Malaysia?",
-        "a": "Madu Subur tersedia melalui rangkaian rakan runcit kami termasuk Berkat Madinah Store, serta melalui saluran rasmi Shopee dan TikTok Shop kami."
+        "a": "Madu Subur tersedia melalui rangkaian pembekal rasmi kami termasuk Berkat Madinah Store, serta melalui saluran rasmi Shopee dan TikTok Shop kami."
       }
     ]
   },
   "finalCta": {
     "heading": "Bersedia untuk bermula?",
-    "subheading": "Temui resipi tradisional Timur Tengah yang dibina atas pengetahuan yang terkumpul sejak turun-temurun.",
+    "subheading": "Temui resipi tradisional Timur Tengah untuk pasangan suami isteri di seluruh Malaysia, dibina atas pengetahuan yang terkumpul sejak turun-temurun.",
     "ctaPrimary": "Beli Runcit",
     "ctaSecondary": "Pertanyaan Borong",
     "ratingText": "Dipercayai oleh lebih 5,000 pelanggan"
@@ -237,6 +250,7 @@
       "MADU TULEN",
       "VEGAN"
     ],
+    "exploreHeading": "TEROKAI",
     "shopHeading": "BELI-BELAH DENGAN KAMI",
     "shopLinks": [
       "Shopee",
@@ -248,6 +262,44 @@
     "copyright": "Madu Subur. Resipi Tradisional. Pengetahuan Turun-Temurun.",
     "privacy": "Dasar Privasi",
     "terms": "Terma Perkhidmatan"
+  },
+  "launchTeaser": {
+    "badge": "Akan Datang",
+    "heading": "Pelancaran & tawaran baharu sedang disediakan",
+    "text": "Kami sedang menyediakan produk baharu dan diskaun bermusim untuk Madu Subur. Ikuti kedai rasmi kami supaya anda tidak terlepas pengumuman.",
+    "cta": "Ikuti di Shopee"
+  },
+  "contactPage": {
+    "channelsHeading": "Hubungi Kami",
+    "channelsSub": "Saluran sebenar, dijawab oleh orang sebenar.",
+    "shopeeTitle": "Shopee",
+    "shopeeDesc": "Hantar mesej kepada kedai rasmi kami untuk soalan pesanan dan produk.",
+    "tiktokTitle": "TikTok Shop",
+    "tiktokDesc": "Hubungi kami tentang video, siaran langsung atau pesanan.",
+    "madinahTitle": "Berkat Madinah Store",
+    "madinahDesc": "Pembekal rasmi kami — Madu Subur dibekalkan dan distok melalui mereka, dan mereka juga boleh membantu dengan soalan produk.",
+    "wholesaleTitle": "Pertanyaan Borong",
+    "wholesaleDesc": "Ingin menstok Subur? Gunakan borang borong khusus kami.",
+    "followTitle": "Ikuti Kami",
+    "formHeading": "Hantar Mesej kepada Kami",
+    "formSub": "Isi borang dan pasukan kami akan menghubungi anda.",
+    "formFullName": "Nama Penuh",
+    "formFullNamePlaceholder": "Nama anda",
+    "formEmail": "Alamat E-mel",
+    "formEmailPlaceholder": "anda@email.com",
+    "formSubject": "Tentang apa mesej ini?",
+    "formSubjectOptions": [
+      "Pilih topik",
+      "Soalan produk",
+      "Sokongan pesanan",
+      "Pertanyaan borong",
+      "Perkara lain"
+    ],
+    "formMessage": "Mesej Anda",
+    "formMessagePlaceholder": "Beritahu kami lebih lanjut...",
+    "formSend": "Hantar Mesej",
+    "whatsappTitle": "WhatsApp",
+    "whatsappDesc": "Hantar mesej terus kepada kami untuk soalan pesanan, produk atau stok."
   },
   "blog": {
     "seoTitle": "Panduan Madu untuk Pembeli Malaysia | SUBUR Honey",

@@ -95,14 +95,20 @@ Target sizes live in the `TARGETS` table in `scripts/optimize-images.mjs`, each 
 largest on-screen size. `jarncap.png` is the one PNG that still ships, because social crawlers
 fetch it as the Open Graph image.
 
-Anything invisible on first paint uses **`data-src` instead of `src`**, and
-`src/scripts/deferred-images.ts` upgrades it once the hero jar has painted. This covers the
-sealed jar, the ten hero ingredient icons, the cursor bee, and the store-modal sticker — all of
-which sit at `opacity: 0` or inside a hidden container until GSAP or a click reveals them.
+Anything invisible on first paint but still inside the initial viewport uses **`data-src` instead
+of `src`**, and `src/scripts/deferred-images.ts` upgrades it once the hero jar has painted. This
+covers the cursor bee and the store-modal sticker — both sit inside a hidden container until a
+script or a click reveals them.
 
 **Do not "fix" that back to plain `src`.** `loading="lazy"` cannot replace it either — every one
 of those elements is inside the initial viewport, so the browser would fetch it immediately.
 The reason is measured, see the performance section below.
+
+The flying-ingredients jar animation lives in the Ritual section now (`ritual-jar-motion.ts`),
+not the Hero — it plays once via `IntersectionObserver` when Ritual scrolls into view, then the
+jar stays put. Its images use plain `loading="lazy"` rather than `data-src`, because they're
+below the fold from the start: nothing here is racing the LCP jar for bandwidth. The Hero's own
+jar (`.hero-jar-static`) is now a single static sealed-jar image with no animation at all.
 
 Locales are `en`, `ar`, `ms`. Arabic is RTL, driven by `LOCALE_META.ar.dir === "rtl"`.
 Adding a locale means touching `LOCALES` + `LOCALE_META` and the per-locale copy dictionaries.

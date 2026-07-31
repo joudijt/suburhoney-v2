@@ -120,6 +120,57 @@ h1, h2, h3, h4 {
   50% { transform: rotate(45deg) translateY(-8px); }
 }
 
+#ritual-jar-wrapper {
+  will-change: transform;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+}
+
+/* A bright arc of gold chases around the ritual card's edge on top of its
+   static gold border. content-box vs border-box masked with `exclude` keeps
+   only the border-width ring visible, so it reads as a moving line rather
+   than a glowing fill - works regardless of the card's own translucency. */
+@property --ritual-border-angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+.ritual-glow-border {
+  position: relative;
+}
+.ritual-glow-border::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  border-radius: inherit;
+  padding: 2px;
+  background: conic-gradient(
+    from var(--ritual-border-angle),
+    transparent 0deg,
+    transparent 265deg,
+    rgba(230, 168, 38, 0.55) 300deg,
+    #fff3d6 330deg,
+    rgba(230, 168, 38, 0.55) 350deg,
+    transparent 360deg
+  );
+  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+  animation: ritual-border-spin 5s linear infinite;
+}
+@keyframes ritual-border-spin {
+  to {
+    --ritual-border-angle: 360deg;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .ritual-glow-border::before {
+    animation: none;
+  }
+}
+
 .benefits-bee-img {
   transform-box: fill-box;
   transform-origin: center;
