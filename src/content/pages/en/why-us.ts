@@ -3,7 +3,7 @@ import { BRAND_SELLER_URL } from "../../../config/site";
 
 export const page: Article = {
   slug: "why-us",
-  title: "Why Choose Subur Honey | Traditional Recipe, Transparent Ingredients",
+  title: "Why Choose Subur Honey | Secret Recipe, Studied Standards, Transparent Ingredients",
   heading: "Why Choose Subur Honey",
   description:
     "What sets Subur Honey apart: ten named ingredients, raw honeycomb base, no artificial additives, and a traditional Middle Eastern recipe made for married couples and trusted by thousands of Malaysian households.",

@@ -32,7 +32,7 @@ export const page: Article = {
     },
     {
       type: "paragraph",
-      text: "Subur dibina atas idea mudah: madu sudah menjadi makanan harian yang dipercayai dalam banyak rumah tangga Malaysia, jadi cara paling semula jadi untuk membawa resipi tradisional Timur Tengah adalah di dalam sebuah balang madu. Setiap ramuan <strong>dinyatakan pada label</strong> - tiada yang disembunyikan di sebalik \"campuran eksklusif\" yang kabur.",
+      text: "Subur dibina atas idea mudah: madu sudah menjadi makanan harian yang dipercayai dalam banyak rumah tangga Malaysia, jadi cara paling semula jadi untuk membawa resipi rahsia Timur Tengah dengan piawaian dikaji dengan teliti adalah di dalam sebuah balang madu. Setiap ramuan <strong>dinyatakan pada label</strong> - tiada yang disembunyikan di sebalik \"campuran eksklusif\" yang kabur.",
     },
     {
       type: "heading",

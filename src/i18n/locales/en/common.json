@@ -29,12 +29,12 @@
     "madinah": "Berkat Madinah Store"
   },
   "hero": {
-    "heading": "Nature's traditional recipe,",
+    "heading": "Nature's secret recipe, precisely studied standards,",
     "headingAccent": "Perfected through generations.",
     "description": "A traditional Middle Eastern honey blend made for married couples across Malaysia, built on generations of knowledge for fertility, vitality, and strength.",
     "badges": [
       "ALL NATURAL",
-      "TRADITIONAL RECIPE",
+      "SECRET RECIPE, STUDIED STANDARDS",
       "REAL HONEY",
       "FOR MARRIED COUPLES",
       "VEGAN"
@@ -44,7 +44,7 @@
   },
   "benefits": {
     "heading": "Why Subur Honey is for you",
-    "subheading": "A traditional recipe made from ingredients trusted by Middle Eastern families for generations.",
+    "subheading": "A secret recipe built on precisely studied standards, made from ingredients trusted by Middle Eastern families for generations.",
     "cards": [
       {
         "label": "For Him & Her",
@@ -214,7 +214,7 @@
       },
       {
         "q": "Is Subur for men or women?",
-        "a": "Subur is made for both men and women. The traditional recipe includes ingredients valued for supporting overall wellbeing and fertility."
+        "a": "Subur is made for both men and women. The secret recipe, built on precisely studied standards, includes ingredients valued for supporting overall wellbeing and fertility."
       },
       {
         "q": "Can husband and wife take Subur together?",
@@ -246,7 +246,7 @@
     "description": "A traditional Middle Eastern honey blend inspired by generations of knowledge and made with carefully selected natural ingredients.",
     "badges": [
       "ALL NATURAL",
-      "TRADITIONAL RECIPE",
+      "SECRET RECIPE, STUDIED STANDARDS",
       "REAL HONEY",
       "VEGAN"
     ],
@@ -259,7 +259,7 @@
     ],
     "blogKicker": "Fresh updates — check our blog!",
     "blogLink": "Blog",
-    "copyright": "Subur Honey. Traditional Recipe. Generational Knowledge.",
+    "copyright": "Subur Honey. Secret Recipe, Studied Standards. Generational Knowledge.",
     "privacy": "Privacy Policy",
     "terms": "Terms of Service"
   },

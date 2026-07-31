@@ -3,10 +3,10 @@ import { BRAND_SELLER_URL } from "../../../config/site";
 
 export const page: Article = {
   slug: "why-us",
-  title: "Kenapa Pilih Madu Subur | Resipi Tradisional, Ramuan Telus",
+  title: "Kenapa Pilih Madu Subur | Resipi Rahsia, Piawaian Teliti, Ramuan Telus",
   heading: "Kenapa Pilih Madu Subur",
   description:
-    "Apa yang membezakan Madu Subur: sepuluh ramuan bernama, asas sarang madu tulen, tiada bahan tambahan tiruan, dan resipi tradisional Timur Tengah untuk pasangan suami isteri yang dipercayai lebih 5,000 rumah tangga Malaysia.",
+    "Apa yang membezakan Madu Subur: sepuluh ramuan bernama, asas sarang madu tulen, tiada bahan tambahan tiruan, dan resipi rahsia Timur Tengah yang dibina atas piawaian dikaji dengan teliti, untuk pasangan suami isteri yang dipercayai lebih 5,000 rumah tangga Malaysia.",
   primaryKeyword: "kenapa pilih madu subur",
   keywords: [
     "kenapa pilih madu subur",
@@ -94,7 +94,7 @@ export const page: Article = {
   faqs: [
     {
       q: "Apa yang membezakan Madu Subur daripada jenama madu lain di Malaysia?",
-      a: "Subur menyatakan kesemua sepuluh ramuan pada label, menggunakan sarang madu tulen dan bukan sirap terproses, tiada warna atau perisa tiruan, dan dibina atas resipi tradisional Timur Tengah dan bukan formula yang tidak didedahkan.",
+      a: "Subur menyatakan kesemua sepuluh ramuan pada label, menggunakan sarang madu tulen dan bukan sirap terproses, tiada warna atau perisa tiruan, dan dibina atas resipi rahsia Timur Tengah dengan piawaian dikaji dengan teliti, dan bukan formula yang tidak didedahkan.",
     },
     {
       q: "Adakah Madu Subur benar-benar semula jadi dan vegan?",
