@@ -12,6 +12,7 @@ export const article: Article = {
   updated: "2026-07-23",
   readingMinutes: 7,
   icon: "/icons/ingrediant_08.webp",
+  figureAlt: "زوجان ماليزيان بالزي التقليدي يحملان معًا برطمان عسل سُوبور.",
   category: "دليل الشراء",
   blocks: [
     {

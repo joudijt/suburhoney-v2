@@ -18,6 +18,7 @@ export const article: Article = {
   updated: "2026-07-23",
   readingMinutes: 7,
   icon: "/icons/ingrediant_03.webp",
+  figureAlt: "A jar of Subur Honey surrounded by pieces of raw honeycomb.",
   category: "Buying guide",
   blocks: [
     {

@@ -1,26 +1,32 @@
 ---
 /**
- * Lead image for the standalone pages, sitting between the page header and the
- * first content block. Renders nothing unless the page has both a figure
- * registered for its slug and translated alt text, so blog articles - which
- * share this Article type but have no lead image - are unaffected.
+ * Lead image for the standalone pages and for blog articles, sitting between the
+ * header and the first content block. Renders nothing unless it has both a
+ * figure and translated alt text, so anything without a lead image is
+ * unaffected.
+ *
+ * Pages pass `slug` and are looked up in PAGE_FIGURES. Blog articles pass an
+ * already-resolved `figure` instead, because their slugs are localized and the
+ * lookup has to go through the article's canonical English slug first - see
+ * config/articleFigures.ts.
  *
  * Optionally carries the page's answer passage inside the frame instead of
  * leaving it in its own box below. The text stays real HTML, never baked into
  * the image: it is the passage answer engines are most likely to quote, so it
  * has to remain crawlable and selectable.
  */
-import { PAGE_FIGURES } from "../../config/pageFigures";
+import { PAGE_FIGURES, type PageFigure } from "../../config/pageFigures";
 
 interface Props {
-  slug: string;
+  slug?: string;
+  figure?: PageFigure;
   alt?: string;
   question?: string;
   answer?: string;
 }
 
-const { slug, alt, question, answer } = Astro.props;
-const figure = PAGE_FIGURES[slug];
+const { slug, figure: figureProp, alt, question, answer } = Astro.props;
+const figure = figureProp ?? (slug ? PAGE_FIGURES[slug] : undefined);
 const hasOverlay = Boolean(question && answer);
 ---
 

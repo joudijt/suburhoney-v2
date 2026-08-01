@@ -60,6 +60,14 @@ const TARGETS = [
   { src: "images/page-benefits.png", width: 1536, quality: 78 },
   { src: "images/page-retail.png", width: 1536, quality: 82 },
   { src: "images/page-why-us.png", width: 1536, quality: 82 },
+
+  // Lead images above the blog article body, same max-w-3xl reading column and
+  // therefore the same 1536 cap. article-couples is a supplied photograph of
+  // people (its source is only 1254 wide, and sources are never upscaled); the
+  // other two are still-lifes from make-page-figures.mjs.
+  { src: "images/article-couples.png", width: 1536, quality: 78 },
+  { src: "images/article-black-seed.png", width: 1536, quality: 82 },
+  { src: "images/article-pure-honey.png", width: 1536, quality: 82 },
 ];
 
 // Ingredient icons: 80px in the hero (md:h-20), ~51px in the honeycomb, and

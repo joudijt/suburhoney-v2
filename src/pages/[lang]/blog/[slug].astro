@@ -3,8 +3,10 @@ import Layout from "../../../layouts/Layout.astro";
 import Header from "../../../components/Header.astro";
 import Footer from "../../../components/Footer.astro";
 import Blocks from "../../../components/article/Blocks.astro";
+import PageFigure from "../../../components/article/PageFigure.astro";
 import { LOCALES, SITE_URL, SITE_NAME, BRAND_SELLER_URL, localeUrl, type Locale } from "../../../config/site";
-import { getArticles, getArticle, getTranslations } from "../../../content/articles";
+import { ARTICLE_FIGURES } from "../../../config/articleFigures";
+import { getArticles, getArticle, getTranslations, getCanonicalSlug } from "../../../content/articles";
 
 import en from "../../../i18n/locales/en/common.json";
 import ar from "../../../i18n/locales/ar/common.json";
@@ -40,6 +42,11 @@ const related = article.related
 const headings = article.blocks.filter((block) => block.type === "heading");
 const answer = article.blocks.find((block) => block.type === "answer");
 
+/* The same file serves all three locales, so it is keyed by the article's
+   canonical English slug rather than the localized one it is reached by. */
+const canonicalSlug = getCanonicalSlug(lang, slug);
+const figure = canonicalSlug ? ARTICLE_FIGURES[canonicalSlug] : undefined;
+
 /* Built from the same objects the page renders, so the markup and the structured
    data cannot drift apart. */
 const schemaGraph = [
@@ -64,7 +71,9 @@ const schemaGraph = [
       .reduce((a, c) => a + c, 0),
     articleSection: article.category,
     keywords: article.keywords.join(", "),
-    image: [`${SITE_URL}${article.icon}`],
+    /* Lead image first when the article has one - it is the real article image
+       a crawler or an AI answer should show, not the category icon. */
+    image: [...(figure ? [`${SITE_URL}${figure.src}`] : []), `${SITE_URL}${article.icon}`],
     author: { "@id": `${SITE_URL}/#organization` },
     publisher: { "@id": `${SITE_URL}/#organization` },
     isPartOf: { "@id": `${blogUrl}#blog` },
@@ -169,6 +178,16 @@ const dateFormat = new Intl.DateTimeFormat(lang === "ms" ? "ms-MY" : lang === "a
           </div>
         </div>
       </header>
+
+      <!-- lead image, directly under the title. Same frame + reading column as
+           the body below it, so it lines up with the prose at every width. -->
+      {figure && article.figureAlt && (
+        <div class="mx-auto max-w-7xl px-6 md:px-10">
+          <div class="mx-auto max-w-3xl">
+            <PageFigure figure={figure} alt={article.figureAlt} />
+          </div>
+        </div>
+      )}
 
       <!-- contents: a plain jump list, cheap and useful on a phone -->
       {headings.length > 2 && (

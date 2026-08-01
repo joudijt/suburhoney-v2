@@ -18,6 +18,7 @@ export const article: Article = {
   updated: "2026-07-23",
   readingMinutes: 7,
   icon: "/icons/ingrediant_03.webp",
+  figureAlt: "Sebalang Subur Honey dikelilingi kepingan sarang madu mentah.",
   category: "Panduan pembeli",
   blocks: [
     {

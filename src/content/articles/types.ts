@@ -116,10 +116,12 @@ export interface Article {
   /** Icon from /icons used as the card and hero motif. */
   icon: string;
   /**
-   * Translated alt text for the lead image shown above the content blocks on the
-   * standalone pages. The image itself is locale-independent, so only the alt
-   * text lives here - the file and its dimensions are in config/pageFigures.ts,
-   * keyed by slug. Blog articles leave this unset and render no lead image.
+   * Translated alt text for the lead image. The image itself is
+   * locale-independent, so only the alt text lives here - the file and its
+   * dimensions are in config/pageFigures.ts for the standalone pages (keyed by
+   * slug) and config/articleFigures.ts for blog articles (keyed by the
+   * canonical English slug, since blog slugs are localized). Left unset means
+   * no lead image renders.
    */
   figureAlt?: string;
   category: string;

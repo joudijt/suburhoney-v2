@@ -3,6 +3,9 @@
  * from the real brand assets - jarncap plus the ten ingredient icons - so no
  * scene is fabricated as a photograph that was never taken.
  *
+ * The three blog article figures are all supplied photographs and are not built
+ * here; they live in assets-src/images/article-*.png, cropped to a shared 4:3.
+ *
  * Output lands in assets-src/, which `npm run optimize:images` then turns into
  * the public/*.webp the pages actually load. Run this only when the jar asset,
  * the icon set, or the brand palette changes; the PNGs are committed, so a
@@ -15,13 +18,19 @@ import sharp from 'sharp';
 const W = 1536;
 const H = 864;
 
+/* Article figures are 4:3, not the pages' 16:9. The couple photograph carries the
+   ratio: its subjects need 910px of a 1254px-wide frame, which 16:9 and 3:2 both
+   crop into, and every article figure has to render at one shared size. */
+const ARTICLE_W = 1536;
+const ARTICLE_H = 1152;
+
 const CREAM = '#F8F4EC';
 const CREAM_SOFT = '#FFFDF8';
 const GOLD = '#E6A826';
 
 /** Cream backdrop, gold bloom, and a contact shadow sitting at the jar's base. */
-const backdrop = ({ shadowCy, shadowRx }) => `
-<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}">
+const backdrop = ({ shadowCy, shadowRx, w = W, h = H }) => `
+<svg xmlns="http://www.w3.org/2000/svg" width="${w}" height="${h}">
   <defs>
     <linearGradient id="base" x1="0" y1="0" x2="0.35" y2="1">
       <stop offset="0%" stop-color="${CREAM_SOFT}"/>
@@ -36,9 +45,9 @@ const backdrop = ({ shadowCy, shadowRx }) => `
       <feGaussianBlur stdDeviation="18"/>
     </filter>
   </defs>
-  <rect width="${W}" height="${H}" fill="url(#base)"/>
-  <rect width="${W}" height="${H}" fill="url(#bloom)"/>
-  <ellipse cx="${W / 2}" cy="${shadowCy}" rx="${shadowRx}" ry="22"
+  <rect width="${w}" height="${h}" fill="url(#base)"/>
+  <rect width="${w}" height="${h}" fill="url(#bloom)"/>
+  <ellipse cx="${w / 2}" cy="${shadowCy}" rx="${shadowRx}" ry="22"
            fill="#7A4E0E" opacity="0.28" filter="url(#soft)"/>
 </svg>`;
 
@@ -101,3 +110,6 @@ const jarAt = async (h) => {
     .toFile('assets-src/images/page-why-us.png');
   console.log('page-why-us.png  jar', `${jar.width}x${jar.height}`, `x-range ${jarLeft}-${jarLeft + jar.width}`, `+ ${icons.length} icons`);
 }
+
+/* All three blog article figures are supplied photographs, cropped to a shared
+   4:3 in assets-src - nothing is composed for them here. */

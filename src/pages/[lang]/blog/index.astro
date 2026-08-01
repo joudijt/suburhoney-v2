@@ -3,7 +3,8 @@ import Layout from "../../../layouts/Layout.astro";
 import Header from "../../../components/Header.astro";
 import Footer from "../../../components/Footer.astro";
 import { LOCALES, SITE_URL, SITE_NAME, localeUrl, type Locale } from "../../../config/site";
-import { getArticles } from "../../../content/articles";
+import { ARTICLE_FIGURES } from "../../../config/articleFigures";
+import { getArticles, getCanonicalSlug } from "../../../content/articles";
 
 import en from "../../../i18n/locales/en/common.json";
 import ar from "../../../i18n/locales/ar/common.json";
@@ -18,7 +19,13 @@ export function getStaticPaths() {
 const { lang } = Astro.params as { lang: Locale };
 const t = content[lang];
 const b = t.blog;
-const articles = getArticles(lang);
+/* Each card shows its article's own lead image. Resolved through the canonical
+   English slug because blog slugs are localized - same lookup the article page
+   does. An article with no figure keeps the centred category icon. */
+const articles = getArticles(lang).map((article) => {
+  const canonical = getCanonicalSlug(lang, article.slug);
+  return { article, figure: canonical ? ARTICLE_FIGURES[canonical] : undefined };
+});
 const blogUrl = localeUrl(lang, "/blog/");
 
 const schemaGraph = [
@@ -30,7 +37,7 @@ const schemaGraph = [
     url: blogUrl,
     inLanguage: lang,
     publisher: { "@id": `${SITE_URL}/#organization` },
-    blogPost: articles.map((a) => ({
+    blogPost: articles.map(({ article: a, figure }) => ({
       "@type": "BlogPosting",
       "@id": `${localeUrl(lang, `/blog/${a.slug}/`)}#article`,
       headline: a.title,
@@ -38,6 +45,7 @@ const schemaGraph = [
       datePublished: a.published,
       dateModified: a.updated,
       url: localeUrl(lang, `/blog/${a.slug}/`),
+      ...(figure ? { image: [`${SITE_URL}${figure.src}`] } : {}),
     })),
   },
   {
@@ -68,22 +76,38 @@ const schemaGraph = [
       </div>
 
       <div class="mx-auto mt-16 grid max-w-6xl grid-cols-1 gap-8 md:grid-cols-3">
-        {articles.map((article) => (
+        {articles.map(({ article, figure }) => (
           <a
             data-reveal
             href={`/${lang}/blog/${article.slug}/`}
             class="group relative flex flex-col overflow-hidden rounded-3xl border border-brown/10 bg-cream-soft shadow-softer transition-all duration-500 hover:-translate-y-1.5 hover:border-gold/40 hover:shadow-soft"
           >
             <div class="relative flex h-44 items-center justify-center overflow-hidden bg-[linear-gradient(160deg,var(--color-sand),var(--color-cream-soft))] md:h-52">
-              <img
-                data-src={article.icon}
-                alt=""
-                aria-hidden="true"
-                width="224"
-                height="224"
-                decoding="async"
-                class="h-16 w-16 object-contain opacity-80 transition-transform duration-500 group-hover:scale-110 md:h-20 md:w-20"
-              />
+              {figure ? (
+                /* object-cover, not contain: the card band is a fixed height and
+                   the figures are 4:3, so contain would letterbox every card.
+                   Decorative here - the heading right below carries the same
+                   meaning, so alt stays empty rather than repeating it. */
+                <img
+                  data-src={figure.src}
+                  alt=""
+                  aria-hidden="true"
+                  width={figure.width}
+                  height={figure.height}
+                  decoding="async"
+                  class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                />
+              ) : (
+                <img
+                  data-src={article.icon}
+                  alt=""
+                  aria-hidden="true"
+                  width="224"
+                  height="224"
+                  decoding="async"
+                  class="h-16 w-16 object-contain opacity-80 transition-transform duration-500 group-hover:scale-110 md:h-20 md:w-20"
+                />
+              )}
               <span class="absolute end-4 top-4 rounded-full bg-cream/85 px-3 py-1 text-[10px] font-bold uppercase tracking-[0.15em] text-brown/60 backdrop-blur-sm">
                 {article.category}
               </span>

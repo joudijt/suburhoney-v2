@@ -18,6 +18,7 @@ export const article: Article = {
   updated: "2026-07-23",
   readingMinutes: 7,
   icon: "/icons/ingrediant_08.webp",
+  figureAlt: "A Malaysian couple in traditional dress holding a jar of Subur Honey together.",
   category: "Buying guide",
   blocks: [
     {

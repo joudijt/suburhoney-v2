@@ -12,6 +12,7 @@ export const article: Article = {
   updated: "2026-07-23",
   readingMinutes: 6,
   icon: "/icons/ingrediant_07.webp",
+  figureAlt: "برطمان عسل سُوبور بين حبة البركة وقطع من قرص العسل الخام.",
   category: "المكونات",
   blocks: [
     {

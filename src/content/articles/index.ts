@@ -51,3 +51,14 @@ export function getArticle(lang: Locale, slug: string): Article | undefined {
 export function getTranslations(lang: Locale, slug: string): Partial<Record<Locale, string>> {
   return ARTICLE_GROUPS.find((g) => g[lang] === slug) ?? {};
 }
+
+/**
+ * The English slug of whichever group this article belongs to - the one stable
+ * id an article has across locales, since the slugs themselves are localized.
+ * Used to look a shared, language-independent asset up once instead of
+ * repeating it in all three content files. Returns undefined for an article
+ * that is in no group, which is legitimate for single-language content.
+ */
+export function getCanonicalSlug(lang: Locale, slug: string): string | undefined {
+  return ARTICLE_GROUPS.find((g) => g[lang] === slug)?.en;
+}
