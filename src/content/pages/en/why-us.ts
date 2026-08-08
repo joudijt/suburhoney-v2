@@ -3,16 +3,16 @@ import { BRAND_SELLER_URL } from "../../../config/site";
 
 export const page: Article = {
   slug: "why-us",
-  title: "Why Choose Subur Honey | Secret Recipe, Studied Standards, Transparent Ingredients",
+  title: "Why Choose Subur Honey | Ten Named Ingredients, Raw Honeycomb, Nothing Hidden",
   heading: "Why Choose Subur Honey",
   description:
-    "What sets Subur Honey apart: ten named ingredients, raw honeycomb base, no artificial additives, and a traditional Middle Eastern recipe made for married couples and trusted by thousands of Malaysian households.",
+    "What sets Subur Honey apart: ten named ingredients, a raw honeycomb base, no artificial additives, and a blend made for married couples and trusted by thousands of Malaysian households.",
   primaryKeyword: "kenapa pilih madu subur",
   keywords: [
     "why choose subur honey",
     "subur honey vs regular honey",
     "authentic honey blend Malaysia",
-    "traditional honey brand Malaysia",
+    "honest honey brand Malaysia",
     "madu asli vs madu tulen",
     "honey for married couples Malaysia",
   ],
@@ -28,7 +28,7 @@ export const page: Article = {
       type: "answer",
       question: "Why choose Subur Honey over another jar on the shelf?",
       answer:
-        "Subur Honey names all ten of its ingredients on the label, uses raw honeycomb rather than a processed syrup, contains no artificial colours or flavours, and follows a Middle Eastern recipe made for married couples and built on generations of traditional use rather than a marketing trend. It is trusted by more than 5,000 customers across Malaysia.",
+        "Subur Honey names all ten of its ingredients on the label, uses raw honeycomb rather than a processed syrup, contains no artificial colours or flavours, and is made for married couples taking it daily. It is trusted by more than 5,000 customers across Malaysia.",
     },
     {
       type: "paragraph",
@@ -45,9 +45,8 @@ export const page: Article = {
       columns: ["", "Subur Honey", "Typical processed blend"],
       rows: [
         ["Base", "Raw honeycomb", "Filtered, heat-treated syrup"],
-        ["Ingredients", "10, all named on the label", "Often an unlisted \"proprietary blend\""],
+        ["Ingredient list", "All ten named on the label", "Usually an undisclosed blend"],
         ["Additives", "None artificial", "Frequently includes artificial flavour or colour"],
-        ["Recipe origin", "Traditional Middle Eastern", "Usually undisclosed"],
         ["Crystallisation", "Expected - a sign of raw honey", "Often prevented by processing"],
       ],
     },
@@ -82,7 +81,7 @@ export const page: Article = {
       type: "callout",
       tone: "warning",
       title: "What we do not claim",
-      text: "Subur Honey is a traditional daily food, not a medicine. Malaysian food law prohibits any food from being advertised as preventing, treating or curing a condition, and we hold to that on every page of this site - not only where the law requires it.",
+      text: "Subur Honey is an everyday food, not a medicine. Malaysian food law prohibits any food from being advertised as preventing, treating or curing a condition, and we hold to that on every page of this site - not only where the law requires it.",
     },
     {
       type: "cta",
@@ -94,7 +93,7 @@ export const page: Article = {
   faqs: [
     {
       q: "What makes Subur Honey different from other honey brands in Malaysia?",
-      a: "Subur names all ten ingredients on the label, uses raw honeycomb instead of processed syrup, adds no artificial colours or flavours, and is built on a traditional Middle Eastern recipe rather than an undisclosed formula.",
+      a: "Subur names all ten ingredients on the label, uses raw honeycomb instead of processed syrup, adds no artificial colours or flavours, and tells you the whole blend rather than hiding it behind an undisclosed formula.",
     },
     {
       q: "Is Subur Honey genuinely natural and vegan?",
@@ -110,7 +109,7 @@ export const page: Article = {
     },
     {
       q: "Does Subur Honey treat or cure any medical condition?",
-      a: "No. Subur Honey is a traditional daily food, not a medicine, and Malaysian food law prohibits marketing any food as a cure or treatment. For medical concerns, see a doctor.",
+      a: "No. Subur Honey is an everyday food, not a medicine, and Malaysian food law prohibits marketing any food as a cure or treatment. For medical concerns, see a doctor.",
     },
   ],
   related: [],

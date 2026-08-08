@@ -6,7 +6,7 @@ export const page: Article = {
   title: "Contact Subur Honey | Malaysia's Honey for Married Couples",
   heading: "Contact Subur Honey",
   description:
-    "How to reach Subur Honey, the traditional honey blend for married couples across Malaysia: retail questions via Shopee and TikTok Shop, wholesale enquiries via our online form, and support through our official supplier Berkat Madinah Store.",
+    "How to reach Subur Honey, the honey blend for married couples across Malaysia: retail questions via Shopee and TikTok Shop, wholesale enquiries via our online form, and support through our official supplier Berkat Madinah Store.",
   primaryKeyword: "hubungi madu subur",
   keywords: [
     "contact subur honey",
@@ -25,7 +25,7 @@ export const page: Article = {
       type: "answer",
       question: "How can I contact Subur Honey?",
       answer:
-        "Subur Honey is the traditional Middle Eastern honey blend made for married couples across Malaysia. Today, the fastest ways to reach us are through our official Shopee and TikTok Shop channels for order and product questions, our online form for wholesale enquiries, and our official supplier Berkat Madinah Store. You can also message us directly on WhatsApp.",
+        "Subur Honey is the honey blend made for married couples across Malaysia. The fastest ways to reach us are our official Shopee and TikTok Shop channels for order and product questions, our online form for wholesale enquiries, and our official supplier Berkat Madinah Store. You can also message us directly on WhatsApp.",
     },
     {
       type: "heading",
