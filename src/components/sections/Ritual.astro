@@ -12,12 +12,18 @@ const { lang, heading, subheading, steps } = Astro.props;
 /* Studio photo, mirrored per locale exactly like the hero pair: the couple sits
    on the reading-start side of the frame, leaving the opposite half empty for the
    text box. So the text lands right for en/ms and left for ar - which is what
-   `lg:col-start-2` gives for free, since CSS Grid numbers columns along the
+   `xl:col-start-2` gives for free, since CSS Grid numbers columns along the
    writing direction (column 2 is the rightmost box in LTR, the leftmost in RTL).
-   No direction conditional needed on the layout, only on which photo loads. */
+   No direction conditional needed on the layout, only on which photo loads.
+
+   Two files per locale: `wide` is a 16:9 cut used by the xl+ background layer,
+   where the section box is close to that ratio; `card` is the untouched 3:2
+   original, rendered below xl as a card above the text at its own ratio. Below
+   xl the section is too tall for the photo to work as a background at all - at
+   1024 it zoomed in far enough to cut the woman's face in half. */
 const bg = lang === "ar"
-  ? { src: "/images/ritual-bg-ar.webp", position: "object-right" }
-  : { src: "/images/ritual-bg-latin.webp", position: "object-left" };
+  ? { wide: "/images/ritual-bg-ar-wide.webp", card: "/images/ritual-bg-ar.webp", position: "object-right" }
+  : { wide: "/images/ritual-bg-latin-wide.webp", card: "/images/ritual-bg-latin.webp", position: "object-left" };
 ---
 
 <section id="ritual" class="relative isolate overflow-hidden bg-cream px-6 py-28 md:py-36" data-reveal-group>
@@ -28,14 +34,14 @@ const bg = lang === "ar"
       empty half. Below lg it cannot work as a background - one column of text
       over it is unreadable - so the same file is rendered as a card above the
       text instead (further down), and this layer switches off. */}
-  <div class="absolute inset-0 -z-20 hidden lg:block" aria-hidden="true">
+  <div class="absolute inset-0 -z-20 hidden xl:block" aria-hidden="true">
     <img
-      src={bg.src}
+      src={bg.wide}
       alt=""
       aria-hidden="true"
       loading="lazy"
       width="1536"
-      height="1024"
+      height="864"
       decoding="async"
       class={`h-full w-full object-cover ${bg.position}`}
     />
@@ -44,11 +50,11 @@ const bg = lang === "ar"
     <div class="absolute left-1/2 top-1/2 h-[70vmax] w-[70vmax] -translate-x-1/2 -translate-y-1/2 rounded-full bg-[radial-gradient(circle,rgba(230,168,38,0.22),transparent_65%)]"></div>
     {/* The top wash hazes the whole section, which is fine over flat cream but
         would mute the photo - so it drops out exactly where the photo appears. */}
-    <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(255,253,248,0.6),transparent_55%)] lg:hidden"></div>
+    <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(255,253,248,0.6),transparent_55%)] xl:hidden"></div>
   </div>
   <div class="mx-auto max-w-7xl">
-    <div class="grid grid-cols-1 items-center gap-14 lg:grid-cols-2 lg:gap-24">
-      <div class="ritual-glow-border order-2 max-w-xl space-y-12 rounded-[2rem] border border-gold/50 bg-cream-soft/55 p-8 backdrop-blur-xl md:p-12 lg:order-2 lg:col-start-2" data-reveal>
+    <div class="grid grid-cols-1 items-center gap-14 xl:grid-cols-2 xl:gap-24">
+      <div class="ritual-glow-border order-2 max-w-xl space-y-12 rounded-[2rem] border border-gold/50 bg-cream-soft/55 p-8 backdrop-blur-xl md:p-12 xl:order-2 xl:col-start-2" data-reveal>
         <div class="space-y-5">
           <p class="kicker">A Simple Daily Habit</p>
           <h2 class="font-display text-4xl text-brown md:text-5xl lg:text-6xl">{heading}</h2>
@@ -70,24 +76,24 @@ const bg = lang === "ar"
       </div>
 
       {/* Mobile and tablet counterpart of the background photo above: the same
-          file, shown as a card over the text instead of behind it. Cropped and
-          anchored to the subject side, because the half the desktop text box
-          fills is empty cream in the source and reads as a blank panel once the
-          text moves below it.
+          file, shown as a card over the text instead of behind it. Rendered at
+          the source's own 3:2 ratio so nothing is cropped - the earlier square
+          box threw a third of the frame away. The subject-side object-position
+          is kept so any sub-pixel difference lands on the empty half.
           The jar animation that used to sit here is gone: it was already hidden
           from lg up, the photo shows the jar anyway, and keeping it would have
           meant lazy-loading 12 images nobody sees. ritual-jar-motion.ts is left
           on disk unused if it is ever wanted back. */}
-      <div class="order-1 lg:hidden" data-reveal>
+      <div class="order-1 xl:hidden" data-reveal>
         <img
-          src={bg.src}
+          src={bg.card}
           alt=""
           aria-hidden="true"
           loading="lazy"
           width="1536"
           height="1024"
           decoding="async"
-          class={`aspect-square w-full rounded-[2rem] border border-gold/30 object-cover shadow-soft sm:aspect-[4/3] ${bg.position}`}
+          class={`aspect-[3/2] w-full rounded-[2rem] border border-gold/30 object-cover shadow-soft ${bg.position}`}
         />
       </div>
     </div>

@@ -62,8 +62,13 @@ const TARGETS = [
   // Ritual background: full-bleed, object-cover, lazy. Per-locale photo, same
   // mirrored-pair convention as the hero above - the couple always sits on the
   // reading-start side so the text box can take the empty half opposite them.
+  // The -wide cuts are the xl+ background layer; the uncropped originals are
+  // the card shown below xl, where they render at their own 3:2 and crop
+  // nothing. See scripts/make-crops.mjs.
   { src: "images/ritual-bg-ar.png", width: 1536, quality: 78 },
   { src: "images/ritual-bg-latin.png", width: 1536, quality: 78 },
+  { src: "images/ritual-bg-ar-wide.png", width: 1536, quality: 78 },
+  { src: "images/ritual-bg-latin-wide.png", width: 1536, quality: 78 },
 
   // Lead images above the content blocks on benefits / retail / why-us. Shown
   // at most 768px wide (the max-w-3xl reading column), so 1536 is the 2x cap.

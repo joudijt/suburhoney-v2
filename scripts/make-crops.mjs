@@ -33,6 +33,14 @@ const CROPS = [
   { src: "hero-bg-ar.png", suffix: "wide", ratio: 16 / 9, anchor: 0.38 },
   { src: "hero-bg-ar.png", suffix: "tall", ratio: 4 / 5, anchor: 0.34 },
   { src: "hero-bg-ar.png", suffix: "portrait", ratio: 1 / 2, anchor: 0.27 },
+
+  // Ritual background, shown only from xl up (below that the same photo is a
+  // card above the text, at its own 3:2). A 16:9 cut of a 3:2 source keeps the
+  // full width - it only trims 80px off the top and bottom - so the couple, the
+  // jar and the empty half the text box sits on all survive, and the residual
+  // object-cover crop at 1440 drops from 17% to about 6%.
+  { src: "ritual-bg-latin.png", suffix: "wide", ratio: 16 / 9, anchor: 0.5 },
+  { src: "ritual-bg-ar.png", suffix: "wide", ratio: 16 / 9, anchor: 0.5 },
 ];
 
 for (const crop of CROPS) {
