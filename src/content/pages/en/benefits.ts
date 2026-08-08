@@ -28,7 +28,7 @@ export const page: Article = {
       type: "answer",
       question: "What are the benefits of Subur Honey?",
       answer:
-        "Subur Honey blends raw honeycomb with nine other ingredients - black seed, saffron, ginseng, ginger, cinnamon, star anise, nutmeg, walnuts and almonds - each long valued for fertility support, daily vitality and stamina. It is taken as a simple daily habit, one teaspoon on an empty stomach, rather than as a medicine.",
+        "Subur Honey blends raw honeycomb with nine other ingredients - black seed, saffron, ginseng, ginger, cinnamon, star anise, nutmeg, walnuts and almonds - each valued for fertility support, daily vitality and stamina. It is taken as a simple daily habit, one teaspoon on an empty stomach, rather than as a medicine.",
     },
     {
       type: "paragraph",
@@ -52,7 +52,7 @@ export const page: Article = {
         },
         {
           term: "Male vitality",
-          text: "Ginseng root has centuries of use for male strength and vitality, paired here with warming spices like ginger and nutmeg.",
+          text: "Ginseng root is used for male strength and vitality, paired here with warming spices like ginger and nutmeg.",
         },
         {
           term: "A shared daily ritual for couples",
@@ -98,7 +98,7 @@ export const page: Article = {
   faqs: [
     {
       q: "What are the main benefits of Subur Honey?",
-      a: "Subur Honey combines raw honeycomb with nine other ingredients - including black seed, saffron and ginseng - long valued for fertility support, daily vitality, stamina and male wellness. It is taken as a daily food, not a medicine.",
+      a: "Subur Honey combines raw honeycomb with nine other ingredients - including black seed, saffron and ginseng - valued for fertility support, daily vitality, stamina and male wellness. It is taken as a daily food, not a medicine.",
     },
     {
       q: "Is Subur Honey good for couples?",
