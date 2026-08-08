@@ -13,16 +13,27 @@ interface Props {
 
 const { lang, heading, headingAccent, description, badges, ctaPrimary, ctaSecondary } = Astro.props;
 
-/* Studio photo, mirrored per locale: hero-bg-latin.webp has the jar on the
-   right with calm empty space on the left (text sits there for en/ms);
-   hero-bg-ar.webp has the jar on the left with calm space on the right
-   (text sits there for ar, aligned with the language switcher). */
-const bg = lang === "ar"
-  ? { src: "/images/hero-bg-ar.webp", position: "object-left" }
-  : { src: "/images/hero-bg-latin.webp", position: "object-right" };
+/* Studio photo, mirrored per locale: the latin file has the jar on the right
+   with calm empty space on the left (text sits there for en/ms); the ar file
+   has the jar on the left with calm space on the right (text sits there for
+   ar, aligned with the language switcher).
+   Three cuts each, one per breakpoint band - see scripts/make-crops.mjs. A
+   single 3:2 file cropped 66% of the frame on a phone and cut the jar apart. */
+const base = lang === "ar" ? "hero-bg-ar" : "hero-bg-latin";
+const bg = {
+  portrait: `/images/${base}-portrait.webp`,
+  tall: `/images/${base}-tall.webp`,
+  mid: `/images/${base}-mid.webp`,
+  wide: `/images/${base}-wide.webp`,
+  position: lang === "ar" ? "object-left" : "object-right",
+};
 ---
 
-<section id="hero" class="relative isolate flex min-h-[100svh] w-full items-center overflow-hidden bg-cream pt-20">
+<!-- items-start below lg: on a phone the photo is a portrait cut with the jar
+     filling the lower two-thirds, so the text sits in the calm band above it
+     instead of on the label. From lg the photo is a wide cut with the jar to
+     one side and the text returns to the vertical centre beside it. -->
+<section id="hero" class="relative isolate flex min-h-[100svh] w-full items-start overflow-hidden bg-cream pt-28 lg:items-center lg:pt-20">
   <!-- `isolate` is load-bearing: without its own stacking context, this
        section's -z children escape to the document root and paint BEHIND
        the section's own bg-cream instead of behind its content, hiding them
@@ -36,13 +47,22 @@ const bg = lang === "ar"
        header's bottom edge keeps the whole composition visible. The section
        keeps its own pt-20 so the text stays clear of the bar too. -->
   <div class="absolute inset-x-0 bottom-0 top-20 -z-20" aria-hidden="true">
-    <img
-      src={bg.src}
-      alt=""
-      aria-hidden="true"
-      loading="lazy"
-      class={`h-full w-full object-cover ${bg.position}`}
-    />
+    <!-- object-left/object-right stay physical, not start/end: these are two
+         mirrored photographs, so the anchor follows the picture, not the
+         reading direction. -->
+    <picture>
+      <source media="(min-width: 1280px)" srcset={bg.wide} />
+      <source media="(min-width: 1024px)" srcset={bg.mid} />
+      <source media="(min-width: 640px)" srcset={bg.tall} />
+      <img
+        src={bg.portrait}
+        alt=""
+        aria-hidden="true"
+        loading="lazy"
+        decoding="async"
+        class={`h-full w-full object-cover ${bg.position}`}
+      />
+    </picture>
   </div>
   <!-- ambient glow only - no full-section wash, so the photo stays clear -->
   <div class="pointer-events-none absolute inset-0 -z-10" aria-hidden="true">
@@ -52,7 +72,7 @@ const bg = lang === "ar"
        start-0 (direction-aware) at lg - left for en/ms, right for ar,
        following the text instead of hazing the whole photo. -->
   <div class="pointer-events-none absolute inset-0 -z-10" aria-hidden="true">
-    <div class="absolute left-1/2 top-1/2 h-[68%] w-[96%] -translate-x-1/2 -translate-y-1/2 rounded-[3rem] bg-cream-soft/80 blur-3xl lg:start-0 lg:left-auto lg:h-[75%] lg:w-[38%] lg:translate-x-0"></div>
+    <div class="absolute left-1/2 top-[34%] h-[46%] w-[96%] -translate-x-1/2 -translate-y-1/2 rounded-[3rem] bg-cream-soft/75 blur-3xl lg:start-0 lg:left-auto lg:top-1/2 lg:h-[75%] lg:w-[38%] lg:translate-x-0"></div>
   </div>
 
   <!-- No jar illustration - it was removed so the text fills the section

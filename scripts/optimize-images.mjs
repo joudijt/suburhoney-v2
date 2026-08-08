@@ -44,8 +44,20 @@ const TARGETS = [
 
   // Hero background: full-bleed, object-cover, lazy. Per-locale photo -
   // mirrored compositions, jar on opposite sides to sit clear of the text.
+  // Three cuts per locale because the box ratio swings from 0.51 on a phone to
+  // 1.76 on a desktop; one 3:2 file cut the jar in half at both ends. Windows
+  // are defined in scripts/make-crops.mjs. The uncropped originals stay
+  // registered - they are the sources the crops are cut from.
   { src: "images/hero-bg-ar.png", width: 1536, quality: 78 },
   { src: "images/hero-bg-latin.png", width: 1536, quality: 78 },
+  { src: "images/hero-bg-ar-mid.png", width: 1536, quality: 78 },
+  { src: "images/hero-bg-latin-mid.png", width: 1536, quality: 78 },
+  { src: "images/hero-bg-ar-wide.png", width: 1536, quality: 78 },
+  { src: "images/hero-bg-latin-wide.png", width: 1536, quality: 78 },
+  { src: "images/hero-bg-ar-tall.png", width: 1024, quality: 78 },
+  { src: "images/hero-bg-latin-tall.png", width: 1024, quality: 78 },
+  { src: "images/hero-bg-ar-portrait.png", width: 900, quality: 78 },
+  { src: "images/hero-bg-latin-portrait.png", width: 900, quality: 78 },
 
   // Ritual background: full-bleed, object-cover, lazy. Per-locale photo, same
   // mirrored-pair convention as the hero above - the couple always sits on the
