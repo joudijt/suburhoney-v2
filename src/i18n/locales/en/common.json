@@ -1,7 +1,7 @@
 {
   "seo": {
-    "title": "SUBUR Honey | Traditional Honey for Married Couples in Malaysia",
-    "description": "Shop SUBUR Honey, a traditional Middle Eastern honey blend made for married couples across Malaysia, with saffron, ginseng, black seed and honeycomb for fertility, vitality and strength. All natural, vegan. Retail and wholesale across Malaysia."
+    "title": "SUBUR Honey | Honey Blend for Married Couples in Malaysia",
+    "description": "Shop SUBUR Honey, a honey blend made for married couples across Malaysia. Raw honeycomb with saffron, ginseng, black seed, walnuts and more - all ten ingredients named on the label. All natural, vegan. Retail and wholesale across Malaysia."
   },
   "nav": {
     "home": "Home",
@@ -29,13 +29,13 @@
     "madinah": "Berkat Madinah Store"
   },
   "hero": {
-    "heading": "Nature's secret recipe, precisely studied standards,",
-    "headingAccent": "Perfected through generations.",
-    "description": "A traditional Middle Eastern honey blend made for married couples across Malaysia, built on generations of knowledge for fertility, vitality, and strength.",
+    "heading": "Real honey. Ten real ingredients.",
+    "headingAccent": "Made for married couples.",
+    "description": "A honey blend made for married couples in Malaysia. Raw honeycomb, nuts, spices and roots - all ten named on the label.",
     "badges": [
       "ALL NATURAL",
-      "SECRET RECIPE, STUDIED STANDARDS",
-      "REAL HONEY",
+      "10 NAMED INGREDIENTS",
+      "RAW HONEYCOMB",
       "FOR MARRIED COUPLES",
       "VEGAN"
     ],
@@ -44,28 +44,28 @@
   },
   "benefits": {
     "heading": "Why Subur Honey is for you",
-    "subheading": "A secret recipe built on precisely studied standards, made from ingredients trusted by Middle Eastern families for generations.",
+    "subheading": "Ten ingredients, all named on the label: raw honeycomb, nuts, spices and roots.",
     "cards": [
       {
         "label": "For Him & Her",
         "title": "Fertility Support",
-        "description": "Made with traditional herbs and natural ingredients that have long been used to support fertility and reproductive health in both men and women."
+        "description": "Made with herbs and natural ingredients long used to support fertility and reproductive health in both men and women."
       },
       {
         "label": "Daily Performance",
         "title": "Stamina & Energy",
-        "description": "A blend of nutrient-rich ingredients traditionally used to support energy, stamina, and daily wellbeing."
+        "description": "A blend of nutrient-rich ingredients used to support energy, stamina, and daily wellbeing."
       },
       {
         "label": "Men's Wellness",
         "title": "Male Vitality",
-        "description": "Contains traditional ingredients valued for generations for supporting male vitality, strength, and overall wellness."
+        "description": "Contains ingredients long valued for supporting male vitality, strength, and overall wellness."
       }
     ]
   },
   "ritual": {
     "heading": "The Morning Ritual",
-    "subheading": "For generations, honey blends like Subur were taken as part of a simple daily routine.",
+    "subheading": "Honey blends like Subur are taken as part of a simple daily routine - one spoon, every morning.",
     "steps": [
       "Take one teaspoon on an empty stomach.",
       "Wait 15 minutes before breakfast.",
@@ -73,49 +73,49 @@
     ]
   },
   "ingredients": {
-    "heading": "Traditional Ingredients Inside Every Jar",
-    "subheading": "Ten natural ingredients chosen for a reason passed down through generations.",
+    "heading": "Ten Ingredients Inside Every Jar",
+    "subheading": "Ten natural ingredients, each chosen for a reason and each named on the label.",
     "items": [
       {
         "name": "Star Anise",
-        "alt": "Star anise, a traditional spice used in the Subur Honey blend",
-        "description": "Traditionally used to support digestion and warmth.",
+        "alt": "Star anise, one of the ten ingredients in the Subur Honey blend",
+        "description": "Used to support digestion and warmth.",
         "icon": "/icons/ingrediant_01.webp"
       },
       {
         "name": "Saffron",
         "alt": "Saffron threads, a premium natural ingredient in Subur Honey",
-        "description": "A prized spice traditionally valued for mood and vitality support.",
+        "description": "A prized spice valued for mood and vitality support.",
         "icon": "/icons/ingrediant_02.webp"
       },
       {
         "name": "Fresh Ginger",
-        "alt": "Fresh ginger root, a traditional ingredient in Subur Honey",
-        "description": "Adds natural warmth and is traditionally used to support circulation.",
+        "alt": "Fresh ginger root, one of the ten ingredients in Subur Honey",
+        "description": "Adds natural warmth and is used to support circulation.",
         "icon": "/icons/ingrediant_03.webp"
       },
       {
         "name": "Walnuts",
         "alt": "Walnuts, a natural ingredient in the Subur Honey blend",
-        "description": "A nutrient-dense nut traditionally linked to daily energy.",
+        "description": "A nutrient-dense nut linked to daily energy.",
         "icon": "/icons/ingrediant_04.webp"
       },
       {
         "name": "Nutmeg",
-        "alt": "Nutmeg seed, a traditional spice in Subur Honey",
-        "description": "A traditional spice included for overall wellness.",
+        "alt": "Nutmeg seed, one of the ten ingredients in Subur Honey",
+        "description": "A warm spice included for overall wellness.",
         "icon": "/icons/ingrediant_05.webp"
       },
       {
         "name": "Cinnamon",
-        "alt": "Cinnamon sticks, a traditional spice in Subur Honey",
-        "description": "A warming spice traditionally used to support stamina.",
+        "alt": "Cinnamon sticks, one of the ten ingredients in Subur Honey",
+        "description": "A warming spice used to support stamina.",
         "icon": "/icons/ingrediant_06.webp"
       },
       {
         "name": "Black Seed (Habbatus Sauda)",
-        "alt": "Black seed (habbatus sauda), a traditional ingredient in Subur Honey",
-        "description": "A traditional seed long valued for immune and vitality support.",
+        "alt": "Black seed (habbatus sauda), one of the ten ingredients in Subur Honey",
+        "description": "A seed long valued for immune and vitality support.",
         "icon": "/icons/ingrediant_07.webp"
       },
       {
@@ -132,8 +132,8 @@
       },
       {
         "name": "Ginseng Root",
-        "alt": "Ginseng root, a traditional ingredient in Subur Honey",
-        "description": "A root long valued in traditional medicine for stamina and vitality.",
+        "alt": "Ginseng root, one of the ten ingredients in Subur Honey",
+        "description": "A root long valued for stamina and vitality.",
         "icon": "/icons/ingrediant_10.webp"
       }
     ],
@@ -150,7 +150,7 @@
   "wholesale": {
     "kicker": "FOR BUSINESSES",
     "heading": "Partner with Subur Honey",
-    "description": "Bring a traditional Middle Eastern honey recipe to your customers. Join our growing network of retailers, distributors, and resellers across Malaysia.",
+    "description": "Bring a honey blend your customers can read the whole label of. Join our growing network of retailers, distributors, and resellers across Malaysia.",
     "features": [
       {
         "title": "Bulk Pricing Available",
@@ -202,7 +202,7 @@
     "items": [
       {
         "q": "What makes Subur different from regular honey?",
-        "a": "Subur is more than honey. It combines honey with traditional herbs and natural ingredients inspired by generations of Middle Eastern knowledge."
+        "a": "Subur is more than honey. It is raw honeycomb blended with nine other ingredients - nuts, spices and roots - each one named on the label."
       },
       {
         "q": "How should I consume Subur?",
@@ -214,7 +214,7 @@
       },
       {
         "q": "Is Subur for men or women?",
-        "a": "Subur is made for both men and women. The secret recipe, built on precisely studied standards, includes ingredients valued for supporting overall wellbeing and fertility."
+        "a": "Subur is made for both men and women. The blend includes ingredients valued for supporting overall wellbeing and fertility."
       },
       {
         "q": "Can husband and wife take Subur together?",
@@ -236,18 +236,18 @@
   },
   "finalCta": {
     "heading": "Ready to begin?",
-    "subheading": "Discover a traditional Middle Eastern recipe made for married couples across Malaysia, built on generations of accumulated knowledge.",
+    "subheading": "A honey blend made for married couples across Malaysia, with all ten ingredients named on the label.",
     "ctaPrimary": "Buy Retail",
     "ctaSecondary": "Wholesale Inquiry",
     "ratingText": "Trusted by more than 5,000 customers"
   },
   "footer": {
     "brand": "SUBUR HONEY",
-    "description": "A traditional Middle Eastern honey blend inspired by generations of knowledge and made with carefully selected natural ingredients.",
+    "description": "A honey blend made for married couples, with raw honeycomb, nuts, spices and roots - and nothing you cannot read on the label.",
     "badges": [
       "ALL NATURAL",
-      "SECRET RECIPE, STUDIED STANDARDS",
-      "REAL HONEY",
+      "10 NAMED INGREDIENTS",
+      "RAW HONEYCOMB",
       "VEGAN"
     ],
     "exploreHeading": "EXPLORE",
@@ -259,7 +259,7 @@
     ],
     "blogKicker": "Fresh updates — check our blog!",
     "blogLink": "Blog",
-    "copyright": "Subur Honey. Secret Recipe, Studied Standards. Generational Knowledge.",
+    "copyright": "Subur Honey. Ten ingredients. All named. Nothing hidden.",
     "privacy": "Privacy Policy",
     "terms": "Terms of Service"
   },
