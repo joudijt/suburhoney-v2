@@ -100,7 +100,11 @@ for (const size of WIDTHS) {
         }
         // A background layer whose top edge is above the header's bottom edge is
         // being clipped by the bar.
-        if (BACKGROUND.test(img.src) && img.topInPage < img.headerBottom - 1) {
+        // 2px of slack: the header is h-20 (80px) and the layers below it are
+        // offset by the same 80px, but the bar also carries a 1px bottom border
+        // (and a second one on the collapsed mobile menu). One or two pixels of
+        // photo under a hairline border is not the bug this check is for.
+        if (BACKGROUND.test(img.src) && img.topInPage < img.headerBottom - 2) {
           failures.push(
             `${url} @${size.w}: ${img.src} starts at y=${Math.round(img.topInPage)}, under the ${img.headerBottom}px header`
           );
