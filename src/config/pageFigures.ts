@@ -18,15 +18,16 @@ export interface PageFigure {
   width: number;
   height: number;
   /**
-   * Classes applied below `lg` for photos whose subject sits on one side and
-   * whose other half is deliberately empty. On desktop the overlay text fills
-   * that half; below `lg` the text moves underneath, leaving the empty half
-   * looking like an unfinished image - so those widths crop it away instead.
-   * Anchored with the physical `object-left`/`object-right`, never the
-   * direction-aware `object-start`: one file serves all three locales.
+   * A real crop of the same photo, served below `lg` for photos whose subject
+   * sits on one side and whose other half is deliberately empty. On desktop the
+   * overlay text fills that half; below `lg` the text moves underneath, leaving
+   * the empty half looking like an unfinished image. Art direction belongs in
+   * the image pipeline, not in an object-position guess, so this is a genuine
+   * square cut from scripts/make-crops.mjs rather than a CSS crop of the wide
+   * file - the CSS version threw away a third of the frame.
    * Figures with a centred composition leave this unset and are never cropped.
    */
-  mobileCrop?: string;
+  mobileSrc?: string;
 }
 
 export const PAGE_FIGURES: Record<string, PageFigure> = {
@@ -34,7 +35,7 @@ export const PAGE_FIGURES: Record<string, PageFigure> = {
     src: "/images/page-benefits.webp",
     width: 1536,
     height: 1024,
-    mobileCrop: "aspect-square object-cover object-left sm:aspect-[4/3]",
+    mobileSrc: "/images/page-benefits-square.webp",
   },
   retail: { src: "/images/page-retail.webp", width: 1536, height: 864 },
   // Jar centred with ingredients spread to both edges - cropping either side

@@ -35,20 +35,21 @@ const hasOverlay = Boolean(question && answer);
     <div class="relative">
       {/* No forced aspect ratio: the photo is 3:2 and the two still-lifes are
           16:9, and cropping either to a shared box cut the subject. Intrinsic
-          width/height are still set so the reading column reserves the space. */}
-      <img
-        src={figure.src}
-        alt={alt}
-        width={figure.width}
-        height={figure.height}
-        loading="lazy"
-        decoding="async"
-        class={
-          figure.mobileCrop
-            ? `w-full ${figure.mobileCrop} lg:aspect-auto lg:h-auto lg:object-fill`
-            : "h-auto w-full"
-        }
-      />
+          width/height are still set so the reading column reserves the space.
+          Where a figure declares a mobileSrc, below lg gets a real square cut of
+          the same photo instead of a CSS crop of this one. */}
+      <picture>
+        {figure.mobileSrc && <source media="(max-width: 1023px)" srcset={figure.mobileSrc} />}
+        <img
+          src={figure.src}
+          alt={alt}
+          width={figure.width}
+          height={figure.height}
+          loading="lazy"
+          decoding="async"
+          class="h-auto w-full"
+        />
+      </picture>
 
       {hasOverlay && (
         /* `right-0`, not `end-0`. The subject sits on the physical left of this

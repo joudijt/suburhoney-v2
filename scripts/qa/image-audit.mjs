@@ -82,7 +82,13 @@ for (const size of WIDTHS) {
       });
 
       if (report.scrollX) failures.push(`${url} @${size.w}: horizontal overflow`);
-      for (const e of errors) failures.push(`${url} @${size.w}: console/network: ${e}`);
+      for (const e of errors) {
+        // Astro's own dev toolbar runs an accessibility audit in the page and
+        // logs a fetch error of its own when a navigation cuts it short. It does
+        // not exist in the build, so it is noise here rather than a site fault.
+        if (e.includes("Astro") && e.includes("audit")) continue;
+        failures.push(`${url} @${size.w}: console/network: ${e}`);
+      }
 
       for (const img of report.imgs) {
         if (IGNORE.test(img.src)) continue;

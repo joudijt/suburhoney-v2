@@ -75,6 +75,9 @@ const TARGETS = [
   // page-benefits is a photo; the other two are product still-lifes composed
   // from jarncap + the real ingredient icons - locale-independent, one each.
   { src: "images/page-benefits.png", width: 1536, quality: 78 },
+  // Square cut of the same photo for below-lg, where the wide frame's empty
+  // half reads as an unfinished image. See scripts/make-crops.mjs.
+  { src: "images/page-benefits-square.png", width: 1024, quality: 78 },
   { src: "images/page-retail.png", width: 1536, quality: 82 },
   { src: "images/page-why-us.png", width: 1536, quality: 82 },
 

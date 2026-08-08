@@ -41,6 +41,11 @@ const CROPS = [
   // object-cover crop at 1440 drops from 17% to about 6%.
   { src: "ritual-bg-latin.png", suffix: "wide", ratio: 16 / 9, anchor: 0.5 },
   { src: "ritual-bg-ar.png", suffix: "wide", ratio: 16 / 9, anchor: 0.5 },
+
+  // Benefits lead photo. The half the desktop overlay text fills is empty cream
+  // in the source, so below lg it reads as a blank panel. A real square cut
+  // framed on the man and the jar replaces the CSS crop that used to do this.
+  { src: "page-benefits.png", suffix: "square", ratio: 1, anchor: 0.34 },
 ];
 
 for (const crop of CROPS) {
