@@ -132,8 +132,14 @@ Malay: `tradisi`, `tradisional`, `Timur Tengah`, `turun-temurun`, `piawaian dika
 
 ### The rule
 
-**A fixed-ratio box gets a real asset cropped to that ratio. CSS `object-cover` may never
-crop more than about 5% of a frame.**
+**A fixed-ratio box gets a real asset cropped to that ratio.** Two classes of image, with
+different bars:
+
+- **Content images** (lead figures, blog cards): rendered ratio must equal natural ratio.
+  Zero crop.
+- **Full-bleed backgrounds** (hero, ritual): a real art-directed source per breakpoint band,
+  residual `object-cover` crop no worse than 10%, and the subject verified whole by looking
+  at a screenshot.
 
 Art direction happens in the image pipeline, not in `object-position` guesswork. This
 extends the pattern already used by `scripts/optimize-images.mjs` and
@@ -146,13 +152,14 @@ extends the pattern already used by `scripts/optimize-images.mjs` and
    top edge is the header's bottom edge (the header is `fixed` and `h-20`). Section
    `min-h-[100svh]` and the existing `pt-20` on content are unchanged.
 
-2. **Hero gets portrait crops for mobile.** New `hero-bg-latin-portrait` and
-   `hero-bg-ar-portrait` at 3:4, cropped from the existing sources so the jar and its label
-   are whole, produced by a committed script and registered in the `TARGETS` table of
-   `scripts/optimize-images.mjs`. Served with `<picture>` and
-   `media="(max-width: 1023px)"`, the wide file staying as the `<img>` fallback.
-   `hero-bg-ar`'s source is 1264x843, so its 3:4 crop is about 630px wide - adequate for a
-   390px viewport at roughly 1.6x, and recorded here rather than discovered later.
+2. **Hero gets a real cut per breakpoint band.** Once the photo layer starts below the
+   header, the box it must fill runs from 0.51 on a 390px phone to 0.81 on a tablet to 1.76
+   on a 1440px desktop - one 3:2 file cannot serve that range without cutting the jar apart
+   (66% crop at 390px). Three cuts per locale, produced by a committed crop script and
+   registered in the `TARGETS` table of `scripts/optimize-images.mjs`: `wide` 16:9 from
+   1024px up, `tall` 4:5 from 640px, `portrait` 1:2 below that, selected with `<picture>` +
+   `media`. `hero-bg-ar`'s source is only 1264x843, so its portrait cut lands near 421px
+   wide - about 1.1x on a 390px viewport, recorded here rather than discovered later.
 
 3. **Ritual mobile card renders at native ratio.** The card's `aspect-square sm:aspect-[4/3]`
    becomes `aspect-[3/2]`, matching the source photos exactly, so the 33% mobile crop goes to
