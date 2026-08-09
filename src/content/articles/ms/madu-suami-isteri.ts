@@ -65,7 +65,7 @@ export const article: Article = {
       items: [
         { icon: "/icons/ingrediant_08.webp", name: "Sarang madu mentah", text: "Asasnya. Mentah, bukan diproses haba, jadi sarang masih ada dalam balang." },
         { icon: "/icons/ingrediant_02.webp", name: "Safron", text: "Bahan paling mahal dalam mana-mana campuran mengikut berat — dan yang pertama digugurkan oleh produk murah." },
-        { icon: "/icons/ingrediant_10.webp", name: "Akar ginseng", text: "Lama digunakan untuk stamina dan tenaga harian." },
+        { icon: "/icons/ingrediant_10.webp", name: "Akar ginseng", text: "Digunakan untuk stamina dan tenaga harian." },
         { icon: "/icons/ingrediant_07.webp", name: "Habbatus sauda", text: "Bahan Sunnah yang paling dicari pembeli Malaysia mengikut nama." },
         { icon: "/icons/ingrediant_03.webp", name: "Halia segar", text: "Akar panas, biasanya diambil untuk peredaran darah." },
         { icon: "/icons/ingrediant_06.webp", name: "Kayu manis", text: "Rempah panas, dan sebab kenapa campuran yang baik berbau seperti itu apabila dibuka." },

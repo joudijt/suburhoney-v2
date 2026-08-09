@@ -65,7 +65,7 @@ export const article: Article = {
       items: [
         { icon: "/icons/ingrediant_08.webp", name: "Raw honeycomb", text: "The base. Raw rather than heat-treated, so the comb is still present in the jar." },
         { icon: "/icons/ingrediant_02.webp", name: "Saffron", text: "The most expensive ingredient in any blend by weight — and the first one cheap products drop." },
-        { icon: "/icons/ingrediant_10.webp", name: "Ginseng root", text: "Long used for stamina and daily energy." },
+        { icon: "/icons/ingrediant_10.webp", name: "Ginseng root", text: "Used for stamina and daily energy." },
         { icon: "/icons/ingrediant_07.webp", name: "Black seed", text: "Habbatus sauda. The Sunnah ingredient most Malaysian buyers look for by name." },
         { icon: "/icons/ingrediant_03.webp", name: "Fresh ginger", text: "A warming root, commonly taken for circulation." },
         { icon: "/icons/ingrediant_06.webp", name: "Cinnamon", text: "Warming spice, and the reason a good blend smells like it does when you open it." },
