@@ -113,7 +113,7 @@ export const page: Article = {
     },
     {
       q: "من يوفّر عسل سُوبور في ماليزيا؟",
-      a: `يُباع عسل سُوبور بالتجزئة عبر شبكة شركائنا بما في ذلك <a href="${BRAND_SELLER_URL}" target="_blank" rel="noopener noreferrer">Berkat Madinah Store</a>، إلى جانب متجرينا الرسميين على Shopee وTikTok Shop.`,
+      a: `يُباع عسل سُوبور بالتجزئة عبر مورّدنا الرسمي <a href="${BRAND_SELLER_URL}" target="_blank" rel="noopener noreferrer">Berkat Madinah Store</a>، إلى جانب متجرينا الرسميين على Shopee وTikTok Shop.`,
     },
   ],
   related: [],

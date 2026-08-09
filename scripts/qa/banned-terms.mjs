@@ -10,9 +10,14 @@
  *   node scripts/qa/banned-terms.mjs --dir=dist  # checks the built output
  */
 import { readdir, readFile } from "node:fs/promises";
-import { join } from "node:path";
+import { basename, join, resolve } from "node:path";
 
 const dir = process.argv.find((a) => a.startsWith("--dir="))?.split("=")[1] ?? "src";
+// Resolved so "dist", "dist/", "./dist" and an absolute path all match - a
+// literal `dir === "dist"` compare missed every prefixed/trailing-slash form
+// and silently fell back to the EXT filter, which excludes .html and made
+// `--dir=dist/` report clean without reading anything.
+const isDistMode = basename(resolve(dir)) === "dist";
 
 const BANNED = [
   /traditional/i,
@@ -47,7 +52,7 @@ async function* walk(d) {
     const p = join(d, e.name);
     if (SKIP.test(p)) continue;
     if (e.isDirectory()) yield* walk(p);
-    else if (EXT.test(e.name) || dir === "dist") yield p;
+    else if (EXT.test(e.name) || isDistMode) yield p;
   }
 }
 for await (const file of walk(dir)) {

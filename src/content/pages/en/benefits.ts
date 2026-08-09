@@ -114,7 +114,7 @@ export const page: Article = {
     },
     {
       q: "Who supplies Subur Honey in Malaysia?",
-      a: `Subur Honey is retailed through our partner network including <a href="${BRAND_SELLER_URL}" target="_blank" rel="noopener noreferrer">Berkat Madinah Store</a>, alongside our official Shopee and TikTok Shop channels.`,
+      a: `Subur Honey is retailed through our official supplier, <a href="${BRAND_SELLER_URL}" target="_blank" rel="noopener noreferrer">Berkat Madinah Store</a>, alongside our official Shopee and TikTok Shop channels.`,
     },
   ],
   related: [],

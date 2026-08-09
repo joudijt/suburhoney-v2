@@ -39,7 +39,14 @@ const hasOverlay = Boolean(question && answer);
           Where a figure declares a mobileSrc, below lg gets a real square cut of
           the same photo instead of a CSS crop of this one. */}
       <picture>
-        {figure.mobileSrc && <source media="(max-width: 1023px)" srcset={figure.mobileSrc} />}
+        {figure.mobileSrc && (
+          <source
+            media="(max-width: 1023px)"
+            srcset={figure.mobileSrc}
+            width={figure.mobileWidth}
+            height={figure.mobileHeight}
+          />
+        )}
         <img
           src={figure.src}
           alt={alt}

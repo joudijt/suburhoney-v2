@@ -49,7 +49,7 @@
       {
         "label": "For Him & Her",
         "title": "Fertility Support",
-        "description": "Made with herbs and natural ingredients long used to support fertility and reproductive health in both men and women."
+        "description": "Made with herbs and natural ingredients used to support fertility and reproductive health in both men and women."
       },
       {
         "label": "Daily Performance",
@@ -59,7 +59,7 @@
       {
         "label": "Men's Wellness",
         "title": "Male Vitality",
-        "description": "Contains ingredients long valued for supporting male vitality, strength, and overall wellness."
+        "description": "Contains ingredients valued for supporting male vitality, strength, and overall wellness."
       }
     ]
   },
@@ -115,7 +115,7 @@
       {
         "name": "Black Seed (Habbatus Sauda)",
         "alt": "Black seed (habbatus sauda), one of the ten ingredients in Subur Honey",
-        "description": "A seed long valued for immune and vitality support.",
+        "description": "A seed valued for immune and vitality support.",
         "icon": "/icons/ingrediant_07.webp"
       },
       {
@@ -133,7 +133,7 @@
       {
         "name": "Ginseng Root",
         "alt": "Ginseng root, one of the ten ingredients in Subur Honey",
-        "description": "A root long valued for stamina and vitality.",
+        "description": "A root valued for stamina and vitality.",
         "icon": "/icons/ingrediant_10.webp"
       }
     ],

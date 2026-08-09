@@ -28,6 +28,13 @@ export interface PageFigure {
    * Figures with a centred composition leave this unset and are never cropped.
    */
   mobileSrc?: string;
+  /**
+   * Intrinsic size of `mobileSrc`, so the `<source>` reserves the right box
+   * below `lg` instead of the wide image's box getting resized once the square
+   * crop loads - see the CLS note in PageFigure.astro.
+   */
+  mobileWidth?: number;
+  mobileHeight?: number;
 }
 
 export const PAGE_FIGURES: Record<string, PageFigure> = {
@@ -36,6 +43,8 @@ export const PAGE_FIGURES: Record<string, PageFigure> = {
     width: 1536,
     height: 1024,
     mobileSrc: "/images/page-benefits-square.webp",
+    mobileWidth: 1024,
+    mobileHeight: 1024,
   },
   retail: { src: "/images/page-retail.webp", width: 1536, height: 864 },
   // Jar centred with ingredients spread to both edges - cropping either side
