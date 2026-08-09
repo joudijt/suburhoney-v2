@@ -64,7 +64,7 @@ export const article: Article = {
     },
     {
       type: "callout",
-      tone: "tradition",
+      tone: "origin",
       title: "Where SUBUR sits",
       text: "SUBUR is a warm-spice honeycomb blend rather than a date-based Nusantara one, so it is built on raw honeycomb and black seed alongside saffron, ginseng, ginger, cinnamon, star anise, nutmeg, walnuts and almonds. Dates are not in it. If a date-based trio is specifically what you are after, buy a kurma blend — not a jar that merely mentions dates in its description.",
     },

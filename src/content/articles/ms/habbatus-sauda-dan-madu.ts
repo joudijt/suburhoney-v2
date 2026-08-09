@@ -64,7 +64,7 @@ export const article: Article = {
     },
     {
       type: "callout",
-      tone: "tradition",
+      tone: "origin",
       title: "Di mana SUBUR berdiri",
       text: "SUBUR ialah campuran rempah panas dan sarang madu, bukan trio berasaskan kurma, jadi ia dibina atas sarang madu mentah dan habbatus sauda bersama safron, ginseng, halia, kayu manis, bunga lawang, buah pala, walnut dan badam. Kurma tiada di dalamnya. Jika trio berasaskan kurma itu yang anda cari secara khusus, belilah campuran kurma — bukan balang yang sekadar menyebut kurma dalam penerangannya.",
     },

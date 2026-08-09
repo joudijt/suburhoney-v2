@@ -56,7 +56,7 @@ export interface TableBlock {
 
 export interface CalloutBlock {
   type: "callout";
-  tone: "note" | "warning" | "tradition";
+  tone: "note" | "warning" | "origin";
   title: string;
   /** May contain inline <strong> and <a href> - see ParagraphBlock. */
   text: string;
