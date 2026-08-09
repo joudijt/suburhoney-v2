@@ -3,18 +3,18 @@ import { BRAND_SELLER_URL } from "../../../config/site";
 
 export const page: Article = {
   slug: "why-us",
-  title: "Kenapa Pilih Madu Subur | Resipi Rahsia, Piawaian Teliti, Ramuan Telus",
+  title: "Kenapa Pilih Madu Subur | Sepuluh Ramuan Bernama, Sarang Madu Tulen, Tiada Yang Disembunyikan",
   heading: "Kenapa Pilih Madu Subur",
   description:
-    "Apa yang membezakan Madu Subur: sepuluh ramuan bernama, asas sarang madu tulen, tiada bahan tambahan tiruan, dan resipi rahsia Timur Tengah yang dibina atas piawaian dikaji dengan teliti, untuk pasangan suami isteri yang dipercayai lebih 5,000 rumah tangga Malaysia.",
+    "Apa yang membezakan Madu Subur: sepuluh ramuan bernama, asas sarang madu tulen, tiada bahan tambahan tiruan, dan campuran yang dibuat untuk pasangan suami isteri serta dipercayai oleh beribu-ribu rumah tangga Malaysia.",
   primaryKeyword: "kenapa pilih madu subur",
   keywords: [
     "kenapa pilih madu subur",
     "madu subur berbanding madu biasa",
     "jenama madu tulen Malaysia",
-    "madu tradisional dipercayai",
+    "jenama madu jujur Malaysia",
     "madu asli berbanding madu tulen",
-    "madu untuk pasangan suami isteri malaysia",
+    "madu untuk pasangan suami isteri Malaysia",
   ],
   published: "2026-07-24",
   updated: "2026-07-24",
@@ -28,7 +28,7 @@ export const page: Article = {
       type: "answer",
       question: "Kenapa pilih Madu Subur berbanding balang lain di rak?",
       answer:
-        "Madu Subur menyatakan kesemua sepuluh ramuannya pada label, menggunakan sarang madu tulen dan bukan sirap terproses, tiada warna atau perisa tiruan, dan mengikut resipi Timur Tengah untuk pasangan suami isteri yang dibina atas penggunaan tradisional turun-temurun, bukan trend pemasaran. Ia dipercayai oleh lebih 5,000 pelanggan di seluruh Malaysia.",
+        "Madu Subur menyatakan kesemua sepuluh ramuannya pada label, menggunakan sarang madu tulen dan bukan sirap terproses, tiada warna atau perisa tiruan, dan dibuat untuk pasangan suami isteri yang mengambilnya setiap hari. Ia dipercayai oleh lebih 5,000 pelanggan di seluruh Malaysia.",
     },
     {
       type: "paragraph",
@@ -45,9 +45,8 @@ export const page: Article = {
       columns: ["", "Madu Subur", "Campuran terproses biasa"],
       rows: [
         ["Asas", "Sarang madu tulen", "Sirap yang ditapis dan dirawat haba"],
-        ["Ramuan", "10, semuanya dinamakan pada label", "Selalunya \"campuran eksklusif\" tanpa senarai"],
+        ["Senarai ramuan", "Kesemua sepuluh dinamakan pada label", "Selalunya campuran yang tidak didedahkan"],
         ["Bahan tambahan", "Tiada yang tiruan", "Kerap mengandungi perisa atau warna tiruan"],
-        ["Asal resipi", "Tradisional Timur Tengah", "Selalunya tidak didedahkan"],
         ["Penghabluran", "Dijangka - tanda madu tulen", "Selalunya dielakkan melalui pemprosesan"],
       ],
     },
@@ -82,7 +81,7 @@ export const page: Article = {
       type: "callout",
       tone: "warning",
       title: "Apa yang kami tidak dakwa",
-      text: "Madu Subur adalah makanan harian tradisional, bukan ubat. Undang-undang makanan Malaysia melarang mana-mana makanan diiklankan sebagai mencegah, merawat atau menyembuhkan sesuatu keadaan, dan kami berpegang teguh pada prinsip ini di setiap halaman laman ini - bukan hanya di mana undang-undang mewajibkannya.",
+      text: "Madu Subur adalah makanan harian, bukan ubat. Undang-undang makanan Malaysia melarang mana-mana makanan diiklankan sebagai mencegah, merawat atau menyembuhkan sesuatu keadaan, dan kami berpegang teguh pada prinsip ini di setiap halaman laman ini - bukan hanya di mana undang-undang mewajibkannya.",
     },
     {
       type: "cta",
@@ -94,7 +93,7 @@ export const page: Article = {
   faqs: [
     {
       q: "Apa yang membezakan Madu Subur daripada jenama madu lain di Malaysia?",
-      a: "Subur menyatakan kesemua sepuluh ramuan pada label, menggunakan sarang madu tulen dan bukan sirap terproses, tiada warna atau perisa tiruan, dan dibina atas resipi rahsia Timur Tengah dengan piawaian dikaji dengan teliti, dan bukan formula yang tidak didedahkan.",
+      a: "Subur menyatakan kesemua sepuluh ramuan pada label, menggunakan sarang madu tulen dan bukan sirap terproses, tiada warna atau perisa tiruan, dan memberitahu anda campuran penuh dan bukan menyembunyikannya di sebalik formula yang tidak didedahkan.",
     },
     {
       q: "Adakah Madu Subur benar-benar semula jadi dan vegan?",
@@ -110,7 +109,7 @@ export const page: Article = {
     },
     {
       q: "Adakah Madu Subur merawat atau menyembuhkan sebarang keadaan perubatan?",
-      a: "Tidak. Madu Subur adalah makanan harian tradisional, bukan ubat, dan undang-undang makanan Malaysia melarang mana-mana makanan dipasarkan sebagai penawar atau rawatan. Jumpa doktor untuk sebarang masalah kesihatan.",
+      a: "Tidak. Madu Subur adalah makanan harian, bukan ubat, dan undang-undang makanan Malaysia melarang mana-mana makanan dipasarkan sebagai penawar atau rawatan. Jumpa doktor untuk sebarang masalah kesihatan.",
     },
   ],
   related: [],

@@ -1,7 +1,7 @@
 {
   "seo": {
-    "title": "Madu SUBUR | Madu Tradisional untuk Pasangan Suami Isteri di Malaysia",
-    "description": "Beli Madu SUBUR, campuran madu Timur Tengah tradisional untuk pasangan suami isteri di seluruh Malaysia, dengan kunyit bunga (saffron), ginseng, habbatus sauda dan sarang lebah untuk kesuburan, vitaliti dan kekuatan. Semula jadi sepenuhnya, vegan. Runcit dan borong di seluruh Malaysia."
+    "title": "Madu SUBUR | Campuran Madu untuk Pasangan Suami Isteri di Malaysia",
+    "description": "Beli Madu SUBUR, campuran madu untuk pasangan suami isteri di seluruh Malaysia. Sarang madu tulen dengan saffron, ginseng, habbatus sauda, walnut dan banyak lagi - kesemua sepuluh ramuan dinyatakan pada label. Semula jadi sepenuhnya, vegan. Runcit dan borong di seluruh Malaysia."
   },
   "nav": {
     "home": "Laman Utama",
@@ -29,12 +29,12 @@
     "madinah": "Berkat Madinah Store"
   },
   "hero": {
-    "heading": "Resipi rahsia alam semula jadi, piawaian dikaji dengan teliti,",
-    "headingAccent": "Disempurnakan sejak turun-temurun.",
-    "description": "Campuran madu Timur Tengah tradisional untuk pasangan suami isteri di seluruh Malaysia, dibina atas pengetahuan turun-temurun untuk kesuburan, vitaliti, dan kekuatan.",
+    "heading": "Madu tulen. Sepuluh ramuan tulen.",
+    "headingAccent": "Dibuat untuk pasangan suami isteri.",
+    "description": "Campuran madu untuk pasangan suami isteri di Malaysia. Sarang madu tulen, kekacang, rempah dan akar - kesemua sepuluh dinyatakan pada label.",
     "badges": [
       "SEMULA JADI SEPENUHNYA",
-      "RESIPI RAHSIA, PIAWAIAN TELITI",
+      "10 RAMUAN BERNAMA",
       "MADU TULEN",
       "UNTUK PASANGAN",
       "VEGAN"
@@ -44,28 +44,28 @@
   },
   "benefits": {
     "heading": "Kenapa Madu Subur Sesuai Untuk Anda",
-    "subheading": "Resipi rahsia dengan piawaian yang dikaji dengan teliti, daripada ramuan yang dipercayai keluarga Timur Tengah sejak turun-temurun.",
+    "subheading": "Sepuluh ramuan, semuanya dinyatakan pada label: sarang madu tulen, kekacang, rempah dan akar.",
     "cards": [
       {
         "label": "Untuk Dia & Dia",
         "title": "Sokongan Kesuburan",
-        "description": "Diperbuat daripada herba tradisional dan ramuan semula jadi yang telah lama digunakan untuk menyokong kesuburan dan kesihatan reproduktif bagi lelaki dan wanita."
+        "description": "Diperbuat daripada herba dan ramuan semula jadi yang menyokong kesuburan dan kesihatan reproduktif bagi lelaki dan wanita."
       },
       {
         "label": "Prestasi Harian",
         "title": "Tenaga & Stamina",
-        "description": "Campuran ramuan kaya nutrien yang digunakan secara tradisional untuk menyokong tenaga, stamina, dan kesejahteraan harian."
+        "description": "Campuran ramuan kaya nutrien yang menyokong tenaga, stamina dan kesejahteraan harian."
       },
       {
         "label": "Kesejahteraan Lelaki",
         "title": "Vitaliti Lelaki",
-        "description": "Mengandungi ramuan tradisional yang dihargai turun-temurun untuk menyokong vitaliti, kekuatan dan kesejahteraan keseluruhan lelaki."
+        "description": "Mengandungi ramuan yang menyokong vitaliti, kekuatan dan kesejahteraan keseluruhan lelaki."
       }
     ]
   },
   "ritual": {
     "heading": "Amalan Waktu Pagi",
-    "subheading": "Sejak turun-temurun, campuran madu seperti Subur diambil sebagai sebahagian daripada rutin harian yang mudah.",
+    "subheading": "Campuran madu seperti Subur diambil sebagai sebahagian daripada rutin harian yang mudah - satu sudu, setiap pagi.",
     "steps": [
       "Ambil satu sudu teh semasa perut kosong.",
       "Tunggu 15 minit sebelum sarapan.",
@@ -73,49 +73,49 @@
     ]
   },
   "ingredients": {
-    "heading": "Ramuan Tradisional Dalam Setiap Balang",
-    "subheading": "Sepuluh ramuan semula jadi yang dipilih atas sebab yang diwarisi turun-temurun.",
+    "heading": "Sepuluh Ramuan Dalam Setiap Balang",
+    "subheading": "Sepuluh ramuan semula jadi, setiap satu dipilih atas sebab tertentu dan dinyatakan pada label.",
     "items": [
       {
         "name": "Bunga Lawang",
-        "alt": "Bunga lawang, rempah tradisional yang digunakan dalam campuran Madu Subur",
-        "description": "Digunakan secara tradisional untuk menyokong penghadaman dan kehangatan badan.",
+        "alt": "Bunga lawang, salah satu daripada sepuluh ramuan dalam campuran Madu Subur",
+        "description": "Digunakan untuk menyokong penghadaman dan kehangatan badan.",
         "icon": "/icons/ingrediant_01.webp"
       },
       {
         "name": "Kunyit Bunga (Saffron)",
         "alt": "Benang saffron, ramuan semula jadi premium dalam Madu Subur",
-        "description": "Rempah bernilai tinggi yang dihargai secara tradisional untuk menyokong mood dan vitaliti.",
+        "description": "Rempah bernilai tinggi yang dihargai untuk sokongan mood dan vitaliti.",
         "icon": "/icons/ingrediant_02.webp"
       },
       {
         "name": "Halia Segar",
-        "alt": "Akar halia segar, ramuan tradisional dalam Madu Subur",
-        "description": "Menambah kehangatan semula jadi dan digunakan secara tradisional untuk menyokong peredaran darah.",
+        "alt": "Akar halia segar, salah satu daripada sepuluh ramuan dalam Madu Subur",
+        "description": "Menambah kehangatan semula jadi dan digunakan untuk menyokong peredaran darah.",
         "icon": "/icons/ingrediant_03.webp"
       },
       {
         "name": "Walnut",
         "alt": "Walnut, ramuan semula jadi dalam campuran Madu Subur",
-        "description": "Kekacang padat nutrien yang dikaitkan secara tradisional dengan tenaga harian.",
+        "description": "Kekacang padat nutrien yang dikaitkan dengan tenaga harian.",
         "icon": "/icons/ingrediant_04.webp"
       },
       {
         "name": "Buah Pala",
-        "alt": "Biji buah pala, rempah tradisional dalam Madu Subur",
-        "description": "Rempah tradisional yang disertakan untuk kesejahteraan keseluruhan.",
+        "alt": "Biji buah pala, salah satu daripada sepuluh ramuan dalam Madu Subur",
+        "description": "Rempah hangat yang disertakan untuk kesejahteraan keseluruhan.",
         "icon": "/icons/ingrediant_05.webp"
       },
       {
         "name": "Kayu Manis",
-        "alt": "Batang kayu manis, rempah tradisional dalam Madu Subur",
-        "description": "Rempah yang memberi kehangatan, digunakan secara tradisional untuk menyokong stamina.",
+        "alt": "Batang kayu manis, salah satu daripada sepuluh ramuan dalam Madu Subur",
+        "description": "Rempah hangat yang digunakan untuk menyokong stamina.",
         "icon": "/icons/ingrediant_06.webp"
       },
       {
         "name": "Habbatus Sauda",
-        "alt": "Habbatus sauda, ramuan tradisional dalam Madu Subur",
-        "description": "Biji tradisional yang telah lama dihargai untuk sokongan imun dan vitaliti.",
+        "alt": "Habbatus sauda, salah satu daripada sepuluh ramuan dalam Madu Subur",
+        "description": "Biji yang dihargai untuk sokongan imun dan vitaliti.",
         "icon": "/icons/ingrediant_07.webp"
       },
       {
@@ -132,8 +132,8 @@
       },
       {
         "name": "Akar Ginseng",
-        "alt": "Akar ginseng, ramuan tradisional dalam Madu Subur",
-        "description": "Akar yang telah lama dihargai dalam perubatan tradisional untuk stamina dan vitaliti.",
+        "alt": "Akar ginseng, salah satu daripada sepuluh ramuan dalam Madu Subur",
+        "description": "Akar yang dihargai untuk stamina dan vitaliti.",
         "icon": "/icons/ingrediant_10.webp"
       }
     ],
@@ -149,8 +149,8 @@
   },
   "wholesale": {
     "kicker": "UNTUK PERNIAGAAN",
-    "heading": "Berkerjasama dengan Madu Subur",
-    "description": "Bawakan resipi madu tradisional Timur Tengah kepada pelanggan anda. Sertai rangkaian peruncit, pengedar, dan peniaga semula kami yang semakin berkembang di seluruh Malaysia.",
+    "heading": "Bekerjasama dengan Madu Subur",
+    "description": "Bawakan campuran madu yang membolehkan pelanggan anda membaca label penuhnya. Sertai rangkaian peruncit, pengedar, dan peniaga semula kami yang semakin berkembang di seluruh Malaysia.",
     "features": [
       {
         "title": "Harga Pukal Tersedia",
@@ -202,7 +202,7 @@
     "items": [
       {
         "q": "Apa yang membezakan Subur daripada madu biasa?",
-        "a": "Subur lebih daripada sekadar madu. Ia menggabungkan madu dengan herba tradisional dan ramuan semula jadi yang diilhamkan daripada pengetahuan turun-temurun Timur Tengah."
+        "a": "Subur lebih daripada sekadar madu. Ia ialah sarang madu tulen dicampur dengan sembilan ramuan lain - kekacang, rempah dan akar - setiap satu dinyatakan pada label."
       },
       {
         "q": "Bagaimana saya patut mengambil Subur?",
@@ -214,7 +214,7 @@
       },
       {
         "q": "Adakah Subur untuk lelaki atau wanita?",
-        "a": "Subur dibuat untuk lelaki dan wanita. Resipi rahsia ini, dibina atas piawaian yang dikaji dengan teliti, mengandungi ramuan yang dihargai untuk menyokong kesejahteraan keseluruhan dan kesuburan."
+        "a": "Subur dibuat untuk lelaki dan wanita. Campuran ini mengandungi ramuan yang dihargai untuk menyokong kesejahteraan keseluruhan dan kesuburan."
       },
       {
         "q": "Bolehkah suami isteri mengambil Subur bersama?",
@@ -236,17 +236,17 @@
   },
   "finalCta": {
     "heading": "Bersedia untuk bermula?",
-    "subheading": "Temui resipi rahsia Timur Tengah dengan piawaian dikaji teliti, untuk pasangan suami isteri di seluruh Malaysia, dibina atas pengetahuan yang terkumpul sejak turun-temurun.",
+    "subheading": "Campuran madu untuk pasangan suami isteri di seluruh Malaysia, dengan kesemua sepuluh ramuan dinyatakan pada label.",
     "ctaPrimary": "Beli Runcit",
     "ctaSecondary": "Pertanyaan Borong",
     "ratingText": "Dipercayai oleh lebih 5,000 pelanggan"
   },
   "footer": {
     "brand": "MADU SUBUR",
-    "description": "Campuran madu Timur Tengah tradisional yang diilhamkan daripada pengetahuan turun-temurun dan diperbuat daripada ramuan semula jadi terpilih.",
+    "description": "Campuran madu untuk pasangan suami isteri, dengan sarang madu tulen, kekacang, rempah dan akar - dan tiada apa yang anda tidak boleh baca pada label.",
     "badges": [
       "SEMULA JADI SEPENUHNYA",
-      "RESIPI RAHSIA, PIAWAIAN TELITI",
+      "10 RAMUAN BERNAMA",
       "MADU TULEN",
       "VEGAN"
     ],
@@ -259,7 +259,7 @@
     ],
     "blogKicker": "Kemas kini terkini — lawati blog kami!",
     "blogLink": "Blog",
-    "copyright": "Madu Subur. Resipi Rahsia, Piawaian Teliti. Pengetahuan Turun-Temurun.",
+    "copyright": "Madu Subur. Sepuluh Ramuan. Semuanya Dinamakan. Tiada Yang Disembunyikan.",
     "privacy": "Dasar Privasi",
     "terms": "Terma Perkhidmatan"
   },

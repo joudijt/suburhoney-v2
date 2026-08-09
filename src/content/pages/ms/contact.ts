@@ -6,7 +6,7 @@ export const page: Article = {
   title: "Hubungi Madu Subur | Madu untuk Pasangan Suami Isteri di Malaysia",
   heading: "Hubungi Madu Subur",
   description:
-    "Cara menghubungi Madu Subur, madu tradisional untuk pasangan suami isteri di seluruh Malaysia: pertanyaan runcit melalui Shopee dan TikTok Shop, pertanyaan borong melalui borang dalam talian kami, dan sokongan melalui pembekal rasmi kami Berkat Madinah Store.",
+    "Cara menghubungi Madu Subur, campuran madu untuk pasangan suami isteri di seluruh Malaysia: pertanyaan runcit melalui Shopee dan TikTok Shop, pertanyaan borong melalui borang dalam talian kami, dan sokongan melalui pembekal rasmi kami Berkat Madinah Store.",
   primaryKeyword: "hubungi madu subur",
   keywords: [
     "hubungi madu subur",
@@ -25,7 +25,7 @@ export const page: Article = {
       type: "answer",
       question: "Bagaimana saya boleh menghubungi Madu Subur?",
       answer:
-        "Madu Subur ialah campuran madu tradisional Timur Tengah untuk pasangan suami isteri di seluruh Malaysia. Hari ini, cara terpantas untuk menghubungi kami adalah melalui saluran rasmi Shopee dan TikTok Shop kami untuk soalan pesanan dan produk, borang dalam talian kami untuk pertanyaan borong, dan pembekal rasmi kami Berkat Madinah Store. Anda juga boleh menghantar mesej terus kepada kami di WhatsApp.",
+        "Madu Subur ialah campuran madu untuk pasangan suami isteri di seluruh Malaysia. Cara terpantas untuk menghubungi kami adalah melalui saluran rasmi Shopee dan TikTok Shop kami untuk soalan pesanan dan produk, borang dalam talian kami untuk pertanyaan borong, dan pembekal rasmi kami Berkat Madinah Store. Anda juga boleh menghantar mesej terus kepada kami di WhatsApp.",
     },
     {
       type: "heading",

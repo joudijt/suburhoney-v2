@@ -3,10 +3,10 @@ import { BRAND_SELLER_URL } from "../../../config/site";
 
 export const page: Article = {
   slug: "benefits",
-  title: "Khasiat Madu Subur | Campuran Tradisional untuk Kesuburan & Tenaga",
-  heading: "Khasiat Tradisional Madu Subur",
+  title: "Khasiat Madu Subur | Sepuluh Ramuan Bernama untuk Pasangan",
+  heading: "Khasiat Madu Subur",
   description:
-    "Kenapa ramai rakyat Malaysia memilih Madu Subur: sepuluh ramuan tradisional bernama untuk kesuburan, tenaga dan stamina harian, dicampur dalam sarang madu tulen tanpa bahan tambahan tiruan.",
+    "Kenapa ramai rakyat Malaysia memilih Madu Subur: sepuluh ramuan bernama untuk kesuburan, vitaliti dan stamina harian, dicampur dalam sarang madu tulen tanpa bahan tambahan tiruan.",
   primaryKeyword: "khasiat madu subur",
   keywords: [
     "khasiat madu subur",
@@ -14,7 +14,7 @@ export const page: Article = {
     "madu untuk kesuburan",
     "madu untuk suami isteri",
     "khasiat habbatus sauda madu",
-    "madu tradisional Malaysia",
+    "khasiat campuran madu Malaysia",
   ],
   published: "2026-07-24",
   updated: "2026-07-24",
@@ -28,11 +28,11 @@ export const page: Article = {
       type: "answer",
       question: "Apakah khasiat Madu Subur?",
       answer:
-        "Madu Subur mencampurkan sarang madu tulen dengan sepuluh ramuan tradisional - habbatus sauda, kunyit bunga (saffron), ginseng, halia, kayu manis, bunga lawang, buah pala, walnut dan badam - setiap satu dihargai turun-temurun untuk sokongan kesuburan, tenaga harian dan stamina. Ia diambil sebagai amalan harian yang mudah, satu camca pada perut kosong, bukan sebagai ubat.",
+        "Madu Subur mencampurkan sarang madu tulen dengan sembilan ramuan lain - habbatus sauda, saffron, ginseng, halia, kayu manis, bunga lawang, buah pala, walnut dan badam - setiap satu dihargai untuk sokongan kesuburan, vitaliti harian dan stamina. Ia diambil sebagai amalan harian yang mudah, satu sudu teh pada perut kosong, bukan sebagai ubat.",
     },
     {
       type: "paragraph",
-      text: "Subur dibina atas idea mudah: madu sudah menjadi makanan harian yang dipercayai dalam banyak rumah tangga Malaysia, jadi cara paling semula jadi untuk membawa resipi rahsia Timur Tengah dengan piawaian dikaji dengan teliti adalah di dalam sebuah balang madu. Setiap ramuan <strong>dinyatakan pada label</strong> - tiada yang disembunyikan di sebalik \"campuran eksklusif\" yang kabur.",
+      text: "Subur dibina atas idea yang mudah: madu sudah menjadi makanan harian yang dipercayai dalam banyak rumah tangga Malaysia, jadi sebalang madu adalah cara paling semula jadi untuk menggabungkan sembilan ramuan lain yang biasanya dibeli berasingan. Setiap ramuan <strong>dinyatakan pada label</strong> - tiada yang disembunyikan di sebalik \"campuran eksklusif\" yang kabur.",
     },
     {
       type: "heading",
@@ -44,15 +44,15 @@ export const page: Article = {
       items: [
         {
           term: "Sokongan kesuburan, untuk suami dan isteri",
-          text: "Habbatus sauda, ginseng dan saffron adalah antara tiga ramuan tradisional paling banyak dicari di Malaysia untuk kesihatan reproduktif, dan ketiga-tiganya ada dalam setiap balang Subur.",
+          text: "Habbatus sauda, ginseng dan saffron antara tiga ramuan paling banyak dicari di Malaysia untuk kesihatan reproduktif, dan ketiga-tiganya ada dalam setiap balang Subur.",
         },
         {
           term: "Tenaga dan stamina harian",
-          text: "Walnut, badam dan kayu manis secara tradisinya diambil untuk tenaga berpanjangan - sebab itu ramai rumah tangga sudah menyimpannya secara berasingan di dapur.",
+          text: "Walnut, badam dan kayu manis dimakan untuk tenaga berpanjangan - sebab itu ramai rumah tangga sudah menyimpannya berasingan di dapur.",
         },
         {
           term: "Vitaliti lelaki",
-          text: "Akar ginseng mempunyai sejarah berabad dalam perubatan tradisional untuk kekuatan dan vitaliti lelaki, digandingkan di sini dengan rempah pemanas seperti halia dan buah pala.",
+          text: "Akar ginseng digunakan untuk kekuatan dan vitaliti lelaki, digandingkan di sini dengan rempah pemanas seperti halia dan buah pala.",
         },
         {
           term: "Amalan harian bersama untuk pasangan",
@@ -73,7 +73,7 @@ export const page: Article = {
       type: "callout",
       tone: "warning",
       title: "Apa yang kami tidak akan dakwa",
-      text: "Peraturan Makanan 1985 Malaysia melarang mana-mana produk makanan diiklankan sebagai mencegah, merawat atau menyembuhkan sebarang keadaan perubatan - termasuk kemandulan. Subur adalah makanan harian tradisional, diambil sepertimana campuran madu seumpamanya telah diambil turun-temurun. Ia bukan pengganti rawatan perubatan, dan sesiapa yang mempunyai masalah kesihatan perlu berjumpa doktor.",
+      text: "Peraturan Makanan 1985 Malaysia melarang mana-mana produk makanan diiklankan sebagai mencegah, merawat atau menyembuhkan sebarang keadaan perubatan - termasuk kemandulan. Subur adalah makanan harian, diambil sesudu pada satu masa. Ia bukan pengganti rawatan perubatan, dan sesiapa yang mempunyai masalah kesihatan perlu berjumpa doktor.",
     },
     {
       type: "heading",
@@ -85,7 +85,7 @@ export const page: Article = {
       steps: [
         { title: "Satu camca, perut kosong", text: "Diambil sebaik bangun pagi, sebelum makan atau minum apa-apa." },
         { title: "Tunggu lebih kurang 15 minit", text: "Kemudian sarapan seperti biasa." },
-        { title: "Setiap hari, bukan sekali-sekala", text: "Amalan tradisional ini dibina atas keberterusan, bukan sesudu sekali-sekala." },
+        { title: "Setiap hari, bukan sekali-sekala", text: "Sesudu setiap hari itu intinya. Sesudu sekali-sekala bukan amalan yang sama." },
       ],
     },
     {
@@ -98,23 +98,23 @@ export const page: Article = {
   faqs: [
     {
       q: "Apakah khasiat utama Madu Subur?",
-      a: "Madu Subur mencampurkan sarang madu tulen dengan sepuluh ramuan tradisional - termasuk habbatus sauda, saffron dan ginseng - dihargai turun-temurun untuk sokongan kesuburan, tenaga harian, stamina dan kesihatan lelaki. Ia diambil sebagai makanan harian, bukan ubat.",
+      a: "Madu Subur mencampurkan sarang madu tulen dengan sembilan ramuan lain - termasuk habbatus sauda, saffron dan ginseng - dihargai untuk sokongan kesuburan, tenaga harian, stamina dan kesihatan lelaki. Ia diambil sebagai makanan harian, bukan ubat.",
     },
     {
       q: "Adakah Madu Subur sesuai untuk pasangan suami isteri?",
-      a: "Ya. Ramai pasangan di Malaysia mengambil Subur bersama sebagai sebahagian rutin pagi mereka, kerana madu dan ramuan seperti habbatus sauda secara tradisinya diambil oleh lelaki dan wanita.",
+      a: "Ya. Ramai pasangan di Malaysia mengambil Subur bersama sebagai sebahagian rutin pagi mereka - madu dan ramuan seperti habbatus sauda sesuai diambil oleh lelaki dan wanita.",
     },
     {
       q: "Adakah Madu Subur menyembuhkan kemandulan atau penyakit lain?",
-      a: "Tidak. Undang-undang makanan Malaysia melarang mana-mana makanan dipasarkan sebagai penawar atau rawatan. Subur adalah makanan harian tradisional berasaskan penggunaan turun-temurun, bukan produk perubatan. Jumpa doktor untuk sebarang masalah kesihatan.",
+      a: "Tidak. Undang-undang makanan Malaysia melarang mana-mana makanan dipasarkan sebagai penawar atau rawatan. Subur adalah makanan harian, bukan produk perubatan. Jumpa doktor untuk sebarang masalah kesihatan.",
     },
     {
       q: "Apa beza Madu Subur dengan madu biasa?",
-      a: "Madu biasa hanyalah madu sahaja. Subur ialah sarang madu tulen dicampur dengan sepuluh ramuan tradisional bernama - habbatus sauda, saffron, halia, ginseng, kayu manis, bunga lawang, buah pala, walnut, badam dan sarang madu itu sendiri - untuk tujuan penggunaan tradisional yang khusus.",
+      a: "Madu biasa hanyalah madu sahaja. Subur ialah sarang madu tulen dicampur dengan sembilan ramuan lain yang dinamakan - habbatus sauda, saffron, halia, ginseng, kayu manis, bunga lawang, buah pala, walnut dan badam - dipilih untuk pasangan yang mengambilnya setiap hari.",
     },
     {
       q: "Siapa membekalkan Madu Subur di Malaysia?",
-      a: `Madu Subur diniagakan secara runcit melalui rangkaian rakan kami termasuk <a href="${BRAND_SELLER_URL}" target="_blank" rel="noopener noreferrer">Berkat Madinah Store</a>, di samping saluran rasmi Shopee dan TikTok Shop kami.`,
+      a: `Madu Subur dijual secara runcit melalui pembekal rasmi kami <a href="${BRAND_SELLER_URL}" target="_blank" rel="noopener noreferrer">Berkat Madinah Store</a>, di samping saluran rasmi Shopee dan TikTok Shop kami.`,
     },
   ],
   related: [],
