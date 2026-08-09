@@ -33,7 +33,11 @@ const bg = {
      filling the lower two-thirds, so the text sits in the calm band above it
      instead of on the label. From lg the photo is a wide cut with the jar to
      one side and the text returns to the vertical centre beside it. -->
-<section id="hero" class="relative isolate flex min-h-[100svh] w-full items-start overflow-hidden bg-cream pt-28 lg:items-center lg:pt-20">
+<!-- min-h-[calc(100svh-5rem)], not 100svh: the header is now `sticky` (real
+     flow space, h-20/5rem) instead of `fixed` (floating over content), so
+     Hero starts right after it - subtracting the header's own height keeps
+     header+Hero together filling exactly one screen, same as before. -->
+<section id="hero" class="relative isolate flex min-h-[calc(100svh-5rem)] w-full items-start overflow-hidden bg-cream lg:items-center">
   <!-- `isolate` is load-bearing: without its own stacking context, this
        section's -z children escape to the document root and paint BEHIND
        the section's own bg-cream instead of behind its content, hiding them
@@ -41,12 +45,12 @@ const bg = {
   <!-- background photo, not the LCP element - kept off fetchpriority/preload
        so it never competes with the hero jar for bandwidth (see CLAUDE.md
        performance notes on this host's concurrency cliff). -->
-  <!-- top-20, not inset-0: the header is fixed and h-20, so a photo starting at
-       y=0 has its top 80px hidden behind the bar - the dipper at the top of the
-       frame was being sliced on every viewport. Starting the layer at the
-       header's bottom edge keeps the whole composition visible. The section
-       keeps its own pt-20 so the text stays clear of the bar too. -->
-  <div class="absolute inset-x-0 bottom-0 top-20 -z-20" aria-hidden="true">
+  <!-- inset-0, not top-20: that offset compensated for the old fixed header
+       floating over the section's top 80px. Now that the header is `sticky`
+       (real flow space, never overlapping Hero), the photo can fill the
+       whole section from its own top edge - nothing is left hidden behind
+       a bar that no longer sits over it. -->
+  <div class="absolute inset-0 -z-20" aria-hidden="true">
     <!-- object-left/object-right stay physical, not start/end: these are two
          mirrored photographs, so the anchor follows the picture, not the
          reading direction. -->
