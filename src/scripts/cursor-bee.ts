@@ -1,16 +1,39 @@
 export function initCursorBee() {
   if (typeof window === "undefined") return;
 
-  const isTouch = !window.matchMedia("(hover: hover) and (pointer: fine)").matches;
   const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-  if (isTouch || prefersReducedMotion) return;
+  if (prefersReducedMotion) return;
 
   const bee = document.querySelector<HTMLElement>("#bee-cursor");
   const beeImg = bee?.querySelector<HTMLElement>(".bee-cursor-img");
   if (!bee || !beeImg) return;
 
-  document.documentElement.classList.add("cursor-bee-active");
-  bee.classList.add("is-active");
+  // Touch-vs-mouse is decided from real input, not an upfront `matchMedia`
+  // snapshot: `(hover: hover) and (pointer: fine)` is unreliable on some
+  // non-touch laptops (hybrid trackpad drivers, docked/scaled displays,
+  // RDP/VM sessions can report `pointer: coarse` with no touch hardware at
+  // all), and a false read there used to hide the bee permanently with no
+  // way to recover since `.bee-cursor` defaults to `display: none` until a
+  // script adds `.is-active`. A genuine `touchstart` disables it for the
+  // session; a genuine mouse move enables it - whichever fires first wins.
+  let activated = false;
+  let disabled = false;
+
+  function activate() {
+    if (activated || disabled) return;
+    activated = true;
+    document.documentElement.classList.add("cursor-bee-active");
+    bee.classList.add("is-active");
+    rafId = requestAnimationFrame(tick);
+  }
+
+  window.addEventListener(
+    "touchstart",
+    () => {
+      disabled = true;
+    },
+    { passive: true, once: true }
+  );
 
   let mouseX = window.innerWidth / 2;
   let mouseY = window.innerHeight / 2;
@@ -28,6 +51,7 @@ export function initCursorBee() {
       mouseX = e.clientX;
       mouseY = e.clientY;
       idleSince = performance.now();
+      activate();
     },
     { passive: true }
   );
@@ -36,6 +60,7 @@ export function initCursorBee() {
   document.addEventListener(
     "pointerover",
     (e) => {
+      if (!activated) return;
       const target = e.target as Element | null;
       if (target?.closest(interactiveSelector)) {
         hovering = true;
@@ -47,6 +72,7 @@ export function initCursorBee() {
   document.addEventListener(
     "pointerout",
     (e) => {
+      if (!activated) return;
       const target = e.target as Element | null;
       if (target?.closest(interactiveSelector)) {
         hovering = false;
@@ -59,6 +85,10 @@ export function initCursorBee() {
   document.addEventListener(
     "pointerdown",
     (e) => {
+      // Touch taps fire pointerdown too; only pop a sparkle once a real mouse
+      // has activated the bee, or a tap on a touch device leaves gold flecks
+      // behind with no bee ever visible to explain them.
+      if (!activated) return;
       beeImg.classList.remove("is-clicking");
       requestAnimationFrame(() => beeImg.classList.add("is-clicking"));
       setTimeout(() => beeImg.classList.remove("is-clicking"), 260);
@@ -113,8 +143,6 @@ export function initCursorBee() {
 
     rafId = requestAnimationFrame(tick);
   }
-
-  rafId = requestAnimationFrame(tick);
 
   window.addEventListener("beforeunload", () => cancelAnimationFrame(rafId));
 }
