@@ -25,7 +25,7 @@ export const article: Article = {
       type: "answer",
       question: "What is black seed honey?",
       answer:
-        "Black seed honey is honey combined with Nigella sativa — habbatus sauda — either as whole seeds, ground seed, or seed oil. Both are named in Islamic tradition, which is why the pairing is sought out across Malaysia. It is eaten as a daily food, most often a teaspoon in the morning.",
+        "Black seed honey is honey combined with Nigella sativa — habbatus sauda — either as whole seeds, ground seed, or seed oil. Both are named in Islamic teaching, which is why the pairing is sought out across Malaysia. It is eaten as a daily food, most often a teaspoon in the morning.",
     },
     {
       type: "paragraph",
@@ -48,7 +48,7 @@ export const article: Article = {
     {
       type: "list",
       items: [
-        { term: "Both are named in the tradition", text: "Honey and black seed each appear in Islamic sources, which is why they are combined rather than either being taken alone." },
+        { term: "Both are named in Islamic teaching", text: "Honey and black seed each appear in Islamic sources, which is why they are combined rather than either being taken alone." },
         { term: "Honey makes the seed edible daily", text: "Black seed on its own is sharp, bitter and peppery. Few people would take a spoon of it every morning. Honey is what turns it into a habit that lasts." },
         { term: "It carries the ground seed", text: "Honey suspends ground seed evenly instead of letting it settle, so each spoonful is roughly the same as the last." },
       ],
@@ -60,13 +60,13 @@ export const article: Article = {
     },
     {
       type: "paragraph",
-      text: "Malaysian sellers frequently group three foods together: honey, dates and black seed. All three are named in Islamic tradition, all three keep well without refrigeration, and all three are eaten rather than taken. That is the whole basis of the grouping — it is a category of foods honoured by tradition, not a formula with a fixed ratio.",
+      text: "Malaysian sellers frequently group three foods together: honey, dates and black seed. All three are named in Islamic teaching, all three keep well without refrigeration, and all three are eaten rather than taken. That is the whole basis of the grouping — it is a category of foods honoured in Islamic teaching, not a formula with a fixed ratio.",
     },
     {
       type: "callout",
       tone: "tradition",
       title: "Where SUBUR sits",
-      text: "SUBUR is a Middle Eastern blend rather than a Nusantara one, so it is built on raw honeycomb and black seed alongside saffron, ginseng, ginger, cinnamon, star anise, nutmeg, walnuts and almonds. Dates are not in it. If a date-based trio is specifically what you are after, buy a kurma blend — not a jar that merely mentions dates in its description.",
+      text: "SUBUR is a warm-spice honeycomb blend rather than a date-based Nusantara one, so it is built on raw honeycomb and black seed alongside saffron, ginseng, ginger, cinnamon, star anise, nutmeg, walnuts and almonds. Dates are not in it. If a date-based trio is specifically what you are after, buy a kurma blend — not a jar that merely mentions dates in its description.",
     },
     {
       type: "heading",
@@ -94,13 +94,13 @@ export const article: Article = {
     },
     {
       type: "paragraph",
-      text: "Honestly: it is a food that people have eaten daily for a very long time, in a tradition that values consistency. Nigella sativa is genuinely well studied compared with most traditional ingredients, but studies on an isolated compound in a laboratory are not the same thing as a teaspoon of honey blend at breakfast, and it is dishonest to present them as though they were.",
+      text: "Honestly: it is a food that people have eaten daily for a very long time. Nigella sativa has been studied more than most of the other ingredients in this blend, but studies on an isolated compound in a laboratory are not the same thing as a teaspoon of honey blend at breakfast, and it is dishonest to present them as though they were.",
     },
     {
       type: "callout",
       tone: "warning",
       title: "What no seller may tell you",
-      text: "Malaysia's Food Regulations 1985 prohibit food products and their advertising from claiming to prevent, treat or cure any condition. Any listing telling you black seed honey treats an illness is breaking that rule. Buy it as a traditional daily food, which is what it is.",
+      text: "Malaysia's Food Regulations 1985 prohibit food products and their advertising from claiming to prevent, treat or cure any condition. Any listing telling you black seed honey treats an illness is breaking that rule. Buy it as a daily food, which is what it is.",
     },
     {
       type: "heading",
@@ -113,7 +113,7 @@ export const article: Article = {
         { title: "A teaspoon in the morning", text: "On an empty stomach, before anything else." },
         { title: "Wait roughly fifteen minutes", text: "Then eat breakfast as usual." },
         { title: "Never in boiling liquid", text: "If you stir it into a drink, let the drink cool to warm first. Boiling water is the fastest way to waste what you paid for." },
-        { title: "Daily rather than occasionally", text: "The tradition is built on routine. A jar taken now and then is not the same practice." },
+        { title: "Daily rather than occasionally", text: "This works as a routine, not an occasional dose. A jar taken now and then is not the same practice." },
       ],
     },
     {
@@ -126,15 +126,15 @@ export const article: Article = {
   faqs: [
     {
       q: "What is habbatus sauda?",
-      a: "Habbatus sauda is the Malay name for Nigella sativa, also called black seed or black cumin. It is a small black seed with a sharp peppery taste, named in Islamic tradition, and widely sold in Malaysia on its own or blended into honey.",
+      a: "Habbatus sauda is the Malay name for Nigella sativa, also called black seed or black cumin. It is a small black seed with a sharp peppery taste, named in Islamic teaching, and widely sold in Malaysia on its own or blended into honey.",
     },
     {
       q: "Why is black seed mixed with honey?",
-      a: "Black seed alone is bitter and peppery, so few people would take it daily. Honey makes it palatable enough to become a routine, suspends the ground seed evenly so each spoonful is consistent, and is itself named in the same tradition.",
+      a: "Black seed alone is bitter and peppery, so few people would take it daily. Honey makes it palatable enough to become a routine, suspends the ground seed evenly so each spoonful is consistent, and is itself named in the same Islamic sources.",
     },
     {
       q: "What is the Sunnah trio of madu, kurma and habbatus sauda?",
-      a: "It is the grouping of honey, dates and black seed — three foods named in Islamic tradition that keep well and are eaten rather than dosed. It is a category of honoured foods, not a fixed formula with set proportions.",
+      a: "It is the grouping of honey, dates and black seed — three foods named in Islamic teaching that keep well and are eaten rather than dosed. It is a category of honoured foods, not a fixed formula with set proportions.",
     },
     {
       q: "Is ground black seed better than whole seed in honey?",
@@ -146,7 +146,7 @@ export const article: Article = {
     },
     {
       q: "Does black seed honey cure illness?",
-      a: "No food may be sold in Malaysia on a claim that it prevents, treats or cures any condition — that is prohibited under the Food Regulations 1985. Black seed honey is a traditional daily food. For any medical concern, see a doctor.",
+      a: "No food may be sold in Malaysia on a claim that it prevents, treats or cures any condition — that is prohibited under the Food Regulations 1985. Black seed honey is a daily food, nothing more. For any medical concern, see a doctor.",
     },
   ],
   related: ["honey-for-couples-malaysia", "how-to-identify-pure-honey"],

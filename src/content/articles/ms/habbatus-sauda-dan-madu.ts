@@ -25,7 +25,7 @@ export const article: Article = {
       type: "answer",
       question: "Apa itu madu habbatus sauda?",
       answer:
-        "Madu habbatus sauda ialah madu yang digabungkan dengan Nigella sativa — habbatus sauda — sama ada dalam bentuk biji penuh, biji kisar, atau minyak biji. Kedua-duanya disebut dalam tradisi Islam, dan itulah sebabnya gandingan ini dicari di seluruh Malaysia. Ia dimakan sebagai makanan harian, selalunya satu sudu kecil pada waktu pagi.",
+        "Madu habbatus sauda ialah madu yang digabungkan dengan Nigella sativa — habbatus sauda — sama ada dalam bentuk biji penuh, biji kisar, atau minyak biji. Kedua-duanya disebut dalam ajaran Islam, dan itulah sebabnya gandingan ini dicari di seluruh Malaysia. Ia dimakan sebagai makanan harian, selalunya satu sudu kecil pada waktu pagi.",
     },
     {
       type: "paragraph",
@@ -48,7 +48,7 @@ export const article: Article = {
     {
       type: "list",
       items: [
-        { term: "Kedua-duanya disebut dalam tradisi", text: "Madu dan habbatus sauda masing-masing muncul dalam sumber Islam, sebab itu ia digabungkan dan bukan diambil berasingan." },
+        { term: "Kedua-duanya disebut dalam ajaran Islam", text: "Madu dan habbatus sauda masing-masing muncul dalam sumber Islam, sebab itu ia digabungkan dan bukan diambil berasingan." },
         { term: "Madu menjadikan biji itu boleh dimakan setiap hari", text: "Habbatus sauda sendirian rasanya tajam, pahit dan pedas. Sedikit sahaja orang sanggup ambil sesudu setiap pagi. Madu yang menjadikannya amalan yang boleh bertahan." },
         { term: "Ia mengapungkan biji kisar", text: "Madu menahan biji kisar secara sekata dan tidak membiarkannya mendap, jadi setiap sudu lebih kurang sama dengan sudu sebelumnya." },
       ],
@@ -60,13 +60,13 @@ export const article: Article = {
     },
     {
       type: "paragraph",
-      text: "Penjual di Malaysia kerap mengumpulkan tiga makanan ini bersama: madu, kurma dan habbatus sauda. Ketiga-tiganya disebut dalam tradisi Islam, ketiga-tiganya tahan lama tanpa peti sejuk, dan ketiga-tiganya dimakan, bukan didos. Itulah keseluruhan asas pengelompokan ini — ia kategori makanan yang dimuliakan tradisi, bukan formula dengan nisbah tetap.",
+      text: "Penjual di Malaysia kerap mengumpulkan tiga makanan ini bersama: madu, kurma dan habbatus sauda. Ketiga-tiganya disebut dalam ajaran Islam, ketiga-tiganya tahan lama tanpa peti sejuk, dan ketiga-tiganya dimakan, bukan didos. Itulah keseluruhan asas pengelompokan ini — ia kategori makanan yang dimuliakan dalam ajaran Islam, bukan formula dengan nisbah tetap.",
     },
     {
       type: "callout",
       tone: "tradition",
       title: "Di mana SUBUR berdiri",
-      text: "SUBUR ialah campuran Timur Tengah, bukan Nusantara, jadi ia dibina atas sarang madu mentah dan habbatus sauda bersama safron, ginseng, halia, kayu manis, bunga lawang, buah pala, walnut dan badam. Kurma tiada di dalamnya. Jika trio berasaskan kurma itu yang anda cari secara khusus, belilah campuran kurma — bukan balang yang sekadar menyebut kurma dalam penerangannya.",
+      text: "SUBUR ialah campuran rempah panas dan sarang madu, bukan trio berasaskan kurma, jadi ia dibina atas sarang madu mentah dan habbatus sauda bersama safron, ginseng, halia, kayu manis, bunga lawang, buah pala, walnut dan badam. Kurma tiada di dalamnya. Jika trio berasaskan kurma itu yang anda cari secara khusus, belilah campuran kurma — bukan balang yang sekadar menyebut kurma dalam penerangannya.",
     },
     {
       type: "heading",
@@ -94,13 +94,13 @@ export const article: Article = {
     },
     {
       type: "paragraph",
-      text: "Secara jujur: ia makanan yang telah dimakan orang setiap hari sejak sekian lama, dalam tradisi yang menghargai konsistensi. Nigella sativa memang lebih banyak dikaji berbanding kebanyakan bahan tradisional, tetapi kajian ke atas sebatian terasing di dalam makmal bukan perkara yang sama dengan sesudu campuran madu ketika sarapan, dan tidak jujur untuk membentangkannya seolah-olah ia sama.",
+      text: "Secara jujur: ia makanan yang telah dimakan orang setiap hari sejak sekian lama. Nigella sativa memang lebih banyak dikaji berbanding kebanyakan bahan lain dalam campuran ini, tetapi kajian ke atas sebatian terasing di dalam makmal bukan perkara yang sama dengan sesudu campuran madu ketika sarapan, dan tidak jujur untuk membentangkannya seolah-olah ia sama.",
     },
     {
       type: "callout",
       tone: "warning",
       title: "Apa yang tiada penjual boleh beritahu anda",
-      text: "Peraturan-Peraturan Makanan 1985 melarang produk makanan dan iklannya daripada mendakwa boleh mencegah, merawat atau menyembuhkan sebarang keadaan. Mana-mana senarai yang memberitahu anda madu habbatus sauda merawat penyakit sedang melanggar peraturan itu. Belilah ia sebagai makanan harian tradisional, kerana itulah hakikatnya.",
+      text: "Peraturan-Peraturan Makanan 1985 melarang produk makanan dan iklannya daripada mendakwa boleh mencegah, merawat atau menyembuhkan sebarang keadaan. Mana-mana senarai yang memberitahu anda madu habbatus sauda merawat penyakit sedang melanggar peraturan itu. Belilah ia sebagai makanan harian, kerana itulah hakikatnya.",
     },
     {
       type: "heading",
@@ -113,7 +113,7 @@ export const article: Article = {
         { title: "Satu sudu kecil pada waktu pagi", text: "Ketika perut kosong, sebelum apa-apa lagi." },
         { title: "Tunggu kira-kira lima belas minit", text: "Kemudian bersarapan seperti biasa." },
         { title: "Jangan sekali-kali dalam air mendidih", text: "Jika anda mahu kacau ke dalam minuman, biarkan minuman itu suam dahulu. Air mendidih ialah cara terpantas membazirkan apa yang anda bayar." },
-        { title: "Setiap hari, bukan sekali-sekala", text: "Tradisi ini dibina atas rutin. Sebalang yang diambil sesekali bukan amalan yang sama." },
+        { title: "Setiap hari, bukan sekali-sekala", text: "Ini berfungsi sebagai rutin, bukan dos sekali-sekala. Sebalang yang diambil sesekali bukan amalan yang sama." },
       ],
     },
     {
@@ -126,15 +126,15 @@ export const article: Article = {
   faqs: [
     {
       q: "Apa itu habbatus sauda?",
-      a: "Habbatus sauda ialah nama Melayu bagi Nigella sativa, juga dikenali sebagai biji hitam atau jintan hitam. Ia biji hitam kecil berperisa tajam dan pedas, disebut dalam tradisi Islam, dan dijual meluas di Malaysia secara berasingan atau dicampur ke dalam madu.",
+      a: "Habbatus sauda ialah nama Melayu bagi Nigella sativa, juga dikenali sebagai biji hitam atau jintan hitam. Ia biji hitam kecil berperisa tajam dan pedas, disebut dalam ajaran Islam, dan dijual meluas di Malaysia secara berasingan atau dicampur ke dalam madu.",
     },
     {
       q: "Kenapa habbatus sauda dicampur dengan madu?",
-      a: "Habbatus sauda sendirian rasanya pahit dan pedas, jadi sedikit sahaja orang akan mengambilnya setiap hari. Madu menjadikannya cukup sedap untuk menjadi rutin, menahan biji kisar secara sekata supaya setiap sudu konsisten, dan madu itu sendiri disebut dalam tradisi yang sama.",
+      a: "Habbatus sauda sendirian rasanya pahit dan pedas, jadi sedikit sahaja orang akan mengambilnya setiap hari. Madu menjadikannya cukup sedap untuk menjadi rutin, menahan biji kisar secara sekata supaya setiap sudu konsisten, dan madu itu sendiri disebut dalam sumber Islam yang sama.",
     },
     {
       q: "Apa itu trio Sunnah madu, kurma dan habbatus sauda?",
-      a: "Ia pengelompokan madu, kurma dan habbatus sauda — tiga makanan yang disebut dalam tradisi Islam, tahan lama, dan dimakan dan bukan didos. Ia satu kategori makanan yang dimuliakan, bukan formula tetap dengan nisbah yang ditetapkan.",
+      a: "Ia pengelompokan madu, kurma dan habbatus sauda — tiga makanan yang disebut dalam ajaran Islam, tahan lama, dan dimakan dan bukan didos. Ia satu kategori makanan yang dimuliakan, bukan formula tetap dengan nisbah yang ditetapkan.",
     },
     {
       q: "Biji kisar lebih baik daripada biji penuh dalam madu?",
@@ -146,7 +146,7 @@ export const article: Article = {
     },
     {
       q: "Adakah madu habbatus sauda menyembuhkan penyakit?",
-      a: "Tiada makanan boleh dijual di Malaysia dengan dakwaan mencegah, merawat atau menyembuhkan sebarang keadaan — itu dilarang di bawah Peraturan-Peraturan Makanan 1985. Madu habbatus sauda ialah makanan harian tradisional. Untuk sebarang kebimbangan perubatan, sila berjumpa doktor.",
+      a: "Tiada makanan boleh dijual di Malaysia dengan dakwaan mencegah, merawat atau menyembuhkan sebarang keadaan — itu dilarang di bawah Peraturan-Peraturan Makanan 1985. Madu habbatus sauda ialah makanan harian, tidak lebih. Untuk sebarang kebimbangan perubatan, sila berjumpa doktor.",
     },
   ],
   related: ["madu-suami-isteri", "cara-kenal-madu-asli"],

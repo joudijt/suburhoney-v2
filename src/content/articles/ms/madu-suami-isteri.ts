@@ -18,14 +18,14 @@ export const article: Article = {
   updated: "2026-07-23",
   readingMinutes: 7,
   icon: "/icons/ingrediant_08.webp",
-  figureAlt: "Pasangan suami isteri Malaysia berpakaian tradisional memegang sebalang Subur Honey bersama-sama.",
+  figureAlt: "Pasangan suami isteri Malaysia berpakaian pengantin Melayu memegang sebalang Subur Honey bersama-sama.",
   category: "Panduan pembeli",
   blocks: [
     {
       type: "answer",
       question: "Apa itu madu suami isteri?",
       answer:
-        "Madu suami isteri ialah madu yang dicampurkan dengan rempah panas, kekacang dan akar, bukan madu yang dimakan begitu sahaja. Di Malaysia ia dibeli oleh pasangan berkahwin sebagai amalan harian bersama, biasanya satu sudu kecil setiap pagi. Ia makanan tradisional, bukan ubat, dan resipinya berbeza-beza antara jenama.",
+        "Madu suami isteri ialah madu yang dicampurkan dengan rempah panas, kekacang dan akar, bukan madu yang dimakan begitu sahaja. Di Malaysia ia dibeli oleh pasangan berkahwin sebagai amalan harian bersama, biasanya satu sudu kecil setiap pagi. Ia makanan harian, bukan ubat, dan resipinya berbeza-beza antara jenama.",
     },
     {
       type: "paragraph",
@@ -42,7 +42,7 @@ export const article: Article = {
     },
     {
       type: "paragraph",
-      text: "Nama itu menerangkan siapa yang membelinya, bukan fungsi perubatan. Dalam tradisi Nusantara, makanan yang bersifat panas — halia, kayu manis, buah pala, habbatus sauda — diambil oleh kedua-dua pasangan bersama sebagai rutin kongsi, selalunya sebelum merancang keluarga atau sekadar sebagai amalan sepanjang perkahwinan. Gandingan itu bersifat budaya dan keagamaan, bukan sekadar pemakanan.",
+      text: "Nama itu menerangkan siapa yang membelinya, bukan fungsi perubatan. Di Malaysia dan rantau Nusantara yang lebih luas, makanan yang bersifat panas — halia, kayu manis, buah pala, habbatus sauda — diambil oleh kedua-dua pasangan bersama sebagai rutin kongsi, selalunya sebelum merancang keluarga atau sekadar sebagai amalan sepanjang perkahwinan. Gandingan itu bersifat budaya dan keagamaan, bukan sekadar pemakanan.",
     },
     {
       type: "callout",
@@ -57,7 +57,7 @@ export const article: Article = {
     },
     {
       type: "paragraph",
-      text: "Tiada formula tetap, dan sebab itulah senarai bahan lebih penting daripada label di hadapan balang. Kebanyakan campuran tradisional Timur Tengah dan Nusantara mengambil daripada keluarga rempah panas, kekacang dan akar yang sama. SUBUR menggunakan sepuluh:",
+      text: "Tiada formula tetap, dan sebab itulah senarai bahan lebih penting daripada label di hadapan balang. Kebanyakan campuran dalam kategori ini mengambil daripada keluarga rempah panas, kekacang dan akar yang sama, tidak kira rantau ilhamnya. SUBUR menggunakan sepuluh:",
     },
     {
       type: "ingredients",
@@ -65,12 +65,12 @@ export const article: Article = {
       items: [
         { icon: "/icons/ingrediant_08.webp", name: "Sarang madu mentah", text: "Asasnya. Mentah, bukan diproses haba, jadi sarang masih ada dalam balang." },
         { icon: "/icons/ingrediant_02.webp", name: "Safron", text: "Bahan paling mahal dalam mana-mana campuran mengikut berat — dan yang pertama digugurkan oleh produk murah." },
-        { icon: "/icons/ingrediant_10.webp", name: "Akar ginseng", text: "Lama digunakan dalam amalan tradisional untuk stamina dan tenaga harian." },
+        { icon: "/icons/ingrediant_10.webp", name: "Akar ginseng", text: "Lama digunakan untuk stamina dan tenaga harian." },
         { icon: "/icons/ingrediant_07.webp", name: "Habbatus sauda", text: "Bahan Sunnah yang paling dicari pembeli Malaysia mengikut nama." },
-        { icon: "/icons/ingrediant_03.webp", name: "Halia segar", text: "Akar panas, secara tradisi diambil untuk peredaran darah." },
+        { icon: "/icons/ingrediant_03.webp", name: "Halia segar", text: "Akar panas, biasanya diambil untuk peredaran darah." },
         { icon: "/icons/ingrediant_06.webp", name: "Kayu manis", text: "Rempah panas, dan sebab kenapa campuran yang baik berbau seperti itu apabila dibuka." },
-        { icon: "/icons/ingrediant_01.webp", name: "Bunga lawang", text: "Secara tradisi diambil untuk penghadaman dan kepanasan badan." },
-        { icon: "/icons/ingrediant_05.webp", name: "Buah pala", text: "Rempah panas klasik dalam masakan Nusantara dan amalan tradisional." },
+        { icon: "/icons/ingrediant_01.webp", name: "Bunga lawang", text: "Biasanya diambil untuk penghadaman dan kepanasan badan." },
+        { icon: "/icons/ingrediant_05.webp", name: "Buah pala", text: "Rempah panas klasik dalam masakan Nusantara." },
         { icon: "/icons/ingrediant_04.webp", name: "Walnut", text: "Padat nutrien, dan sebahagian sebab teksturnya pekat dan bukan cair." },
         { icon: "/icons/ingrediant_09.webp", name: "Badam", text: "Kekacang kedua, dikisar masuk ke dalam campuran, bukan sekadar ditabur di atas." },
       ],
@@ -92,7 +92,7 @@ export const article: Article = {
         { term: "Di mana safronnya", text: "Safron ialah bahan termahal dalam kategori ini. Kalau ia disenaraikan tetapi balangnya murah, ia hadir dalam jumlah yang amat sedikit." },
         { term: "Kenyataan halal yang jelas", text: "Dinyatakan dengan terang pada label atau oleh penjual. Bagi kebanyakan pembeli Malaysia, ini bukan pilihan." },
         { term: "Penjual di sebaliknya", text: "Perniagaan tempatan berdaftar yang boleh dihubungi lebih baik daripada senarai marketplace tanpa nama. SUBUR dijual menerusi Berkat Madinah Store." },
-        { term: "Bahasa yang jujur", text: "Perkataan penggunaan tradisional adalah sah dan biasa. Janji penyembuhan dan kehamilan tidak." },
+        { term: "Bahasa yang jujur", text: "Perkataan penggunaan lazim adalah sah dan biasa. Janji penyembuhan dan kehamilan tidak." },
       ],
     },
     {
@@ -114,12 +114,12 @@ export const article: Article = {
     },
     {
       type: "steps",
-      title: "Rutin pagi tradisional",
+      title: "Rutin pagi harian",
       steps: [
         { title: "Satu sudu kecil, perut kosong", text: "Sebelum apa-apa lagi pada waktu pagi. Sudu kecil, bukan sudu besar — ini amalan harian, bukan dos." },
-        { title: "Tunggu kira-kira lima belas minit", text: "Kemudian bersarapan seperti biasa. Tempoh menunggu inilah yang paling kerap dilangkau, dan yang paling jelas dinyatakan dalam tradisi." },
+        { title: "Tunggu kira-kira lima belas minit", text: "Kemudian bersarapan seperti biasa. Tempoh menunggu inilah yang paling kerap dilangkau." },
         { title: "Kedua-dua pasangan, waktu yang sama", text: "Rutin bersama itulah inti kategori ini. Mengambilnya bersama menjadikannya amalan, bukan sekadar suplemen." },
-        { title: "Setiap hari, bukan sekali-sekala", text: "Penggunaan tradisional mengandaikan konsistensi selama berminggu dan berbulan, bukan sebalang yang diambil sesekali." },
+        { title: "Setiap hari, bukan sekali-sekala", text: "Penggunaan lazim mengandaikan konsistensi selama berminggu dan berbulan, bukan sebalang yang diambil sesekali." },
       ],
     },
     {
@@ -152,11 +152,11 @@ export const article: Article = {
   faqs: [
     {
       q: "Apa itu madu suami isteri?",
-      a: "Ia madu yang dicampurkan dengan rempah panas, kekacang dan akar — biasanya habbatus sauda, halia, kayu manis, buah pala, safron, ginseng dan kekacang kisar — dibeli oleh pasangan berkahwin di Malaysia sebagai amalan harian bersama, lazimnya satu sudu kecil setiap pagi. Ia makanan tradisional, bukan ubat.",
+      a: "Ia madu yang dicampurkan dengan rempah panas, kekacang dan akar — biasanya habbatus sauda, halia, kayu manis, buah pala, safron, ginseng dan kekacang kisar — dibeli oleh pasangan berkahwin di Malaysia sebagai amalan harian bersama, lazimnya satu sudu kecil setiap pagi. Ia makanan harian, bukan ubat.",
     },
     {
       q: "Adakah madu suami isteri membantu kesuburan?",
-      a: "Tiada makanan yang boleh dijual di Malaysia dengan dakwaan mencegah, merawat atau menyembuhkan sebarang keadaan, termasuk kesuburan. Campuran ini diambil sebagai amalan harian tradisional. Jika anda ada kebimbangan tentang kehamilan, sila berjumpa doktor.",
+      a: "Tiada makanan yang boleh dijual di Malaysia dengan dakwaan mencegah, merawat atau menyembuhkan sebarang keadaan, termasuk kesuburan. Campuran ini diambil sebagai amalan harian. Jika anda ada kebimbangan tentang kehamilan, sila berjumpa doktor.",
     },
     {
       q: "Berapa banyak madu suami isteri patut diambil sehari?",
@@ -168,7 +168,7 @@ export const article: Article = {
     },
     {
       q: "Bagaimana saya tahu madu suami isteri itu tulen?",
-      a: "Cari senarai bahan yang dinamakan sepenuhnya dan bukan \"herba pilihan\", kenyataan halal yang jelas, penjual yang boleh dikenal pasti dan dihubungi, serta bahasa penggunaan tradisional dan bukan janji penyembuhan. Campuran yang enggan memberitahu isinya tidak boleh dibandingkan dengan apa-apa.",
+      a: "Cari senarai bahan yang dinamakan sepenuhnya dan bukan \"herba pilihan\", kenyataan halal yang jelas, penjual yang boleh dikenal pasti dan dihubungi, serta bahasa penggunaan lazim dan bukan janji penyembuhan. Campuran yang enggan memberitahu isinya tidak boleh dibandingkan dengan apa-apa.",
     },
     {
       q: "Adakah madu suami isteri halal?",
