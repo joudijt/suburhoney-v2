@@ -25,11 +25,11 @@ const DIR = "assets-src/images";
 const CROPS = [
   // `mid` covers 1024-1279, where the section is only about 720-780px tall under
   // the header and a 16:9 cut would crop a fifth of the frame away.
-  { src: "hero-bg-latin.png", suffix: "mid", ratio: 1.4, anchor: 0.6 },
+  { src: "hero-bg-latin.png", suffix: "mid", ratio: 1.4, anchor: 0.72 },
   { src: "hero-bg-ar.png", suffix: "mid", ratio: 1.4, anchor: 0.4 },
-  { src: "hero-bg-latin.png", suffix: "wide", ratio: 16 / 9, anchor: 0.62 },
-  { src: "hero-bg-latin.png", suffix: "tall", ratio: 4 / 5, anchor: 0.66 },
-  { src: "hero-bg-latin.png", suffix: "portrait", ratio: 1 / 2, anchor: 0.73 },
+  { src: "hero-bg-latin.png", suffix: "wide", ratio: 16 / 9, anchor: 0.68 },
+  { src: "hero-bg-latin.png", suffix: "tall", ratio: 4 / 5, anchor: 0.78 },
+  { src: "hero-bg-latin.png", suffix: "portrait", ratio: 1 / 2, anchor: 0.71 },
   { src: "hero-bg-ar.png", suffix: "wide", ratio: 16 / 9, anchor: 0.38 },
   { src: "hero-bg-ar.png", suffix: "tall", ratio: 4 / 5, anchor: 0.34 },
   { src: "hero-bg-ar.png", suffix: "portrait", ratio: 1 / 2, anchor: 0.27 },
