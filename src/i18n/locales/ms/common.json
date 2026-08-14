@@ -1,7 +1,7 @@
 {
   "seo": {
     "title": "Madu SUBUR | Campuran Madu untuk Pasangan Suami Isteri di Malaysia",
-    "description": "Beli Madu SUBUR, campuran madu untuk pasangan suami isteri di seluruh Malaysia. Sarang madu tulen dengan saffron, ginseng, habbatus sauda, walnut dan banyak lagi - kesemua sepuluh ramuan dinyatakan pada label. Semula jadi sepenuhnya, vegan. Runcit dan borong di seluruh Malaysia."
+    "description": "Beli Madu SUBUR, campuran madu untuk pasangan suami isteri di seluruh Malaysia. Sarang madu tulen dengan saffron, ginseng, habbatus sauda, walnut dan banyak lagi - kesemua sepuluh ramuan dinyatakan pada label. Semula jadi sepenuhnya, tanpa pewarna dan perisa tiruan. Runcit dan borong di seluruh Malaysia."
   },
   "nav": {
     "home": "Laman Utama",
@@ -23,10 +23,18 @@
   },
   "storeModal": {
     "heading": "Pilih Kedai Anda",
-    "subheading": "Pilih platform kegemaran anda untuk membeli Madu Subur secara runcit.",
+    "subheading": "Madu Subur dijual melalui satu peruncit sahaja, Berkat Madinah - pilih cara yang anda mahu untuk membeli.",
     "shopee": "Shopee",
     "tiktok": "TikTok Shop",
-    "madinah": "Berkat Madinah Store"
+    "madinah": "Berkat Madinah Store",
+    "onlineHeading": "Berkat Madinah dalam talian",
+    "branchesHeading": "Berkat Madinah di kedai",
+    "contactLabel": "Tanya melalui WhatsApp",
+    "contactHint": "Saluran untuk bertanya, bukan tempat membuat pesanan.",
+    "branchAreas": {
+      "ampang": "Ampang Jaya",
+      "batu-caves": "Batu Caves"
+    }
   },
   "hero": {
     "heading": "Madu tulen. Sepuluh ramuan tulen.",
@@ -37,7 +45,7 @@
       "10 RAMUAN BERNAMA",
       "MADU TULEN",
       "UNTUK PASANGAN",
-      "VEGAN"
+      "TANPA PEWARNA TIRUAN"
     ],
     "ctaPrimary": "Beli Runcit",
     "ctaSecondary": "Pertanyaan Borong"
@@ -138,11 +146,11 @@
       }
     ],
     "footerNote": {
-      "before": "Madu SUBUR sesuai bersama",
+      "before": "Membeli untuk perniagaan? Lihat",
       "wholesaleLink": "program borong kami",
-      "middle": ", dan turut tersedia melalui rangkaian pembekal rasmi kami, termasuk",
+      "middle": ". Setiap balang, runcit atau pukal, sampai kepada anda melalui satu peruncit sahaja,",
       "madinahLink": "Berkat Madinah Store",
-      "after": ". Lihat",
+      "after": " - dua cawangannya di Selangor, kedai Shopee miliknya dan TikTok Shop miliknya. Ia tidak dijual di pasar raya mahupun farmasi. Lihat",
       "faqLink": "Soalan Lazim penuh kami",
       "end": "."
     }
@@ -150,7 +158,7 @@
   "wholesale": {
     "kicker": "UNTUK PERNIAGAAN",
     "heading": "Bekerjasama dengan Madu Subur",
-    "description": "Bawakan campuran madu yang membolehkan pelanggan anda membaca label penuhnya. Sertai rangkaian peruncit, pengedar, dan peniaga semula kami yang semakin berkembang di seluruh Malaysia.",
+    "description": "Bawakan campuran madu yang membolehkan pelanggan anda membaca label penuhnya. Pesanan pukal dibekalkan melalui Berkat Madinah Store, satu-satunya peruncit Madu Subur di Malaysia.",
     "features": [
       {
         "title": "Harga Pukal Tersedia",
@@ -230,7 +238,7 @@
       },
       {
         "q": "Di mana saya boleh beli Madu Subur di Malaysia?",
-        "a": "Madu Subur tersedia melalui rangkaian pembekal rasmi kami termasuk Berkat Madinah Store, serta melalui saluran rasmi Shopee dan TikTok Shop kami."
+        "a": "Hanya melalui Berkat Madinah Store: dua cawangannya di Selangor - Ampang Jaya dan Batu Caves - kedai Shopee miliknya, TikTok Shop miliknya, atau WhatsApp. Semuanya satu penjual yang dicapai dengan pelbagai cara, bukan penjual berasingan; Subur tidak dijual di pasar raya mahupun farmasi."
       }
     ]
   },
@@ -239,7 +247,7 @@
     "subheading": "Campuran madu untuk pasangan suami isteri di seluruh Malaysia, dengan kesemua sepuluh ramuan dinyatakan pada label.",
     "ctaPrimary": "Beli Runcit",
     "ctaSecondary": "Pertanyaan Borong",
-    "ratingText": "Dipercayai oleh lebih 5,000 pelanggan"
+    "ratingText": "Dipercayai keluarga di seluruh Lembah Klang"
   },
   "footer": {
     "brand": "MADU SUBUR",
@@ -248,7 +256,7 @@
       "SEMULA JADI SEPENUHNYA",
       "10 RAMUAN BERNAMA",
       "MADU TULEN",
-      "VEGAN"
+      "TANPA PEWARNA TIRUAN"
     ],
     "exploreHeading": "TEROKAI",
     "shopHeading": "BELI-BELAH DENGAN KAMI",
@@ -273,13 +281,13 @@
     "channelsHeading": "Hubungi Kami",
     "channelsSub": "Saluran sebenar, dijawab oleh orang sebenar.",
     "shopeeTitle": "Shopee",
-    "shopeeDesc": "Hantar mesej kepada kedai rasmi kami untuk soalan pesanan dan produk.",
+    "shopeeDesc": "Kedai Shopee milik Berkat Madinah sendiri — hantar mesej untuk soalan pesanan dan produk.",
     "tiktokTitle": "TikTok Shop",
-    "tiktokDesc": "Hubungi kami tentang video, siaran langsung atau pesanan.",
+    "tiktokDesc": "TikTok Shop milik Berkat Madinah sendiri — hubungi tentang video, siaran langsung atau pesanan.",
     "madinahTitle": "Berkat Madinah Store",
-    "madinahDesc": "Pembekal rasmi kami — Madu Subur dibekalkan dan distok melalui mereka, dan mereka juga boleh membantu dengan soalan produk.",
+    "madinahDesc": "Peruncit eksklusif Madu Subur — dua cawangan di Selangor, dan orang yang boleh menjawab soalan stok atau produk.",
     "wholesaleTitle": "Pertanyaan Borong",
-    "wholesaleDesc": "Ingin menstok Subur? Gunakan borang borong khusus kami.",
+    "wholesaleDesc": "Ingin menstok Subur? Gunakan borang borong khusus kami — pesanan pukal dibekalkan melalui Berkat Madinah.",
     "followTitle": "Ikuti Kami",
     "formHeading": "Hantar Mesej kepada Kami",
     "formSub": "Isi borang dan pasukan kami akan menghubungi anda.",

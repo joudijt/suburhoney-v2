@@ -1,12 +1,12 @@
 import type { Article } from "../../articles/types";
-import { BRAND_SELLER_URL } from "../../../config/site";
+import { BRANCHES, BRAND_SELLER, BRAND_SELLER_URL } from "../../../config/site";
 
 export const page: Article = {
   slug: "why-us",
   title: "Kenapa Pilih Madu Subur | Sepuluh Ramuan Bernama, Sarang Madu Tulen, Tiada Yang Disembunyikan",
   heading: "Kenapa Pilih Madu Subur",
   description:
-    "Apa yang membezakan Madu Subur: sepuluh ramuan bernama, asas sarang madu tulen, tiada bahan tambahan tiruan, dan campuran yang dibuat untuk pasangan suami isteri serta dipercayai oleh beribu-ribu rumah tangga Malaysia.",
+    "Apa yang membezakan Madu Subur: sepuluh ramuan bernama, asas sarang madu tulen, tiada bahan tambahan tiruan, dan campuran untuk pasangan suami isteri - dijual eksklusif melalui Berkat Madinah Store, kedai yang sudah dikenali keluarga di Lembah Klang.",
   primaryKeyword: "kenapa pilih madu subur",
   keywords: [
     "kenapa pilih madu subur",
@@ -17,7 +17,7 @@ export const page: Article = {
     "madu untuk pasangan suami isteri Malaysia",
   ],
   published: "2026-07-24",
-  updated: "2026-07-24",
+  updated: "2026-08-14",
   readingMinutes: 5,
   icon: "/images/honey-sticker.webp",
   figureAlt:
@@ -28,7 +28,7 @@ export const page: Article = {
       type: "answer",
       question: "Kenapa pilih Madu Subur berbanding balang lain di rak?",
       answer:
-        "Madu Subur menyatakan kesemua sepuluh ramuannya pada label, menggunakan sarang madu tulen dan bukan sirap terproses, tiada warna atau perisa tiruan, dan dibuat untuk pasangan suami isteri yang mengambilnya setiap hari. Ia dipercayai oleh lebih 5,000 pelanggan di seluruh Malaysia.",
+        "Madu Subur menyatakan kesemua sepuluh ramuannya pada label, menggunakan sarang madu tulen dan bukan sirap terproses, tiada warna atau perisa tiruan, dan dibuat untuk pasangan suami isteri yang mengambilnya setiap hari. Ia dijual eksklusif melalui Berkat Madinah Store, kedai barangan Arab yang sudah menjadi tempat keluarga Lembah Klang berbelanja.",
     },
     {
       type: "paragraph",
@@ -52,14 +52,14 @@ export const page: Article = {
     },
     {
       type: "heading",
-      text: "Adakah Madu Subur semula jadi dan vegan?",
+      text: "Adakah Madu Subur semula jadi, dan adakah ia vegan?",
       id: "natural-vegan",
     },
     {
       type: "list",
       items: [
         { term: "Semula jadi sepenuhnya", text: "Setiap ramuan - sarang madu, habbatus sauda, saffron, ginseng, halia, kayu manis, bunga lawang, buah pala, walnut dan badam - adalah ramuan semula jadi yang utuh." },
-        { term: "Vegan", text: "Subur tidak mengandungi ramuan berasaskan haiwan selain madu itu sendiri." },
+        { term: "Bukan vegan", text: "Madu ialah hasil lebah, dan piawaian vegan yang ketat tidak menerimanya, jadi kami tidak melabel Subur sebagai vegan. Selain madu, setiap ramuan lain berasaskan tumbuhan - tiada daging, susu, telur atau gelatin di dalam balang." },
         { term: "Tiada bahan tambahan tiruan", text: "Tiada warna tiruan, tiada perisa tiruan, tiada bahan pengisi." },
       ],
     },
@@ -70,7 +70,7 @@ export const page: Article = {
     },
     {
       type: "paragraph",
-      text: `Madu Subur diniagakan secara runcit di Malaysia melalui <a href="${BRAND_SELLER_URL}" target="_blank" rel="noopener noreferrer">Berkat Madinah Store</a>, di samping saluran rasmi Shopee dan TikTok Shop kami sendiri. Lihat <a href="/ms/retail/">semua saluran runcit kami</a> sebelum membeli, dan <a href="/ms/#wholesale">program borong kami</a> jika anda seorang peniaga.`,
+      text: `Madu Subur dijual di Malaysia secara eksklusif melalui <a href="${BRAND_SELLER_URL}" target="_blank" rel="noopener noreferrer">${BRAND_SELLER}</a> - sebuah kedai barangan Arab yang lengkap dengan dua cawangan di Selangor, ${BRANCHES[0].area} dan ${BRANCHES[1].area}. Kedai Shopee dan TikTok Shopnya pula ialah kedai yang sama berniaga dalam talian, bukan penjual lain, dan Subur tidak dijual di pasar raya mahupun farmasi. Lihat <a href="/ms/retail/">semua saluran runcit kami</a> sebelum membeli, dan <a href="/ms/#wholesale">program borong kami</a> jika anda seorang peniaga - bekalan pukal turut disalurkan melalui kedai yang sama.`,
     },
     {
       type: "quote",
@@ -96,12 +96,12 @@ export const page: Article = {
       a: "Subur menyatakan kesemua sepuluh ramuan pada label, menggunakan sarang madu tulen dan bukan sirap terproses, tiada warna atau perisa tiruan, dan memberitahu anda campuran penuh dan bukan menyembunyikannya di sebalik formula yang tidak didedahkan.",
     },
     {
-      q: "Adakah Madu Subur benar-benar semula jadi dan vegan?",
-      a: "Madu Subur diperbuat sepenuhnya daripada ramuan semula jadi tanpa tambahan berasaskan haiwan selain madu itu sendiri, dan tidak mengandungi warna, perisa atau bahan pengisi tiruan.",
+      q: "Adakah Madu Subur vegan?",
+      a: "Tidak. Madu ialah hasil lebah dan piawaian vegan yang ketat tidak menerimanya, jadi kami tidak melabelnya sebagai vegan. Ramuan lain semuanya berasaskan tumbuhan - tiada daging, susu, telur atau gelatin - dan tiada warna, perisa atau bahan pengisi tiruan.",
     },
     {
-      q: "Berapa ramai pelanggan mempercayai Madu Subur?",
-      a: "Madu Subur dipercayai oleh lebih 5,000 pelanggan di seluruh Malaysia, dijual melalui saluran rasmi Shopee dan TikTok Shop kami serta pembekal rasmi kami Berkat Madinah Store.",
+      q: "Adakah Madu Subur jenama yang dikenali di Malaysia?",
+      a: `Ia terjual sebalang demi sebalang melalui kedai yang memang sudah dipercayai orang: ${BRAND_SELLER}, kedai barangan Arab yang menjadi tempat keluarga Lembah Klang kembali berbelanja. Setiap balang sampai kepada anda daripada satu penjual itu sahaja - cawangan ${BRANCHES[0].area}, cawangan ${BRANCHES[1].area}, kedai Shopee miliknya atau TikTok Shop miliknya.`,
     },
     {
       q: "Kenapa Madu Subur berhablur dalam balang?",

@@ -1,12 +1,12 @@
 import type { Article } from "../../articles/types";
-import { BRAND_SELLER_URL } from "../../../config/site";
+import { BRANCHES, BRAND_SELLER, BRAND_SELLER_URL } from "../../../config/site";
 
 export const page: Article = {
   slug: "why-us",
   title: "Why Choose Subur Honey | Ten Named Ingredients, Raw Honeycomb, Nothing Hidden",
   heading: "Why Choose Subur Honey",
   description:
-    "What sets Subur Honey apart: ten named ingredients, a raw honeycomb base, no artificial additives, and a blend made for married couples and trusted by thousands of Malaysian households.",
+    "What sets Subur Honey apart: ten named ingredients, a raw honeycomb base, no artificial additives, and a blend made for married couples - sold only through Berkat Madinah Store, a name Klang Valley families already know.",
   primaryKeyword: "kenapa pilih madu subur",
   keywords: [
     "why choose subur honey",
@@ -17,7 +17,7 @@ export const page: Article = {
     "honey for married couples Malaysia",
   ],
   published: "2026-07-24",
-  updated: "2026-07-24",
+  updated: "2026-08-14",
   readingMinutes: 5,
   icon: "/images/honey-sticker.webp",
   figureAlt:
@@ -28,7 +28,7 @@ export const page: Article = {
       type: "answer",
       question: "Why choose Subur Honey over another jar on the shelf?",
       answer:
-        "Subur Honey names all ten of its ingredients on the label, uses raw honeycomb rather than a processed syrup, contains no artificial colours or flavours, and is made for married couples taking it daily. It is trusted by more than 5,000 customers across Malaysia.",
+        "Subur Honey names all ten of its ingredients on the label, uses raw honeycomb rather than a processed syrup, contains no artificial colours or flavours, and is made for married couples taking it daily. It is sold only through Berkat Madinah Store, the Arabic grocery Klang Valley families already shop at.",
     },
     {
       type: "paragraph",
@@ -52,14 +52,14 @@ export const page: Article = {
     },
     {
       type: "heading",
-      text: "Is Subur Honey natural and vegan?",
+      text: "Is Subur Honey natural, and is it vegan?",
       id: "natural-vegan",
     },
     {
       type: "list",
       items: [
         { term: "All natural", text: "Every ingredient - honeycomb, black seed, saffron, ginseng, ginger, cinnamon, star anise, nutmeg, walnuts and almonds - is a whole, natural ingredient." },
-        { term: "Vegan", text: "Subur contains no animal-derived ingredients beyond the honey itself." },
+        { term: "Not vegan", text: "Honey is a bee product, and strict vegan standards exclude it, so Subur is not vegan. Every other ingredient is a plant - there is no meat, dairy, egg or gelatine in the jar." },
         { term: "No artificial additives", text: "No artificial colours, no artificial flavours, no fillers." },
       ],
     },
@@ -70,7 +70,7 @@ export const page: Article = {
     },
     {
       type: "paragraph",
-      text: `Subur Honey is retailed in Malaysia through <a href="${BRAND_SELLER_URL}" target="_blank" rel="noopener noreferrer">Berkat Madinah Store</a>, alongside our own official Shopee and TikTok Shop channels. See our full <a href="/en/retail/">retail channels</a> before buying, and our <a href="/en/#wholesale">wholesale programme</a> if you are a business.`,
+      text: `Subur Honey is sold in Malaysia exclusively through <a href="${BRAND_SELLER_URL}" target="_blank" rel="noopener noreferrer">${BRAND_SELLER}</a> - a full Arabic grocery with two branches in Selangor, ${BRANCHES[0].area} and ${BRANCHES[1].area}. The Shopee storefront and the TikTok Shop are that same store trading online, not other sellers, and Subur is not stocked in supermarkets or pharmacies. See our full <a href="/en/retail/">retail channels</a> before buying, and our <a href="/en/#wholesale">wholesale programme</a> if you are a business - volume orders are supplied through the same store.`,
     },
     {
       type: "quote",
@@ -96,12 +96,12 @@ export const page: Article = {
       a: "Subur names all ten ingredients on the label, uses raw honeycomb instead of processed syrup, adds no artificial colours or flavours, and tells you the whole blend rather than hiding it behind an undisclosed formula.",
     },
     {
-      q: "Is Subur Honey genuinely natural and vegan?",
-      a: "Subur Honey is made entirely from natural ingredients with no animal-derived additions beyond the honey itself, and contains no artificial colours, flavours or fillers.",
+      q: "Is Subur Honey vegan?",
+      a: "No. Honey is a bee product and strict vegan standards exclude it, so we do not call Subur vegan. Every other ingredient is a plant - no meat, dairy, egg or gelatine - and there are no artificial colours, flavours or fillers.",
     },
     {
-      q: "How many customers trust Subur Honey?",
-      a: "Subur Honey is trusted by more than 5,000 customers across Malaysia, sold through our official Shopee and TikTok Shop channels and our official supplier Berkat Madinah Store.",
+      q: "Is Subur Honey a well-known name in Malaysia?",
+      a: `It sells jar after jar through a shop people already trust: ${BRAND_SELLER}, the Arabic grocery Klang Valley families come back to. Every jar reaches you through that one seller - its ${BRANCHES[0].area} branch, its ${BRANCHES[1].area} branch, its own Shopee storefront or its own TikTok Shop.`,
     },
     {
       q: "Why does Subur Honey crystallise in the jar?",

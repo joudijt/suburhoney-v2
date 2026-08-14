@@ -1,22 +1,23 @@
 import type { Article } from "../../articles/types";
-import { BRAND_SELLER_URL } from "../../../config/site";
+import { BRANCHES, BRAND_SELLER, BRAND_SELLER_URL, SHOPEE_URL, TIKTOK_SHOP_URL, WHATSAPP_URL } from "../../../config/site";
 
 export const page: Article = {
   slug: "contact",
   title: "Hubungi Madu Subur | Madu untuk Pasangan Suami Isteri di Malaysia",
   heading: "Hubungi Madu Subur",
   description:
-    "Cara menghubungi Madu Subur, campuran madu untuk pasangan suami isteri di seluruh Malaysia: pertanyaan runcit melalui Shopee dan TikTok Shop, pertanyaan borong melalui borang dalam talian kami, dan sokongan melalui pembekal rasmi kami Berkat Madinah Store.",
+    "Cara menghubungi Madu Subur, campuran madu untuk pasangan suami isteri di Malaysia: WhatsApp, dua cawangan Berkat Madinah Store di Selangor, kedai Shopee dan TikTok Shop miliknya, dan borang dalam talian kami untuk pertanyaan borong.",
   primaryKeyword: "hubungi madu subur",
   keywords: [
     "hubungi madu subur",
     "pertanyaan borong madu subur",
     "hubungi madu subur malaysia",
     "khidmat pelanggan madu subur",
+    "cawangan Berkat Madinah Store",
     "madu untuk pasangan suami isteri malaysia",
   ],
   published: "2026-07-24",
-  updated: "2026-07-24",
+  updated: "2026-08-14",
   readingMinutes: 3,
   icon: "/logo-8.webp",
   category: "Hubungi",
@@ -25,7 +26,22 @@ export const page: Article = {
       type: "answer",
       question: "Bagaimana saya boleh menghubungi Madu Subur?",
       answer:
-        "Madu Subur ialah campuran madu untuk pasangan suami isteri di seluruh Malaysia. Cara terpantas untuk menghubungi kami adalah melalui saluran rasmi Shopee dan TikTok Shop kami untuk soalan pesanan dan produk, borang dalam talian kami untuk pertanyaan borong, dan pembekal rasmi kami Berkat Madinah Store. Anda juga boleh menghantar mesej terus kepada kami di WhatsApp.",
+        "Madu Subur dijual eksklusif melalui Berkat Madinah Store, jadi semua jalan sampai kepada penjual yang sama: WhatsApp, mana-mana daripada dua cawangannya di Selangor, kedai Shopee miliknya dan TikTok Shop miliknya. Gunakan saluran itu untuk soalan pesanan dan produk, dan borang dalam talian kami untuk pertanyaan borong.",
+    },
+    {
+      type: "heading",
+      text: "Di mana saya boleh berkunjung sendiri?",
+      id: "branches",
+    },
+    {
+      type: "table",
+      caption: `${BRAND_SELLER} - kedua-dua cawangan`,
+      columns: ["Cawangan", "Alamat"],
+      rows: BRANCHES.map((branch) => [branch.area, branch.full]),
+    },
+    {
+      type: "paragraph",
+      text: `Kedua-dua cawangan berada di Selangor, dalam Lembah Klang. ${BRAND_SELLER} ialah peruncit eksklusif Madu Subur: <a href="${SHOPEE_URL}" target="_blank" rel="noopener noreferrer">kedai Shopee</a> dan <a href="${TIKTOK_SHOP_URL}" target="_blank" rel="noopener noreferrer">TikTok Shop</a> miliknya ialah kedai yang sama berniaga dalam talian, bukan penjual berasingan, dan Subur tidak dijual di pasar raya mahupun farmasi. Untuk menyemak stok sebelum anda bergerak ke sana, hubungi kedai melalui <a href="${WHATSAPP_URL}" target="_blank" rel="noopener noreferrer">WhatsApp</a>.`,
     },
     {
       type: "heading",
@@ -34,7 +50,7 @@ export const page: Article = {
     },
     {
       type: "paragraph",
-      text: "Pertanyaan borong menggunakan borang khusus, bukan hubungan umum - ia meminta butiran yang diperlukan oleh pasukan kami untuk memberi sebut harga yang tepat pada kali pertama, tanpa berulang-alik. Dapatkannya di <a href=\"/ms/#wholesale\">bahagian borong di laman utama kami</a>.",
+      text: `Pertanyaan borong menggunakan borang khusus, bukan hubungan umum - ia meminta butiran yang diperlukan untuk memberi sebut harga yang tepat pada kali pertama, tanpa berulang-alik. Dapatkannya di <a href="/ms/#wholesale">bahagian borong di laman utama kami</a>. Pesanan pukal turut dibekalkan melalui ${BRAND_SELLER}, yang menguruskan harga pukal dan stok.`,
     },
     {
       type: "heading",
@@ -53,19 +69,23 @@ export const page: Article = {
   faqs: [
     {
       q: "Bagaimana saya boleh menghubungi Madu Subur sekarang?",
-      a: `Hantar mesej kepada kami melalui Shopee atau TikTok Shop rasmi untuk soalan pesanan dan produk, gunakan borang pertanyaan borong di laman utama untuk pesanan perniagaan, atau hubungi pembekal rasmi kami <a href="${BRAND_SELLER_URL}" target="_blank" rel="noopener noreferrer">Berkat Madinah Store</a> terus.`,
+      a: `Hantar mesej kepada <a href="${BRAND_SELLER_URL}" target="_blank" rel="noopener noreferrer">${BRAND_SELLER}</a> melalui <a href="${WHATSAPP_URL}" target="_blank" rel="noopener noreferrer">WhatsApp</a>, atau melalui kedai Shopee atau TikTok Shop miliknya, untuk soalan pesanan dan produk. Ia peruncit eksklusif Madu Subur, jadi kesemuanya sampai kepada pihak yang sama. Untuk pesanan perniagaan, gunakan borang pertanyaan borong di laman utama.`,
+    },
+    {
+      q: "Di mana cawangan Berkat Madinah Store?",
+      a: `Ada dua, kedua-duanya di Selangor: ${BRANCHES[0].area} (${BRANCHES[0].full}) dan ${BRANCHES[1].area} (${BRANCHES[1].full}).`,
     },
     {
       q: "Adakah nombor telefon atau e-mel untuk Madu Subur?",
-      a: "Saluran hubungan telefon dan e-mel khusus sedang disediakan. Sementara itu, chat Shopee, mesej TikTok Shop, borang borong dan Berkat Madinah Store adalah cara terpantas untuk menghubungi kami.",
+      a: `<a href="${WHATSAPP_URL}" target="_blank" rel="noopener noreferrer">WhatsApp</a> ialah talian terus kepada kedai. Saluran telefon dan e-mel khusus sedang disediakan; sementara itu WhatsApp, chat Shopee, mesej TikTok Shop, borang borong, atau sekadar berkunjung ke mana-mana cawangan adalah cara terpantas untuk menghubungi kami.`,
     },
     {
       q: "Bagaimana saya bertanya tentang pesanan borong atau pukal?",
-      a: "Gunakan borang pertanyaan borong di bahagian borong laman utama kami. Ia dibina khusus untuk pesanan perniagaan supaya pasukan kami boleh memberi sebut harga yang tepat.",
+      a: `Gunakan borang pertanyaan borong di bahagian borong laman utama kami. Ia dibina khusus untuk pesanan perniagaan, dan bekalannya disalurkan melalui ${BRAND_SELLER} yang menguruskan harga pukal.`,
     },
     {
       q: "Bolehkah saya bertanya soalan produk sebelum membeli?",
-      a: "Boleh - hantar mesej kepada kedai rasmi Shopee atau TikTok Shop kami, atau hubungi pembekal rasmi kami Berkat Madinah Store.",
+      a: `Boleh - hantar mesej kepada ${BRAND_SELLER} melalui WhatsApp, atau melalui kedai Shopee atau TikTok Shop miliknya. Pekerja di mana-mana cawangan juga boleh menjawab secara bersemuka.`,
     },
   ],
   related: [],

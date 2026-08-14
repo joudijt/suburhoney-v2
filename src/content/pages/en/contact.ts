@@ -1,22 +1,23 @@
 import type { Article } from "../../articles/types";
-import { BRAND_SELLER_URL } from "../../../config/site";
+import { BRANCHES, BRAND_SELLER, BRAND_SELLER_URL, SHOPEE_URL, TIKTOK_SHOP_URL, WHATSAPP_URL } from "../../../config/site";
 
 export const page: Article = {
   slug: "contact",
   title: "Contact Subur Honey | Malaysia's Honey for Married Couples",
   heading: "Contact Subur Honey",
   description:
-    "How to reach Subur Honey, a honey blend for married couples across Malaysia: retail questions via Shopee and TikTok Shop, wholesale enquiries via our online form, and support through our official supplier Berkat Madinah Store.",
+    "How to reach Subur Honey, a honey blend for married couples across Malaysia: WhatsApp, the two Berkat Madinah Store branches in Selangor, the store's own Shopee and TikTok Shop storefronts, and our online form for wholesale enquiries.",
   primaryKeyword: "hubungi madu subur",
   keywords: [
     "contact subur honey",
     "subur honey wholesale enquiry",
     "hubungi madu subur",
     "subur honey customer service",
+    "Berkat Madinah Store branches",
     "honey for married couples Malaysia",
   ],
   published: "2026-07-24",
-  updated: "2026-07-24",
+  updated: "2026-08-14",
   readingMinutes: 3,
   icon: "/logo-8.webp",
   category: "Contact",
@@ -25,7 +26,22 @@ export const page: Article = {
       type: "answer",
       question: "How can I contact Subur Honey?",
       answer:
-        "Subur Honey is a honey blend made for married couples across Malaysia. The fastest ways to reach us are our official Shopee and TikTok Shop channels for order and product questions, our online form for wholesale enquiries, and our official supplier Berkat Madinah Store. You can also message us directly on WhatsApp.",
+        "Subur Honey is sold only through Berkat Madinah Store, so every route reaches the same seller: WhatsApp, either of its two Selangor branches, its own Shopee storefront and its own TikTok Shop. Use those for order and product questions, and our online form for wholesale enquiries.",
+    },
+    {
+      type: "heading",
+      text: "Where can I visit in person?",
+      id: "branches",
+    },
+    {
+      type: "table",
+      caption: `${BRAND_SELLER} - both branches`,
+      columns: ["Branch", "Address"],
+      rows: BRANCHES.map((branch) => [branch.area, branch.full]),
+    },
+    {
+      type: "paragraph",
+      text: `Both branches are in Selangor, inside the Klang Valley. ${BRAND_SELLER} is the exclusive retailer of Subur Honey: its <a href="${SHOPEE_URL}" target="_blank" rel="noopener noreferrer">Shopee storefront</a> and its <a href="${TIKTOK_SHOP_URL}" target="_blank" rel="noopener noreferrer">TikTok Shop</a> are the same shop trading online, not separate sellers, and Subur is not stocked in supermarkets or pharmacies. To check what is on the shelf before you travel, message the store on <a href="${WHATSAPP_URL}" target="_blank" rel="noopener noreferrer">WhatsApp</a>.`,
     },
     {
       type: "heading",
@@ -34,7 +50,7 @@ export const page: Article = {
     },
     {
       type: "paragraph",
-      text: "Wholesale enquiries go through a dedicated form, not general contact - it asks for the details our team needs to quote you properly the first time, rather than back-and-forth. Find it in the <a href=\"/en/#wholesale\">wholesale section on our homepage</a>.",
+      text: `Wholesale enquiries go through a dedicated form, not general contact - it asks for the details needed to quote you properly the first time, rather than back-and-forth. Find it in the <a href="/en/#wholesale">wholesale section on our homepage</a>. Volume orders are supplied through ${BRAND_SELLER} as well, which handles bulk pricing and stock.`,
     },
     {
       type: "heading",
@@ -53,19 +69,23 @@ export const page: Article = {
   faqs: [
     {
       q: "How can I contact Subur Honey right now?",
-      a: `Message us through our official Shopee or TikTok Shop for order and product questions, use the wholesale enquiry form on the homepage for business orders, or reach our official supplier <a href="${BRAND_SELLER_URL}" target="_blank" rel="noopener noreferrer">Berkat Madinah Store</a> directly.`,
+      a: `Message <a href="${BRAND_SELLER_URL}" target="_blank" rel="noopener noreferrer">${BRAND_SELLER}</a> on <a href="${WHATSAPP_URL}" target="_blank" rel="noopener noreferrer">WhatsApp</a>, or through its own Shopee or TikTok Shop storefront, for order and product questions. It is the exclusive retailer of Subur Honey, so all of those reach the same people. For business orders, use the wholesale enquiry form on the homepage.`,
+    },
+    {
+      q: "Where are the Berkat Madinah Store branches?",
+      a: `There are two, both in Selangor: ${BRANCHES[0].area} (${BRANCHES[0].full}) and ${BRANCHES[1].area} (${BRANCHES[1].full}).`,
     },
     {
       q: "Is there a phone number or email for Subur Honey?",
-      a: "A dedicated phone and email contact channel is being set up. Until then, Shopee chat, TikTok Shop messages, the wholesale form and Berkat Madinah Store are the fastest ways to reach us.",
+      a: `<a href="${WHATSAPP_URL}" target="_blank" rel="noopener noreferrer">WhatsApp</a> is the direct line to the store. A dedicated phone and email channel is being set up; until then WhatsApp, Shopee chat, TikTok Shop messages, the wholesale form, or simply walking into either branch are the fastest ways to reach us.`,
     },
     {
       q: "How do I ask about a wholesale or bulk order?",
-      a: "Use the wholesale enquiry form in the wholesale section of our homepage. It is built specifically for business orders so our team can quote you accurately.",
+      a: `Use the wholesale enquiry form in the wholesale section of our homepage. It is built specifically for business orders, and stock is supplied through ${BRAND_SELLER}, which handles bulk pricing.`,
     },
     {
       q: "Can I ask a product question before I buy?",
-      a: "Yes - message our official Shopee or TikTok Shop store directly, or reach out to our official supplier Berkat Madinah Store.",
+      a: `Yes - message ${BRAND_SELLER} on WhatsApp, or through its own Shopee or TikTok Shop storefront. Staff at either branch can answer in person too.`,
     },
   ],
   related: [],

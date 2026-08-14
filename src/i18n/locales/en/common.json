@@ -1,7 +1,7 @@
 {
   "seo": {
     "title": "SUBUR Honey | Honey Blend for Married Couples in Malaysia",
-    "description": "Shop SUBUR Honey, a honey blend made for married couples across Malaysia. Raw honeycomb with saffron, ginseng, black seed, walnuts and more - all ten ingredients named on the label. All natural, vegan. Retail and wholesale across Malaysia."
+    "description": "Shop SUBUR Honey, a honey blend made for married couples across Malaysia. Raw honeycomb with saffron, ginseng, black seed, walnuts and more - all ten ingredients named on the label. All natural, with no artificial colours or flavours. Retail and wholesale across Malaysia."
   },
   "nav": {
     "home": "Home",
@@ -23,10 +23,18 @@
   },
   "storeModal": {
     "heading": "Choose Your Store",
-    "subheading": "Select your preferred platform to purchase Subur Honey retail.",
+    "subheading": "Subur Honey is sold through one retailer, Berkat Madinah - pick the way you would like to buy.",
     "shopee": "Shopee",
     "tiktok": "TikTok Shop",
-    "madinah": "Berkat Madinah Store"
+    "madinah": "Berkat Madinah Store",
+    "onlineHeading": "Berkat Madinah online",
+    "branchesHeading": "Berkat Madinah in store",
+    "contactLabel": "Ask on WhatsApp",
+    "contactHint": "A line for questions, not a place to order.",
+    "branchAreas": {
+      "ampang": "Ampang Jaya",
+      "batu-caves": "Batu Caves"
+    }
   },
   "hero": {
     "heading": "Real honey. Ten real ingredients.",
@@ -37,7 +45,7 @@
       "10 NAMED INGREDIENTS",
       "RAW HONEYCOMB",
       "FOR MARRIED COUPLES",
-      "VEGAN"
+      "NO ARTIFICIAL COLOURS"
     ],
     "ctaPrimary": "Buy Retail",
     "ctaSecondary": "Wholesale Inquiry"
@@ -138,11 +146,11 @@
       }
     ],
     "footerNote": {
-      "before": "SUBUR Honey pairs naturally with our",
+      "before": "Buying for a business? See our",
       "wholesaleLink": "wholesale programme",
-      "middle": ", and is also available through our official supplier network, including",
+      "middle": ". Every jar, retail or bulk, reaches you through one retailer,",
       "madinahLink": "Berkat Madinah Store",
-      "after": ". See our",
+      "after": " - its two Selangor branches, its own Shopee storefront and its own TikTok Shop. It is not stocked in supermarkets or pharmacies. See our",
       "faqLink": "full FAQ",
       "end": "."
     }
@@ -150,7 +158,7 @@
   "wholesale": {
     "kicker": "FOR BUSINESSES",
     "heading": "Partner with Subur Honey",
-    "description": "Bring a honey blend your customers can read the whole label of. Join our growing network of retailers, distributors, and resellers across Malaysia.",
+    "description": "Bring a honey blend your customers can read the whole label of. Volume orders are supplied through Berkat Madinah Store, the one retailer Subur Honey is sold through in Malaysia.",
     "features": [
       {
         "title": "Bulk Pricing Available",
@@ -230,7 +238,7 @@
       },
       {
         "q": "Where can I buy Subur Honey in Malaysia?",
-        "a": "Subur Honey is available through our official supplier network including Berkat Madinah Store, as well as via our official Shopee and TikTok Shop channels."
+        "a": "Only through Berkat Madinah Store: its two Selangor branches in Ampang Jaya and Batu Caves, its own Shopee storefront, its own TikTok Shop, or WhatsApp. Those are one shop reached several ways, not separate sellers - Subur is not stocked in supermarkets or pharmacies."
       }
     ]
   },
@@ -239,7 +247,7 @@
     "subheading": "A honey blend made for married couples across Malaysia, with all ten ingredients named on the label.",
     "ctaPrimary": "Buy Retail",
     "ctaSecondary": "Wholesale Inquiry",
-    "ratingText": "Trusted by more than 5,000 customers"
+    "ratingText": "Trusted by families across the Klang Valley"
   },
   "footer": {
     "brand": "SUBUR HONEY",
@@ -248,7 +256,7 @@
       "ALL NATURAL",
       "10 NAMED INGREDIENTS",
       "RAW HONEYCOMB",
-      "VEGAN"
+      "NO ARTIFICIAL COLOURS"
     ],
     "exploreHeading": "EXPLORE",
     "shopHeading": "SHOP WITH US",
@@ -273,13 +281,13 @@
     "channelsHeading": "Get in Touch",
     "channelsSub": "Real channels, answered by real people.",
     "shopeeTitle": "Shopee",
-    "shopeeDesc": "Message our official store for order and product questions.",
+    "shopeeDesc": "Berkat Madinah's own Shopee storefront — message it for order and product questions.",
     "tiktokTitle": "TikTok Shop",
-    "tiktokDesc": "Reach us about a video, live sale or order.",
+    "tiktokDesc": "Berkat Madinah's own TikTok Shop — reach it about a video, live sale or order.",
     "madinahTitle": "Berkat Madinah Store",
-    "madinahDesc": "Our official supplier — Subur Honey is stocked and supplied through them, and they can help with product questions too.",
+    "madinahDesc": "The exclusive retailer of Subur Honey — two Selangor branches, and the people to ask about stock or a product question.",
     "wholesaleTitle": "Wholesale Enquiry",
-    "wholesaleDesc": "Stocking Subur? Use our dedicated wholesale form.",
+    "wholesaleDesc": "Stocking Subur? Use our dedicated wholesale form — volume orders are supplied through Berkat Madinah.",
     "followTitle": "Follow Us",
     "formHeading": "Send Us a Message",
     "formSub": "Fill in the form and our team will get back to you.",

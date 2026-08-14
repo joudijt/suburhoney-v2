@@ -1,5 +1,5 @@
 import type { Article } from "../../articles/types";
-import { BRAND_SELLER_URL } from "../../../config/site";
+import { BRANCHES, BRAND_SELLER, BRAND_SELLER_URL } from "../../../config/site";
 
 export const page: Article = {
   slug: "benefits",
@@ -17,7 +17,7 @@ export const page: Article = {
     "khasiat campuran madu Malaysia",
   ],
   published: "2026-07-24",
-  updated: "2026-07-24",
+  updated: "2026-08-14",
   readingMinutes: 5,
   icon: "/icons/ingrediant_07.webp",
   figureAlt:
@@ -113,8 +113,8 @@ export const page: Article = {
       a: "Madu biasa hanyalah madu sahaja. Subur ialah sarang madu tulen dicampur dengan sembilan ramuan lain yang dinamakan - habbatus sauda, saffron, halia, ginseng, kayu manis, bunga lawang, buah pala, walnut dan badam - dipilih untuk pasangan yang mengambilnya setiap hari.",
     },
     {
-      q: "Siapa membekalkan Madu Subur di Malaysia?",
-      a: `Madu Subur dijual secara runcit melalui pembekal rasmi kami <a href="${BRAND_SELLER_URL}" target="_blank" rel="noopener noreferrer">Berkat Madinah Store</a>, di samping saluran rasmi Shopee dan TikTok Shop kami.`,
+      q: "Siapa menjual Madu Subur di Malaysia?",
+      a: `Madu Subur dijual hanya melalui <a href="${BRAND_SELLER_URL}" target="_blank" rel="noopener noreferrer">${BRAND_SELLER}</a>, peruncit eksklusifnya - cawangan ${BRANCHES[0].area} dan ${BRANCHES[1].area} di Selangor, kedai Shopee miliknya, TikTok Shop miliknya, atau WhatsApp. Semuanya satu penjual yang dicapai dengan pelbagai cara, bukan penjual berasingan, dan Subur tidak dijual di pasar raya mahupun farmasi. Pesanan pukal turut dibekalkan melalui kedai yang sama.`,
     },
   ],
   related: [],

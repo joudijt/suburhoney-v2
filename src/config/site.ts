@@ -1,14 +1,61 @@
 export const SITE_URL = "https://suburhoney.com";
 export const SITE_NAME = "SUBUR Honey";
 export const BRAND_SELLER = "Berkat Madinah Store";
+export const BRAND_SELLER_AR = "متجر بركة المدينة";
 export const BRAND_SELLER_URL = "https://madinah.com.my/en/";
 
 /**
  * Where to buy. Shopee points at the shop page rather than the single-item deep
  * link we were given, so visitors land on the full range instead of one listing.
+ *
+ * Both marketplace storefronts belong to Berkat Madinah - `arabianvillagemalaysia`
+ * is the store's own marketplace trading name, not a third-party reseller. Describe
+ * them as the store's channels, never as separate sellers: SUBUR is sold exclusively
+ * through Berkat Madinah.
  */
 export const SHOPEE_URL = "https://shopee.com.my/arabianvillagemalaysia";
 export const TIKTOK_SHOP_URL = "https://vt.tiktok.com/ZSX2MbR9G/?page=TikTokShop";
+
+/**
+ * The physical stores, exactly as the owner supplied them (2026-08-14).
+ *
+ * Do not tidy or reformat an address - these feed LocalBusiness schema and the
+ * Retail page, and a "cleaned up" address stops matching the Google listing.
+ * The site previously claimed "stores across Malaysia"; there are two, both in
+ * Selangor.
+ */
+export interface Branch {
+  id: string;
+  /** Area name a searcher would actually type. */
+  area: string;
+  street: string;
+  locality: string;
+  postcode: string;
+  region: string;
+  /** One-line form for prose and llms.txt. */
+  full: string;
+}
+
+export const BRANCHES: Branch[] = [
+  {
+    id: "ampang",
+    area: "Ampang Jaya",
+    street: "Putra Sulaiman, 17-L1, Persiaran Putra Sulaiman",
+    locality: "Taman Putra Sulaiman, Ampang Jaya",
+    postcode: "68000",
+    region: "Selangor",
+    full: "Putra Sulaiman, 17-L1, Persiaran Putra Sulaiman, Taman Putra Sulaiman, 68000 Ampang Jaya, Selangor",
+  },
+  {
+    id: "batu-caves",
+    area: "Batu Caves",
+    street: "32, Jalan Prima SG 2",
+    locality: "Prima Seri Gombak, Batu Caves",
+    postcode: "68100",
+    region: "Selangor",
+    full: "32, Jalan Prima SG 2, Prima Seri Gombak, 68100 Batu Caves, Selangor",
+  },
+];
 
 /** Social accounts belong to the parent store and are shared across its brands. */
 export const INSTAGRAM_URL = "https://www.instagram.com/berkatmadinah";

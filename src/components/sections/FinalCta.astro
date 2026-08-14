@@ -19,10 +19,15 @@ const { lang, heading, subheading, ctaPrimary, ctaSecondary, ratingText } = Astr
       <button type="button" data-store-modal-trigger class="btn-primary">{ctaPrimary}</button>
       <a href={`/${lang}/#wholesale`} class="btn-secondary">{ctaSecondary}</a>
     </div>
+    {/*
+      No star row here. Five filled stars above this line read as a 5.0 score, and
+      nothing on this site collects reviews - the same unsubstantiated claim that had
+      to come out of the Product schema (aggregateRating 5/5000). The stars survived
+      that cleanup only because they were decorative markup rather than text, so every
+      grep for the number passed while a visitor still saw the rating.
+      Do not reintroduce them unless a real review source exists to back them.
+    */}
     <div class="flex flex-col items-center gap-2 pt-6" data-reveal>
-      <div class="flex gap-1 text-gold" aria-hidden="true">
-        {Array.from({ length: 5 }).map(() => <span class="text-xl">★</span>)}
-      </div>
       <p class="text-sm font-bold uppercase tracking-widest text-brown/55">{ratingText}</p>
     </div>
   </div>

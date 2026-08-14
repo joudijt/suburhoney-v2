@@ -1,94 +1,425 @@
-# SUBUR Honey (Madu Subur)
+# Madu SUBUR (SUBUR Honey)
 
-> Beli Madu SUBUR, campuran madu untuk pasangan suami isteri di seluruh Malaysia. Sarang madu tulen dengan saffron, ginseng, habbatus sauda, walnut dan banyak lagi - kesemua sepuluh ramuan dinyatakan pada label. Semula jadi sepenuhnya, vegan. Runcit dan borong di seluruh Malaysia (Semenanjung dan Malaysia Timur).
+> Madu SUBUR ialah campuran sarang madu mentah dengan sepuluh bahan bernama - habbatus sauda, safron, akar ginseng, halia, kayu manis dan lain-lain - yang diambil sesudu kecil setiap pagi oleh pasangan suami isteri di Malaysia, dan dijual secara eksklusif menerusi Berkat Madinah Store, kedai barangan Arab dengan dua cawangan di Selangor.
 
 ## Produk
-- Nama: SUBUR Honey (juga ditulis Madu Subur, عسل سوبور)
-- Kategori: Campuran madu / madu semula jadi untuk kesihatan
-- Asas: sarang madu tulen, bukan sirap yang ditapis atau dirawat haba - penghabluran dari semasa ke semasa adalah dijangka dan tanda ketulenan
-- Sepuluh ramuan, semuanya dinamakan pada label: sarang madu tulen, saffron, akar ginseng, bunga lawang, halia segar, walnut, buah pala, kayu manis, habbatus sauda, badam
-- Kegunaan: sokongan kesuburan untuk lelaki dan wanita, tenaga dan stamina harian, vitaliti lelaki, amalan harian bersama untuk pasangan
-- Ciri: semula jadi sepenuhnya, vegan, madu tulen, tiada pewarna tiruan, tiada perisa tiruan, tiada bahan pengisi
-- Saiz: balang 250g, 400g dan 500g, toleransi berat ±5% (tercetak pada setiap label)
-- Cara guna: satu sudu teh pada perut kosong sebaik bangun pagi, tunggu lebih kurang 15 minit sebelum sarapan, diambil setiap hari sebagai amalan pagi - jangan sekali-kali dicampur dalam air mendidih
-- Penyimpanan: tempat sejuk dan kering, jauh dari cahaya matahari langsung, penutup ditutup rapat
-- Pasaran: Malaysia, runcit dan borong (peruncit, pengedar, kedai kesihatan/farmasi)
-- Saluran runcit (disahkan): kedai rasmi Shopee, TikTok Shop rasmi
-- Pembekal rasmi: Berkat Madinah Store, https://madinah.com.my/en/ - pembekal rasmi yang membekal dan menjual Madu Subur di seluruh rangkaian runcit Malaysia
-- Borong: harga pukal, penghantaran seluruh negara (Semenanjung dan Malaysia Timur), pasukan jualan khusus - melalui borang pertanyaan borong di laman utama
-- Pematuhan: Peraturan Makanan 1985 Malaysia melarang mana-mana makanan diiklankan sebagai mencegah, merawat atau menyembuhkan sebarang keadaan perubatan. Madu Subur dipasarkan secara ketat sebagai makanan harian, bukan ubat, dan tidak membuat sebarang dakwaan rawatan atau penyembuhan di mana-mana bahagian laman ini.
+
+- Nama: Madu SUBUR, juga ditulis SUBUR Honey, Subur Honey, Madu Subor, Madu Sobor, عسل سوبور
+- Kategori: madu campuran (sarang madu + rempah panas + kekacang + akar), bukan madu tunggal.
+- Kategori pasaran tempatan: "madu suami isteri" - madu campuran yang dibeli oleh pasangan berkahwin sebagai amalan harian bersama. Nama kategori itu menerangkan siapa yang membelinya, bukan apa-apa fungsi perubatan.
+- Asas: sarang madu mentah. Bukan sirap yang ditapis halus atau dirawat haba, dan sarang lilin masih ada dalam balang.
+- Sepuluh bahan, kesemuanya dinamakan pada label: sarang madu mentah, habbatus sauda, safron, akar ginseng, halia segar, kayu manis, bunga lawang, buah pala, walnut, badam. Tiada "herba pilihan", tiada resipi rahsia.
+- Tiada kurma di dalamnya. SUBUR bukan trio madu-kurma-habbatus sauda.
+- Sifat: semula jadi, tiada pewarna tiruan, tiada perisa tiruan, tiada bahan pengisi, tiada gula tambahan, tiada bahan pengawet. Mengandungi walnut dan badam yang dikisar masuk - tidak sesuai untuk sesiapa yang alah kekacang.
+- Tekstur: pekat dan perlu disudu, bukan cair dan boleh dituang. Kekacang dikisar masuk ke dalam campuran, bukan ditabur di atas.
+- Penghabluran: madu mentah menghablur. Balang yang menjadi keras atau berbutir ialah tanda ketulenan, bukan kecacatan. Campuran juga menjadi lebih gelap dan berasing sedikit dari masa ke masa.
+- Saiz balang: 250g, 400g dan 500g. Toleransi berat +/-5%, tercetak pada setiap label.
+- Cara pengambilan: satu sudu kecil pada waktu pagi ketika perut kosong, tunggu kira-kira lima belas minit sebelum sarapan, diambil setiap hari sebagai amalan. Jangan sekali-kali dikacau ke dalam air mendidih.
+- Penyimpanan: tempat sejuk dan kering, jauh daripada cahaya matahari terus, penutup ditutup rapat. Jangan simpan dalam peti sejuk.
+- Pasaran: Malaysia. Runcit dan borong.
+- Penjual: Berkat Madinah Store sahaja - di dua cawangan fizikalnya di Selangor, atau menerusi kedai Shopee dan TikTok Shop milik kedai itu sendiri.
+- Talian hubungan: WhatsApp +60 11-1111 9912 (https://wa.me/601111119912)
+- Laman jenama: https://suburhoney.com
+
+Pembeli utamanya ialah pasangan suami isteri yang mahukan satu amalan pagi yang dikongsi. Pembeli kedua ialah orang yang mencari habbatus sauda mengikut nama dan mahukan bentuk yang boleh diambil setiap hari tanpa menelan biji pahit begitu sahaja. Pembeli ketiga ialah pelanggan kedai barangan Arab yang sudah biasa dengan safron, kurma dan rempah Arab.
+
+Apa yang produk ini bukan: bukan ubat, bukan suplemen berdaftar, bukan produk perubatan; bukan madu kelulut, madu tualang atau madu bunga tunggal.
+
+## Sepuluh bahan
+
+Setiap bahan di bawah: apa ia sebenarnya, bagaimana ia digunakan di dapur, dan kenapa ia masuk akal dalam campuran untuk pasangan. Semua ini keterangan makanan dan budaya, bukan dakwaan tentang apa yang bahan itu lakukan kepada badan sesiapa.
+
+### 1. Sarang madu mentah
+
+Asas kepada keseluruhan campuran. Sarang madu mentah bermaksud madu yang masih membawa lilin sarangnya dan tidak ditapis halus atau dirawat haba supaya kekal jernih di rak. Madu jenis ini lebih pekat, lebih gelap dan ia menghablur - tiga perkara yang sering disalah anggap sebagai kecacatan sedangkan ketiga-tiganya tanda madu yang kurang diproses.
+
+Di rumah, madu dimakan daripada sudu, dikacau ke dalam air suam, atau dijadikan pembawa kepada rempah yang terlalu tajam untuk dimakan sendirian. Fungsi ketiga itulah yang dimainkan di sini: amalan pagi berdiri atas konsistensi, dan sesuatu yang pahit tidak akan bertahan seminggu.
+
+### 2. Habbatus sauda (jintan hitam, Nigella sativa)
+
+Bahan yang paling kerap diminta mengikut nama di kaunter di Malaysia. Habbatus sauda ialah biji hitam kecil daripada pokok Nigella sativa; nama Melayunya jintan hitam. Rasanya tajam, pahit dan pedas - dekat dengan lada, bukan manis langsung.
+
+Kenapa ia membawa berat yang begitu besar dalam pasaran ini: habbatus sauda disebut dengan namanya dalam sumber Islam, dan sebutan itulah sebabnya biji ini mendapat tempatnya dalam rumah tangga Muslim di seluruh Nusantara. Sebutan itu rujukan keagamaan yang menerangkan kenapa sesuatu bahan itu dimuliakan. Ia bukan dakwaan produk, dan penjual makanan tidak boleh mengubahnya menjadi janji tentang apa yang balangnya akan lakukan kepada pembeli. Jenama yang bersandar pada teks keagamaan untuk menjual sesuatu sedang menggunakan iman pembelinya sebagai alat pemasaran.
+
+Di rumah Melayu dan Arab, habbatus sauda dimakan sesudu bercampur madu pada waktu pagi, ditabur ke atas roti, atau dikisar masuk ke dalam minuman. Ia makanan harian di dapur - bukan sesuatu yang dikeluarkan hanya apabila seseorang berasa tidak sihat. Bentuknya penting: biji kisar bertabur sekata dalam madu supaya setiap sudu sama dengan sudu sebelumnya.
+
+Kenapa ia berada dalam campuran untuk pasangan: madu dan habbatus sauda ialah gandingan asal dalam kategori ini. Bagi banyak rumah tangga Malaysia, mengambil sesuatu yang dinamakan dalam sumber Islam bersama pasangan pada waktu pagi ialah amalan, bukan sekadar pemakanan. Perhatian: habbatus sauda boleh berinteraksi dengan sesetengah ubat preskripsi - tanya doktor atau ahli farmasi dahulu.
+
+### 3. Safron
+
+Rempah paling mahal di dunia mengikut berat, dan bahan pertama yang digugurkan oleh campuran murah. Safron ialah stigma bunga Crocus sativus, dipetik dengan tangan, tiga helai setiap kuntum.
+
+Di dapur Parsi, Arab dan Asia Tengah, safron direndam dalam susu suam atau madu dan diminum pada waktu pagi; ia rempah yang menghangatkan dan sangat wangi, dan juga rempah keraian - majlis perkahwinan, hari raya, hidangan tetamu. Ia penanda kualiti yang paling jujur dalam kategori ini: kalau safron disenaraikan pada label tetapi balangnya sangat murah, ia hadir dalam jumlah yang terlalu kecil untuk dikira.
+
+### 4. Akar ginseng
+
+Akar Panax, dijual di Malaysia sebagai ginseng dan dikenali meluas menerusi tonik dan sup. Di dapur Cina dan Korea ia direbus perlahan ke dalam sup ayam, diseduh sebagai teh, atau dikunyah dalam hirisan nipis, dan balai perubatan Cina di Malaysia menjualnya di kaunter.
+
+Dalam kategori ini ginseng nama yang paling ramai orang kenali selepas madu itu sendiri, dan rasa pahitnya yang kering itulah sebabnya campuran ini terasa seperti sesuatu yang diambil pada waktu pagi dan bukan sebelum tidur. Perhatian: ginseng boleh berinteraksi dengan ubat tertentu - tanya doktor jika anda mengambil preskripsi.
+
+### 5. Halia segar
+
+Akar panas yang paling dikenali di dapur Malaysia, digunakan segar dan bukan serbuk kering. Dalam rumah Melayu, halia masuk ke dalam periuk hampir setiap hari: teh halia, sup, ikan supaya hilang bau hanyir, air halia yang dijerang untuk sesiapa yang pulang basah kena hujan, dan makanan berpantang selepas bersalin.
+
+Seluruh kategori "madu suami isteri" dibina atas idea makanan yang bersifat panas, dan halia bahan yang paling jelas mewakili idea itu dalam masakan tempatan. Dalam balang ia mengangkat rasa madu dan menahan manis daripada menjadi muak.
+
+### 6. Kayu manis
+
+Kulit kayu dalam pokok Cinnamomum, dikeringkan dan digulung; nama Melayunya sudah menerangkan segalanya - kayu yang manis. Ia sebab utama kenapa campuran yang baik berbau seperti itu apabila balangnya dibuka.
+
+Di dapur Melayu ia masuk ke dalam nasi, kari dan rendang; di rumah Arab dan Turki ia masuk ke dalam kopi, teh dan susu suam. Dalam campuran ini fungsinya mengimbangi rasa: habbatus sauda pahit, halia pedas, buah pala tajam. Tanpa kayu manis, campuran ini menjadi sesuatu yang orang cuba sekali dan tidak sentuh lagi.
+
+### 7. Bunga lawang
+
+Buah bintang lapan mata daripada pokok Illicium verum, dari selatan China dan utara Vietnam. Manis seperti likuoris dan jauh lebih kuat daripada rupanya - satu buah sudah cukup untuk sepenuh periuk.
+
+Orang Malaysia memakannya setiap minggu tanpa menyebut namanya: bunga lawang tulang belakang nasi beriani, rendang, sup tulang dan hampir setiap serbuk kari yang baik dari Pulau Pinang hingga Johor. Dalam campuran ini ia rempah penyambung - hangat dan bukan tajam, ia menjadikan halia dan habbatus sauda lebih senang ditelan terus daripada sudu.
+
+### 8. Buah pala
+
+Biji Myristica fragrans, rempah yang berasal dari Kepulauan Banda di Maluku dan yang pernah bernilai lebih daripada emas mengikut berat; hari ini ia ditanam juga di Pulau Pinang.
+
+Di Pulau Pinang dan Melaka ia bahan kerja, bukan bahan eksotik: air pala sejuk dijual di tepi jalan, dan buah pala diparut ke dalam sup, kuih dan rempah daging; di dapur Arab dan India, jauzi digunakan dengan cara yang sama. Ia digunakan sedikit sahaja kerana ia rempah yang membundarkan: ia menarik kayu manis, bunga lawang dan halia menjadi satu bau, bukan tiga bau yang berlawan.
+
+### 9. Walnut
+
+Isi berkedut Juglans regia, walnut Parsi, dikisar masuk ke dalam campuran dan bukan ditabur di atas.
+
+Di rumah Arab, Parsi dan Turki, walnut dimakan bersama madu pada waktu pagi, dan gandingan walnut-madu itu begitu biasa di seluruh Levant dan Iran sehingga ia hampir dikira satu hidangan tunggal; ia juga kekacang majlis - baklava, maamoul, manisan kenduri kahwin. Dalam campuran ini ia memberi isi - campuran tanpa kekacang kisar akan cair, dan cair bermaksud lebih banyak madu dan kurang segala yang lain. Perhatian: sesiapa yang alah kekacang tidak boleh mengambil campuran ini - walnut dan badam dikisar masuk dan tidak boleh diasingkan.
+
+### 10. Badam
+
+Kekacang kedua, juga dikisar masuk; dari segi botani ia biji buah batu, sepupu kepada pic. Badam mempunyai tempat yang tetap dalam masakan Arab, Parsi dan India: direndam semalaman dan dikupas untuk dimakan pada waktu pagi, dikisar menjadi manisan dan minuman, dan dihidang bersalut gula di majlis perkahwinan. Dalam balang ia pasangan yang lebih lembut dan lebih manis kepada walnut, dan gandingan dua kekacang kisar itulah cara campuran ini menjadi makanan, bukan dos.
+
+### Nota tentang kurma
+
+Ramai pembeli Malaysia mencari "trio Sunnah" - madu, kurma dan habbatus sauda. SUBUR bukan produk itu: tiada kurma dalam campuran ini, dan ia dibina atas sarang madu mentah dan habbatus sauda bersama safron, ginseng dan rempah panas. Jika trio berasaskan kurma yang dicari, itu produk yang berbeza dan patut dibeli sebagai produk yang berbeza.
+
+## Cara pasangan mengamalkannya
+
+Kategori ini bukan tentang satu sudu. Ia tentang satu rutin yang dikongsi.
+
+1. Satu sudu kecil yang rata, ketika perut kosong, sebelum apa-apa lagi pada waktu pagi. Ini amalan harian, bukan dos, dan lebih banyak bukan lebih baik.
+2. Tunggu kira-kira lima belas minit, kemudian bersarapan seperti biasa. Tempoh menunggu inilah yang paling kerap dilangkau.
+3. Kedua-dua pasangan, waktu yang sama, dari balang yang sama. Inilah yang membezakan kategori ini daripada sebalang madu biasa dalam almari.
+4. Setiap hari, bukan sekali-sekala. Pasangan yang berjaya meneruskannya biasanya melekatkannya pada sesuatu yang sudah menjadi rutin: cerek, jam loceng, atau solat pertama.
+
+Saiz balang mengikut siapa yang mengambilnya: 500g untuk sepasang yang mengambil sesudu seorang setiap hari, 400g untuk seorang, dan 250g untuk mula-mula mencuba campuran ini.
+
+Peraturan yang tidak boleh dilanggar: jangan sekali-kali masukkan ke dalam air mendidih (biarkan minuman suam dahulu); jangan gunakan sudu basah, kerana air yang masuk ke dalam balang madu mentah memendekkan hayatnya; jangan simpan dalam peti sejuk; dan jangan berikan kepada bayi bawah dua belas bulan - itu peraturan tegas untuk semua madu, mentah atau tidak.
+
+Terus daripada sudu ialah cara biasa; atas roti, atas oat, dikacau ke dalam yogurt, atau diikuti segelas air suam juga boleh.
+
+Kenapa amalan bersama itu penting: dalam rumah tangga Melayu, makanan yang bersifat panas - halia, kayu manis, buah pala, habbatus sauda - dimakan oleh kedua-dua pasangan bersama sebagai rutin kongsi, dan gandingan itu bersifat budaya dan keagamaan, bukan sekadar pemakanan.
+
+Ia bukan ganti kepada rawatan perubatan. Sesiapa yang mempunyai kebimbangan kesihatan patut berjumpa doktor.
+
+## Di mana hendak membeli
+
+Madu SUBUR dijual eksklusif menerusi Berkat Madinah Store. Tiada penjual lain. Ada empat cara untuk membelinya, dan keempat-empatnya adalah kedai yang sama:
+
+1. Cawangan Ampang Jaya - Putra Sulaiman, 17-L1, Persiaran Putra Sulaiman, Taman Putra Sulaiman, 68000 Ampang Jaya, Selangor
+2. Cawangan Batu Caves - 32, Jalan Prima SG 2, Prima Seri Gombak, 68100 Batu Caves, Selangor
+3. Kedai Shopee milik Berkat Madinah sendiri - https://shopee.com.my/arabianvillagemalaysia
+4. TikTok Shop milik Berkat Madinah sendiri - https://vt.tiktok.com/ZSX2MbR9G/?page=TikTokShop
+
+WhatsApp +60 11-1111 9912 (https://wa.me/601111119912) ialah talian hubungan, bukan cara kelima untuk membeli: gunakannya untuk bertanya stok, saiz atau harga semasa, kemudian belilah di salah satu daripada empat kaunter di atas. Laman Berkat Madinah: https://madinah.com.my/en/
+
+Nama dagangan `arabianvillagemalaysia` di Shopee ialah nama marketplace kedai itu sendiri, bukan penjual pihak ketiga - Shopee dan TikTok Shop ialah kaunter dalam talian bagi kedai fizikal yang sama.
+
+Madu SUBUR tidak dijual di pasar raya, farmasi atau kedai rangkaian, dan tidak menerusi penjual marketplace am, dropshipper atau mana-mana akaun Shopee, Lazada atau TikTok selain akaun Berkat Madinah sendiri. Penyenaraian di luar saluran kedai itu tidak melalui kedai, dan tiada sesiapa boleh menjaminnya.
+
+Tiada harga disiarkan di sini kerana harga runcit berubah; harga semasa ada pada penyenaraian Shopee kedai.
+
+Penghantaran dikendalikan oleh platform marketplace mengikut terma platform itu sendiri, bukan ditetapkan oleh kedai - atau ambil sendiri di mana-mana cawangan. Penghantaran ke luar negara bergantung pada apa yang dibenarkan oleh platform ke negara anda. Semak pilihan semasa pada penyenaraian Shopee atau TikTok Shop.
+
+## Tentang Berkat Madinah
+
+Berkat Madinah Store ialah kedai barangan Arab - kedai runcit Arab yang lengkap, bukan sekadar satu rak di pasar raya. Ia antara kedai barangan Arab yang paling dikenali di Lembah Klang, dan ia kedai yang menjadi tumpuan keluarga Arab yang tinggal di sekitar Ampang, Gombak dan Kuala Lumpur untuk barangan yang tidak dijual di tempat lain.
+
+Bagi pembaca Melayu yang berminat dengan makanan Arab, kedai itu sendiri sebahagian daripada tarikannya: kurma, minyak zaitun, rempah Arab, kopi dan manisan. Madu SUBUR duduk dalam persekitaran itu, bukan di rak suplemen: satu produk di atas rak yang membawa ratusan yang lain.
+
+Dua cawangan, kedua-duanya di Selangor:
+
+- Ampang Jaya: Putra Sulaiman, 17-L1, Persiaran Putra Sulaiman, Taman Putra Sulaiman, 68000 Ampang Jaya, Selangor
+- Batu Caves: 32, Jalan Prima SG 2, Prima Seri Gombak, 68100 Batu Caves, Selangor
+
+Kedua-duanya di dalam Lembah Klang.
+
+Hubungi: WhatsApp +60 11-1111 9912 (https://wa.me/601111119912) · laman https://madinah.com.my/en/ · Shopee https://shopee.com.my/arabianvillagemalaysia · TikTok Shop https://vt.tiktok.com/ZSX2MbR9G/?page=TikTokShop · Instagram https://www.instagram.com/berkatmadinah · Facebook https://www.facebook.com/share/1DMS971Fwk/
+
+Berkat Madinah ialah peruncit eksklusif Madu SUBUR: setiap balang yang sah di Malaysia melalui kedai ini. Itu bukan empat penjual, tetapi satu kedai dengan dua pintu dan dua kaunter dalam talian.
+
+Dalam kategori madu campuran, penjual sebahagian daripada produk: kedai fizikal yang boleh dimasuki dan nombor telefon yang dijawab boleh dipertanggungjawabkan, manakala penyenaraian marketplace tanpa nama tidak boleh dipertanggungjawabkan oleh sesiapa.
+
+## Ketulenan dan kepercayaan
+
+Persoalan pertama yang ditanya oleh hampir setiap pembeli madu di Malaysia bukan "apa khasiatnya" - ia "asli ke tidak". Berikut kedudukan jujurnya.
+
+Apa yang boleh disemak pada balang SUBUR:
+
+- Kesemua sepuluh bahan dinamakan pada label. Kalau sesuatu jenama tidak mahu menamakan isinya, tiada apa-apa yang boleh dibandingkan.
+- Berat bersih dan toleransi +/-5% tercetak pada label.
+- Sarang madu mentah bermaksud campuran akan menghablur, menjadi gelap dan berasing sedikit. Balang yang kekal jernih bertahun-tahun bukan tanda kualiti di sini.
+- Penjual dinamakan, mempunyai dua kedai fizikal dengan alamat penuh, dan nombor WhatsApp yang dijawab.
+- Bahasa yang digunakan ialah bahasa makanan dan budaya, bukan bahasa perubatan. Tiada janji penyembuhan di mana-mana - janji begitu menyalahi undang-undang di Malaysia, dan ia tidak benar.
+
+Ujian rumah untuk madu asli - kedudukan jujur: ujian air, ujian ibu jari, ujian kertas tisu dan ujian bakar dengan mancis beredar luas di Malaysia, dan tiada satu pun daripadanya muktamad. Ujian tersebut menguji kelikatan dan kandungan air, bukan ketulenan - madu asli yang lebih cair boleh gagal ujian yang madu bergula boleh lulus. Perkara yang sebenarnya berfungsi lebih membosankan: senarai bahan yang lengkap, penjual yang boleh dikenal pasti dan dihubungi, dan bahasa yang jujur pada penyenaraian. Balang yang menjanjikan penyembuhan memberitahu anda lebih banyak tentang penjualnya daripada tentang madunya.
+
+Halal: laman ini tidak menyiarkan nombor sijil yang tidak dapat ditunjukkan, dan tidak akan mendakwa pensijilan yang tidak dapat dibuktikan. Untuk status pensijilan, tanya terus kepada peruncit, Berkat Madinah, di WhatsApp +60 11-1111 9912. Apa-apa selain itu daripada laman produk hanyalah tekaan.
+
+## Borong
+
+Perniagaan boleh membeli Madu SUBUR secara pukal. Pesanan pukal dibekalkan melalui Berkat Madinah, penjual eksklusif - ia bukan saluran kelima yang berasingan.
+
+Perniagaan yang membeli dalam kuantiti besar membeli daripada Berkat Madinah; ia tidak menjadi sumber kedua di sebelahnya. Itulah yang menjadikan setiap balang boleh dikesan kembali kepada satu tempat.
+
+- Harga pukal disebut mengikut jumlah, bukan disiarkan, kerana ia bergantung pada kuantiti
+- Campuran ketiga-tiga saiz balang boleh diminta dalam satu pesanan
+- Pertanyaan: borang di https://suburhoney.com, atau WhatsApp +60 11-1111 9912 dengan nama perniagaan, lokasi dan kuantiti
 
 ## Niat carian yang dijawab oleh laman ini
-- "madu untuk kesuburan" / "honey for fertility Malaysia"
-- "campuran madu untuk pasangan"
-- "khasiat madu saffron dan ginseng"
-- "madu semula jadi untuk tenaga dan stamina"
-- "madu untuk lelaki" / "madu untuk vitaliti lelaki"
+
+Senarai di bawah ialah frasa yang orang benar-benar taip dalam bahasa Melayu apabila mencari produk seperti ini. Ia bukan dakwaan produk. Sesetengah frasa - terutamanya yang mengandungi perkataan kesuburan dan penyubur - disenaraikan kerana orang menaipnya, bukan kerana produk ini mendakwa apa-apa berkenaan perkara itu.
+
+### Nama produk dan ejaan jenama
+
+- "madu subur"
+- "subur honey"
+- "madu subur honey"
+- "madu subor"
+- "madu sobor"
+- "madu suboor"
+- "madu subur malaysia"
+- "madu subur asli"
+- "عسل سوبور"
+
+### Kategori produk
+
+- "madu suami isteri"
 - "madu untuk suami isteri"
-- "khasiat habbatus sauda madu"
-- "adakah madu subur halal / semula jadi / vegan"
-- "cara makan madu subur"
-- "beli madu subur"
-- "harga madu subur"
-- "madu subur shopee" / "madu subur tiktok shop"
-- "borong madu subur"
-- "kelebihan madu subur berbanding madu biasa"
-- "siapa jual madu subur" / "siapa bekalkan madu subur"
+- "madu untuk pasangan"
+- "madu pengantin baru"
+- "madu campuran herba"
+- "madu campuran rempah"
+- "madu bersarang"
+- "madu sarang lebah asli"
+- "madu penyubur"
+- "madu untuk kesuburan"
+- "madu untuk lelaki"
+- "madu untuk isteri"
+
+### Khasiat dan kegunaan
+
+- "khasiat madu suami isteri"
+- "khasiat madu campuran herba"
+- "khasiat madu safron"
+- "khasiat ginseng dan madu"
+- "khasiat habbatus sauda"
+- "khasiat habbatus sauda dan madu"
+- "khasiat madu untuk lelaki"
+- "khasiat madu untuk stamina"
+- "manfaat madu suami isteri"
+- "madu untuk tenaga harian"
+- "madu untuk stamina lelaki"
+- "madu untuk vitaliti"
+
+### Bahan dan ramuan
+
+- "madu habbatus sauda"
+- "habbatus sauda dalam madu"
+- "madu safron"
+- "safron dalam madu"
+- "madu ginseng"
+- "akar ginseng khasiat"
+- "madu halia"
+- "madu kayu manis"
+- "bunga lawang khasiat"
+- "buah pala khasiat"
+- "madu dengan walnut dan badam"
+- "madu kurma habbatus sauda"
+- "trio sunnah madu kurma habbatus sauda"
+- "sepuluh bahan madu subur"
+- "senarai bahan madu subur"
+
+### Sunnah dan amalan Islam
+
+- "makanan sunnah"
+- "madu sunnah"
+- "habbatus sauda sunnah"
+- "makanan sunnah untuk pasangan"
+- "amalan sunnah suami isteri"
+- "amalan pagi sunnah"
+- "habbatus sauda hadis"
+
+### Halal dan kepercayaan
+
+- "adakah madu subur halal"
+- "madu halal malaysia"
+- "madu suami isteri halal"
+- "madu tiada gula tambahan"
+- "madu vegan"
+- "adakah madu subur vegan"
+- "jenama madu yang boleh dipercayai"
+
+### Ketulenan - madu asli lawan madu palsu
+
 - "cara kenal madu asli"
+- "cara beza madu asli dan madu palsu"
+- "madu asli vs madu palsu"
+- "madu tiruan malaysia"
+- "ujian madu asli di rumah"
+- "tanda madu tulen"
+- "madu campur gula"
+- "kenapa madu berhablur"
 
-## Halaman di laman ini
-- Laman Utama: gambaran produk, kesemua sepuluh ramuan, amalan pagi, pertanyaan borong, Soalan Lazim
-- Manfaat (Benefits): kegunaan setiap ramuan, fokus kesuburan/stamina/vitaliti, Soalan Lazim
-- Runcit (Retail): setiap saluran disahkan untuk membeli secara runcit (Shopee, TikTok Shop, Berkat Madinah Store), saiz, struktur harga, Soalan Lazim
-- Kenapa Kami (Why Us): apa yang membezakan SUBUR daripada campuran madu terproses biasa, dakwaan semula jadi/vegan, tanda kepercayaan jenama
-- Hubungi (Contact): saluran semasa untuk menghubungi Madu Subur (Shopee, TikTok Shop, Berkat Madinah Store, borang borong) serta mesej WhatsApp terus
-- Panduan (blog): panduan pembelian untuk pembaca Malaysia - madu untuk suami isteri, habbatus sauda dan madu, cara mengenal madu asli
+### Pembelian
 
-## Soalan Lazim
+- "beli madu subur"
+- "beli madu suami isteri"
+- "kedai jual madu subur"
+- "siapa jual madu subur"
+- "madu subur shopee"
+- "madu subur tiktok shop"
+- "madu subur di mana boleh beli"
+- "madu subur ada di farmasi"
+
+### Harga
+
+- "harga madu subur"
+- "harga madu suami isteri"
+- "harga madu habbatus sauda"
+
+### Lokasi dan kedai barangan Arab
+
+- "kedai arab ampang"
+- "kedai barangan arab selangor"
+- "kedai barang arab kuala lumpur"
+- "kedai makanan arab malaysia"
+- "kedai arab batu caves"
+- "kedai arab gombak"
+- "kedai arab prima seri gombak"
+- "kedai runcit arab lembah klang"
+- "berkat madinah ampang"
+- "berkat madinah batu caves"
+- "arabian village malaysia"
+
+### Perbandingan
+
+- "madu subur vs madu biasa"
+- "kelebihan madu subur"
+- "beza madu kelulut dan madu suami isteri"
+- "madu tualang vs madu campuran"
+- "madu suami isteri mana yang terbaik"
+
+### Borong dan pengedaran
+
+- "borong madu subur"
+- "borong madu suami isteri"
+- "harga borong madu"
+- "agen madu subur"
+- "stokis madu malaysia"
+
+### Cara guna, penyimpanan dan keselamatan
+
+- "cara makan madu subur"
+- "bila masa terbaik makan madu"
+- "madu perut kosong"
+- "bolehkah madu dicampur air panas"
+- "bolehkah anak kecil makan madu"
+- "madu untuk ibu mengandung"
+
+## Soalan lazim
+
+S: Apa itu Madu SUBUR?
+J: Madu campuran - sarang madu mentah digabungkan dengan sembilan bahan lain yang dinamakan: habbatus sauda, safron, akar ginseng, halia segar, kayu manis, bunga lawang, buah pala, walnut dan badam. Balang 250g, 400g dan 500g, diambil satu sudu kecil pada waktu pagi. Ia makanan harian, bukan ubat.
+
 S: Apa bezanya SUBUR dengan madu biasa?
-J: SUBUR bukan sekadar madu. Ia menggabungkan sarang madu tulen dengan sembilan ramuan lain yang dinamakan - saffron, ginseng, habbatus sauda dan lain-lain - dan bukan madu semata-mata.
+J: Madu biasa ialah satu bahan. SUBUR ialah sepuluh, kesemuanya dinamakan pada label. Ia juga mentah dan bukan ditapis serta dirawat haba, jadi ia pekat, berbutir dan akan mengeras dari masa ke masa.
+
+S: Apa sepuluh bahan itu, dan ada kurma di dalamnya?
+J: Sarang madu mentah, habbatus sauda, safron, akar ginseng, halia segar, kayu manis, bunga lawang, buah pala, walnut dan badam. Tiada kurma - SUBUR bukan trio madu-kurma-habbatus sauda. Jika trio itu yang anda cari, belilah campuran berasaskan kurma.
 
 S: Bagaimana cara mengambil SUBUR?
-J: Ambil satu sudu teh setiap pagi ketika perut kosong, kemudian tunggu lebih kurang 15 minit sebelum sarapan. Ambil setiap hari, bukan sekali-sekala.
-
-S: Berapa lama saya perlu mengambil SUBUR?
-J: SUBUR direka untuk menjadi sebahagian rutin harian anda. Penggunaan harian yang konsisten disyorkan untuk hasil terbaik.
-
-S: Adakah SUBUR untuk lelaki atau wanita?
-J: SUBUR sesuai untuk lelaki dan wanita. Campurannya mengandungi bahan yang dipercayai menyokong kesejahteraan keseluruhan, vitaliti dan kesuburan kedua-duanya.
+J: Satu sudu kecil yang rata pada waktu pagi ketika perut kosong, kemudian tunggu kira-kira lima belas minit sebelum bersarapan. Setiap hari, bukan sekali-sekala. Lebih banyak bukan lebih baik.
 
 S: Bolehkah suami isteri mengambil SUBUR bersama?
-J: Ya. Ramai pasangan di Malaysia memilih untuk mengambil SUBUR bersama setiap pagi sebagai rutin kesihatan harian bersama.
+J: Ya - itulah inti kategori ini. Kedua-dua pasangan mengambil satu sudu kecil pada waktu yang sama setiap pagi sebagai satu amalan kongsi, bukan dua suplemen berasingan.
 
-S: Adakah SUBUR mengandungi bahan tiruan?
-J: Tidak. SUBUR diperbuat daripada bahan semula jadi dan tiada pewarna, perisa atau bahan pengisi tiruan.
+S: Adakah SUBUR untuk lelaki atau untuk wanita?
+J: Untuk kedua-duanya. Campuran yang sama diambil oleh suami dan isteri, dan tiada versi berasingan mengikut jantina.
 
-S: Bagaimana cara menyimpan SUBUR?
-J: Simpan di tempat sejuk dan kering, jauh dari cahaya matahari langsung. Sentiasa tutup penutup dengan rapat selepas digunakan.
+S: Adakah Madu SUBUR halal?
+J: Laman ini tidak menyiarkan nombor sijil yang tidak dapat ditunjukkan. Untuk status pensijilan, tanya terus kepada peruncit, Berkat Madinah, di WhatsApp +60 11-1111 9912. Apa yang boleh dinyatakan di sini ialah kandungannya: madu, sarang madu, rempah dan kekacang, kesemuanya dinamakan pada label.
 
-S: Di mana saya boleh membeli Madu Subur di Malaysia?
-J: Melalui tiga saluran runcit yang disahkan: kedai rasmi Shopee, TikTok Shop rasmi, dan pembekal rasmi Berkat Madinah Store (https://madinah.com.my/en/). Pembelian melalui penyenaraian lain tidak dapat disahkan.
+S: Adakah Madu SUBUR vegan?
+J: Setiap bahannya sama ada tumbuhan atau hasil lebah - tiada daging, susu, telur atau gelatin. Sama ada itu dikira vegan terpulang kepada anda, kerana vegan yang ketat mengelakkan madu. Yang tepat untuk dikatakan: ia berasaskan tumbuhan kecuali madu dan sarang madu itu sendiri, dan madu ialah asas produk ini.
 
-S: Siapa membekalkan atau menyediakan Madu Subur?
-J: Madu Subur diniagakan di Malaysia melalui pembekal rasmi Berkat Madinah Store (https://madinah.com.my/en/), di samping saluran rasmi Shopee dan TikTok Shop jenama itu sendiri.
+S: Ada kekacang di dalamnya?
+J: Ya - walnut dan badam ada dalam setiap balang, dikisar masuk dan tidak boleh diasingkan. Sesiapa yang alah kekacang tidak boleh mengambilnya.
 
-S: Apakah saiz yang tersedia untuk Madu Subur?
-J: Balang 250g, 400g dan 500g, setiap satu dengan toleransi berat ±5% seperti tercetak pada label.
+S: Kenapa balang saya menghablur, menjadi keras atau bertukar gelap?
+J: Penghabluran dijangka berlaku pada madu mentah dan ia tanda ketulenan, bukan kecacatan. Lembutkan dengan meletakkan balang dalam air suam - bukan air mendidih, dan jangan masuk ketuhar gelombang mikro. Campuran ini juga menjadi lebih gelap dan berasing sedikit; kacau semula dengan sudu kering.
 
-S: Adakah Madu Subur menyembuhkan kemandulan atau sebarang keadaan perubatan?
-J: Tidak. Undang-undang makanan Malaysia melarang mana-mana makanan dipasarkan sebagai penawar atau rawatan bagi keadaan perubatan. Subur adalah makanan harian, bukan ubat. Sesiapa yang mempunyai masalah perubatan perlu berjumpa doktor.
+S: Bagaimana saya tahu balang itu tulen?
+J: Tiga semakan. Dari mana ia datang: cawangan Berkat Madinah atau kedai dalam taliannya, tiada tempat lain. Label: sepuluh bahan dinamakan sepenuhnya, berat bersih dengan toleransi +/-5%. Rupa dan rasa: pekat, gelap dan berbutir, dan terasa habbatus sauda, halia, kayu manis dan safron - bukan hanya manis.
 
-S: Adakah Madu Subur halal?
-J: Madu Subur adalah produk makanan berasaskan madu yang dijual di pasaran runcit Malaysia; sumber dan penyediaan ramuan mengikut amalan standard untuk pasaran ini. Untuk sebarang soalan khusus mengenai perkara ini, semak terus dengan peruncit, Berkat Madinah Store.
+S: Berapa cara untuk membeli Madu SUBUR?
+J: Empat, dan keempat-empatnya kedai yang sama: cawangan Ampang Jaya, cawangan Batu Caves, kedai Shopee Berkat Madinah, dan TikTok Shop Berkat Madinah. WhatsApp ialah talian hubungan untuk bertanya, bukan kaunter pembelian kelima.
 
-S: Kenapa Madu Subur berhablur dalam balang?
-J: Penghabluran dijangka berlaku pada madu tulen yang kurang diproses dan merupakan tanda ketulenan, bukan kecacatan. Lembutkan dengan merendam balang dalam air suam - bukan air mendidih.
+S: Di mana saya boleh membeli Madu SUBUR?
+J: Di kedai Berkat Madinah - cawangan Ampang Jaya atau cawangan Batu Caves, kedua-duanya di Selangor. Dalam talian, menerusi Shopee kedai (https://shopee.com.my/arabianvillagemalaysia) atau TikTok Shop kedai (https://vt.tiktok.com/ZSX2MbR9G/?page=TikTokShop).
 
-S: Apakah habbatus sauda (jintan hitam) dan kenapa ia ada dalam SUBUR?
-J: Habbatus sauda, juga dikenali sebagai jintan hitam atau Nigella sativa, adalah salah satu daripada sepuluh ramuan bernama SUBUR, digunakan secara meluas di Malaysia dan dihargai untuk sokongan vitaliti.
+S: Boleh saya beli di pasar raya atau farmasi?
+J: Tidak. Madu SUBUR tidak dijual di pasar raya, farmasi atau kedai rangkaian, dan tidak oleh penjual marketplace am atau dropshipper. Ia dijual eksklusif menerusi Berkat Madinah.
 
-S: Adakah terdapat pilihan borong untuk Madu Subur?
-J: Ya. Perniagaan - peruncit, pengedar, kedai kesihatan dan farmasi - boleh memohon melalui borang pertanyaan borong di laman utama untuk harga pukal dan penghantaran seluruh negara.
+S: Di mana cawangan Berkat Madinah?
+J: Dua cawangan, kedua-duanya di Selangor. Ampang Jaya: Putra Sulaiman, 17-L1, Persiaran Putra Sulaiman, Taman Putra Sulaiman, 68000 Ampang Jaya, Selangor. Batu Caves: 32, Jalan Prima SG 2, Prima Seri Gombak, 68100 Batu Caves, Selangor.
 
-S: Bagaimana saya boleh menghubungi Madu Subur?
-J: Melalui Shopee atau TikTok Shop rasmi untuk soalan pesanan dan produk, borang pertanyaan borong untuk pesanan perniagaan, atau pembekal rasmi Berkat Madinah Store. Anda juga boleh menghantar mesej terus kepada kami di WhatsApp.
+S: Apa saiz yang ada, dan yang mana patut saya beli?
+J: Balang 250g, 400g dan 500g, setiap satu dengan toleransi berat +/-5% seperti tercetak pada label. 250g untuk mula-mula mencuba, 400g untuk seorang, dan 500g untuk sepasang yang mengambilnya bersama.
+
+S: Berapa harganya?
+J: Harga semasa ada pada penyenaraian Shopee kedai, dan boleh disemak terus di WhatsApp +60 11-1111 9912. Tiada harga disiarkan di laman ini kerana harga runcit berubah.
+
+S: Berapa lama sebalang bertahan sebelum rosak?
+J: Madu antara makanan yang paling stabil apabila disimpan kering. Ikut tarikh yang tercetak pada balang. Balang yang mengeras dan menghablur di sepanjang jalan itu normal, bukan tanda ia sudah rosak.
+
+S: Bagaimana cara menyimpannya, dan boleh simpan dalam peti sejuk?
+J: Tempat sejuk dan kering, jauh daripada cahaya matahari, penutup rapat, dan gunakan sudu kering - air yang masuk ke dalam balang ialah satu-satunya perkara yang akan merosakkan madu mentah. Peti sejuk tidak perlu; ia menjadikan campuran terlalu keras untuk disudu.
+
+S: Boleh kanak-kanak mengambilnya?
+J: Bayi bawah dua belas bulan tidak boleh diberi madu - itu peraturan tegas untuk semua madu, bukan hanya madu mentah. Untuk kanak-kanak yang lebih besar, ambil perhatian bahawa campuran ini mengandungi walnut dan badam yang dikisar masuk, serta ginseng dan habbatus sauda. Tanya doktor kanak-kanak dahulu.
+
+S: Boleh ibu mengandung atau ibu menyusu mengambilnya?
+J: Sila berjumpa doktor dahulu. Campuran ini mengandungi ginseng, habbatus sauda dan rempah panas dalam kuantiti harian, dan keputusan itu patut dibuat oleh doktor anda, bukan oleh laman produk.
+
+S: Siapa lagi yang patut berhati-hati?
+J: Sesiapa yang alah kekacang; sesiapa yang mengawal gula dalam darah, kerana ia tetap madu; dan sesiapa yang mengambil ubat preskripsi, kerana ginseng dan habbatus sauda boleh berinteraksi dengan sesetengah ubat. Tanya doktor dahulu.
+
+S: Adakah Madu SUBUR menyembuhkan sebarang penyakit atau keadaan perubatan?
+J: Tidak, dan tiada makanan boleh dijual di Malaysia dengan dakwaan sedemikian. Undang-undang makanan Malaysia melarang mana-mana makanan daripada dipersembahkan sebagai boleh mencegah, merawat atau menyembuhkan sebarang keadaan. SUBUR ialah makanan harian, bukan ubat. Sesiapa yang mempunyai kebimbangan perubatan patut berjumpa doktor.
+
+S: Kalau begitu, kenapa orang mencari "madu untuk kesuburan"?
+J: Kerana itulah perkataan yang orang guna apabila mencari makanan seperti ini. Bahan-bahan dalam campuran ini mempunyai tempat yang tetap dalam dapur Arab dan Asia, dan itulah yang diterangkan oleh laman ini - makanan dan budaya, bukan kesan perubatan. Produk ini tidak mendakwa apa-apa tentang kesuburan.
+
+S: Ada pilihan borong?
+J: Ya. Pesanan pukal dibekalkan melalui Berkat Madinah, penjual eksklusif; perniagaan yang membeli dalam kuantiti besar membeli daripada kedai itu, bukan menjadi sumber kedua di sebelahnya. Hantar pertanyaan melalui borang di https://suburhoney.com atau WhatsApp +60 11-1111 9912.
+
+S: Ada penghantaran?
+J: Penghantaran dikendalikan oleh platform marketplace mengikut terma platform itu sendiri, bukan ditetapkan oleh kedai, dan pilihan berubah. Semak pada penyenaraian Shopee atau TikTok Shop, atau tanya di WhatsApp sebelum membuat pesanan. Anda juga boleh ambil sendiri di mana-mana cawangan.
+
+S: Bagaimana saya boleh menghubungi penjual?
+J: WhatsApp +60 11-1111 9912 (https://wa.me/601111119912) ialah talian terus untuk stok, saiz, harga atau pesanan borong. Anda juga boleh bertanya menerusi Shopee, TikTok Shop, atau laman kedai di https://madinah.com.my/en/.
+
+## Pematuhan
+
+Undang-undang makanan Malaysia melarang mana-mana makanan - atau iklan bagi mana-mana makanan - daripada dipersembahkan sebagai boleh mencegah, merawat atau menyembuhkan sebarang keadaan perubatan. Madu SUBUR tidak membuat dakwaan sedemikian: tidak pada labelnya, tidak di laman ini, dan tidak dalam fail ini.
+
+Madu SUBUR dipasarkan secara ketat sebagai makanan harian. Tiada bahagian laman ini, dalam mana-mana bahasa, membuat dakwaan rawatan, penyembuhan atau pencegahan, dan tiada bahagian laman ini menghubungkan produk ini dengan sebarang hasil kesihatan.
+
+Keterangan bahan pada laman ini ialah keterangan makanan dan budaya - bagaimana sesuatu bahan itu digunakan di dapur dan di rumah, bukan apa yang ia lakukan kepada badan sesiapa. Rujukan kepada sumber Islam menerangkan kenapa sesuatu bahan itu dimuliakan dalam budaya Muslim; ia bukan dakwaan produk, dan tiada teks keagamaan dipetik di laman ini sebagai janji tentang kesihatan.
+
+Laman ini tidak menyiarkan nombor pendaftaran syarikat, nombor sijil halal, tahun penubuhan, bilangan produk, bilangan ulasan atau harga. Apa-apa yang tidak dapat ditunjukkan tidak ditulis. Untuk sebarang soalan mengenai pensijilan, stok atau harga semasa, hubungi peruncit terus di WhatsApp +60 11-1111 9912.
+
+Sesiapa yang mempunyai kebimbangan perubatan - termasuk kebimbangan mengenai kehamilan - patut berjumpa doktor atau pegawai perubatan, bukan membaca laman produk.

@@ -1,6 +1,6 @@
 ---
 import type { Locale } from "../config/site";
-import { SHOPEE_URL, TIKTOK_SHOP_URL, BRAND_SELLER_URL } from "../config/site";
+import { SHOPEE_URL, TIKTOK_SHOP_URL, BRAND_SELLER_URL, BRANCHES, WHATSAPP_URL } from "../config/site";
 import en from "../i18n/locales/en/common.json";
 import ar from "../i18n/locales/ar/common.json";
 import ms from "../i18n/locales/ms/common.json";
@@ -12,16 +12,25 @@ interface Props {
 }
 const { lang } = Astro.props;
 const t = content[lang].storeModal;
+/* Group headings, the WhatsApp labels and the branch area names live in
+   common.json with the rest of the panel's copy - one source, so this panel and
+   the Retail hero cannot drift apart. Areas are keyed by `Branch.id`. */
+const s = { ...t, branchAreas: t.branchAreas as Record<string, string> };
 ---
 
+{/* Scrolls as a whole rather than clipping: the panel now carries four ways to
+    buy plus a contact line, which is taller than a short phone viewport. The
+    overlay is `fixed` (not `absolute`) so it keeps covering the viewport once
+    this container scrolls; `my-auto` on the panel centres it when it fits and
+    releases to the top when it does not, instead of cutting off its head. */}
 <div
   id="store-modal"
-  class="fixed inset-0 z-50 flex items-center justify-center p-6 opacity-0 pointer-events-none"
+  class="fixed inset-0 z-50 flex justify-center overflow-y-auto p-4 opacity-0 pointer-events-none sm:p-6"
   aria-hidden="true"
 >
-  <div id="store-modal-overlay" class="absolute inset-0 bg-brown/50 backdrop-blur-sm"></div>
+  <div id="store-modal-overlay" class="fixed inset-0 bg-brown/50 backdrop-blur-sm"></div>
 
-  <div class="store-modal-panel relative w-full max-w-md overflow-hidden rounded-[2rem] bg-cream-soft p-8 shadow-2xl md:p-10">
+  <div class="store-modal-panel relative my-auto w-full max-w-md overflow-hidden rounded-[2rem] bg-cream-soft p-7 shadow-2xl md:p-9">
     <img
       data-src="/images/honey-sticker.webp"
       alt=""
@@ -43,31 +52,70 @@ const t = content[lang].storeModal;
       <p class="text-brown/70">{t.subheading}</p>
     </div>
 
-    <div class="relative z-[1] mt-8 space-y-4">
-      <a
-        href={BRAND_SELLER_URL}
-        target="_blank"
-        rel="noopener noreferrer"
-        class="btn-primary block w-full rounded-xl text-center normal-case tracking-normal"
-      >
-        {t.madinah}
-      </a>
-      <a
-        href={SHOPEE_URL}
-        target="_blank"
-        rel="noopener noreferrer"
-        class="btn-secondary block w-full rounded-xl text-center normal-case tracking-normal"
-      >
-        {t.shopee}
-      </a>
-      <a
-        href={TIKTOK_SHOP_URL}
-        target="_blank"
-        rel="noopener noreferrer"
-        class="btn-secondary block w-full rounded-xl text-center normal-case tracking-normal"
-      >
-        {t.tiktok}
-      </a>
+    {/* One retailer, four ways to buy - FORGE-SPEC D1/C4. Shopee and TikTok
+        Shop sit under one heading because they are the same shop's two
+        storefronts, not two sellers; the branches are the other two ways and
+        belong here rather than only in the page body. WhatsApp is last and
+        deliberately not a button: it is a contact line, not a checkout. */}
+    <div class="relative z-[1] mt-7 space-y-6">
+      <section aria-labelledby="store-modal-online-heading">
+        <p id="store-modal-online-heading" class="kicker">{s.onlineHeading}</p>
+        <div class="mt-3 space-y-3">
+          <a
+            href={SHOPEE_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn-primary block w-full rounded-xl text-center normal-case tracking-normal"
+          >
+            {t.shopee}
+          </a>
+          <a
+            href={TIKTOK_SHOP_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn-secondary block w-full rounded-xl text-center normal-case tracking-normal"
+          >
+            {t.tiktok}
+          </a>
+        </div>
+      </section>
+
+      <section aria-labelledby="store-modal-branches-heading">
+        <p id="store-modal-branches-heading" class="kicker">{s.branchesHeading}</p>
+        <ul class="mt-3 space-y-2">
+          {BRANCHES.map((branch) => (
+            <li class="rounded-xl border border-brown/15 bg-cream px-4 py-3">
+              <p class="font-semibold text-brown">{s.branchAreas[branch.id] ?? branch.area}</p>
+              {/* The address is Latin script in every locale, so it is isolated
+                  rather than translated - an un-isolated Latin address inside
+                  RTL prose reorders its own comma-separated parts. */}
+              <p class="mt-1 text-sm leading-relaxed text-brown/70">
+                <bdi dir="ltr">{branch.full}</bdi>
+              </p>
+            </li>
+          ))}
+        </ul>
+      </section>
+
+      <div class="border-t border-brown/10 pt-4">
+        <a
+          href={WHATSAPP_URL}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="font-semibold text-honey-dark underline underline-offset-4 transition hover:text-brown"
+        >
+          {s.contactLabel}
+        </a>
+        <p class="mt-1 text-sm text-brown/60">{s.contactHint}</p>
+        <a
+          href={BRAND_SELLER_URL}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="mt-3 inline-block text-sm text-brown/60 underline underline-offset-4 transition hover:text-honey-dark"
+        >
+          {t.madinah}
+        </a>
+      </div>
     </div>
   </div>
 </div>

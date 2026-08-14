@@ -1,5 +1,6 @@
 ---
 import { SITE_URL, SITE_NAME, BRAND_SELLER_URL, INSTAGRAM_URL, FACEBOOK_URL, SHOPEE_URL, TIKTOK_SHOP_URL, LOCALES, LOCALE_META, localeUrl, type Locale } from "../config/site";
+import { PRODUCT_ID, STORE_NODES } from "../config/schema";
 
 interface Props {
   lang: Locale;
@@ -58,21 +59,28 @@ const jsonLd = {
       publisher: { "@id": `${SITE_URL}/#organization` },
       inLanguage: lang,
     },
+    ...STORE_NODES,
+    /*
+      No `offers`.
+
+      It was an AggregateOffer carrying only priceCurrency and availability.
+      An AggregateOffer must carry lowPrice, or price/priceSpecification, so
+      Google rejected the offer and with it the whole Product node - the markup
+      yielded nothing. No price was supplied and inventing one is a checkable
+      falsehood (FORGE-SPEC D9), so the property is removed rather than filled
+      in: an absent offer costs nothing, an invalid one costs the Product.
+
+      The seller relationship it carried survives on the store side, as
+      SELLER_NODE.hasOfferCatalog -> PRODUCT_ID, which needs no price.
+    */
     {
       "@type": "Product",
+      "@id": PRODUCT_ID,
       name: SITE_NAME,
       image: [`${SITE_URL}/jarncap.png`, `${SITE_URL}/jarncap.webp`],
       description,
       brand: { "@type": "Brand", name: SITE_NAME },
       category: "Honey",
-      offers: {
-        "@type": "AggregateOffer",
-        priceCurrency: "MYR",
-        availability: "https://schema.org/InStock",
-        url: canonical,
-        seller: { "@id": `${SITE_URL}/#organization` },
-      },
-      aggregateRating: { "@type": "AggregateRating", ratingValue: "5", reviewCount: "5000" },
     },
     {
       "@type": "FAQPage",

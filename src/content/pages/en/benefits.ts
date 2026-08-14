@@ -1,5 +1,5 @@
 import type { Article } from "../../articles/types";
-import { BRAND_SELLER_URL } from "../../../config/site";
+import { BRANCHES, BRAND_SELLER, BRAND_SELLER_URL } from "../../../config/site";
 
 export const page: Article = {
   slug: "benefits",
@@ -17,7 +17,7 @@ export const page: Article = {
     "honey blend benefits Malaysia",
   ],
   published: "2026-07-24",
-  updated: "2026-07-24",
+  updated: "2026-08-14",
   readingMinutes: 5,
   icon: "/icons/ingrediant_07.webp",
   figureAlt:
@@ -113,8 +113,8 @@ export const page: Article = {
       a: "Regular honey is honey alone. Subur is raw honeycomb blended with nine other named ingredients - black seed, saffron, ginger, ginseng, cinnamon, star anise, nutmeg, walnuts and almonds - chosen for couples taking it daily.",
     },
     {
-      q: "Who supplies Subur Honey in Malaysia?",
-      a: `Subur Honey is retailed through our official supplier, <a href="${BRAND_SELLER_URL}" target="_blank" rel="noopener noreferrer">Berkat Madinah Store</a>, alongside our official Shopee and TikTok Shop channels.`,
+      q: "Who sells Subur Honey in Malaysia?",
+      a: `Subur Honey is sold only through <a href="${BRAND_SELLER_URL}" target="_blank" rel="noopener noreferrer">${BRAND_SELLER}</a>, its exclusive retailer - its ${BRANCHES[0].area} and ${BRANCHES[1].area} branches in Selangor, its own Shopee storefront, its own TikTok Shop, or WhatsApp. Those are one shop reached several ways, not separate sellers, and Subur is not stocked in supermarkets or pharmacies. Volume orders are supplied through the same store.`,
     },
   ],
   related: [],

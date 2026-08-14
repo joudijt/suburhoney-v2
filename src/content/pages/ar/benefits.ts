@@ -1,5 +1,5 @@
 import type { Article } from "../../articles/types";
-import { BRAND_SELLER_URL } from "../../../config/site";
+import { BRAND_SELLER_AR, BRAND_SELLER_URL } from "../../../config/site";
 
 export const page: Article = {
   slug: "benefits",
@@ -16,7 +16,7 @@ export const page: Article = {
     "فوائد مزيج العسل في ماليزيا",
   ],
   published: "2026-07-24",
-  updated: "2026-07-24",
+  updated: "2026-08-14",
   readingMinutes: 5,
   icon: "/icons/ingrediant_07.webp",
   figureAlt:
@@ -112,8 +112,8 @@ export const page: Article = {
       a: "العسل العادي هو عسل فقط. أما سُوبور فهو شمع عسل خام ممزوج بتسعة مكونات أخرى مذكورة بالاسم — الحبة السوداء، الزعفران، الزنجبيل، الجينسنغ، القرفة، اليانسون النجمي، جوزة الطيب، الجوز واللوز — اختيرت للأزواج الذين يأخذونه يومياً.",
     },
     {
-      q: "من يوفّر عسل سُوبور في ماليزيا؟",
-      a: `يُباع عسل سُوبور بالتجزئة عبر مورّدنا الرسمي <a href="${BRAND_SELLER_URL}" target="_blank" rel="noopener noreferrer">Berkat Madinah Store</a>، إلى جانب متجرينا الرسميين على Shopee وTikTok Shop.`,
+      q: "من يبيع عسل سُوبور في ماليزيا؟",
+      a: `يُباع عسل سُوبور حصرياً عبر <a href="${BRAND_SELLER_URL}" target="_blank" rel="noopener noreferrer">${BRAND_SELLER_AR}</a>، بائعه الوحيد في ماليزيا: فرعاه في ولاية سيلانجور بأمبانج جايا وباتو كيفز، ومتجره على Shopee، ومتجره على TikTok Shop، أو عبر واتساب. وهي كلها منافذ بائع واحد لا بائعين متفرقين، والعسل لا يُباع في السوبرماركت ولا في الصيدليات. وطلبات الكميات تُوفَّر عبر المتجر نفسه.`,
     },
   ],
   related: [],
