@@ -25,3 +25,6 @@ incoming/
 
 # jetbrains setting folder
 .idea/
+
+# ai-visibility-kit staging output (never deployed)
+.beacon-out/

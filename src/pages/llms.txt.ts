@@ -28,6 +28,8 @@ export const GET: APIRoute = () => {
     ...LOCALES.filter((l) => l !== "en").map(
       (l) => `- ${l === "ar" ? "Arabic" : "Bahasa Malaysia"}: ${SITE_URL}/llms-${l}.txt`
     ),
+    `- All three concatenated: ${SITE_URL}/llms-full.txt`,
+    `- Companion files: ${SITE_URL}/about.md - ${SITE_URL}/faq.md - ${SITE_URL}/AGENTS.md`,
   ];
 
   return new Response(buildLlmsText("en", links, languages), {

@@ -31,6 +31,31 @@ DirectoryIndex index.html
 <IfModule mod_mime.c>
   AddType image/webp .webp
   AddType font/woff2 .woff2
+
+  # The Astro endpoints set "text/plain; charset=utf-8" on the Response, but this
+  # is a static build - those headers die with the build process and the server
+  # serves the written files under its own types. Verified live 2026-08-18:
+  # /llms-ar.txt came back as bare "text/plain", so 32 KB of Arabic was free to
+  # be decoded as latin-1 by anything that guessed.
+  AddType "text/plain; charset=UTF-8" .txt
+
+  # Markdown surfaces (/about.md, /faq.md, /AGENTS.md). Without a type the host
+  # serves .md as application/octet-stream, which makes a browser download the
+  # file and makes some crawlers skip it.
+  AddType "text/markdown; charset=UTF-8" .md
+</IfModule>
+
+# AddType alone was not enough on the sibling site on this hosting family: the
+# charset reappeared and then vanished again on later requests, because an edge
+# layer re-derives the type. mod_headers rewrites the response header after the
+# type is chosen, which is the one place that layer cannot undo.
+<IfModule mod_headers.c>
+  <FilesMatch "\.txt$">
+    Header set Content-Type "text/plain; charset=UTF-8"
+  </FilesMatch>
+  <FilesMatch "\.md$">
+    Header set Content-Type "text/markdown; charset=UTF-8"
+  </FilesMatch>
 </IfModule>
 
 <IfModule mod_rewrite.c>

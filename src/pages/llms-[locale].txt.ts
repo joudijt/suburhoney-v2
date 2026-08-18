@@ -50,7 +50,18 @@ export const GET: APIRoute = ({ params }) => {
     ),
   ];
 
-  const languages = [`- ${l.primary}`, `- ${l.english}: ${SITE_URL}/llms.txt`];
+  // Every other locale, not just English. The Arabic brief used to name only
+  // itself and English, so a reader who arrived there could not discover the
+  // Malay one at all - and the same the other way round.
+  const OTHER: Record<string, string> = { ar: "العربية", ms: "Bahasa Malaysia" };
+  const languages = [
+    `- ${l.primary}`,
+    `- ${l.english}: ${SITE_URL}/llms.txt`,
+    ...LOCALES.filter((o) => o !== "en" && o !== lang).map(
+      (o) => `- ${OTHER[o] ?? o}: ${SITE_URL}/llms-${o}.txt`
+    ),
+    `- ${SITE_URL}/llms-full.txt`,
+  ];
 
   return new Response(buildLlmsText(lang, links, languages), {
     headers: { "Content-Type": "text/plain; charset=utf-8" },

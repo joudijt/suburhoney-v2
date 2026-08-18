@@ -8,9 +8,16 @@
   "scripts": {
     "dev": "astro dev",
     "optimize:images": "node scripts/optimize-images.mjs",
-    "build": "npm run optimize:images && astro build",
+    "build": "npm run optimize:images && node scripts/ai/surfaces.mjs && astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "ai:surfaces": "node scripts/ai/surfaces.mjs",
+    "ai:facts": "node scripts/ai/facts-sync.mjs",
+    "check:ai": "node scripts/ai/facts-sync.mjs --check",
+    "ai:coverage": "node scripts/ai/coverage.mjs --facts AI-FACTS.yml",
+    "ai:gate": "node scripts/ai/gate.mjs --url https://suburhoney.com",
+    "ai:indexnow": "node scripts/ai/indexnow.mjs --sitemap",
+    "ai:answers": "node scripts/ai/answer-blocks.mjs --list"
   },
   "dependencies": {
     "@astrojs/react": "^6.0.1",
