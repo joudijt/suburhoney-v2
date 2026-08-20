@@ -101,6 +101,16 @@ export const ARTICLE_FIGURES: Record<string, PageFigure> = {
     width: 1200,
     height: 900,
   },
+  // Same picture, second key. The Malay and Arabic hot-water articles are one
+  // group, but the group has no English member, so getAssetKey() cannot resolve
+  // either of them to a shared canonical slug and each falls back to its own.
+  // Filing the file under both keys is the honest fix; inventing an English slug
+  // for a page that does not exist in English would not be.
+  "al-ma-al-sakhin-wal-asal": {
+    src: "/images/article-madu-campur-air-panas.webp",
+    width: 1200,
+    height: 900,
+  },
   "hal-lil-asal-tarikh-salahiya": {
     src: "/images/article-hal-lil-asal-tarikh-salahiya.webp",
     width: 1200,

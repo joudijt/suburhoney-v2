@@ -115,8 +115,8 @@ number that survived the research stage was stopped at the writing stage.
 |---|---|
 | **Search Console demand data (Stage 1)** | **NOT RUN.** The Cogny MCP free call quota for the period is exhausted (next reset 1 Sep). No GSC queries, impressions or positions informed this round; topic selection rests on live SERP research only, and every claim in the demand files carries its URL and pull date |
 | **Keyword volumes** | **NOT AVAILABLE.** No keyword tool on this machine. No volume figure appears anywhere in the map — demand is evidenced by SERP composition, competitor thinness and observed query phrasings |
-| **`scripts/qa/image-audit.mjs`** | **NOT RUN** — needs a dev server and a Playwright pass. The new figures are 1200×900 and the card frame is a fixed 4:3, so no content image renders off its natural ratio, but this has not been verified in a browser |
-| **Live checks (37–45)** | Pending deploy — filled in below after Stage 7 |
+| **`scripts/qa/image-audit.mjs`** | **NOT RUN as written** — it targets a dev server and the six standalone pages, not blog articles. Its three assertions were checked instead against the **live** article and index pages in a real browser at 375 px: every image decoded (`naturalWidth > 0`), no deferred image was left unswapped, and the 1200×900 figures sit in a 4:3 frame so nothing is cropped |
+| **Live checks (37–45)** | **RUN — all pass.** See the live section below |
 
 ## Pre-existing failures this round did not introduce
 
@@ -128,3 +128,33 @@ Recorded so the next round does not mistake them for its own work:
 - `llms/ar.txt` carries a "±5% weight variance" claim whose source is not in the repo.
 - The Netlify twin (`suburhoney.netlify.app`) is still live, indexable, and serves an older build
   with no canonical tag. It duplicates every URL this round adds. Outside the repo; owner's call.
+
+## Live — after deploy (2026-08-20)
+
+Deployed over FTPS: **142 files, SIZE-verified 142/142, 0 failures.**
+
+| # | Check | Result |
+|---|---|---|
+| 37 | Each new URL serves the article | **PASS — compared by bytes, not status.** All 21 URLs return 200 and are byte-identical to the local build. Each also carries its own canonical tag and its lead image reference |
+| 38 | No redirect hop | **PASS** — redirects were not followed; every URL answered 200 directly |
+| 39 | OG / article images serve as images | **PASS** — sampled three round images: `image/webp`, byte-identical to the local files |
+| 40 | Rendered HTML carries the meta | **PASS** — canonical, hreflang, OG and JSON-LD are all in the served HTML, not injected client-side |
+| 41 | Sitemap fetches and includes the new URLs | **PASS** — live `/sitemap.xml` is 200, 48 locs, and contains the round's slugs in all three languages |
+| 42 | IndexNow accepted | **PASS** — 48 URLs submitted and accepted |
+| 43 | Payload budget | **PASS** — 434 KB of images added against a 2.5 MB ceiling; `dist/` is 6.6 MB |
+| 44 | No owner-facing text leaked | **PASS** — the one hit is the article quoting an honest seller's `"I cannot tell you"`, not a leak |
+| 45 | Mobile render at 375 px | **PASS — looked at, not assumed.** Five live pages (en/ms/ar article + en/ar blog index) at 375×812: one H1 each, zero unswapped deferred images, zero broken images, no sideways scroll (`scrollWidth` exactly 375), and every lead image decoded at 1200×900. Arabic RTL screenshot reviewed |
+
+**One defect the byte check caught that a status check would not have.** The Arabic hot-water
+article served 200, byte-perfect — and with no lead image. Its group is Malay + Arabic with no
+English member, so `getAssetKey()` could not resolve a shared canonical slug and fell back to the
+article's own slug, while the shared image was filed under the Malay one. Fixed by filing the image
+under both keys, rebuilt, redeployed and re-verified. This is exactly the class of failure that
+"200 OK" hides.
+
+### Surfaces re-checked live
+
+`/llms.txt` 34,546 B · `/llms-ar.txt` 35,434 B `text/plain; charset=UTF-8` · `/llms-ms.txt`
+34,297 B · `/llms-full.txt` 104,675 B · `/robots.txt` 1,175 B · `/about.md`
+`text/markdown; charset=UTF-8`. All 200. The article index inside each brief is generated, so all
+21 new articles are listed in their own language's brief.
