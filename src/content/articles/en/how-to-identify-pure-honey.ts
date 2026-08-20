@@ -74,7 +74,7 @@ export const article: Article = {
       type: "callout",
       tone: "note",
       title: "Crystallisation is a good sign, not a fault",
-      text: "Malaysian buyers often return honey that has gone grainy or solid, assuming it has spoiled. Crystallisation is what real, unprocessed honey does — the rate depends on its sugar composition and storage temperature. Stand the jar in warm water to loosen it. Never microwave it.",
+      text: "Malaysian buyers often return honey that has gone grainy or solid, assuming it has spoiled. Crystallisation is what real, unprocessed honey does — the rate depends on its sugar composition and storage temperature. It is not proof on its own, though: a syrup-heavy blend can granulate too. Stand the jar in warm water to loosen it. Never microwave it.",
     },
     {
       type: "heading",
@@ -148,5 +148,5 @@ export const article: Article = {
       a: "Treat a price well below the market as a question that needs answering. Real honey has a floor cost set by how it is produced. That does not make every expensive honey genuine, but an unusually cheap one has to be explained somehow.",
     },
   ],
-  related: ["honey-for-couples-malaysia", "black-seed-honey-benefits"],
+  related: ["honey-for-couples-malaysia", "how-to-store-honey-malaysia"],
 };

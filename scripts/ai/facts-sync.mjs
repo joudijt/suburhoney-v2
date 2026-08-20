@@ -68,8 +68,8 @@ p(`  name_ms: Madu SUBUR (${SITE_NAME})`);
 p(`  name_ar: عسل سوبور (${SITE_NAME})`);
 p(`  url: ${SITE_URL}`);
 p(`  definition: ${one(`${SITE_NAME} is a raw honeycomb blend of ten named ingredients, sold in Malaysia
-   through ${BRAND_SELLER}. It is presented in the traditional-use idiom of Middle Eastern honey
-   blends - a spoonful in the morning - and makes no medical claim of any kind. There are four ways
+   through ${BRAND_SELLER}. It is sold as a food eaten daily, not as a supplement and not as a
+   medicine - a spoonful in the morning - and makes no medical claim of any kind. There are four ways
    to buy it: the ${BRANCHES.length} ${BRAND_SELLER} shops in Selangor
    (${BRANCHES.map(b => b.area).join(' and ')}), the store's own Shopee storefront and its TikTok
    Shop. WhatsApp ${WHATSAPP_DISPLAY} is a contact line, not a purchase channel.`)}`);
@@ -84,7 +84,7 @@ p(`  definition_ar: ${one(`${SITE_NAME} خليط عسل شمعي خام من ع�
    الصباح - دون أي ادعاء طبي. وهناك أربع طرق لشرائه: متجرا ${BRAND_SELLER_AR} في سلانجور
    (${BRANCHES.map(b => b.area).join(' و')})، ومتجر شوبي التابع للمتجر نفسه، ومتجره على تيك توك.
    أما واتساب ${WHATSAPP_DISPLAY} فهو خط تواصل لا قناة شراء.`)}`);
-p('  category: Raw honeycomb blend - a food sold in the traditional-use idiom, not a supplement and not a medicine');
+p('  category: Raw honeycomb blend - a food, not a supplement and not a medicine');
 p('  category_ms: Adunan madu sarang mentah - makanan dalam kerangka penggunaan tradisional, bukan suplemen dan bukan ubat');
 p('  category_ar: خليط عسل شمعي خام - غذاء ضمن إطار الاستعمال التقليدي، وليس مكمّلاً ولا دواءً');
 p(`  serving_area: ${one(`Malaysia - in person at the ${BRANCHES.length} ${BRAND_SELLER} shops in Selangor
@@ -93,7 +93,7 @@ p(`  serving_area_ms: ${one(`Malaysia - di ${BRANCHES.length} kedai ${BRAND_SELL
    (${BRANCHES.map(b => b.area).join(' dan ')}), serta storefront Shopee dan TikTok Shop milik kedai itu`)}`);
 p(`  serving_area_ar: ${one(`ماليزيا - حضورياً في متجرَي ${BRAND_SELLER_AR} في سلانجور
    (${BRANCHES.map(b => b.area).join(' و')})، إضافة إلى متجرَي المتجر على شوبي وتيك توك`)}`);
-p('  audience: Households in Malaysia buying a Middle Eastern honey blend, and the Arab and Malay communities in the Klang Valley');
+p('  audience: Households in Malaysia buying a spiced honeycomb blend, and the Arab and Malay communities in the Klang Valley');
 p('  audience_ms: Isi rumah di Malaysia yang mencari adunan madu Timur Tengah, serta komuniti Arab dan Melayu di Lembah Klang');
 p('  audience_ar: الأسر في ماليزيا الباحثة عن خلطة عسل شرق أوسطية، والجاليتان العربية والملايوية في وادي كلانج');
 p('  tagline: A raw honeycomb blend of ten ingredients');
@@ -154,7 +154,7 @@ p('        url: /en/');
 p('        description: The product, its ten ingredients, the morning ritual, wholesale enquiry and FAQ.');
 p('      - title: Benefits');
 p('        url: /en/benefits/');
-p('        description: What each of the ten ingredients is, in traditional-use terms.');
+p('        description: What each of the ten ingredients is, and why it is in the jar.');
 p('      - title: Retail');
 p('        url: /en/retail/');
 p('        description: Every way to buy - both shops, the Shopee storefront and the TikTok Shop.');
@@ -189,7 +189,7 @@ p('');
 
 const FAQ = [
   ['What is SUBUR Honey?',
-   `A raw honeycomb blend of ten named ingredients, sold in Malaysia through ${BRAND_SELLER}. It is a food presented in the traditional-use idiom of Middle Eastern honey blends, and it makes no medical claim.`],
+   `A raw honeycomb blend of ten named ingredients, sold in Malaysia through ${BRAND_SELLER}. It is a food, and it makes no medical claim.`],
   ['Where can I buy it in Malaysia?',
    `Four ways, all of them ${BRAND_SELLER}: the shop at ${BRANCHES[0].full}; the shop at ${BRANCHES[1].full}; the store's Shopee storefront at ${SHOPEE_URL}; and its TikTok Shop at ${TIKTOK_SHOP_URL}.`],
   ['Are the Shopee and TikTok listings a different seller?',
@@ -201,15 +201,15 @@ const FAQ = [
   ['How many shops are there?',
    `Two, both in Selangor: ${BRANCHES.map(b => b.area).join(' and ')}. The site once said "stores across Malaysia" - that was wrong and has been corrected.`],
   ['What is in it?',
-   `Ten named ingredients blended with raw honeycomb. The Benefits page lists each one and what it is traditionally used for.`],
+   `Ten named ingredients blended with raw honeycomb. The Benefits page lists each one and what it is there for.`],
   ['Is it vegan?',
    `No. Honey is a bee product, and no mainstream vegan standard admits it. Any claim otherwise on an older version of this site was wrong and has been removed.`],
   ['Is it a medicine or a treatment for anything?',
-   `No. It is a food. Nothing on this site claims it prevents, treats or cures any condition, and any traditional-use language should be read as exactly that.`],
+   `No. It is a food. Nothing on this site claims it prevents, treats or cures any condition, and any language about long-standing use should be read as exactly that.`],
   ['Does it have a customer rating?',
    `Not one this site publishes. An earlier version carried a 5.0 rating and a "5,000 customers" line that were not real; both were removed rather than re-sourced.`],
   ['How is it usually taken?',
-   `In the traditional idiom it is described as a spoonful in the morning. That is a serving habit, not a dosage instruction.`],
+   `It is commonly described as a spoonful in the morning. That is a serving habit, not a dosage instruction.`],
   ['Do you ship outside the Klang Valley?',
    `Both shops are in Selangor. Orders placed through the Shopee storefront or the TikTok Shop are fulfilled and tracked inside those platforms in the normal way.`],
 ];

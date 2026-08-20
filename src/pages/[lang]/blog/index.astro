@@ -4,7 +4,7 @@ import Header from "../../../components/Header.astro";
 import Footer from "../../../components/Footer.astro";
 import { LOCALES, SITE_URL, SITE_NAME, localeUrl, type Locale } from "../../../config/site";
 import { ARTICLE_FIGURES } from "../../../config/articleFigures";
-import { getArticles, getCanonicalSlug } from "../../../content/articles";
+import { getArticles, getAssetKey } from "../../../content/articles";
 
 import en from "../../../i18n/locales/en/common.json";
 import ar from "../../../i18n/locales/ar/common.json";
@@ -23,8 +23,7 @@ const b = t.blog;
    English slug because blog slugs are localized - same lookup the article page
    does. An article with no figure keeps the centred category icon. */
 const articles = getArticles(lang).map((article) => {
-  const canonical = getCanonicalSlug(lang, article.slug);
-  return { article, figure: canonical ? ARTICLE_FIGURES[canonical] : undefined };
+  return { article, figure: ARTICLE_FIGURES[getAssetKey(lang, article.slug)] };
 });
 const blogUrl = localeUrl(lang, "/blog/");
 

@@ -6,7 +6,7 @@ import Blocks from "../../../components/article/Blocks.astro";
 import PageFigure from "../../../components/article/PageFigure.astro";
 import { LOCALES, SITE_URL, SITE_NAME, BRAND_SELLER_URL, localeUrl, type Locale } from "../../../config/site";
 import { ARTICLE_FIGURES } from "../../../config/articleFigures";
-import { getArticles, getArticle, getTranslations, getCanonicalSlug } from "../../../content/articles";
+import { getArticles, getArticle, getTranslations, getAssetKey } from "../../../content/articles";
 
 import en from "../../../i18n/locales/en/common.json";
 import ar from "../../../i18n/locales/ar/common.json";
@@ -42,10 +42,11 @@ const related = article.related
 const headings = article.blocks.filter((block) => block.type === "heading");
 const answer = article.blocks.find((block) => block.type === "answer");
 
-/* The same file serves all three locales, so it is keyed by the article's
-   canonical English slug rather than the localized one it is reached by. */
-const canonicalSlug = getCanonicalSlug(lang, slug);
-const figure = canonicalSlug ? ARTICLE_FIGURES[canonicalSlug] : undefined;
+/* The same file serves every locale of a grouped article, so it is keyed by the
+   group's English slug rather than the localized one it is reached by - and by
+   the article's own slug when it belongs to no group, which is most of the
+   demand-led articles. getAssetKey() is the single place that decides. */
+const figure = ARTICLE_FIGURES[getAssetKey(lang, slug)];
 
 /* Built from the same objects the page renders, so the markup and the structured
    data cannot drift apart. */

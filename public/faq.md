@@ -2,7 +2,7 @@
 
 ## What is SUBUR Honey?
 
-A raw honeycomb blend of ten named ingredients, sold in Malaysia through Berkat Madinah Store. It is a food presented in the traditional-use idiom of Middle Eastern honey blends, and it makes no medical claim.
+A raw honeycomb blend of ten named ingredients, sold in Malaysia through Berkat Madinah Store. It is a food, and it makes no medical claim.
 
 ## Where can I buy it in Malaysia?
 
@@ -26,7 +26,7 @@ Two, both in Selangor: Ampang Jaya and Batu Caves. The site once said "stores ac
 
 ## What is in it?
 
-Ten named ingredients blended with raw honeycomb. The Benefits page lists each one and what it is traditionally used for.
+Ten named ingredients blended with raw honeycomb. The Benefits page lists each one and what it is there for.
 
 ## Is it vegan?
 
@@ -34,7 +34,7 @@ No. Honey is a bee product, and no mainstream vegan standard admits it. Any clai
 
 ## Is it a medicine or a treatment for anything?
 
-No. It is a food. Nothing on this site claims it prevents, treats or cures any condition, and any traditional-use language should be read as exactly that.
+No. It is a food. Nothing on this site claims it prevents, treats or cures any condition, and any language about long-standing use should be read as exactly that.
 
 ## Does it have a customer rating?
 
@@ -42,7 +42,7 @@ Not one this site publishes. An earlier version carried a 5.0 rating and a "5,00
 
 ## How is it usually taken?
 
-In the traditional idiom it is described as a spoonful in the morning. That is a serving habit, not a dosage instruction.
+It is commonly described as a spoonful in the morning. That is a serving habit, not a dosage instruction.
 
 ## Do you ship outside the Klang Valley?
 

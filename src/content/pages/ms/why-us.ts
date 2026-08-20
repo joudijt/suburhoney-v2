@@ -105,7 +105,7 @@ export const page: Article = {
     },
     {
       q: "Kenapa Madu Subur berhablur dalam balang?",
-      a: "Penghabluran dijangka berlaku pada madu tulen yang kurang diproses dan merupakan tanda ketulenan, bukan kecacatan. Ia boleh dilembutkan dengan merendam balang dalam air suam - bukan air mendidih.",
+      a: "Penghabluran dijangka berlaku pada madu tulen yang kurang diproses dan ia bukan kecacatan - tetapi dengan sendirinya ia bukan bukti ketulenan. Ia boleh dilembutkan dengan merendam balang dalam air suam - bukan air mendidih.",
     },
     {
       q: "Adakah Madu Subur merawat atau menyembuhkan sebarang keadaan perubatan?",

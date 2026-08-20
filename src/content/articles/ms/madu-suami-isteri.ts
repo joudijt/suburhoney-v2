@@ -179,5 +179,5 @@ export const article: Article = {
       a: "Pada kadar satu sudu kecil seorang sehari, balang 250g bertahan kira-kira tiga hingga empat minggu untuk sepasang. Disimpan sejuk, kering dan tertutup, balang yang belum dibuka tahan lama; pengasingan dan warna menjadi gelap adalah normal bagi campuran mentah.",
     },
   ],
-  related: ["habbatus-sauda-dan-madu", "cara-kenal-madu-asli"],
+  related: ["habbatus-sauda-dan-madu", "waktu-terbaik-makan-madu"],
 };

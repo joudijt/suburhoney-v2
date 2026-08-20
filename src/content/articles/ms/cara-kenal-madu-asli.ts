@@ -74,7 +74,7 @@ export const article: Article = {
       type: "callout",
       tone: "note",
       title: "Penghabluran itu tanda baik, bukan kerosakan",
-      text: "Pembeli di Malaysia kerap memulangkan madu yang menjadi berpasir atau beku, menyangka ia sudah rosak. Penghabluran ialah apa yang madu sebenar dan tidak diproses memang lakukan — kadarnya bergantung pada komposisi gula dan suhu penyimpanan. Rendam balang dalam air suam untuk melembutkannya. Jangan sekali-kali masukkan ke dalam ketuhar gelombang mikro.",
+      text: "Pembeli di Malaysia kerap memulangkan madu yang menjadi berpasir atau beku, menyangka ia sudah rosak. Penghabluran ialah apa yang madu sebenar dan tidak diproses memang lakukan — kadarnya bergantung pada komposisi gula dan suhu penyimpanan. Ia bukan bukti dengan sendirinya: campuran yang banyak sirap pun boleh menghablur. Rendam balang dalam air suam untuk melembutkannya. Jangan sekali-kali masukkan ke dalam ketuhar gelombang mikro.",
     },
     {
       type: "heading",
@@ -148,5 +148,5 @@ export const article: Article = {
       a: "Anggap harga jauh di bawah pasaran sebagai soalan yang perlu dijawab. Madu asli ada kos minimum yang ditetapkan oleh cara ia dihasilkan. Itu tidak bermakna setiap madu mahal itu tulen, tetapi madu yang luar biasa murah mesti ada penjelasannya.",
     },
   ],
-  related: ["madu-suami-isteri", "habbatus-sauda-dan-madu"],
+  related: ["madu-suami-isteri", "beza-madu-tulen-dan-madu-campuran"],
 };

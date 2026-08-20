@@ -143,5 +143,5 @@ export const article: Article = {
       a: "لا يجوز بيع أي غذاء بادعاء الوقاية من حالة أو علاجها أو شفائها — وهذا محظور بموجب لوائح الأغذية لعام 1985. عسل الحبة السوداء غذاء يومي لا أكثر. ولأي قلق طبي راجع طبيباً.",
     },
   ],
-  related: ["asal-al-zawjayn", "kayfa-tamiz-al-asal-al-asli"],
+  related: ["kayfa-tamiz-al-asal-al-asli", "tariqat-akl-al-asal-bil-shama"],
 };

@@ -37,7 +37,27 @@ const {
 
 const path = Astro.url.pathname.replace(/^\/(en|ar|ms)/, "") || "/";
 const canonical = alternates?.[lang] ?? localeUrl(lang, path);
+
+/*
+  Which locales get an hreflang link.
+
+  For the standalone pages there is no alternates map and every locale exists at
+  the same path, so all three are emitted. For an article the map is explicit,
+  and an article that exists in one language only must NOT advertise the other
+  two: the old fallback derived /ar/blog/<english-slug>/ from the path, which is
+  a 404, and a 404 alternate invalidates the whole hreflang cluster.
+*/
+const declared = alternates ? LOCALES.filter((l) => alternates[l]) : LOCALES;
+/* hreflang describes a cluster. One page is not a cluster, so a single-language
+   article emits nothing at all rather than an annotation pointing only at
+   itself. */
+const hreflangLocales = declared.length > 1 ? declared : [];
 const hreflangFor = (l: Locale) => alternates?.[l] ?? localeUrl(l, path);
+/* x-default names the page to serve a searcher whose language is not in the
+   cluster - it belongs to English. A cluster with no English member (the Malay
+   and Arabic hot-water pair) gets none: naming one of the two as the fallback
+   for everyone else would be a claim we cannot support. */
+const xDefault = alternates ? alternates.en : localeUrl("en", path);
 const socialImage = image ?? `${SITE_URL}/jarncap.png`;
 
 const jsonLd = {
@@ -106,10 +126,12 @@ const jsonLd = {
 <link rel="canonical" href={canonical} />
 <meta name="robots" content="index, follow, max-image-preview:large" />
 
-{LOCALES.map((l) => (
+{hreflangLocales.map((l) => (
   <link rel="alternate" hreflang={l} href={hreflangFor(l)} />
 ))}
-<link rel="alternate" hreflang="x-default" href={hreflangFor("en")} />
+{hreflangLocales.length > 1 && xDefault && (
+  <link rel="alternate" hreflang="x-default" href={xDefault} />
+)}
 
 <meta property="og:type" content={articleMeta ? "article" : "website"} />
 <meta property="og:site_name" content={SITE_NAME} />

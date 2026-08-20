@@ -179,5 +179,5 @@ export const article: Article = {
       a: "At one teaspoon per person per day, a 250g jar lasts a couple roughly three to four weeks. Stored cool, dry and sealed, an unopened jar keeps well; separation and darkening over time are normal for a raw blend.",
     },
   ],
-  related: ["black-seed-honey-benefits", "how-to-identify-pure-honey"],
+  related: ["black-seed-honey-benefits", "honeycomb-honey-malaysia"],
 };

@@ -1,6 +1,6 @@
 import type { APIRoute } from "astro";
-import { INDEXABLE_PATHS, LOCALES, localeUrl, type Locale } from "../config/site";
-import { ARTICLE_GROUPS, getArticle } from "../content/articles";
+import { INDEXABLE_PATHS, LOCALES, localeUrl } from "../config/site";
+import { getArticles, getTranslations } from "../content/articles";
 
 /**
  * Generated rather than hand-maintained: the previous public/sitemap.xml listed
@@ -37,20 +37,35 @@ export const GET: APIRoute = () => {
     }
   }
 
-  for (const group of ARTICLE_GROUPS) {
-    const langs = LOCALES.filter((l) => group[l]);
-    const alternates = langs.map((l) => ({
-      lang: l as string,
-      href: localeUrl(l, `/blog/${group[l]}/`),
-    }));
-    if (group.en) alternates.push({ lang: "x-default", href: localeUrl("en", `/blog/${group.en}/`) });
+  /*
+    Every article, not every group.
 
-    for (const lang of langs) {
-      const article = getArticle(lang as Locale, group[lang]);
+    This used to loop ARTICLE_GROUPS, which silently dropped any article that
+    exists in one language only - and after the demand-led rounds most articles
+    do, because Malay, Arabic and English readers search for different things.
+    The group is still what supplies the alternates; it is no longer what
+    decides whether a URL is listed at all.
+  */
+  for (const lang of LOCALES) {
+    for (const article of getArticles(lang)) {
+      const translations = getTranslations(lang, article.slug);
+      const langs = LOCALES.filter((l) => translations[l]);
+
+      const alternates = langs.map((l) => ({
+        lang: l as string,
+        href: localeUrl(l, `/blog/${translations[l]}/`),
+      }));
+      /* A single-language article gets no alternates and no x-default: there is
+         nothing to pair it with, and pointing x-default at a URL in another
+         language would be a lie about what that page is. */
+      if (translations.en) {
+        alternates.push({ lang: "x-default", href: localeUrl("en", `/blog/${translations.en}/`) });
+      }
+
       entries.push({
-        loc: localeUrl(lang as Locale, `/blog/${group[lang]}/`),
+        loc: localeUrl(lang, `/blog/${article.slug}/`),
         alternates,
-        lastmod: article?.updated ?? today,
+        lastmod: article.updated,
         priority: "0.8",
       });
     }

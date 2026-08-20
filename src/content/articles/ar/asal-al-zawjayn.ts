@@ -169,5 +169,5 @@ export const article: Article = {
       a: "بمعدل ملعقة صغيرة للفرد يومياً، يكفي مرطبان ٢٥٠غ زوجين نحو ثلاثة إلى أربعة أسابيع. ومع التخزين البارد الجاف المحكم يبقى المرطبان غير المفتوح جيداً؛ والانفصال وغمقان اللون طبيعيان في خلطة خام.",
     },
   ],
-  related: ["habbat-al-barakah-wal-asal", "kayfa-tamiz-al-asal-al-asli"],
+  related: ["habbat-al-barakah-wal-asal", "asal-bil-zafaran"],
 };

@@ -105,7 +105,7 @@ export const page: Article = {
     },
     {
       q: "Why does Subur Honey crystallise in the jar?",
-      a: "Crystallisation is expected in raw, minimally processed honey and is a sign of authenticity, not a fault. It can be softened by standing the jar in warm - never boiling - water.",
+      a: "Crystallisation is expected in raw, minimally processed honey and is not a fault - though on its own it does not prove a jar is genuine. It can be softened by standing the jar in warm - never boiling - water.",
     },
     {
       q: "Does Subur Honey treat or cure any medical condition?",

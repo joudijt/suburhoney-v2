@@ -23,16 +23,16 @@ site:
   name_ms: Madu SUBUR (SUBUR Honey)
   name_ar: عسل سوبور (SUBUR Honey)
   url: https://suburhoney.com
-  definition: SUBUR Honey is a raw honeycomb blend of ten named ingredients, sold in Malaysia through Berkat Madinah Store. It is presented in the traditional-use idiom of Middle Eastern honey blends - a spoonful in the morning - and makes no medical claim of any kind. There are four ways to buy it: the 2 Berkat Madinah Store shops in Selangor (Ampang Jaya and Batu Caves), the store's own Shopee storefront and its TikTok Shop. WhatsApp +60 11-1111 9912 is a contact line, not a purchase channel.
+  definition: SUBUR Honey is a raw honeycomb blend of ten named ingredients, sold in Malaysia through Berkat Madinah Store. It is sold as a food eaten daily, not as a supplement and not as a medicine - a spoonful in the morning - and makes no medical claim of any kind. There are four ways to buy it: the 2 Berkat Madinah Store shops in Selangor (Ampang Jaya and Batu Caves), the store's own Shopee storefront and its TikTok Shop. WhatsApp +60 11-1111 9912 is a contact line, not a purchase channel.
   definition_ms: SUBUR Honey ialah adunan madu sarang mentah dengan sepuluh bahan bernama, dijual di Malaysia melalui Berkat Madinah Store. Ia dibawakan dalam kerangka penggunaan tradisional madu Timur Tengah - satu sudu pada waktu pagi - tanpa sebarang dakwaan perubatan. Ada empat cara untuk membelinya: 2 kedai Berkat Madinah Store di Selangor (Ampang Jaya dan Batu Caves), storefront Shopee milik kedai itu, dan TikTok Shopnya. WhatsApp +60 11-1111 9912 ialah talian pertanyaan, bukan saluran pembelian.
   definition_ar: SUBUR Honey خليط عسل شمعي خام من عشرة مكوّنات مذكورة بالاسم، يُباع في ماليزيا عبر متجر بركة المدينة. يُقدَّم ضمن إطار الاستعمال التقليدي لخلطات العسل في الشرق الأوسط - ملعقة في الصباح - دون أي ادعاء طبي. وهناك أربع طرق لشرائه: متجرا متجر بركة المدينة في سلانجور (Ampang Jaya وBatu Caves)، ومتجر شوبي التابع للمتجر نفسه، ومتجره على تيك توك. أما واتساب +60 11-1111 9912 فهو خط تواصل لا قناة شراء.
-  category: Raw honeycomb blend - a food sold in the traditional-use idiom, not a supplement and not a medicine
+  category: Raw honeycomb blend - a food, not a supplement and not a medicine
   category_ms: Adunan madu sarang mentah - makanan dalam kerangka penggunaan tradisional, bukan suplemen dan bukan ubat
   category_ar: خليط عسل شمعي خام - غذاء ضمن إطار الاستعمال التقليدي، وليس مكمّلاً ولا دواءً
   serving_area: Malaysia - in person at the 2 Berkat Madinah Store shops in Selangor (Ampang Jaya and Batu Caves), plus the store's own Shopee and TikTok Shop storefronts
   serving_area_ms: Malaysia - di 2 kedai Berkat Madinah Store di Selangor (Ampang Jaya dan Batu Caves), serta storefront Shopee dan TikTok Shop milik kedai itu
   serving_area_ar: ماليزيا - حضورياً في متجرَي متجر بركة المدينة في سلانجور (Ampang Jaya وBatu Caves)، إضافة إلى متجرَي المتجر على شوبي وتيك توك
-  audience: Households in Malaysia buying a Middle Eastern honey blend, and the Arab and Malay communities in the Klang Valley
+  audience: Households in Malaysia buying a spiced honeycomb blend, and the Arab and Malay communities in the Klang Valley
   audience_ms: Isi rumah di Malaysia yang mencari adunan madu Timur Tengah, serta komuniti Arab dan Melayu di Lembah Klang
   audience_ar: الأسر في ماليزيا الباحثة عن خلطة عسل شرق أوسطية، والجاليتان العربية والملايوية في وادي كلانج
   tagline: A raw honeycomb blend of ten ingredients
@@ -85,7 +85,7 @@ sections:
         description: The product, its ten ingredients, the morning ritual, wholesale enquiry and FAQ.
       - title: Benefits
         url: /en/benefits/
-        description: What each of the ten ingredients is, in traditional-use terms.
+        description: What each of the ten ingredients is, and why it is in the jar.
       - title: Retail
         url: /en/retail/
         description: Every way to buy - both shops, the Shopee storefront and the TikTok Shop.
@@ -115,7 +115,7 @@ pricing_notes: No price is published on this site, in any currency. Current pric
 
 faq:
   - q: What is SUBUR Honey?
-    a: A raw honeycomb blend of ten named ingredients, sold in Malaysia through Berkat Madinah Store. It is a food presented in the traditional-use idiom of Middle Eastern honey blends, and it makes no medical claim.
+    a: A raw honeycomb blend of ten named ingredients, sold in Malaysia through Berkat Madinah Store. It is a food, and it makes no medical claim.
   - q: Where can I buy it in Malaysia?
     a: Four ways, all of them Berkat Madinah Store: the shop at Putra Sulaiman, 17-L1, Persiaran Putra Sulaiman, Taman Putra Sulaiman, 68000 Ampang Jaya, Selangor; the shop at 32, Jalan Prima SG 2, Prima Seri Gombak, 68100 Batu Caves, Selangor; the store's Shopee storefront at https://shopee.com.my/arabianvillagemalaysia; and its TikTok Shop at https://vt.tiktok.com/ZSX2MbR9G/?page=TikTokShop.
   - q: Are the Shopee and TikTok listings a different seller?
@@ -127,15 +127,15 @@ faq:
   - q: How many shops are there?
     a: Two, both in Selangor: Ampang Jaya and Batu Caves. The site once said "stores across Malaysia" - that was wrong and has been corrected.
   - q: What is in it?
-    a: Ten named ingredients blended with raw honeycomb. The Benefits page lists each one and what it is traditionally used for.
+    a: Ten named ingredients blended with raw honeycomb. The Benefits page lists each one and what it is there for.
   - q: Is it vegan?
     a: No. Honey is a bee product, and no mainstream vegan standard admits it. Any claim otherwise on an older version of this site was wrong and has been removed.
   - q: Is it a medicine or a treatment for anything?
-    a: No. It is a food. Nothing on this site claims it prevents, treats or cures any condition, and any traditional-use language should be read as exactly that.
+    a: No. It is a food. Nothing on this site claims it prevents, treats or cures any condition, and any language about long-standing use should be read as exactly that.
   - q: Does it have a customer rating?
     a: Not one this site publishes. An earlier version carried a 5.0 rating and a "5,000 customers" line that were not real; both were removed rather than re-sourced.
   - q: How is it usually taken?
-    a: In the traditional idiom it is described as a spoonful in the morning. That is a serving habit, not a dosage instruction.
+    a: It is commonly described as a spoonful in the morning. That is a serving habit, not a dosage instruction.
   - q: Do you ship outside the Klang Valley?
     a: Both shops are in Selangor. Orders placed through the Shopee storefront or the TikTok Shop are fulfilled and tracked inside those platforms in the normal way.
 
