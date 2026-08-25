@@ -190,5 +190,5 @@ export const article: Article = {
       a: "السؤال نفسه غير دقيق، لأن الاثنين خارج مقياس واحد مشترك. رقم مانوكا يقيس مركّباً محدداً في دفعة واحدة فقط، والعسل الماليزي عموماً لا يحمل رقماً مكافئاً لأنه لا يخضع لهذا البرنامج أصلاً. غياب الرقم ليس درجة أدنى، بل خروج كامل عن هذا القياس بالذات.",
     },
   ],
-  related: ["al-asal-al-malizi", "kayfa-tamiz-al-asal-al-asli"],
+  related: ["al-asal-al-malizi", "al-farq-bayn-asal-al-sidr-wal-asal-al-malizi"],
 };

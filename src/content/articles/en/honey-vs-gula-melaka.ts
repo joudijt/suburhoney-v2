@@ -188,5 +188,5 @@ export const article: Article = {
       a: "No. Honey is already liquid or semi-set and stirs in on its own. Gula melaka is sold as a firm block or paste and needs grating, melting, or dissolving in hot liquid before it will mix into anything — it won't break down in a cold drink or a quick stir the way honey does.",
     },
   ],
-  related: ["types-of-honey-in-malaysia", "honey-with-nuts-malaysia"],
+  related: ["baking-with-honey-malaysia", "honey-with-nuts-malaysia"],
 };

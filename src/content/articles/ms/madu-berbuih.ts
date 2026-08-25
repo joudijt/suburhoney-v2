@@ -229,5 +229,5 @@ export const article: Article = {
       a: "Dua sebab biasa. Balang diisi terlalu penuh sehingga gas tiada ruang untuk berkumpul, atau madu sudah mengambil cukup air untuk menghasilkan gas secara berterusan. Pindahkan sebahagian madu ke balang kedua dan alihkan ke tempat yang lebih sejuk. Kalau ia berulang setiap hari dan baunya berubah, rujuk penjual.",
     },
   ],
-  related: ["madu-beku-dalam-peti-sejuk", "beza-madu-tulen-dan-madu-campuran"],
+  related: ["madu-beku-dalam-peti-sejuk", "tarikh-luput-madu"],
 };

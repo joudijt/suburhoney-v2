@@ -142,5 +142,5 @@ export const article: Article = {
       a: "اعتبر السعر الأقل بكثير من السوق سؤالاً يحتاج جواباً. للعسل الحقيقي كلفة دنيا تفرضها طريقة إنتاجه. هذا لا يجعل كل عسل غالٍ أصلياً، لكن العسل الرخيص بشكل غير معتاد لا بد له من تفسير.",
     },
   ],
-  related: ["asal-al-zawjayn", "hifz-al-asal-fi-al-jaw-al-ratb"],
+  related: ["asal-al-zawjayn", "qiraat-mulsaq-al-asal-fi-malizia"],
 };

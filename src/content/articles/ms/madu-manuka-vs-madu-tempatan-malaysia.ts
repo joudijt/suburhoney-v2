@@ -195,5 +195,5 @@ export const article: Article = {
       a: "Ia bermaksud lebih banyak satu sebatian terukur dijumpai dalam kelompok itu, dan biasanya bermaksud harga lebih tinggi. Ia tidak bermaksud madu itu lebih segar, lebih tulen atau lebih sedap dimakan — gred lebih tinggi selalunya lebih gelap dan lebih tajam rasanya, sesuatu yang ramai orang sebenarnya kurang gemari di atas roti.",
     },
   ],
-  related: ["cara-kenal-madu-asli", "beza-madu-tulen-dan-madu-campuran"],
+  related: ["madu-kelulut-vs-madu-tualang", "beza-madu-tulen-dan-madu-campuran"],
 };

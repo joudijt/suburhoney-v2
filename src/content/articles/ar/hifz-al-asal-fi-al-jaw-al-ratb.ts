@@ -229,5 +229,5 @@ export const article: Article = {
       a: "هذه النصيحة مكتوبة لمناخ تنخفض حرارته موسمياً، ولا يوفّرها مطبخ ماليزي بلا تكييف. الأجدى هنا هو الثبات لا الرقم: خزانة مغلقة بعيدة عن مصادر الحرارة والبخار أفضل من مكان يتقلّب بين تكييف وحرارة خارجية. وإحكام الغطاء يبقى أهم من درجتين صعوداً أو نزولاً.",
     },
   ],
-  related: ["hal-lil-asal-tarikh-salahiya", "tariqat-akl-al-asal-bil-shama"],
+  related: ["hal-lil-asal-tarikh-salahiya", "naql-al-asal-fi-al-taira"],
 };

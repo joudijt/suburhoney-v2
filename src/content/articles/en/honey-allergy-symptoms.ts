@@ -172,5 +172,5 @@ export const article: Article = {
       a: "Not automatically, but be cautious with any raw, unfiltered honey if you're sensitised to weed or daisy-family (Compositae) pollen, since trace pollen from those flowers can remain in the jar. Start with a small amount, watch for a reaction, and stop immediately if one appears.",
     },
   ],
-  related: ["honey-with-nuts-malaysia", "is-honey-safe-during-pregnancy"],
+  related: ["how-to-read-a-honey-label-malaysia", "is-honey-safe-during-pregnancy"],
 };

@@ -231,5 +231,5 @@ export const article: Article = {
       a: "Tidak perlu. Semut datang kerana ada madu di bibir balang atau di atas rak, bukan kerana balang itu berada pada suhu bilik. Lap bibir balang selepas setiap kali guna, pastikan penutup rapat, dan letakkan balang di dalam bekas kedap. Itu menyelesaikan semut tanpa mengeraskan madu.",
     },
   ],
-  related: ["madu-campur-air-panas", "cara-kenal-madu-asli"],
+  related: ["madu-campur-air-panas", "kenapa-madu-jadi-gelap"],
 };

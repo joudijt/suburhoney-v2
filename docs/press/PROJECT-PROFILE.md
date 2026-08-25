@@ -58,3 +58,47 @@ Written by PRESS Stage 0 on 2026-08-20. Every line cites the file that proved it
 | Keyword tool | No paid keyword API on this machine. Demand evidence is live SERP/autocomplete/PAA/competitor-title research, and every figure is labelled with how it was obtained |
 | Deploy credentials | FTPS user + password known (`reference_suburhoney_hosting`) |
 | Git | `E:\suburhoney-v2`, branch `master`, HEAD `23452bc`, tree clean, in sync with `origin/master` |
+
+---
+
+## Round 3 re-adoption (2026-08-25)
+
+Re-verified against the repo, not from memory. Everything in the table above still holds. Deltas:
+
+| Item | Round 1 (2026-08-20) | Round 3 (2026-08-25) |
+|---|---|---|
+| Live articles | 9 | **48** (16 per language) |
+| Sitemap locs | 27 | **66** |
+| Git | `master` @ `23452bc`, clean | `master` @ `420b3e0`, clean, in sync with `origin/master` |
+| `bin/imgen.py --probe` | `zimage` dead (401) · `pollinations` ok | **unchanged** — `zimage` still 401, `pollinations` ok. Round 2's 886×665 clamp is the expected output size, not 1200×900 |
+| Search Console | **UNAVAILABLE** (Cogny MCP quota exhausted) | **AVAILABLE for the first time** — see below |
+| `npm run check:ai` | green | **was RED, fixed before the round started** — see below |
+
+### `check:ai` was permanently red, and it was not content drift
+
+`node scripts/ai/facts-sync.mjs --check` compared the committed `AI-FACTS.yml` against freshly
+generated output with a strict `!==`. This repo is developed on Windows with `core.autocrlf=true`
+and carries no `.gitattributes`, so **git hands back the file with CRLF while the generator always
+writes LF**. Every one of the 163 lines "differed"; not one character of content did.
+
+The gate could therefore never go green on any Windows checkout, and a round that trusted it would
+have shipped believing the facts file had drifted — or, worse, "fixed" it by regenerating and
+committing a whole-file diff that hid a real drift inside it.
+
+Fixed in `scripts/ai/facts-sync.mjs` by normalising line endings on both sides of the comparison.
+`check:ai` now exits **0**. `node scripts/qa/banned-terms.mjs` was green before and after.
+
+### Search Console is reachable now — and it says the site has no footprint
+
+The OAuth write token at `E:\TechVisionEra\gsc-token-write.json` is **siteOwner** on
+`sc-domain:suburhoney.com`. The property form matters: `https://suburhoney.com/` returns 403,
+`sc-domain:suburhoney.com` works.
+
+The data itself is close to empty: **zero query rows** over 16 months, one page
+(`/en/`) with 4 clicks and 12 impressions. There is no "impressions but poor position" harvest to
+make, so round 3 stays demand-led from SERP research like rounds 1 and 2.
+
+What Search Console did contribute is `sc-domain:madinah.com.my` — the same retailer, the same
+Malaysian Malay/Arab/English audience, **222 honey-related queries** with real impression and
+position figures over 16 months. Captured in `docs/press/round-3/gsc-demand.md`. It is a labelled
+proxy for the audience, not evidence about the SUBUR catalogue, and the map treats it that way.

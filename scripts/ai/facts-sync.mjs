@@ -259,9 +259,15 @@ if (existsSync(OUT)) {
   if (m) final = text.replace('  indexnow_key:\n', `  indexnow_key: ${m[1]}\n`);
 }
 
+/* Compare with line endings normalised. This repo is developed on Windows with
+   core.autocrlf=true, so a fresh checkout hands back CRLF while this script
+   always writes LF - a strict compare then reports permanent, content-free
+   drift and the release gate could never go green again. */
+const normaliseEol = (s) => s.split('\r\n').join('\n');
+
 if (CHECK) {
   const current = existsSync(OUT) ? readFileSync(OUT, 'utf8') : '';
-  if (current !== final) {
+  if (normaliseEol(current) !== normaliseEol(final)) {
     console.error('\n  AI-FACTS.yml is stale - src/config/site.ts or the overlay changed.');
     console.error('  Run: node scripts/ai/facts-sync.mjs\n');
     process.exit(1);

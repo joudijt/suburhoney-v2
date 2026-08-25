@@ -194,5 +194,5 @@ export const article: Article = {
       a: "The grading systems were built for single-source manuka honey — UMF is New Zealand's licensed scheme, and MGO figures also appear on Australian manuka — so a figure on a spiced or multi-ingredient blend should be treated with suspicion. A blend is honestly judged by its ingredient list: every item named, and the jar visibly matching what the label says is inside it.",
     },
   ],
-  related: ["types-of-honey-in-malaysia", "is-malaysian-honey-local-or-imported"],
+  related: ["why-is-honey-dark-or-light", "is-malaysian-honey-local-or-imported"],
 };
