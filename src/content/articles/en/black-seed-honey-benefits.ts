@@ -149,5 +149,5 @@ export const article: Article = {
       a: "No food may be sold in Malaysia on a claim that it prevents, treats or cures any condition — that is prohibited under the Food Regulations 1985. Black seed honey is a daily food, nothing more. For any medical concern, see a doctor.",
     },
   ],
-  related: ["how-to-identify-pure-honey", "types-of-honey-in-malaysia"],
+  related: ["how-to-identify-pure-honey", "is-honey-safe-during-pregnancy"],
 };

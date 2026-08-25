@@ -12,6 +12,14 @@ import { article as enStorage } from "./en/how-to-store-honey-malaysia";
 import { article as enManuka } from "./en/manuka-honey-vs-local-honey";
 import { article as enOrigin } from "./en/is-malaysian-honey-local-or-imported";
 
+// Round 2 (2026-08-25).
+import { article as enHoneyNuts } from "./en/honey-with-nuts-malaysia";
+import { article as enHantaran } from "./en/honeycomb-hantaran-gift-idea";
+import { article as enPregnancy } from "./en/is-honey-safe-during-pregnancy";
+import { article as enAllergy } from "./en/honey-allergy-symptoms";
+import { article as enGulaMelaka } from "./en/honey-vs-gula-melaka";
+import { article as enVegan } from "./en/is-honey-vegan";
+
 import { article as msCouples } from "./ms/madu-suami-isteri";
 import { article as msBlackSeed } from "./ms/habbatus-sauda-dan-madu";
 import { article as msPure } from "./ms/cara-kenal-madu-asli";
@@ -22,6 +30,14 @@ import { article as msFoam } from "./ms/madu-berbuih";
 import { article as msRitual } from "./ms/waktu-terbaik-makan-madu";
 import { article as msHotWater } from "./ms/madu-campur-air-panas";
 import { article as msShops } from "./ms/kedai-madu-asli-selangor";
+
+// Round 2 (2026-08-25).
+import { article as msOnlineOrShop } from "./ms/beli-madu-online-atau-kedai-fizikal";
+import { article as msRaya } from "./ms/hadiah-madu-untuk-raya";
+import { article as msManuka } from "./ms/madu-manuka-vs-madu-tempatan-malaysia";
+import { article as msDoorgift } from "./ms/doorgift-madu-kahwin";
+import { article as msSarapan } from "./ms/resepi-sarapan-guna-madu";
+import { article as msMasakan } from "./ms/madu-untuk-masakan";
 
 import { article as arCouples } from "./ar/asal-al-zawjayn";
 import { article as arBlackSeed } from "./ar/habbat-al-barakah-wal-asal";
@@ -34,9 +50,23 @@ import { article as arExpiry } from "./ar/hal-lil-asal-tarikh-salahiya";
 import { article as arHotWater } from "./ar/al-ma-al-sakhin-wal-asal";
 import { article as arSaffron } from "./ar/asal-bil-zafaran";
 
+// Round 2 (2026-08-25).
+import { article as arFloat } from "./ar/limatha-yatfu-al-shama-fawq-al-asal";
+import { article as arManuka } from "./ar/al-farq-bayn-asal-manuka-wal-asal-al-malizi";
+import { article as arIngredients } from "./ar/mukawwinat-khaltat-al-asal-bil-aashab";
+import { article as arInfant } from "./ar/hal-al-asal-masmuh-lil-atfal-aqal-min-sana";
+import { article as arOnlineBuy } from "./ar/shiraa-al-asal-online-fi-malizia";
+import { article as arEidGift } from "./ar/hadiyat-al-asal-lil-eid";
+
 /** Newest first - this is the order the blog index renders. */
 export const ARTICLES: Record<Locale, Article[]> = {
   en: [
+    enHoneyNuts,
+    enHantaran,
+    enPregnancy,
+    enAllergy,
+    enGulaMelaka,
+    enVegan,
     enComb,
     enWax,
     enWhereToBuy,
@@ -49,6 +79,12 @@ export const ARTICLES: Record<Locale, Article[]> = {
     enPure,
   ],
   ms: [
+    msOnlineOrShop,
+    msRaya,
+    msManuka,
+    msDoorgift,
+    msSarapan,
+    msMasakan,
     msComb,
     msCrystallised,
     msBlend,
@@ -61,6 +97,12 @@ export const ARTICLES: Record<Locale, Article[]> = {
     msPure,
   ],
   ar: [
+    arFloat,
+    arManuka,
+    arIngredients,
+    arInfant,
+    arOnlineBuy,
+    arEidGift,
     arWhereToBuy,
     arWax,
     arStorage,
@@ -106,6 +148,16 @@ export const ARTICLE_GROUPS: Record<Locale, string>[] = [
     en: "where-to-buy-raw-honey-kuala-lumpur",
     ms: "kedai-madu-asli-selangor",
     ar: "ayna-ashtari-asal-fi-kuala-lumpur",
+  },
+
+  // Round 2. G6: the Manuka-vs-local comparison, researched independently in
+  // all three languages (the English piece is Round 1's, the other two are
+  // Round 2's own demand findings) but answering the same core question, so it
+  // earns hreflang like any other three-language group.
+  {
+    en: "manuka-honey-vs-local-honey",
+    ms: "madu-manuka-vs-madu-tempatan-malaysia",
+    ar: "al-farq-bayn-asal-manuka-wal-asal-al-malizi",
   },
 ] as Record<Locale, string>[];
 

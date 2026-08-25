@@ -148,5 +148,5 @@ export const article: Article = {
       a: "Anggap harga jauh di bawah pasaran sebagai soalan yang perlu dijawab. Madu asli ada kos minimum yang ditetapkan oleh cara ia dihasilkan. Itu tidak bermakna setiap madu mahal itu tulen, tetapi madu yang luar biasa murah mesti ada penjelasannya.",
     },
   ],
-  related: ["madu-suami-isteri", "beza-madu-tulen-dan-madu-campuran"],
+  related: ["madu-suami-isteri", "madu-manuka-vs-madu-tempatan-malaysia"],
 };

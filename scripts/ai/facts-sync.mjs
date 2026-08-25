@@ -74,19 +74,19 @@ p(`  definition: ${one(`${SITE_NAME} is a raw honeycomb blend of ten named ingre
    (${BRANCHES.map(b => b.area).join(' and ')}), the store's own Shopee storefront and its TikTok
    Shop. WhatsApp ${WHATSAPP_DISPLAY} is a contact line, not a purchase channel.`)}`);
 p(`  definition_ms: ${one(`${SITE_NAME} ialah adunan madu sarang mentah dengan sepuluh bahan bernama,
-   dijual di Malaysia melalui ${BRAND_SELLER}. Ia dibawakan dalam kerangka penggunaan tradisional
-   madu Timur Tengah - satu sudu pada waktu pagi - tanpa sebarang dakwaan perubatan. Ada empat cara
+   dijual di Malaysia melalui ${BRAND_SELLER}. Ia dimakan sebagai santapan harian - satu sudu pada
+   waktu pagi - tanpa sebarang dakwaan perubatan. Ada empat cara
    untuk membelinya: ${BRANCHES.length} kedai ${BRAND_SELLER} di Selangor
    (${BRANCHES.map(b => b.area).join(' dan ')}), storefront Shopee milik kedai itu, dan TikTok Shopnya.
    WhatsApp ${WHATSAPP_DISPLAY} ialah talian pertanyaan, bukan saluran pembelian.`)}`);
 p(`  definition_ar: ${one(`${SITE_NAME} خليط عسل شمعي خام من عشرة مكوّنات مذكورة بالاسم، يُباع في ماليزيا
-   عبر ${BRAND_SELLER_AR}. يُقدَّم ضمن إطار الاستعمال التقليدي لخلطات العسل في الشرق الأوسط - ملعقة في
+   عبر ${BRAND_SELLER_AR}. يُؤكَل كغذاء يومي - ملعقة في
    الصباح - دون أي ادعاء طبي. وهناك أربع طرق لشرائه: متجرا ${BRAND_SELLER_AR} في سلانجور
    (${BRANCHES.map(b => b.area).join(' و')})، ومتجر شوبي التابع للمتجر نفسه، ومتجره على تيك توك.
    أما واتساب ${WHATSAPP_DISPLAY} فهو خط تواصل لا قناة شراء.`)}`);
 p('  category: Raw honeycomb blend - a food, not a supplement and not a medicine');
-p('  category_ms: Adunan madu sarang mentah - makanan dalam kerangka penggunaan tradisional, bukan suplemen dan bukan ubat');
-p('  category_ar: خليط عسل شمعي خام - غذاء ضمن إطار الاستعمال التقليدي، وليس مكمّلاً ولا دواءً');
+p('  category_ms: Adunan madu sarang mentah - makanan harian, bukan suplemen dan bukan ubat');
+p('  category_ar: خليط عسل شمعي خام - غذاء يومي، وليس مكمّلاً ولا دواءً');
 p(`  serving_area: ${one(`Malaysia - in person at the ${BRANCHES.length} ${BRAND_SELLER} shops in Selangor
    (${BRANCHES.map(b => b.area).join(' and ')}), plus the store's own Shopee and TikTok Shop storefronts`)}`);
 p(`  serving_area_ms: ${one(`Malaysia - di ${BRANCHES.length} kedai ${BRAND_SELLER} di Selangor
@@ -94,8 +94,8 @@ p(`  serving_area_ms: ${one(`Malaysia - di ${BRANCHES.length} kedai ${BRAND_SELL
 p(`  serving_area_ar: ${one(`ماليزيا - حضورياً في متجرَي ${BRAND_SELLER_AR} في سلانجور
    (${BRANCHES.map(b => b.area).join(' و')})، إضافة إلى متجرَي المتجر على شوبي وتيك توك`)}`);
 p('  audience: Households in Malaysia buying a spiced honeycomb blend, and the Arab and Malay communities in the Klang Valley');
-p('  audience_ms: Isi rumah di Malaysia yang mencari adunan madu Timur Tengah, serta komuniti Arab dan Melayu di Lembah Klang');
-p('  audience_ar: الأسر في ماليزيا الباحثة عن خلطة عسل شرق أوسطية، والجاليتان العربية والملايوية في وادي كلانج');
+p('  audience_ms: Isi rumah di Malaysia yang mencari adunan madu sarang berempah, serta komuniti Arab dan Melayu di Lembah Klang');
+p('  audience_ar: الأسر في ماليزيا الباحثة عن خلطة عسل شمعي محلاة بالتوابل، والجاليتان العربية والملايوية في وادي كلانج');
 p('  tagline: A raw honeycomb blend of ten ingredients');
 p('  default_language: en');
 p('  languages:');

@@ -121,4 +121,93 @@ export const ARTICLE_FIGURES: Record<string, PageFigure> = {
     width: 1200,
     height: 900,
   },
+
+  // Round 2 (2026-08-25). All 886x665 (4:3) - pollinations' anonymous tier
+  // clamped resolution below the 1200x900 requested this round (zimage was
+  // dead, so every image fell through to pollinations); declaring the real
+  // pixel size here rather than the requested one, per the site's own rule
+  // that a hardcoded dimension must match the file, not the request. The two
+  // Manuka articles (ms, ar) are members of G6 in ARTICLE_GROUPS, whose
+  // canonical English slug is "manuka-honey-vs-local-honey" above - they
+  // resolve through getAssetKey() to that key already and need no entry here.
+  "honey-with-nuts-malaysia": {
+    src: "/images/article-honey-with-nuts-malaysia.webp",
+    width: 886,
+    height: 665,
+  },
+  "honeycomb-hantaran-gift-idea": {
+    src: "/images/article-honeycomb-hantaran-gift-idea.webp",
+    width: 886,
+    height: 665,
+  },
+  "is-honey-safe-during-pregnancy": {
+    src: "/images/article-is-honey-safe-during-pregnancy.webp",
+    width: 886,
+    height: 665,
+  },
+  "honey-allergy-symptoms": {
+    src: "/images/article-honey-allergy-symptoms.webp",
+    width: 886,
+    height: 665,
+  },
+  "honey-vs-gula-melaka": {
+    src: "/images/article-honey-vs-gula-melaka.webp",
+    width: 886,
+    height: 665,
+  },
+  "is-honey-vegan": {
+    src: "/images/article-is-honey-vegan.webp",
+    width: 886,
+    height: 665,
+  },
+  "beli-madu-online-atau-kedai-fizikal": {
+    src: "/images/article-beli-madu-online-atau-kedai-fizikal.webp",
+    width: 886,
+    height: 665,
+  },
+  "hadiah-madu-untuk-raya": {
+    src: "/images/article-hadiah-madu-untuk-raya.webp",
+    width: 886,
+    height: 665,
+  },
+  "doorgift-madu-kahwin": {
+    src: "/images/article-doorgift-madu-kahwin.webp",
+    width: 886,
+    height: 665,
+  },
+  "resepi-sarapan-guna-madu": {
+    src: "/images/article-resepi-sarapan-guna-madu.webp",
+    width: 886,
+    height: 665,
+  },
+  "madu-untuk-masakan": {
+    src: "/images/article-madu-untuk-masakan.webp",
+    width: 886,
+    height: 665,
+  },
+  "limatha-yatfu-al-shama-fawq-al-asal": {
+    src: "/images/article-limatha-yatfu-al-shama-fawq-al-asal.webp",
+    width: 886,
+    height: 665,
+  },
+  "mukawwinat-khaltat-al-asal-bil-aashab": {
+    src: "/images/article-mukawwinat-khaltat-al-asal-bil-aashab.webp",
+    width: 886,
+    height: 665,
+  },
+  "hal-al-asal-masmuh-lil-atfal-aqal-min-sana": {
+    src: "/images/article-hal-al-asal-masmuh-lil-atfal-aqal-min-sana.webp",
+    width: 886,
+    height: 665,
+  },
+  "shiraa-al-asal-online-fi-malizia": {
+    src: "/images/article-shiraa-al-asal-online-fi-malizia.webp",
+    width: 886,
+    height: 665,
+  },
+  "hadiyat-al-asal-lil-eid": {
+    src: "/images/article-hadiyat-al-asal-lil-eid.webp",
+    width: 886,
+    height: 665,
+  },
 };
