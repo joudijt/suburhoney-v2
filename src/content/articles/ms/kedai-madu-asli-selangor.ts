@@ -197,5 +197,5 @@ export const article: Article = {
       a: "Ia hadiah yang munasabah, dan inilah keadaan yang paling menguntungkan pembelian bersemuka. Anda dapat memeriksa balang yang bakal anda berikan, memilih yang paling kemas, dan bertanya bahannya supaya anda boleh memberitahu penerima dengan tepat apa yang ada di dalamnya. Gambar dalam talian tidak membolehkan anda memilih balang tertentu.",
     },
   ],
-  related: ["sarang-madu-boleh-dimakan", "beza-madu-tulen-dan-madu-campuran"],
+  related: ["sarang-madu-boleh-dimakan", "beli-madu-online-atau-kedai-fizikal"],
 };

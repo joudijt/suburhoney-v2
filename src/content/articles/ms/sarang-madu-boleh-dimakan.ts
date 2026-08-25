@@ -227,5 +227,5 @@ export const article: Article = {
       a: "Kerana kepingan itu datang dari bahagian sarang yang berbeza umur. Bahagian baru dibina lebih pucat, bahagian lama lebih gelap. Dalam campuran berempah, warna juga berubah kerana lilin menyerap warna dan aroma rempah di sekelilingnya. Ketidakseragaman itu perkara biasa bagi sarang yang dipotong dengan tangan.",
     },
   ],
-  related: ["cara-kenal-madu-asli", "kedai-madu-asli-selangor"],
+  related: ["cara-kenal-madu-asli", "doorgift-madu-kahwin"],
 };

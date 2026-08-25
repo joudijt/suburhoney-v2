@@ -192,5 +192,5 @@ export const article: Article = {
       a: "Most comb is sold through online marketplaces, where you judge it from a photograph. Some specialist shops sell it over a counter, which lets you look at the comb from the side and ask what is in the jar first. SUBUR is sold only by Berkat Madinah Store, in Selangor and through its own online storefronts.",
     },
   ],
-  related: ["can-you-eat-honeycomb-wax", "types-of-honey-in-malaysia"],
+  related: ["can-you-eat-honeycomb-wax", "is-honey-vegan"],
 };

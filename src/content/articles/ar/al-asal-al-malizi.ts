@@ -225,5 +225,5 @@ export const article: Article = {
       a: "منشأ العسل غير منشور على هذا الموقع، ولن تجد هنا اسم منطقة ولا اسم منحل. وهذا سؤال مشروع تماماً للمشتري، والطريق الوحيد للجواب أن تسأل المتجر مباشرة عبر قناة التواصل المذكورة في صفحة الاتصال، أو أن تسأل البائع في الفرع.",
     },
   ],
-  related: ["ayna-ashtari-asal-fi-kuala-lumpur", "asal-bil-zafaran"],
+  related: ["ayna-ashtari-asal-fi-kuala-lumpur", "al-farq-bayn-asal-manuka-wal-asal-al-malizi"],
 };

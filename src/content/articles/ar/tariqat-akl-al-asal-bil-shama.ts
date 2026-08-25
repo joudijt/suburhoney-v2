@@ -216,5 +216,5 @@ export const article: Article = {
       a: "سُوبور تُباع من متجر بركة المدينة وحده: فرعان في سيلانجور، إضافة إلى متجري شوبي وتيك توك شوب الخاصين به. ليست في السوبرماركت ولا في الصيدليات، وليست عند موزّع آخر. العناوين وطرق الطلب على صفحة نقاط البيع، وللاستفسار عن الحجم أو التوفّر رقم واتساب واحد على صفحة التواصل.",
     },
   ],
-  related: ["hifz-al-asal-fi-al-jaw-al-ratb", "ayna-ashtari-asal-fi-kuala-lumpur"],
+  related: ["hifz-al-asal-fi-al-jaw-al-ratb", "limatha-yatfu-al-shama-fawq-al-asal"],
 };

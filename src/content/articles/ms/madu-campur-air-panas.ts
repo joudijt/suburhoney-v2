@@ -227,5 +227,5 @@ export const article: Article = {
       a: "Sudu basah membawa titisan air masuk ke dalam balang, dan air yang terperangkap di dalam madu boleh mengubahnya dari masa ke masa, terutamanya dalam iklim lembap. Ia tiada kaitan dengan haba, tetapi ia berlaku pada saat yang sama — semasa anda mengacau minuman panas.",
     },
   ],
-  related: ["waktu-terbaik-makan-madu", "madu-beku-dalam-peti-sejuk"],
+  related: ["waktu-terbaik-makan-madu", "madu-untuk-masakan"],
 };

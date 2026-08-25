@@ -201,5 +201,5 @@ export const article: Article = {
       a: "اسأل عن المكوّنات بأسمائها مكتوبةً لا موصوفةً بعبارات عامة، وعمّا إذا كان الشمع الخام داخل المرطبان، وعن الجهة التي عبّأته ويمكنك العودة إليها، وعن طريقة الحفظ في جوّ ماليزيا الرطب. وإن كنت تتجنّب مكوّناً بعينه فاسأل عنه مباشرة؛ خلطة سُوبور مثلاً لا تمر فيها.",
     },
   ],
-  related: ["tariqat-akl-al-asal-bil-shama", "al-asal-al-malizi"],
+  related: ["tariqat-akl-al-asal-bil-shama", "shiraa-al-asal-online-fi-malizia"],
 };
