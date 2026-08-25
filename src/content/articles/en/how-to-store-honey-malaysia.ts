@@ -207,5 +207,5 @@ export const article: Article = {
       a: "Storage is about taste, aroma and texture — that is the honest framing, and Malaysia's food rules do not permit a seller to promise more than that. A closed jar kept dark, dry and away from steam tastes the way it did when you opened it. A neglected one darkens, stiffens or ferments.",
     },
   ],
-  related: ["can-you-eat-honeycomb-wax", "how-to-identify-pure-honey"],
+  related: ["honey-in-hot-drinks-malaysia", "how-to-identify-pure-honey"],
 };

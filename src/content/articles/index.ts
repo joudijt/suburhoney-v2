@@ -58,9 +58,39 @@ import { article as arInfant } from "./ar/hal-al-asal-masmuh-lil-atfal-aqal-min-
 import { article as arOnlineBuy } from "./ar/shiraa-al-asal-online-fi-malizia";
 import { article as arEidGift } from "./ar/hadiyat-al-asal-lil-eid";
 
+
+// Round 3 (2026-08-25).
+import { article as enFakeHoney } from "./en/is-honey-in-malaysia-fake";
+import { article as enSidr } from "./en/what-is-sidr-honey";
+import { article as enHotDrinks } from "./en/honey-in-hot-drinks-malaysia";
+import { article as enBaking } from "./en/baking-with-honey-malaysia";
+import { article as enLabel } from "./en/how-to-read-a-honey-label-malaysia";
+import { article as enColour } from "./en/why-is-honey-dark-or-light";
+
+// Round 3 (2026-08-25).
+import { article as msExpiry } from "./ms/tarikh-luput-madu";
+import { article as msKelulutTualang } from "./ms/madu-kelulut-vs-madu-tualang";
+import { article as msKhalta } from "./ms/madu-khalta";
+import { article as msPregnancy } from "./ms/madu-untuk-ibu-mengandung";
+import { article as msColour } from "./ms/kenapa-madu-jadi-gelap";
+import { article as msSaffron } from "./ms/madu-saffron";
+
+// Round 3 (2026-08-25).
+import { article as arSidr } from "./ar/al-farq-bayn-asal-al-sidr-wal-asal-al-malizi";
+import { article as arFlight } from "./ar/naql-al-asal-fi-al-taira";
+import { article as arRawFiltered } from "./ar/al-farq-bayn-al-asal-al-kham-wal-musaffa";
+import { article as arLabel } from "./ar/qiraat-mulsaq-al-asal-fi-malizia";
+import { article as arNutsRecipe } from "./ar/tariqat-amal-asal-bil-mukassarat";
+import { article as arGiftHome } from "./ar/hadiya-min-malizia-lil-ahl";
 /** Newest first - this is the order the blog index renders. */
 export const ARTICLES: Record<Locale, Article[]> = {
   en: [
+    enFakeHoney,
+    enSidr,
+    enHotDrinks,
+    enBaking,
+    enLabel,
+    enColour,
     enHoneyNuts,
     enHantaran,
     enPregnancy,
@@ -79,6 +109,12 @@ export const ARTICLES: Record<Locale, Article[]> = {
     enPure,
   ],
   ms: [
+    msExpiry,
+    msKelulutTualang,
+    msKhalta,
+    msPregnancy,
+    msColour,
+    msSaffron,
     msOnlineOrShop,
     msRaya,
     msManuka,
@@ -97,6 +133,12 @@ export const ARTICLES: Record<Locale, Article[]> = {
     msPure,
   ],
   ar: [
+    arSidr,
+    arFlight,
+    arRawFiltered,
+    arLabel,
+    arNutsRecipe,
+    arGiftHome,
     arFloat,
     arManuka,
     arIngredients,
@@ -174,6 +216,12 @@ const PARTIAL_GROUPS = [
   { ms: "madu-campur-air-panas", ar: "al-ma-al-sakhin-wal-asal" },
   { en: "how-to-store-honey-malaysia", ar: "hifz-al-asal-fi-al-jaw-al-ratb" },
   { en: "types-of-honey-in-malaysia", ar: "al-asal-al-malizi" },
+  { en: "what-is-sidr-honey", ar: "al-farq-bayn-asal-al-sidr-wal-asal-al-malizi" }, // G7
+  { en: "why-is-honey-dark-or-light", ms: "kenapa-madu-jadi-gelap" }, // G8
+  { ms: "tarikh-luput-madu", ar: "hal-lil-asal-tarikh-salahiya" }, // G9
+  { en: "is-honey-safe-during-pregnancy", ms: "madu-untuk-ibu-mengandung" }, // G10
+  { ms: "madu-saffron", ar: "asal-bil-zafaran" }, // G11
+  { en: "how-to-read-a-honey-label-malaysia", ar: "qiraat-mulsaq-al-asal-fi-malizia" }, // G12
 ] as Partial<Record<Locale, string>>[];
 
 const GROUPS = [...ARTICLE_GROUPS, ...PARTIAL_GROUPS] as Partial<Record<Locale, string>>[];

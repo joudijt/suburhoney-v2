@@ -216,5 +216,5 @@ export const article: Article = {
       a: "Tidak. Kategori madu herba di Malaysia kerap dikaitkan dengan kurma, jadi soalan ini munasabah. Balang SUBUR dibina atas sarang madu mentah bersama habbatus sauda, safron, ginseng, halia, kayu manis, bunga lawang, buah pala, walnut dan badam. Kurma tiada dalam senarai itu, dan kami menyebutnya supaya tiada andaian.",
     },
   ],
-  related: ["cara-kenal-madu-asli", "sarang-madu-boleh-dimakan"],
+  related: ["madu-khalta", "sarang-madu-boleh-dimakan"],
 };

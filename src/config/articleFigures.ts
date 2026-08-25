@@ -210,4 +210,80 @@ export const ARTICLE_FIGURES: Record<string, PageFigure> = {
     width: 886,
     height: 665,
   },
+
+  // Round 3 (2026-08-25). 886x665 - the free generator's hard cap,
+  // confirmed by two control runs that both returned 886x665 whatever
+  // size was requested. Declared at its REAL size: the pipeline never
+  // upscales, and a template that claims 1200x900 for a 886x665 file
+  // ships a lie the image audit cannot see.
+  "is-honey-in-malaysia-fake": {
+    src: "/images/article-is-honey-in-malaysia-fake.webp",
+    width: 886,
+    height: 665,
+  },
+  "what-is-sidr-honey": {
+    src: "/images/article-what-is-sidr-honey.webp",
+    width: 886,
+    height: 665,
+  },
+  "honey-in-hot-drinks-malaysia": {
+    src: "/images/article-honey-in-hot-drinks-malaysia.webp",
+    width: 886,
+    height: 665,
+  },
+  "baking-with-honey-malaysia": {
+    src: "/images/article-baking-with-honey-malaysia.webp",
+    width: 886,
+    height: 665,
+  },
+  "how-to-read-a-honey-label-malaysia": {
+    src: "/images/article-how-to-read-a-honey-label-malaysia.webp",
+    width: 886,
+    height: 665,
+  },
+  "why-is-honey-dark-or-light": {
+    src: "/images/article-why-is-honey-dark-or-light.webp",
+    width: 886,
+    height: 665,
+  },
+  "tarikh-luput-madu": {
+    src: "/images/article-tarikh-luput-madu.webp",
+    width: 886,
+    height: 665,
+  },
+  "madu-kelulut-vs-madu-tualang": {
+    src: "/images/article-madu-kelulut-vs-madu-tualang.webp",
+    width: 886,
+    height: 665,
+  },
+  "madu-khalta": {
+    src: "/images/article-madu-khalta.webp",
+    width: 886,
+    height: 665,
+  },
+  "madu-saffron": {
+    src: "/images/article-madu-saffron.webp",
+    width: 886,
+    height: 665,
+  },
+  "naql-al-asal-fi-al-taira": {
+    src: "/images/article-naql-al-asal-fi-al-taira.webp",
+    width: 886,
+    height: 665,
+  },
+  "al-farq-bayn-al-asal-al-kham-wal-musaffa": {
+    src: "/images/article-al-farq-bayn-al-asal-al-kham-wal-musaffa.webp",
+    width: 886,
+    height: 665,
+  },
+  "tariqat-amal-asal-bil-mukassarat": {
+    src: "/images/article-tariqat-amal-asal-bil-mukassarat.webp",
+    width: 886,
+    height: 665,
+  },
+  "hadiya-min-malizia-lil-ahl": {
+    src: "/images/article-hadiya-min-malizia-lil-ahl.webp",
+    width: 886,
+    height: 665,
+  },
 };

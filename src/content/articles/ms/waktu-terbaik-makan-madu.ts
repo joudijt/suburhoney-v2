@@ -214,5 +214,5 @@ export const article: Article = {
       a: "Tidak. Madu mentah tidak diberikan kepada kanak-kanak bawah umur satu tahun, dan ini peraturan keselamatan yang tegas, bukan sekadar langkah berjaga-jaga. Campuran ini juga mengandungi walnut dan badam yang dikisar masuk, jadi ia tidak sesuai untuk sesiapa yang alah kepada kekacang.",
     },
   ],
-  related: ["madu-campur-air-panas", "resepi-sarapan-guna-madu"],
+  related: ["madu-untuk-ibu-mengandung", "resepi-sarapan-guna-madu"],
 };

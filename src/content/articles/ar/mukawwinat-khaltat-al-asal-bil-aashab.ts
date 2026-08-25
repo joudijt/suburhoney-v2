@@ -199,5 +199,5 @@ export const article: Article = {
       a: "في هذه الخلطة الجوز واللوز مطحونان داخل قوام الخليط نفسه منذ البداية، لا مرشوشين أو مضافين فوق العسل بعد التعبئة. لهذا لن تجد قطعة جوز كاملة أو نصف لوزة في الملعقة — القوام أكثر كثافة بدل أن يكون فيه قطع منفصلة يمكن عدّها أو التقاطها.",
     },
   ],
-  related: ["asal-bil-zafaran", "hal-al-asal-masmuh-lil-atfal-aqal-min-sana"],
+  related: ["asal-bil-zafaran", "al-farq-bayn-al-asal-al-kham-wal-musaffa"],
 };

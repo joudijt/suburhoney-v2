@@ -1,0 +1,170 @@
+{
+  "round": 3,
+  "date": "2026-08-25",
+  "note": "assetKey is the group's English slug where a group has an English member, else the article's own slug - the same rule getAssetKey() applies at runtime. imgW/imgH are the REAL generated pixels (886x665, the free provider's hard cap), never the requested size.",
+  "articles": [
+    {
+      "id": "en1", "lang": "en", "ident": "enFakeHoney",
+      "slug": "is-honey-in-malaysia-fake",
+      "assetKey": "is-honey-in-malaysia-fake",
+      "imgW": 886, "imgH": 665,
+      "inboundFrom": { "article": "how-to-identify-pure-honey" }
+    },
+    {
+      "id": "en2", "lang": "en", "ident": "enSidr",
+      "slug": "what-is-sidr-honey",
+      "assetKey": "what-is-sidr-honey",
+      "imgW": 886, "imgH": 665,
+      "inboundFrom": { "article": "types-of-honey-in-malaysia" }
+    },
+    {
+      "id": "en3", "lang": "en", "ident": "enHotDrinks",
+      "slug": "honey-in-hot-drinks-malaysia",
+      "assetKey": "honey-in-hot-drinks-malaysia",
+      "imgW": 886, "imgH": 665,
+      "inboundFrom": { "article": "how-to-store-honey-malaysia" }
+    },
+    {
+      "id": "en4", "lang": "en", "ident": "enBaking",
+      "slug": "baking-with-honey-malaysia",
+      "assetKey": "baking-with-honey-malaysia",
+      "imgW": 886, "imgH": 665,
+      "inboundFrom": { "article": "honey-vs-gula-melaka" }
+    },
+    {
+      "id": "en5", "lang": "en", "ident": "enLabel",
+      "slug": "how-to-read-a-honey-label-malaysia",
+      "assetKey": "how-to-read-a-honey-label-malaysia",
+      "imgW": 886, "imgH": 665,
+      "inboundFrom": { "article": "honey-allergy-symptoms" }
+    },
+    {
+      "id": "en6", "lang": "en", "ident": "enColour",
+      "slug": "why-is-honey-dark-or-light",
+      "assetKey": "why-is-honey-dark-or-light",
+      "imgW": 886, "imgH": 665,
+      "inboundFrom": { "article": "manuka-honey-vs-local-honey" }
+    },
+
+    {
+      "id": "ms1", "lang": "ms", "ident": "msExpiry",
+      "slug": "tarikh-luput-madu",
+      "assetKey": "tarikh-luput-madu",
+      "imgW": 886, "imgH": 665,
+      "inboundFrom": { "article": "madu-berbuih" }
+    },
+    {
+      "id": "ms2", "lang": "ms", "ident": "msKelulutTualang",
+      "slug": "madu-kelulut-vs-madu-tualang",
+      "assetKey": "madu-kelulut-vs-madu-tualang",
+      "imgW": 886, "imgH": 665,
+      "inboundFrom": { "article": "madu-manuka-vs-madu-tempatan-malaysia" }
+    },
+    {
+      "id": "ms3", "lang": "ms", "ident": "msKhalta",
+      "slug": "madu-khalta",
+      "assetKey": "madu-khalta",
+      "imgW": 886, "imgH": 665,
+      "inboundFrom": { "article": "beza-madu-tulen-dan-madu-campuran" }
+    },
+    {
+      "id": "ms4", "lang": "ms", "ident": "msPregnancy",
+      "slug": "madu-untuk-ibu-mengandung",
+      "assetKey": "is-honey-safe-during-pregnancy",
+      "imgW": 1200, "imgH": 900,
+      "reuse": "G10 has an English member, so getAssetKey() resolves both articles to is-honey-safe-during-pregnancy and this article shares the round-2 image already registered under that key. Genuine reuse - no new file, and no articleFigures entry needed.",
+      "inboundFrom": { "article": "waktu-terbaik-makan-madu" }
+    },
+    {
+      "id": "ms5", "lang": "ms", "ident": "msColour",
+      "slug": "kenapa-madu-jadi-gelap",
+      "assetKey": "why-is-honey-dark-or-light",
+      "imgW": 886, "imgH": 665,
+      "reuse": "G8 shares en6's new image via getAssetKey().",
+      "inboundFrom": { "article": "madu-beku-dalam-peti-sejuk" }
+    },
+    {
+      "id": "ms6", "lang": "ms", "ident": "msSaffron",
+      "slug": "madu-saffron",
+      "assetKey": "madu-saffron",
+      "imgW": 886, "imgH": 665,
+      "note": "G11 (ms+ar) has no English member, so getCanonicalSlug() returns undefined and each member falls back to its own slug. The live Arabic partner keeps article-asal-bil-zafaran.webp; this one needs its own file.",
+      "inboundFrom": { "article": "habbatus-sauda-dan-madu" }
+    },
+
+    {
+      "id": "ar1", "lang": "ar", "ident": "arSidr",
+      "slug": "al-farq-bayn-asal-al-sidr-wal-asal-al-malizi",
+      "assetKey": "what-is-sidr-honey",
+      "imgW": 886, "imgH": 665,
+      "reuse": "G7 shares en2's new image via getAssetKey().",
+      "inboundFrom": { "article": "al-farq-bayn-asal-manuka-wal-asal-al-malizi" }
+    },
+    {
+      "id": "ar2", "lang": "ar", "ident": "arFlight",
+      "slug": "naql-al-asal-fi-al-taira",
+      "assetKey": "naql-al-asal-fi-al-taira",
+      "imgW": 886, "imgH": 665,
+      "inboundFrom": { "article": "hifz-al-asal-fi-al-jaw-al-ratb" }
+    },
+    {
+      "id": "ar3", "lang": "ar", "ident": "arRawFiltered",
+      "slug": "al-farq-bayn-al-asal-al-kham-wal-musaffa",
+      "assetKey": "al-farq-bayn-al-asal-al-kham-wal-musaffa",
+      "imgW": 886, "imgH": 665,
+      "inboundFrom": { "article": "mukawwinat-khaltat-al-asal-bil-aashab" }
+    },
+    {
+      "id": "ar4", "lang": "ar", "ident": "arLabel",
+      "slug": "qiraat-mulsaq-al-asal-fi-malizia",
+      "assetKey": "how-to-read-a-honey-label-malaysia",
+      "imgW": 886, "imgH": 665,
+      "reuse": "G12 shares en5's new image via getAssetKey().",
+      "inboundFrom": { "article": "kayfa-tamiz-al-asal-al-asli" }
+    },
+    {
+      "id": "ar5", "lang": "ar", "ident": "arNutsRecipe",
+      "slug": "tariqat-amal-asal-bil-mukassarat",
+      "assetKey": "tariqat-amal-asal-bil-mukassarat",
+      "imgW": 886, "imgH": 665,
+      "inboundFrom": { "article": "tariqat-akl-al-asal-bil-shama" }
+    },
+    {
+      "id": "ar6", "lang": "ar", "ident": "arGiftHome",
+      "slug": "hadiya-min-malizia-lil-ahl",
+      "assetKey": "hadiya-min-malizia-lil-ahl",
+      "imgW": 886, "imgH": 665,
+      "inboundFrom": { "article": "hadiyat-al-asal-lil-eid" }
+    }
+  ],
+
+  "groups": [
+    {
+      "id": "G7", "members": { "en": "what-is-sidr-honey", "ar": "al-farq-bayn-asal-al-sidr-wal-asal-al-malizi" },
+      "xDefault": true
+    },
+    {
+      "id": "G8", "members": { "en": "why-is-honey-dark-or-light", "ms": "kenapa-madu-jadi-gelap" },
+      "xDefault": true
+    },
+    {
+      "id": "G9", "members": { "ms": "tarikh-luput-madu", "ar": "hal-lil-asal-tarikh-salahiya" },
+      "xDefault": false,
+      "note": "No English member - no x-default, per D14. The Arabic member is a live round-1 article."
+    },
+    {
+      "id": "G10", "members": { "en": "is-honey-safe-during-pregnancy", "ms": "madu-untuk-ibu-mengandung" },
+      "xDefault": true,
+      "note": "The English member is a live round-2 article."
+    },
+    {
+      "id": "G11", "members": { "ms": "madu-saffron", "ar": "asal-bil-zafaran" },
+      "xDefault": false,
+      "note": "No English member - no x-default. The Arabic member is a live round-1 article."
+    },
+    {
+      "id": "G12", "members": { "en": "how-to-read-a-honey-label-malaysia", "ar": "qiraat-mulsaq-al-asal-fi-malizia" },
+      "xDefault": true
+    }
+  ]
+}
