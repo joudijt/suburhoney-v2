@@ -2,10 +2,10 @@ import type { Article } from "../types";
 
 export const article: Article = {
   slug: "madu-untuk-masakan",
-  title: "Madu Untuk Masakan: Marinat, Glaze dan Bakeri",
+  title: "Madu Untuk Masakan: Marinat, Glaze dan Hidangan Siap",
   heading: "Madu untuk masakan: bila sesuai dan macam mana guna dengan betul",
   description:
-    "Madu untuk masakan — bila ia sesuai untuk marinat, glaze dan bakeri, cara elak rasa hangus, dan kenapa sudu dari bahagian berbeza bagi rasa tak sama.",
+    "Madu untuk masakan — bila ia sesuai untuk marinat, glaze dan hidangan siap, kenapa adunan bakeri perlukan madu cair, dan cara elak rasa hangus.",
   primaryKeyword: "madu untuk masakan",
   keywords: [
     "madu untuk masakan",
@@ -13,14 +13,13 @@ export const article: Article = {
     "madu bersarang untuk masak",
     "madu untuk marinat",
     "madu untuk glaze ayam",
-    "madu untuk bakeri",
     "sudu madu untuk masakan",
     "madu sesuai untuk dapur",
     "madu cair vs madu bersarang untuk masakan",
     "madu rosak bila dimasak",
   ],
   published: "2026-08-25",
-  updated: "2026-08-25",
+  updated: "2026-08-26",
   readingMinutes: 5,
   icon: "/icons/ingrediant_06.webp",
   figureAlt:
@@ -29,9 +28,9 @@ export const article: Article = {
   blocks: [
     {
       type: "answer",
-      question: "Bolehkah madu untuk masakan digunakan dalam marinat, glaze dan bakeri?",
+      question: "Bolehkah madu untuk masakan digunakan dalam marinat, glaze dan adunan bakeri?",
       answer:
-        "Boleh. Madu untuk masakan sesuai dalam marinat ayam, glaze semasa dibakar, dan bakeri seperti roti serta kuih ringan — ia memberi rasa manis berlapis dan warna keperang. Haba mengubah rasa, warna dan tekstur madu, bukan menentukan sama ada ia elok untuk dimasak. Sudu dari bahagian berbeza balang juga boleh beri nisbah kacang dan rempah yang tidak sama.",
+        "Boleh untuk marinat dan glaze, dan paling baik dicurah atas hidangan yang sudah siap atau sejuk. Untuk adunan bakeri pula, guna madu cair biasa dan tukar sukatannya ikut berat. Haba mengubah rasa, warna dan tekstur madu, dan sudu dari bahagian berbeza balang membawa nisbah kacang dan rempah yang tidak sama.",
     },
     {
       type: "paragraph",
@@ -85,8 +84,8 @@ export const article: Article = {
           text: "Sapu pada minit-minit akhir supaya warna keperang terbentuk tanpa hangus.",
         },
         {
-          term: "Bakeri",
-          text: "Gantikan sebahagian gula dalam adunan roti atau kuih ringan.",
+          term: "Adunan bakeri — guna madu cair",
+          text: "Balang bersarang berempah bukan untuk adunan; timbang madu cair biasa sebagai ganti gula.",
         },
         {
           term: "Sos rendaman",
@@ -111,8 +110,8 @@ export const article: Article = {
         ],
         [
           "Bakeri — roti dan kuih ringan",
-          "Gantian sebahagian gula dalam adunan",
-          "Adunan jadi lebih lembap; kurangkan cecair lain sedikit",
+          "Madu cair biasa, bukan madu bersarang berempah",
+          "Tukar sukatan ikut berat, dan kurangkan cecair lain sedikit",
         ],
         [
           "Sos rendaman buah atau salad",
@@ -123,16 +122,16 @@ export const article: Article = {
     },
     {
       type: "heading",
-      text: "Bolehkah madu bersarang digunakan untuk bakeri?",
+      text: "Bolehkah madu bersarang berempah masuk ke dalam adunan bakeri?",
       id: "madu-dalam-bakeri",
     },
     {
       type: "paragraph",
-      text: "Boleh. Madu bersarang boleh menggantikan sebahagian gula dalam adunan roti atau kuih ringan, tetapi ia membawa lebih kelembapan berbanding gula biasa, jadi kurangkan sedikit cecair lain dalam resipi supaya adunan tidak terlalu basah dan tetap senang dibentuk sebelum dibakar di dalam ketuhar.",
+      text: "Untuk adunan, tidak. Sarang lilin tidak sebati dalam adunan, walnut dan badam yang dikisar mengubah tekstur sama ada resipi itu mahukan kacang atau tidak, dan haba ketuhar meratakan bau rempah yang anda bayar mahal untuknya. Balang bersarang berempah seperti SUBUR ialah balang yang salah untuk kerja itu.",
     },
     {
       type: "paragraph",
-      text: "Serpihan sarang dan kekacang yang tergabung dalam madu SUBUR turut memberi tekstur pada adunan — bukan span lembut semata-mata, tetapi sedikit gigitan pada setiap suapan. Kesan ini sama boleh dilihat pada roti atau biskut ringan yang dibakar di rumah, bukan sesuatu yang perlukan resipi khas untuk mencapainya.",
+      text: "Untuk roti atau kuih ringan, ambil madu cair biasa yang murah dan tukar sukatannya ikut berat, bukan ikut cawan — <a href=\"/ms/blog/tukar-sukatan-gula-kepada-madu/\">panduan tukar sukatan gula kepada madu</a> menulis aritmetiknya penuh, bersama pelarasan cecair dan suhu ketuhar. Balang berempah pula bekerja paling baik atas kek yang sudah sejuk, lempeng panas atau yogurt kosong.",
     },
     {
       type: "heading",
@@ -141,13 +140,13 @@ export const article: Article = {
     },
     {
       type: "paragraph",
-      text: "Kekacang dan serpihan sarang dalam SUBUR lebih ringan berbanding madu di sekelilingnya, jadi ia naik ke bahagian atas balang dan bukan mendap ke dasar. Sudu pertama dari atas balang biasanya membawa lebih banyak kacang dan rempah; sudu dari bahagian bawah lebih banyak madu cecair sahaja.",
+      text: "Serpihan sarang dan kekacang yang dikisar lebih ringan berbanding madu di sekelilingnya, jadi kedua-duanya naik ke bahagian atas balang. Butiran rempah yang lebih berat pula bergerak perlahan ke bawah. Jadi sudu dari atas membawa lebih banyak sarang dan kacang, manakala sudu dari dasar membawa mendapan rempah. Sebab fizikalnya dihuraikan penuh dalam <a href=\"/ms/blog/madu-berasing-dua-lapisan/\">panduan madu berasing dua lapisan</a>.",
     },
     {
       type: "callout",
       tone: "note",
       title: "Kacau dahulu untuk rasa sekata",
-      text: "Kekacang, serpihan sarang dan rempah dalam SUBUR lebih ringan berbanding madu di sekelilingnya dan naik ke atas, bukan mendap ke dasar balang. Kalau resipi anda perlukan nisbah sekata pada setiap sudu — contohnya marinat untuk beberapa kepingan ayam — kacau balang perlahan dahulu sebelum menyudu.",
+      text: "Sarang dan kekacang kisar naik ke atas; butiran rempah yang lebih berat mendap ke dasar. Kalau resipi anda perlukan nisbah sekata pada setiap sudu — contohnya marinat untuk beberapa kepingan ayam — kacau balang dari dasar ke atas dahulu sebelum menyudu.",
     },
     {
       type: "heading",
@@ -169,7 +168,7 @@ export const article: Article = {
     },
     {
       type: "paragraph",
-      text: "Mula dengan satu resipi mudah — marinat ayam atau glaze pada hujung minggu — sebelum cuba menggantikan gula sepenuhnya dalam bakeri. Kacau balang sebelum menyudu kalau anda mahu rasa sekata pada setiap sudu, dan semak <a href=\"/ms/#ingredients\">senarai penuh sepuluh bahan SUBUR</a> dahulu kalau ada sesiapa yang alah kacang akan menjamah hidangan itu.",
+      text: "Mula dengan satu resipi mudah — marinat ayam atau glaze pada hujung minggu. Kacau balang dari dasar ke atas sebelum menyudu kalau anda mahu rasa sekata pada setiap sudu, dan semak <a href=\"/ms/#ingredients\">senarai penuh sepuluh bahan SUBUR</a> dahulu kalau ada sesiapa yang alah kacang akan menjamah hidangan itu.",
     },
     {
       type: "paragraph",
@@ -196,12 +195,12 @@ export const article: Article = {
       a: "Sapu madu pada ayam dalam 5 hingga 10 minit terakhir sahaja semasa ia dibakar atau digril, bukan dari awal masakan. Sapuan lewat memberi masa untuk warna keperang terbentuk pada permukaan tanpa gula dalam madu sempat hangus atau berasap, terutamanya di bahagian tepi yang paling dekat dengan api.",
     },
     {
-      q: "Bolehkah madu bersarang digunakan untuk bakeri?",
-      a: "Boleh. Madu bersarang boleh gantikan sebahagian gula dalam adunan roti atau kuih ringan, dan serpihan sarang serta kekacang di dalamnya turut memberi sedikit tekstur pada setiap suapan. Kerana ia membawa lebih kelembapan berbanding gula biasa, kurangkan sedikit cecair lain dalam resipi itu.",
+      q: "Bolehkah madu bersarang berempah digunakan dalam adunan bakeri?",
+      a: "Ia balang yang salah untuk kerja itu. Sarang lilin tidak sebati dalam adunan, kekacang kisar mengubah tekstur, dan haba ketuhar meratakan bau rempahnya. Untuk roti atau kuih ringan, guna madu cair biasa dan tukar sukatan gula kepada madu ikut berat. Madu berempah pula lebih baik dicurah atas hidangan yang sudah siap.",
     },
     {
       q: "Kenapa sudu madu untuk masakan bagi rasa berbeza setiap kali?",
-      a: "Kekacang dan serpihan sarang dalam balang lebih ringan berbanding madu di sekelilingnya, jadi ia naik ke atas dan bukan mendap ke dasar. Sudu dari atas balang membawa lebih kacang dan rempah; sudu dari bawah lebih banyak madu cecair sahaja. Kacau perlahan dahulu kalau anda mahu nisbah sekata.",
+      a: "Isi balang bukan satu cecair. Serpihan sarang dan kekacang kisar lebih ringan daripada madu, jadi kedua-duanya naik ke atas; butiran rempah yang lebih berat pula mendap perlahan ke dasar. Sudu dari atas membawa lebih banyak sarang dan kacang, sudu dari bawah membawa mendapan rempah. Kacau dari dasar ke atas kalau anda mahu nisbah sekata.",
     },
     {
       q: "Madu cair atau madu bersarang — mana lebih sesuai untuk masakan?",
@@ -209,12 +208,12 @@ export const article: Article = {
     },
     {
       q: "Adakah madu berempah sesuai untuk semua jenis masakan?",
-      a: "Ia sesuai untuk marinat, glaze, dan bakeri di mana rasa rempah menjadi kelebihan, tetapi kurang sesuai untuk hidangan yang perlukan tekstur licin sepenuhnya melainkan ditapis dahulu. Untuk sos halus atau adunan yang perlu rata sepenuhnya, tapis serpihan sarang dan kekacang sebelum digunakan.",
+      a: "Ia sesuai untuk marinat, glaze dan hidangan yang sudah siap, di mana rasa rempah menjadi kelebihan. Ia kurang sesuai untuk adunan bakeri dan untuk hidangan yang perlukan tekstur licin sepenuhnya. Untuk sos halus, tapis serpihan sarang dan kekacang dahulu; untuk adunan, guna madu cair biasa sebagai gantinya.",
     },
     {
       q: "Macam mana nak simpan madu supaya sesuai untuk dapur setiap hari?",
       a: "Simpan di tempat sejuk dan jauh dari dapur atau cahaya matahari terus, tutup rapat selepas setiap kali guna, dan guna sudu kering supaya air tidak masuk ke dalam balang. Balang yang senang dicapai berhampiran kawasan memasak memudahkan penggunaan harian tanpa perlu dipindahkan berulang kali.",
     },
   ],
-  related: ["madu-campur-air-panas", "resepi-sarapan-guna-madu"],
+  related: ["madu-campur-air-panas", "tukar-sukatan-gula-kepada-madu"],
 };

@@ -1,0 +1,159 @@
+{
+  "round": 4,
+  "date": "2026-08-26",
+  "note": "13 articles. assetKey follows getAssetKey(): the group's English slug where the group has an English member, else the article's own slug. Where a NEW English article joins a LIVE Arabic one (G13/G14/G15), the new English key must be registered pointing at the EXISTING Arabic image file - otherwise the live article silently loses the frame it already ships. Every image, new or reused, is 886x665.",
+  "articles": [
+    {
+      "id": "en1", "lang": "en", "ident": "enKelulutStandard",
+      "slug": "kelulut-honey-standard-malaysia",
+      "assetKey": "kelulut-honey-standard-malaysia",
+      "img": "/images/article-kelulut-honey-standard-malaysia.webp",
+      "imgW": 886, "imgH": 665, "newImage": true,
+      "inboundFrom": { "article": "types-of-honey-in-malaysia" }
+    },
+    {
+      "id": "en2", "lang": "en", "ident": "enRawMeaning",
+      "slug": "what-does-raw-honey-mean",
+      "assetKey": "what-does-raw-honey-mean",
+      "img": "/images/article-al-farq-bayn-al-asal-al-kham-wal-musaffa.webp",
+      "imgW": 886, "imgH": 665, "newImage": false,
+      "reuse": "G13 - shares the LIVE Arabic raw-vs-filtered frame. The new English key points at that existing file so the Arabic article keeps its own picture.",
+      "inboundFrom": { "article": "how-to-identify-pure-honey" }
+    },
+    {
+      "id": "en3", "lang": "en", "ident": "enPlane",
+      "slug": "bringing-honey-on-a-plane-malaysia",
+      "assetKey": "bringing-honey-on-a-plane-malaysia",
+      "img": "/images/article-naql-al-asal-fi-al-taira.webp",
+      "imgW": 886, "imgH": 665, "newImage": false,
+      "reuse": "G14 - shares the LIVE Arabic flight frame.",
+      "inboundFrom": { "article": "how-to-store-honey-malaysia" }
+    },
+    {
+      "id": "en4", "lang": "en", "ident": "enArabicHoney",
+      "slug": "what-is-arabic-honey",
+      "assetKey": "what-is-arabic-honey",
+      "img": "/images/article-what-is-arabic-honey.webp",
+      "imgW": 886, "imgH": 665, "newImage": true,
+      "inboundFrom": { "article": "what-is-sidr-honey" }
+    },
+    {
+      "id": "en5", "lang": "en", "ident": "enBabies",
+      "slug": "can-babies-have-honey",
+      "assetKey": "can-babies-have-honey",
+      "img": "/images/article-hal-al-asal-masmuh-lil-atfal-aqal-min-sana.webp",
+      "imgW": 886, "imgH": 665, "newImage": false,
+      "reuse": "G15 - shares the LIVE Arabic infant frame.",
+      "inboundFrom": { "article": "honey-allergy-symptoms" }
+    },
+
+    {
+      "id": "ms1", "lang": "ms", "ident": "msNinetyPercent",
+      "slug": "90-peratus-madu-palsu",
+      "assetKey": "is-honey-in-malaysia-fake",
+      "img": null,
+      "imgW": 886, "imgH": 665, "newImage": false,
+      "reuse": "G17 - the group's English member is LIVE and already registered under this key. No articleFigures entry needed.",
+      "inboundFrom": { "article": "cara-kenal-madu-asli" }
+    },
+    {
+      "id": "ms2", "lang": "ms", "ident": "msAutentik",
+      "slug": "logo-autentik-kkm-madu",
+      "assetKey": "logo-autentik-kkm-madu",
+      "img": "/images/article-logo-autentik-kkm-madu.webp",
+      "imgW": 886, "imgH": 665, "newImage": true,
+      "inboundFrom": { "article": "beli-madu-online-atau-kedai-fizikal" }
+    },
+    {
+      "id": "ms3", "lang": "ms", "ident": "msSugarSwap",
+      "slug": "tukar-sukatan-gula-kepada-madu",
+      "assetKey": "baking-with-honey-malaysia",
+      "img": null,
+      "imgW": 886, "imgH": 665, "newImage": false,
+      "reuse": "G16 - English member is LIVE and already registered under this key.",
+      "inboundFrom": { "article": "madu-untuk-masakan" }
+    },
+    {
+      "id": "ms4", "lang": "ms", "ident": "msSeparation",
+      "slug": "madu-berasing-dua-lapisan",
+      "assetKey": "madu-berasing-dua-lapisan",
+      "img": "/images/article-madu-berasing-dua-lapisan.webp",
+      "imgW": 886, "imgH": 665, "newImage": true,
+      "inboundFrom": { "article": "madu-berbuih" }
+    },
+
+    {
+      "id": "ar1", "lang": "ar", "ident": "arPregnancy",
+      "slug": "hal-al-asal-amin-lil-hamil",
+      "assetKey": "is-honey-safe-during-pregnancy",
+      "img": null,
+      "imgW": 886, "imgH": 665, "newImage": false,
+      "reuse": "G10 becomes three-language. English member is LIVE and already registered under this key.",
+      "inboundFrom": { "article": "hal-al-asal-masmuh-lil-atfal-aqal-min-sana" }
+    },
+    {
+      "id": "ar2", "lang": "ar", "ident": "arOrganic",
+      "slug": "al-asal-al-udwi-fi-malizia",
+      "assetKey": "al-asal-al-udwi-fi-malizia",
+      "img": "/images/article-al-asal-al-udwi-fi-malizia.webp",
+      "imgW": 886, "imgH": 665, "newImage": true,
+      "inboundFrom": { "article": "al-farq-bayn-al-asal-al-kham-wal-musaffa" }
+    },
+    {
+      "id": "ar3", "lang": "ar", "ident": "arSugarSwap",
+      "slug": "istibdal-al-sukkar-bil-asal",
+      "assetKey": "baking-with-honey-malaysia",
+      "img": null,
+      "imgW": 886, "imgH": 665, "newImage": false,
+      "reuse": "G16 - English member is LIVE and already registered under this key.",
+      "inboundFrom": { "article": "al-ma-al-sakhin-wal-asal" }
+    },
+    {
+      "id": "ar4", "lang": "ar", "ident": "arImport",
+      "slug": "idkhal-al-asal-ila-malizia",
+      "assetKey": "idkhal-al-asal-ila-malizia",
+      "img": "/images/article-idkhal-al-asal-ila-malizia.webp",
+      "imgW": 886, "imgH": 665, "newImage": true,
+      "inboundFrom": { "article": "naql-al-asal-fi-al-taira" }
+    }
+  ],
+
+  "groupEdits": [
+    {
+      "id": "G10",
+      "action": "extend",
+      "match": "\"is-honey-safe-during-pregnancy\"",
+      "addLocale": "ar",
+      "addSlug": "hal-al-asal-amin-lil-hamil",
+      "note": "Existing PARTIAL_GROUPS entry {en, ms} gains ar and becomes this site's first three-language group."
+    },
+    {
+      "id": "G16",
+      "action": "extend",
+      "match": "\"baking-with-honey-malaysia\"",
+      "addLocale": null,
+      "note": "baking-with-honey-malaysia is currently UNGROUPED, so there is no entry to extend - G16 is added as a new three-locale entry below instead."
+    }
+  ],
+
+  "newGroups": [
+    { "id": "G13", "members": { "en": "what-does-raw-honey-mean", "ar": "al-farq-bayn-al-asal-al-kham-wal-musaffa" } },
+    { "id": "G14", "members": { "en": "bringing-honey-on-a-plane-malaysia", "ar": "naql-al-asal-fi-al-taira" } },
+    { "id": "G15", "members": { "en": "can-babies-have-honey", "ar": "hal-al-asal-masmuh-lil-atfal-aqal-min-sana" } },
+    { "id": "G16", "members": { "en": "baking-with-honey-malaysia", "ms": "tukar-sukatan-gula-kepada-madu", "ar": "istibdal-al-sukkar-bil-asal" } },
+    { "id": "G17", "members": { "en": "is-honey-in-malaysia-fake", "ms": "90-peratus-madu-palsu" } }
+  ],
+
+  "liveArticleEdits": [
+    {
+      "file": "src/content/articles/ms/beza-madu-tulen-dan-madu-campuran.ts",
+      "why": "FINDINGS-CARRIED-IN.md #1 - it promises the site does not repeat the fake-honey figure, while the live English article is titled 'Checking the 90% Claim'. Rewrite that sentence to the settled position and link the new Malay article.",
+      "blocker": true
+    },
+    {
+      "file": "src/content/articles/en/is-honey-safe-during-pregnancy.ts",
+      "why": "Drop the secondary keyword that collides with the new en5 infant article, as reported by that writer.",
+      "blocker": false
+    }
+  ]
+}

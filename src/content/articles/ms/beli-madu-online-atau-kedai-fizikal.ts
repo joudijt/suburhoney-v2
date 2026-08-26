@@ -203,5 +203,5 @@ export const article: Article = {
       a: "Kedua-dua platform itu sudah membawa pembeli yang sedia mencari, dan penjual tidak perlu bina sistem pembayaran serta penghantaran sendiri dari kosong. Bagi pembeli, ini bermakna semakan storefront — nama akaun, sejarah jualan, gambar sebenar — menjadi langkah semak yang lebih penting berbanding mencari laman web berasingan yang mungkin tidak wujud.",
     },
   ],
-  related: ["kedai-madu-asli-selangor", "cara-kenal-madu-asli"],
+  related: ["kedai-madu-asli-selangor", "logo-autentik-kkm-madu"],
 };

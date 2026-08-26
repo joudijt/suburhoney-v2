@@ -286,4 +286,55 @@ export const ARTICLE_FIGURES: Record<string, PageFigure> = {
     width: 886,
     height: 665,
   },
+
+  // Round 4 (2026-08-26). All 886x665.
+  // Three of these keys point at an image file that already existed: a new
+  // English article joining a live Arabic one takes over the group's asset
+  // key, so the key must resolve to the Arabic article's own picture or the
+  // live page silently loses the frame it already ships.
+  "kelulut-honey-standard-malaysia": {
+    src: "/images/article-kelulut-honey-standard-malaysia.webp",
+    width: 886,
+    height: 665,
+  },
+  "what-does-raw-honey-mean": {
+    src: "/images/article-al-farq-bayn-al-asal-al-kham-wal-musaffa.webp",
+    width: 886,
+    height: 665,
+  },
+  "bringing-honey-on-a-plane-malaysia": {
+    src: "/images/article-naql-al-asal-fi-al-taira.webp",
+    width: 886,
+    height: 665,
+  },
+  "what-is-arabic-honey": {
+    src: "/images/article-what-is-arabic-honey.webp",
+    width: 886,
+    height: 665,
+  },
+  "can-babies-have-honey": {
+    src: "/images/article-hal-al-asal-masmuh-lil-atfal-aqal-min-sana.webp",
+    width: 886,
+    height: 665,
+  },
+  "logo-autentik-kkm-madu": {
+    src: "/images/article-logo-autentik-kkm-madu.webp",
+    width: 886,
+    height: 665,
+  },
+  "madu-berasing-dua-lapisan": {
+    src: "/images/article-madu-berasing-dua-lapisan.webp",
+    width: 886,
+    height: 665,
+  },
+  "al-asal-al-udwi-fi-malizia": {
+    src: "/images/article-al-asal-al-udwi-fi-malizia.webp",
+    width: 886,
+    height: 665,
+  },
+  "idkhal-al-asal-ila-malizia": {
+    src: "/images/article-idkhal-al-asal-ila-malizia.webp",
+    width: 886,
+    height: 665,
+  },
 };

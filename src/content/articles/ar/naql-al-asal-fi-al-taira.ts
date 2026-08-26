@@ -242,5 +242,5 @@ export const article: Article = {
       a: "ممكن في بعض الوجهات لا كلها، ويحكمه أمران معاً: ما يقبله بريد البلدين، وما تسمح جمارك بلد الوصول بدخوله من منتجات نحلية. وهي أمور تُسأل عنها مباشرة قبل أن تدفع أجرة شحن. أما تفاصيل الطلب والاستلام من المتجر نفسه فتُسأل من المتجر مباشرة.",
     },
   ],
-  related: ["hifz-al-asal-fi-al-jaw-al-ratb", "hal-lil-asal-tarikh-salahiya"],
+  related: ["idkhal-al-asal-ila-malizia", "hal-lil-asal-tarikh-salahiya"],
 };

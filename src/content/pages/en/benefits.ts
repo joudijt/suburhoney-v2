@@ -67,7 +67,7 @@ export const page: Article = {
     },
     {
       type: "paragraph",
-      text: "Raw honeycomb is the least processed form honey can take - nothing filtered out, nothing added in. Subur uses it as the base rather than a refined syrup, which is also why the jar naturally crystallises over time. That is a sign of a genuine raw blend, not a fault. Read more on <a href=\"/en/blog/how-to-identify-pure-honey/\">how to tell real honey from syrup</a> before you buy any jar, from us or anyone else.",
+      text: "Raw honeycomb is the least processed form honey can take - nothing filtered out, nothing added in. Subur uses it as the base rather than a refined syrup, which is also why the jar naturally crystallises over time. That is what raw honey does, and it is not a fault - though on its own it does not prove a jar is genuine. Read more on <a href=\"/en/blog/how-to-identify-pure-honey/\">how to tell real honey from syrup</a> before you buy any jar, from us or anyone else.",
     },
     {
       type: "callout",

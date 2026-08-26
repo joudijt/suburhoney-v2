@@ -199,5 +199,5 @@ export const article: Article = {
       a: "بالنظر أولاً: شمع مرئي وعتامة ورغوة خفيفة تعني مساراً قصيراً، وصفاء تاماً وسيولة ثابتة تعني مرشّحاً ضيقاً. ثم بقراءة قائمة المكونات كاملة. وما بقي بعد ذلك — تفاصيل التصنيع التي لا تُنشر — اسأل عنه البائع مباشرة بدل قبول رقم مخمّن من صفحة أخرى.",
     },
   ],
-  related: ["mukawwinat-khaltat-al-asal-bil-aashab", "kayfa-tamiz-al-asal-al-asli"],
+  related: ["al-asal-al-udwi-fi-malizia", "kayfa-tamiz-al-asal-al-asli"],
 };

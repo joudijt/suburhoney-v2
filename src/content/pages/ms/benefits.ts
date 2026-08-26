@@ -67,7 +67,7 @@ export const page: Article = {
     },
     {
       type: "paragraph",
-      text: "Sarang madu tulen adalah bentuk madu yang paling kurang diproses - tiada yang ditapis keluar, tiada yang ditambah masuk. Subur menggunakannya sebagai asas, bukan sirap yang telah ditapis, sebab itu jugalah balang ini akan berhablur secara semula jadi dari semasa ke semasa. Itu tanda campuran tulen yang sebenar, bukan kecacatan. Baca lebih lanjut tentang <a href=\"/ms/blog/cara-kenal-madu-asli/\">cara mengenal madu asli berbanding sirap</a> sebelum anda membeli mana-mana balang, daripada kami atau sesiapa sahaja.",
+      text: "Sarang madu tulen adalah bentuk madu yang paling kurang diproses - tiada yang ditapis keluar, tiada yang ditambah masuk. Subur menggunakannya sebagai asas, bukan sirap yang telah ditapis, sebab itu jugalah balang ini akan berhablur secara semula jadi dari semasa ke semasa. Itu kelakuan madu mentah dan bukan kecacatan - walaupun ia sendiri tidak membuktikan sesebuah balang itu tulen. Baca lebih lanjut tentang <a href=\"/ms/blog/cara-kenal-madu-asli/\">cara mengenal madu asli berbanding sirap</a> sebelum anda membeli mana-mana balang, daripada kami atau sesiapa sahaja.",
     },
     {
       type: "callout",

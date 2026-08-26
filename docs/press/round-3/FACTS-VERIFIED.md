@@ -287,8 +287,8 @@ about 25°F.
 
 ### The trap this section exists to prevent
 
-**The volume ratio is 0.81. The mass ratio is 1.28.** They point in opposite directions, and
-converting one into the other by carrying the number across unchanged produces "80 g of honey per
+**The volume ratio is 0.75. The mass ratio is 1.28.** They point in opposite directions, and
+converting one into the other by carrying the number across unchanged produces "75 g of honey per
 100 g of sugar" — which is short by roughly the honey-to-sugar density ratio and bakes a
 noticeably under-sweetened result.
 

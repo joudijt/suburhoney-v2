@@ -148,5 +148,5 @@ export const article: Article = {
       a: "Treat a price well below the market as a question that needs answering. Real honey has a floor cost set by how it is produced. That does not make every expensive honey genuine, but an unusually cheap one has to be explained somehow.",
     },
   ],
-  related: ["honey-for-couples-malaysia", "is-honey-in-malaysia-fake"],
+  related: ["what-does-raw-honey-mean", "is-honey-in-malaysia-fake"],
 };
