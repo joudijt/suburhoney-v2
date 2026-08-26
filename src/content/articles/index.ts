@@ -90,20 +90,50 @@ import { article as enPlane } from "./en/bringing-honey-on-a-plane-malaysia";
 import { article as enArabicHoney } from "./en/what-is-arabic-honey";
 import { article as enBabies } from "./en/can-babies-have-honey";
 
+// Round 5 (2026-08-26). G47-G52 - see docs/press/ROUND-5-MAP.md.
+import { article as enDiabetes } from "./en/honey-and-diabetes";
+import { article as enCough } from "./en/honey-for-cough-and-cold";
+import { article as enCalories } from "./en/honey-calories-and-sugar-content";
+import { article as enVsSugar } from "./en/honey-vs-sugar-which-is-healthier";
+import { article as enDailyAmount } from "./en/how-much-honey-is-safe-per-day";
+import { article as enSuhoor } from "./en/honey-during-ramadan-suhoor";
+
 // Round 4 (2026-08-26).
 import { article as msNinetyPercent } from "./ms/90-peratus-madu-palsu";
 import { article as msAutentik } from "./ms/logo-autentik-kkm-madu";
 import { article as msSugarSwap } from "./ms/tukar-sukatan-gula-kepada-madu";
 import { article as msSeparation } from "./ms/madu-berasing-dua-lapisan";
 
+// Round 5 (2026-08-26). G47-G52 - see docs/press/ROUND-5-MAP.md.
+import { article as msDiabetes } from "./ms/madu-untuk-pesakit-kencing-manis";
+import { article as msCough } from "./ms/madu-untuk-batuk-dan-selesema";
+import { article as msCalories } from "./ms/kalori-dan-gula-dalam-madu";
+import { article as msVsSugar } from "./ms/madu-atau-gula-mana-lebih-sihat";
+import { article as msDailyAmount } from "./ms/berapa-banyak-madu-selamat-sehari";
+import { article as msSuhoor } from "./ms/madu-untuk-sahur-bulan-puasa";
+
 // Round 4 (2026-08-26).
 import { article as arPregnancy } from "./ar/hal-al-asal-amin-lil-hamil";
 import { article as arOrganic } from "./ar/al-asal-al-udwi-fi-malizia";
 import { article as arSugarSwap } from "./ar/istibdal-al-sukkar-bil-asal";
 import { article as arImport } from "./ar/idkhal-al-asal-ila-malizia";
+
+// Round 5 (2026-08-26). G47-G52 - see docs/press/ROUND-5-MAP.md.
+import { article as arDiabetes } from "./ar/hal-yastatie-marda-al-sukkari-tanawul-al-asal";
+import { article as arCough } from "./ar/al-asal-lil-suaal-wal-zukam";
+import { article as arCalories } from "./ar/al-suqrat-al-hararia-wal-sukkar-fi-al-asal";
+import { article as arVsSugar } from "./ar/al-asal-am-al-sukkar-ayyuhuma-afdal";
+import { article as arDailyAmount } from "./ar/kam-malaqat-asal-yawmian-amina";
+import { article as arSuhoor } from "./ar/al-asal-fi-suhoor-ramadan";
 /** Newest first - this is the order the blog index renders. */
 export const ARTICLES: Record<Locale, Article[]> = {
   en: [
+    enDiabetes,
+    enCough,
+    enCalories,
+    enVsSugar,
+    enDailyAmount,
+    enSuhoor,
     enKelulutStandard,
     enRawMeaning,
     enPlane,
@@ -133,6 +163,12 @@ export const ARTICLES: Record<Locale, Article[]> = {
     enPure,
   ],
   ms: [
+    msDiabetes,
+    msCough,
+    msCalories,
+    msVsSugar,
+    msDailyAmount,
+    msSuhoor,
     msNinetyPercent,
     msAutentik,
     msSugarSwap,
@@ -161,6 +197,12 @@ export const ARTICLES: Record<Locale, Article[]> = {
     msPure,
   ],
   ar: [
+    arDiabetes,
+    arCough,
+    arCalories,
+    arVsSugar,
+    arDailyAmount,
+    arSuhoor,
     arPregnancy,
     arOrganic,
     arSugarSwap,
@@ -233,6 +275,16 @@ export const ARTICLE_GROUPS: Record<Locale, string>[] = [
     ms: "madu-manuka-vs-madu-tempatan-malaysia",
     ar: "al-farq-bayn-asal-manuka-wal-asal-al-malizi",
   },
+
+  // Round 5 (2026-08-26). Six topics researched independently in each
+  // language and arriving at the same core question - see
+  // docs/press/ROUND-5-MAP.md for the demand evidence behind each.
+  { en: "honey-and-diabetes", ms: "madu-untuk-pesakit-kencing-manis", ar: "hal-yastatie-marda-al-sukkari-tanawul-al-asal" }, // G47
+  { en: "honey-for-cough-and-cold", ms: "madu-untuk-batuk-dan-selesema", ar: "al-asal-lil-suaal-wal-zukam" }, // G48
+  { en: "honey-calories-and-sugar-content", ms: "kalori-dan-gula-dalam-madu", ar: "al-suqrat-al-hararia-wal-sukkar-fi-al-asal" }, // G49
+  { en: "honey-vs-sugar-which-is-healthier", ms: "madu-atau-gula-mana-lebih-sihat", ar: "al-asal-am-al-sukkar-ayyuhuma-afdal" }, // G50
+  { en: "how-much-honey-is-safe-per-day", ms: "berapa-banyak-madu-selamat-sehari", ar: "kam-malaqat-asal-yawmian-amina" }, // G51
+  { en: "honey-during-ramadan-suhoor", ms: "madu-untuk-sahur-bulan-puasa", ar: "al-asal-fi-suhoor-ramadan" }, // G52
 ] as Record<Locale, string>[];
 
 /**

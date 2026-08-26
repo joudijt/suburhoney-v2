@@ -24,6 +24,36 @@ import type { PageFigure } from "./pageFigures";
  * renders at a ratio other than its own.
  */
 export const ARTICLE_FIGURES: Record<string, PageFigure> = {
+  "honey-and-diabetes": {
+    src: "/images/figure-honey-in-glass.webp",
+    width: 940,
+    height: 705,
+  },
+  "honey-for-cough-and-cold": {
+    src: "/images/figure-honey-dipper.webp",
+    width: 1536,
+    height: 1152,
+  },
+  "honey-calories-and-sugar-content": {
+    src: "/images/figure-spoon-close.webp",
+    width: 1024,
+    height: 768,
+  },
+  "honey-vs-sugar-which-is-healthier": {
+    src: "/images/figure-board-and-nuts.webp",
+    width: 620,
+    height: 465,
+  },
+  "how-much-honey-is-safe-per-day": {
+    src: "/images/figure-blossom-and-light.webp",
+    width: 1057,
+    height: 793,
+  },
+  "honey-during-ramadan-suhoor": {
+    src: "/images/figure-table-setting.webp",
+    width: 1024,
+    height: 768,
+  },
   "honey-for-couples-malaysia": {
     src: "/images/article-couples.webp",
     width: 1252,
