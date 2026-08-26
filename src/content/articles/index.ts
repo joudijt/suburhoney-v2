@@ -98,6 +98,14 @@ import { article as enVsSugar } from "./en/honey-vs-sugar-which-is-healthier";
 import { article as enDailyAmount } from "./en/how-much-honey-is-safe-per-day";
 import { article as enSuhoor } from "./en/honey-during-ramadan-suhoor";
 
+// Round 6 (2026-08-26). G53-G58 - see docs/press/ROUND-6-MAP.md.
+import { article as enVitamins } from "./en/honey-vitamins-and-minerals";
+import { article as enHalal } from "./en/is-honey-halal";
+import { article as enExercise } from "./en/honey-before-and-after-exercise";
+import { article as enBulkGifts } from "./en/bulk-honey-gifts-for-events";
+import { article as enToddler } from "./en/how-much-honey-for-a-toddler";
+import { article as enTeeth } from "./en/is-honey-bad-for-your-teeth";
+
 // Round 4 (2026-08-26).
 import { article as msNinetyPercent } from "./ms/90-peratus-madu-palsu";
 import { article as msAutentik } from "./ms/logo-autentik-kkm-madu";
@@ -112,6 +120,14 @@ import { article as msVsSugar } from "./ms/madu-atau-gula-mana-lebih-sihat";
 import { article as msDailyAmount } from "./ms/berapa-banyak-madu-selamat-sehari";
 import { article as msSuhoor } from "./ms/madu-untuk-sahur-bulan-puasa";
 
+// Round 6 (2026-08-26). G53-G58 - see docs/press/ROUND-6-MAP.md.
+import { article as msVitamins } from "./ms/vitamin-dan-mineral-dalam-madu";
+import { article as msHalal } from "./ms/adakah-madu-halal";
+import { article as msExercise } from "./ms/madu-sebelum-selepas-bersenam";
+import { article as msBulkGifts } from "./ms/madu-pukal-untuk-hadiah-korporat";
+import { article as msToddler } from "./ms/berapa-banyak-madu-untuk-kanak-kanak";
+import { article as msTeeth } from "./ms/adakah-madu-buruk-untuk-gigi";
+
 // Round 4 (2026-08-26).
 import { article as arPregnancy } from "./ar/hal-al-asal-amin-lil-hamil";
 import { article as arOrganic } from "./ar/al-asal-al-udwi-fi-malizia";
@@ -125,9 +141,23 @@ import { article as arCalories } from "./ar/al-suqrat-al-hararia-wal-sukkar-fi-a
 import { article as arVsSugar } from "./ar/al-asal-am-al-sukkar-ayyuhuma-afdal";
 import { article as arDailyAmount } from "./ar/kam-malaqat-asal-yawmian-amina";
 import { article as arSuhoor } from "./ar/al-asal-fi-suhoor-ramadan";
+
+// Round 6 (2026-08-26). G53-G58 - see docs/press/ROUND-6-MAP.md.
+import { article as arVitamins } from "./ar/al-fitaminat-wal-maadin-fi-al-asal";
+import { article as arHalal } from "./ar/hal-al-asal-halal";
+import { article as arExercise } from "./ar/tanawul-al-asal-qabl-wa-baad-al-riyada";
+import { article as arBulkGifts } from "./ar/al-asal-bil-jumla-lihadaya-al-sharikat";
+import { article as arToddler } from "./ar/kam-min-al-asal-liltifl-al-sagheer";
+import { article as arTeeth } from "./ar/hal-yudirru-al-asal-bil-asnan";
 /** Newest first - this is the order the blog index renders. */
 export const ARTICLES: Record<Locale, Article[]> = {
   en: [
+    enVitamins,
+    enHalal,
+    enExercise,
+    enBulkGifts,
+    enToddler,
+    enTeeth,
     enDiabetes,
     enCough,
     enCalories,
@@ -163,6 +193,12 @@ export const ARTICLES: Record<Locale, Article[]> = {
     enPure,
   ],
   ms: [
+    msVitamins,
+    msHalal,
+    msExercise,
+    msBulkGifts,
+    msToddler,
+    msTeeth,
     msDiabetes,
     msCough,
     msCalories,
@@ -197,6 +233,12 @@ export const ARTICLES: Record<Locale, Article[]> = {
     msPure,
   ],
   ar: [
+    arVitamins,
+    arHalal,
+    arExercise,
+    arBulkGifts,
+    arToddler,
+    arTeeth,
     arDiabetes,
     arCough,
     arCalories,
@@ -285,6 +327,15 @@ export const ARTICLE_GROUPS: Record<Locale, string>[] = [
   { en: "honey-vs-sugar-which-is-healthier", ms: "madu-atau-gula-mana-lebih-sihat", ar: "al-asal-am-al-sukkar-ayyuhuma-afdal" }, // G50
   { en: "how-much-honey-is-safe-per-day", ms: "berapa-banyak-madu-selamat-sehari", ar: "kam-malaqat-asal-yawmian-amina" }, // G51
   { en: "honey-during-ramadan-suhoor", ms: "madu-untuk-sahur-bulan-puasa", ar: "al-asal-fi-suhoor-ramadan" }, // G52
+
+  // Round 6 (2026-08-26). See docs/press/ROUND-6-MAP.md for the demand
+  // evidence and the cannibalisation check behind each.
+  { en: "honey-vitamins-and-minerals", ms: "vitamin-dan-mineral-dalam-madu", ar: "al-fitaminat-wal-maadin-fi-al-asal" }, // G53
+  { en: "is-honey-halal", ms: "adakah-madu-halal", ar: "hal-al-asal-halal" }, // G54
+  { en: "honey-before-and-after-exercise", ms: "madu-sebelum-selepas-bersenam", ar: "tanawul-al-asal-qabl-wa-baad-al-riyada" }, // G55
+  { en: "bulk-honey-gifts-for-events", ms: "madu-pukal-untuk-hadiah-korporat", ar: "al-asal-bil-jumla-lihadaya-al-sharikat" }, // G56
+  { en: "how-much-honey-for-a-toddler", ms: "berapa-banyak-madu-untuk-kanak-kanak", ar: "kam-min-al-asal-liltifl-al-sagheer" }, // G57
+  { en: "is-honey-bad-for-your-teeth", ms: "adakah-madu-buruk-untuk-gigi", ar: "hal-yudirru-al-asal-bil-asnan" }, // G58
 ] as Record<Locale, string>[];
 
 /**

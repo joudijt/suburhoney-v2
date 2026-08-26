@@ -140,6 +140,16 @@ const ALT = {
  * ruling says an unfillable slot must do.
  */
 const ASSIGN = {
+  // --- round 6 (2026-08-26): six more topics, spread onto the least-used
+  // frames from rounds 4-5 rather than piling further onto jar-alone/
+  // honey-dipper, which are already the heaviest. -----------------------
+  "honey-vitamins-and-minerals": "ingredients-left",
+  "is-honey-halal": "jar-and-botanicals",
+  "honey-before-and-after-exercise": "lavender-and-ginger",
+  "bulk-honey-gifts-for-events": "couple-at-table",
+  "how-much-honey-for-a-toddler": "jar-and-walnuts",
+  "is-honey-bad-for-your-teeth": "couple-sharing",
+
   // --- round 5 (2026-08-26): nutrition/safety topics, no branded jar on the
   // two most sensitive ones (diabetes, cough) — same convention as pregnancy
   // and allergy in round 2. Spread across underused frames rather than piling
