@@ -140,6 +140,17 @@ const ALT = {
  * ruling says an unfillable slot must do.
  */
 const ASSIGN = {
+  // --- round 5 (2026-08-26): nutrition/safety topics, no branded jar on the
+  // two most sensitive ones (diabetes, cough) — same convention as pregnancy
+  // and allergy in round 2. Spread across underused frames rather than piling
+  // onto the already-heavy jar-alone/tea-and-comb clusters. ------------------
+  "honey-and-diabetes": "honey-in-glass",
+  "honey-for-cough-and-cold": "honey-dipper",
+  "honey-calories-and-sugar-content": "spoon-close",
+  "honey-vs-sugar-which-is-healthier": "board-and-nuts",
+  "how-much-honey-is-safe-per-day": "blossom-and-light",
+  "honey-during-ramadan-suhoor": "table-setting",
+
   // --- the three that were already the site's own photography ---------------
   "honey-for-couples-malaysia": "couples",
   "black-seed-honey-benefits": "black-seed",
