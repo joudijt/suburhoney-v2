@@ -24,7 +24,7 @@ export const article: Article = {
   readingMinutes: 5,
   icon: "/icons/ingrediant_02.webp",
   figureAlt:
-    "A graded imported honey jar beside an open jar of raw honeycomb blend, the comparison behind manuka honey vs local honey.",
+    "A wooden dipper lifting honey over an open glass jar, with honeycomb behind it.",
   category: "Comparison",
   blocks: [
     {

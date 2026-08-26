@@ -24,7 +24,7 @@ export const article: Article = {
   readingMinutes: 5,
   icon: "/icons/ingrediant_08.webp",
   figureAlt:
-    "A honeycomb honey jar staged as a hantaran gift on a presentation tray, comb and spices visible through the glass.",
+    "A couple sharing honey at a table set with tea, nuts and a jar of SUBUR honey.",
   category: "Gifting guide",
   blocks: [
     {

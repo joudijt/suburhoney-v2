@@ -25,7 +25,7 @@ export const article: Article = {
   readingMinutes: 5,
   icon: "/icons/ingrediant_10.webp",
   figureAlt:
-    "مرطبان عسل بشمع النحل موضوع على طاولة محل، في سياق شراء العسل داخل سيلانجور قرب كوالالمبور.",
+    "مرطبان عسل سُبور وحده أمام خلفية كريمية سادة.",
   category: "دليل الشراء",
   blocks: [
     {

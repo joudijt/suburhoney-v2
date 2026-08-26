@@ -24,7 +24,7 @@ export const article: Article = {
   readingMinutes: 5,
   icon: "/icons/ingrediant_06.webp",
   figureAlt:
-    "Madu dituang ke dalam cawan berisi air suam di sebelah cerek, cara betul madu campur air panas.",
+    "Secawan teh dan seketul sarang madu di atas papan kayu, di sebelah balang madu SUBUR yang terbuka.",
   category: "Penggunaan",
   blocks: [
     {

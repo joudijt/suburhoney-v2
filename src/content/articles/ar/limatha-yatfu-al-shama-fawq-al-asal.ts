@@ -25,7 +25,8 @@ export const article: Article = {
   updated: "2026-08-25",
   readingMinutes: 4,
   icon: "/icons/ingrediant_08.webp",
-  figureAlt: "مرطبان عسل خام تطفو فيه طبقة شمع فاتحة اللون قرب سطح العسل.",
+  figureAlt:
+    "مرطبان عسل سُبور بجانب شمع العسل واللوز، والعسل ينساب من مغرفة فوقه.",
   category: "الثقة",
   blocks: [
     {

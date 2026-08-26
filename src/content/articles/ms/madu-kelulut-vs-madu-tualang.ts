@@ -25,7 +25,7 @@ export const article: Article = {
   readingMinutes: 5,
   icon: "/icons/ingrediant_01.webp",
   figureAlt:
-    "Dua balang madu tempatan diletakkan bersebelahan di atas meja kayu.",
+    "Bunga kamomil dan lavender terletak dalam cahaya hangat di atas permukaan berwarna madu.",
   category: "Perbandingan",
   blocks: [
     {

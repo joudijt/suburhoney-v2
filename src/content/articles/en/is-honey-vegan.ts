@@ -24,7 +24,7 @@ export const article: Article = {
   readingMinutes: 5,
   icon: "/icons/ingrediant_08.webp",
   figureAlt:
-    "A plain glass honey jar with a wooden honey dipper resting beside it on a light surface.",
+    "Chamomile and lavender lying in warm light on a honey-coloured surface.",
   category: "Diet facts",
   blocks: [
     {

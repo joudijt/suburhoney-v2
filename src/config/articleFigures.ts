@@ -3,22 +3,27 @@ import type { PageFigure } from "./pageFigures";
 /**
  * Lead images rendered under the H1 on blog articles.
  *
- * Keyed by the article's **English slug**, which is what `ARTICLE_GROUPS` in
- * content/articles/index.ts uses to tie the three locales of one article
- * together. Blog slugs are deliberately localized, so they cannot be the key the
- * way page slugs are in `PAGE_FIGURES` - resolve a locale slug through
- * `getCanonicalSlug()` first.
+ * Keyed by the article's **English slug** (or its own slug for single-language
+ * articles), which is what `ARTICLE_GROUPS` in content/articles/index.ts uses to
+ * tie the three locales of one article together. Blog slugs are deliberately
+ * localized, so they cannot be the key the way page slugs are in
+ * `PAGE_FIGURES` - resolve a locale slug through `getCanonicalSlug()` first.
  *
- * Same reasoning as pageFigures: one file serves all three languages, so only
- * the translated alt text lives with the copy (`figureAlt` on Article) and the
- * geometry lives here once instead of nine times.
+ * ⛔ GENERATED FILE. Written by scripts/assign-article-figures.mjs from the crop
+ *    table in scripts/make-article-crops.mjs. Edit those, not this.
  *
- * All three are supplied photographs, cropped to a shared 4:3 in assets-src.
+ * Every frame here is a real cut of a photograph that is already on this site -
+ * the standing ruling of 2026-08-26 is reuse only, never generate. The library
+ * is eighteen frames from ten photographs against forty-eight article groups, so
+ * a photograph carries two or three articles under different crop windows; the
+ * repeats are listed at the end of this file.
+ *
+ * The declared width/height is the file's real size. Nothing is upscaled, and
+ * every frame is 4:3 because the blog card band is a fixed `aspect-[4/3]` with
+ * `object-cover` and scripts/qa/image-audit.mjs fails a content image that
+ * renders at a ratio other than its own.
  */
 export const ARTICLE_FIGURES: Record<string, PageFigure> = {
-  // All three are 4:3 so every article renders one identical frame. The pixel
-  // sizes differ because the two photographs are only as large as their sources
-  // and the pipeline never upscales - the rendered box is the same either way.
   "honey-for-couples-malaysia": {
     src: "/images/article-couples.webp",
     width: 1252,
@@ -34,307 +39,274 @@ export const ARTICLE_FIGURES: Record<string, PageFigure> = {
     width: 1536,
     height: 1152,
   },
-
-  // Round 1 (2026-08-20). All 1200x900 - the blog card frame is a fixed 4:3 and
-  // scripts/qa/image-audit.mjs fails any content image rendered at a ratio other
-  // than its own, so the generator's output is cover-cropped to 4:3 rather than
-  // letterboxed. Grouped articles share one file, keyed by the group's English
-  // slug; single-language articles are keyed by their own slug. Both resolve
-  // through getAssetKey().
   "honeycomb-honey-malaysia": {
-    src: "/images/article-honeycomb-honey-malaysia.webp",
-    width: 1200,
-    height: 900,
+    src: "/images/figure-jar-and-comb.webp",
+    width: 1057,
+    height: 793,
   },
   "can-you-eat-honeycomb-wax": {
-    src: "/images/article-can-you-eat-honeycomb-wax.webp",
-    width: 1200,
-    height: 900,
-  },
-  "where-to-buy-raw-honey-kuala-lumpur": {
-    src: "/images/article-where-to-buy-raw-honey-kuala-lumpur.webp",
-    width: 1200,
-    height: 900,
-  },
-  "types-of-honey-in-malaysia": {
-    src: "/images/article-types-of-honey-in-malaysia.webp",
-    width: 1200,
-    height: 900,
-  },
-  "how-to-store-honey-malaysia": {
-    src: "/images/article-how-to-store-honey-malaysia.webp",
-    width: 1200,
-    height: 900,
-  },
-  "manuka-honey-vs-local-honey": {
-    src: "/images/article-manuka-honey-vs-local-honey.webp",
-    width: 1200,
-    height: 900,
-  },
-  "is-malaysian-honey-local-or-imported": {
-    src: "/images/article-is-malaysian-honey-local-or-imported.webp",
-    width: 1200,
-    height: 900,
-  },
-  "madu-beku-dalam-peti-sejuk": {
-    src: "/images/article-madu-beku-dalam-peti-sejuk.webp",
-    width: 1200,
-    height: 900,
-  },
-  "beza-madu-tulen-dan-madu-campuran": {
-    src: "/images/article-beza-madu-tulen-dan-madu-campuran.webp",
-    width: 1200,
-    height: 900,
-  },
-  "madu-berbuih": {
-    src: "/images/article-madu-berbuih.webp",
-    width: 1200,
-    height: 900,
-  },
-  "waktu-terbaik-makan-madu": {
-    src: "/images/article-waktu-terbaik-makan-madu.webp",
-    width: 1200,
-    height: 900,
-  },
-  "madu-campur-air-panas": {
-    src: "/images/article-madu-campur-air-panas.webp",
-    width: 1200,
-    height: 900,
-  },
-  // Same picture, second key. The Malay and Arabic hot-water articles are one
-  // group, but the group has no English member, so getAssetKey() cannot resolve
-  // either of them to a shared canonical slug and each falls back to its own.
-  // Filing the file under both keys is the honest fix; inventing an English slug
-  // for a page that does not exist in English would not be.
-  "al-ma-al-sakhin-wal-asal": {
-    src: "/images/article-madu-campur-air-panas.webp",
-    width: 1200,
-    height: 900,
-  },
-  "hal-lil-asal-tarikh-salahiya": {
-    src: "/images/article-hal-lil-asal-tarikh-salahiya.webp",
-    width: 1200,
-    height: 900,
-  },
-  "asal-bil-zafaran": {
-    src: "/images/article-asal-bil-zafaran.webp",
-    width: 1200,
-    height: 900,
-  },
-
-  // Round 2 (2026-08-25). All 886x665 (4:3) - pollinations' anonymous tier
-  // clamped resolution below the 1200x900 requested this round (zimage was
-  // dead, so every image fell through to pollinations); declaring the real
-  // pixel size here rather than the requested one, per the site's own rule
-  // that a hardcoded dimension must match the file, not the request. The two
-  // Manuka articles (ms, ar) are members of G6 in ARTICLE_GROUPS, whose
-  // canonical English slug is "manuka-honey-vs-local-honey" above - they
-  // resolve through getAssetKey() to that key already and need no entry here.
-  "honey-with-nuts-malaysia": {
-    src: "/images/article-honey-with-nuts-malaysia.webp",
-    width: 886,
-    height: 665,
-  },
-  "honeycomb-hantaran-gift-idea": {
-    src: "/images/article-honeycomb-hantaran-gift-idea.webp",
-    width: 886,
-    height: 665,
-  },
-  "is-honey-safe-during-pregnancy": {
-    src: "/images/article-is-honey-safe-during-pregnancy.webp",
-    width: 886,
-    height: 665,
-  },
-  "honey-allergy-symptoms": {
-    src: "/images/article-honey-allergy-symptoms.webp",
-    width: 886,
-    height: 665,
-  },
-  "honey-vs-gula-melaka": {
-    src: "/images/article-honey-vs-gula-melaka.webp",
-    width: 886,
-    height: 665,
-  },
-  "is-honey-vegan": {
-    src: "/images/article-is-honey-vegan.webp",
-    width: 886,
-    height: 665,
-  },
-  "beli-madu-online-atau-kedai-fizikal": {
-    src: "/images/article-beli-madu-online-atau-kedai-fizikal.webp",
-    width: 886,
-    height: 665,
-  },
-  "hadiah-madu-untuk-raya": {
-    src: "/images/article-hadiah-madu-untuk-raya.webp",
-    width: 886,
-    height: 665,
-  },
-  "doorgift-madu-kahwin": {
-    src: "/images/article-doorgift-madu-kahwin.webp",
-    width: 886,
-    height: 665,
-  },
-  "resepi-sarapan-guna-madu": {
-    src: "/images/article-resepi-sarapan-guna-madu.webp",
-    width: 886,
-    height: 665,
-  },
-  "madu-untuk-masakan": {
-    src: "/images/article-madu-untuk-masakan.webp",
-    width: 886,
-    height: 665,
+    src: "/images/figure-tea-and-comb.webp",
+    width: 768,
+    height: 576,
   },
   "limatha-yatfu-al-shama-fawq-al-asal": {
-    src: "/images/article-limatha-yatfu-al-shama-fawq-al-asal.webp",
-    width: 886,
-    height: 665,
+    src: "/images/figure-jar-and-comb.webp",
+    width: 1057,
+    height: 793,
   },
-  "mukawwinat-khaltat-al-asal-bil-aashab": {
-    src: "/images/article-mukawwinat-khaltat-al-asal-bil-aashab.webp",
-    width: 886,
-    height: 665,
+  "where-to-buy-raw-honey-kuala-lumpur": {
+    src: "/images/figure-jar-alone.webp",
+    width: 1152,
+    height: 864,
   },
-  "hal-al-asal-masmuh-lil-atfal-aqal-min-sana": {
-    src: "/images/article-hal-al-asal-masmuh-lil-atfal-aqal-min-sana.webp",
-    width: 886,
-    height: 665,
+  "beli-madu-online-atau-kedai-fizikal": {
+    src: "/images/figure-jar-alone.webp",
+    width: 1152,
+    height: 864,
   },
   "shiraa-al-asal-online-fi-malizia": {
-    src: "/images/article-shiraa-al-asal-online-fi-malizia.webp",
-    width: 886,
-    height: 665,
-  },
-  "hadiyat-al-asal-lil-eid": {
-    src: "/images/article-hadiyat-al-asal-lil-eid.webp",
-    width: 886,
-    height: 665,
-  },
-
-  // Round 3 (2026-08-25). 886x665 - the free generator's hard cap,
-  // confirmed by two control runs that both returned 886x665 whatever
-  // size was requested. Declared at its REAL size: the pipeline never
-  // upscales, and a template that claims 1200x900 for a 886x665 file
-  // ships a lie the image audit cannot see.
-  "is-honey-in-malaysia-fake": {
-    src: "/images/article-is-honey-in-malaysia-fake.webp",
-    width: 886,
-    height: 665,
-  },
-  "what-is-sidr-honey": {
-    src: "/images/article-what-is-sidr-honey.webp",
-    width: 886,
-    height: 665,
-  },
-  "honey-in-hot-drinks-malaysia": {
-    src: "/images/article-honey-in-hot-drinks-malaysia.webp",
-    width: 886,
-    height: 665,
-  },
-  "baking-with-honey-malaysia": {
-    src: "/images/article-baking-with-honey-malaysia.webp",
-    width: 886,
-    height: 665,
+    src: "/images/figure-jar-and-walnuts.webp",
+    width: 800,
+    height: 600,
   },
   "how-to-read-a-honey-label-malaysia": {
-    src: "/images/article-how-to-read-a-honey-label-malaysia.webp",
-    width: 886,
-    height: 665,
+    src: "/images/figure-ingredients-left.webp",
+    width: 1152,
+    height: 864,
   },
-  "why-is-honey-dark-or-light": {
-    src: "/images/article-why-is-honey-dark-or-light.webp",
-    width: 886,
-    height: 665,
-  },
-  "tarikh-luput-madu": {
-    src: "/images/article-tarikh-luput-madu.webp",
-    width: 886,
-    height: 665,
-  },
-  "madu-kelulut-vs-madu-tualang": {
-    src: "/images/article-madu-kelulut-vs-madu-tualang.webp",
-    width: 886,
-    height: 665,
-  },
-  "madu-khalta": {
-    src: "/images/article-madu-khalta.webp",
-    width: 886,
-    height: 665,
-  },
-  "madu-saffron": {
-    src: "/images/article-madu-saffron.webp",
-    width: 886,
-    height: 665,
-  },
-  "naql-al-asal-fi-al-taira": {
-    src: "/images/article-naql-al-asal-fi-al-taira.webp",
-    width: 886,
-    height: 665,
-  },
-  "al-farq-bayn-al-asal-al-kham-wal-musaffa": {
-    src: "/images/article-al-farq-bayn-al-asal-al-kham-wal-musaffa.webp",
-    width: 886,
-    height: 665,
-  },
-  "tariqat-amal-asal-bil-mukassarat": {
-    src: "/images/article-tariqat-amal-asal-bil-mukassarat.webp",
-    width: 886,
-    height: 665,
-  },
-  "hadiya-min-malizia-lil-ahl": {
-    src: "/images/article-hadiya-min-malizia-lil-ahl.webp",
-    width: 886,
-    height: 665,
-  },
-
-  // Round 4 (2026-08-26). All 886x665.
-  // Three of these keys point at an image file that already existed: a new
-  // English article joining a live Arabic one takes over the group's asset
-  // key, so the key must resolve to the Arabic article's own picture or the
-  // live page silently loses the frame it already ships.
-  "kelulut-honey-standard-malaysia": {
-    src: "/images/article-kelulut-honey-standard-malaysia.webp",
-    width: 886,
-    height: 665,
-  },
-  "what-does-raw-honey-mean": {
-    src: "/images/article-al-farq-bayn-al-asal-al-kham-wal-musaffa.webp",
-    width: 886,
-    height: 665,
-  },
-  "bringing-honey-on-a-plane-malaysia": {
-    src: "/images/article-naql-al-asal-fi-al-taira.webp",
-    width: 886,
-    height: 665,
-  },
-  "what-is-arabic-honey": {
-    src: "/images/article-what-is-arabic-honey.webp",
-    width: 886,
-    height: 665,
-  },
-  "can-babies-have-honey": {
-    src: "/images/article-hal-al-asal-masmuh-lil-atfal-aqal-min-sana.webp",
-    width: 886,
-    height: 665,
+  "mukawwinat-khaltat-al-asal-bil-aashab": {
+    src: "/images/figure-jar-and-ingredients.webp",
+    width: 1152,
+    height: 864,
   },
   "logo-autentik-kkm-madu": {
-    src: "/images/article-logo-autentik-kkm-madu.webp",
-    width: 886,
-    height: 665,
-  },
-  "madu-berasing-dua-lapisan": {
-    src: "/images/article-madu-berasing-dua-lapisan.webp",
-    width: 886,
-    height: 665,
+    src: "/images/figure-jar-and-comb.webp",
+    width: 1057,
+    height: 793,
   },
   "al-asal-al-udwi-fi-malizia": {
-    src: "/images/article-al-asal-al-udwi-fi-malizia.webp",
-    width: 886,
-    height: 665,
+    src: "/images/figure-blossom-and-light.webp",
+    width: 1057,
+    height: 793,
+  },
+  "kelulut-honey-standard-malaysia": {
+    src: "/images/figure-honey-dipper.webp",
+    width: 1536,
+    height: 1152,
+  },
+  "al-farq-bayn-al-asal-al-kham-wal-musaffa": {
+    src: "/images/figure-honey-in-glass.webp",
+    width: 940,
+    height: 705,
+  },
+  "what-does-raw-honey-mean": {
+    src: "/images/figure-honey-in-glass.webp",
+    width: 940,
+    height: 705,
+  },
+  "is-malaysian-honey-local-or-imported": {
+    src: "/images/figure-blossom-and-light.webp",
+    width: 1057,
+    height: 793,
+  },
+  "what-is-arabic-honey": {
+    src: "/images/figure-jar-and-botanicals.webp",
+    width: 1124,
+    height: 843,
+  },
+  "madu-khalta": {
+    src: "/images/figure-jar-and-ingredients.webp",
+    width: 1152,
+    height: 864,
+  },
+  "beza-madu-tulen-dan-madu-campuran": {
+    src: "/images/figure-jar-and-ingredients.webp",
+    width: 1152,
+    height: 864,
+  },
+  "types-of-honey-in-malaysia": {
+    src: "/images/figure-jar-and-ingredients.webp",
+    width: 1152,
+    height: 864,
+  },
+  "manuka-honey-vs-local-honey": {
+    src: "/images/figure-honey-dipper.webp",
+    width: 1536,
+    height: 1152,
+  },
+  "what-is-sidr-honey": {
+    src: "/images/figure-table-setting.webp",
+    width: 1024,
+    height: 768,
+  },
+  "madu-kelulut-vs-madu-tualang": {
+    src: "/images/figure-blossom-and-light.webp",
+    width: 1057,
+    height: 793,
+  },
+  "honey-vs-gula-melaka": {
+    src: "/images/figure-spoonful.webp",
+    width: 952,
+    height: 714,
+  },
+  "is-honey-in-malaysia-fake": {
+    src: "/images/figure-jar-and-walnuts.webp",
+    width: 800,
+    height: 600,
+  },
+  "why-is-honey-dark-or-light": {
+    src: "/images/figure-honey-in-glass.webp",
+    width: 940,
+    height: 705,
+  },
+  "madu-berbuih": {
+    src: "/images/figure-honey-dipper.webp",
+    width: 1536,
+    height: 1152,
+  },
+  "madu-berasing-dua-lapisan": {
+    src: "/images/figure-honey-in-glass.webp",
+    width: 940,
+    height: 705,
+  },
+  "madu-beku-dalam-peti-sejuk": {
+    src: "/images/figure-table-setting.webp",
+    width: 1024,
+    height: 768,
+  },
+  "how-to-store-honey-malaysia": {
+    src: "/images/figure-jar-alone.webp",
+    width: 1152,
+    height: 864,
+  },
+  "tarikh-luput-madu": {
+    src: "/images/figure-jar-alone.webp",
+    width: 1152,
+    height: 864,
+  },
+  "hal-lil-asal-tarikh-salahiya": {
+    src: "/images/figure-jar-alone.webp",
+    width: 1152,
+    height: 864,
+  },
+  "madu-saffron": {
+    src: "/images/figure-ingredients-left.webp",
+    width: 1152,
+    height: 864,
+  },
+  "asal-bil-zafaran": {
+    src: "/images/figure-ingredients-left.webp",
+    width: 1152,
+    height: 864,
+  },
+  "honey-with-nuts-malaysia": {
+    src: "/images/figure-board-and-nuts.webp",
+    width: 620,
+    height: 465,
+  },
+  "tariqat-amal-asal-bil-mukassarat": {
+    src: "/images/figure-board-and-nuts.webp",
+    width: 620,
+    height: 465,
+  },
+  "honey-in-hot-drinks-malaysia": {
+    src: "/images/figure-tea-and-comb.webp",
+    width: 768,
+    height: 576,
+  },
+  "madu-campur-air-panas": {
+    src: "/images/figure-tea-and-comb.webp",
+    width: 768,
+    height: 576,
+  },
+  "al-ma-al-sakhin-wal-asal": {
+    src: "/images/figure-tea-and-comb.webp",
+    width: 768,
+    height: 576,
+  },
+  "baking-with-honey-malaysia": {
+    src: "/images/figure-spoon-close.webp",
+    width: 1024,
+    height: 768,
+  },
+  "madu-untuk-masakan": {
+    src: "/images/figure-spoonful.webp",
+    width: 952,
+    height: 714,
+  },
+  "resepi-sarapan-guna-madu": {
+    src: "/images/figure-spoon-close.webp",
+    width: 1024,
+    height: 768,
+  },
+  "waktu-terbaik-makan-madu": {
+    src: "/images/figure-spoonful.webp",
+    width: 952,
+    height: 714,
+  },
+  "honeycomb-hantaran-gift-idea": {
+    src: "/images/figure-couple-at-table.webp",
+    width: 1365,
+    height: 1024,
+  },
+  "doorgift-madu-kahwin": {
+    src: "/images/figure-couple-at-table.webp",
+    width: 1365,
+    height: 1024,
+  },
+  "hadiah-madu-untuk-raya": {
+    src: "/images/figure-couple-sharing.webp",
+    width: 1365,
+    height: 1024,
+  },
+  "hadiyat-al-asal-lil-eid": {
+    src: "/images/figure-couple-sharing.webp",
+    width: 1365,
+    height: 1024,
+  },
+  "hadiya-min-malizia-lil-ahl": {
+    src: "/images/figure-table-setting.webp",
+    width: 1024,
+    height: 768,
+  },
+  "is-honey-safe-during-pregnancy": {
+    src: "/images/figure-lavender-and-ginger.webp",
+    width: 700,
+    height: 525,
+  },
+  "can-babies-have-honey": {
+    src: "/images/figure-honey-dipper.webp",
+    width: 1536,
+    height: 1152,
+  },
+  "hal-al-asal-masmuh-lil-atfal-aqal-min-sana": {
+    src: "/images/figure-honey-dipper.webp",
+    width: 1536,
+    height: 1152,
+  },
+  "honey-allergy-symptoms": {
+    src: "/images/figure-board-and-nuts.webp",
+    width: 620,
+    height: 465,
+  },
+  "is-honey-vegan": {
+    src: "/images/figure-blossom-and-light.webp",
+    width: 1057,
+    height: 793,
+  },
+  "bringing-honey-on-a-plane-malaysia": {
+    src: "/images/figure-jar-alone.webp",
+    width: 1152,
+    height: 864,
+  },
+  "naql-al-asal-fi-al-taira": {
+    src: "/images/figure-jar-alone.webp",
+    width: 1152,
+    height: 864,
   },
   "idkhal-al-asal-ila-malizia": {
-    src: "/images/article-idkhal-al-asal-ila-malizia.webp",
-    width: 886,
-    height: 665,
+    src: "/images/figure-jar-and-botanicals.webp",
+    width: 1124,
+    height: 843,
   },
 };

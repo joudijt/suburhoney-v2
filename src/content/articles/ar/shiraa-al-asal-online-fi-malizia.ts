@@ -24,7 +24,7 @@ export const article: Article = {
   readingMinutes: 5,
   icon: "/icons/ingrediant_08.webp",
   figureAlt:
-    "مرطبان عسل بشمع النحل بجانب طرد بريدي عادي بلا شعارات، في سياق شراء عسل أونلاين في ماليزيا.",
+    "مرطبان عسل سُبور عند قاعدته شمع العسل والجوز واللوز، والعسل يُسكب فيه.",
   category: "دليل الشراء",
   blocks: [
     {

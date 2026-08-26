@@ -18,7 +18,8 @@ export const article: Article = {
   updated: "2026-07-23",
   readingMinutes: 7,
   icon: "/icons/ingrediant_03.webp",
-  figureAlt: "Sebalang Subur Honey dikelilingi kepingan sarang madu mentah.",
+  figureAlt:
+    "Penyendok kayu mengangkat madu dari balang terbuka, dengan sarang madu di belakangnya.",
   category: "Panduan pembeli",
   blocks: [
     {

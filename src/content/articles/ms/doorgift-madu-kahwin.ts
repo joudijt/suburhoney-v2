@@ -25,7 +25,7 @@ export const article: Article = {
   readingMinutes: 5,
   icon: "/icons/ingrediant_08.webp",
   figureAlt:
-    "Beberapa balang kecil madu tersusun rapi di atas permukaan neutral, disediakan sebagai doorgift madu kahwin untuk tetamu majlis.",
+    "Sepasang suami isteri berkongsi madu di meja yang dihidang dengan teh, kacang dan sebalang madu SUBUR.",
   category: "Panduan hadiah",
   blocks: [
     {

@@ -88,6 +88,30 @@ const TARGETS = [
   { src: "images/article-couples.png", width: 1536, quality: 78 },
   { src: "images/article-black-seed.png", width: 1536, quality: 82 },
   { src: "images/article-pure-honey.png", width: 1536, quality: 82 },
+
+  // Blog lead figures cut from the photographs above by
+  // scripts/make-article-crops.mjs. Standing ruling 2026-08-26: article images
+  // are reused from the site's own library, never generated. Same max-w-3xl
+  // reading column, so the same 1536 cap - and every one of them is already
+  // smaller than that, because a window is never upscaled past its source.
+  { src: "images/figure-black-seed.png", width: 1536, quality: 82 },
+  { src: "images/figure-blossom-and-light.png", width: 1536, quality: 82 },
+  { src: "images/figure-board-and-nuts.png", width: 1536, quality: 82 },
+  { src: "images/figure-couple-at-table.png", width: 1536, quality: 82 },
+  { src: "images/figure-couple-sharing.png", width: 1536, quality: 82 },
+  { src: "images/figure-honey-dipper.png", width: 1536, quality: 82 },
+  { src: "images/figure-honey-in-glass.png", width: 1536, quality: 82 },
+  { src: "images/figure-ingredients-left.png", width: 1536, quality: 82 },
+  { src: "images/figure-jar-alone.png", width: 1536, quality: 82 },
+  { src: "images/figure-jar-and-botanicals.png", width: 1536, quality: 82 },
+  { src: "images/figure-jar-and-comb.png", width: 1536, quality: 82 },
+  { src: "images/figure-jar-and-ingredients.png", width: 1536, quality: 82 },
+  { src: "images/figure-jar-and-walnuts.png", width: 1536, quality: 82 },
+  { src: "images/figure-lavender-and-ginger.png", width: 1536, quality: 82 },
+  { src: "images/figure-spoon-close.png", width: 1536, quality: 82 },
+  { src: "images/figure-spoonful.png", width: 1536, quality: 82 },
+  { src: "images/figure-table-setting.png", width: 1536, quality: 82 },
+  { src: "images/figure-tea-and-comb.png", width: 1536, quality: 82 },
 ];
 
 // Ingredient icons: 80px in the hero (md:h-20), ~51px in the honeycomb, and

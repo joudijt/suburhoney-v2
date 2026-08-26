@@ -25,7 +25,7 @@ export const article: Article = {
   readingMinutes: 5,
   icon: "/icons/ingrediant_03.webp",
   figureAlt:
-    "A glass of hot tea steaming on a saucer, with a smaller glass of the same drink beside it.",
+    "A glass cup of tea and a slab of honeycomb on a wooden board beside an open jar of SUBUR honey.",
   category: "Everyday use",
   blocks: [
     {

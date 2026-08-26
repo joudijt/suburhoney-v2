@@ -23,7 +23,8 @@ export const article: Article = {
   updated: "2026-08-20",
   readingMinutes: 5,
   icon: "/icons/ingrediant_06.webp",
-  figureAlt: "كوب شاي يخفت بخاره وبجانبه ملعقة عسل بشمع النحل وقطعة قرفة.",
+  figureAlt:
+    "كوب شاي زجاجي وقطعة من شمع العسل على لوح خشبي بجانب مرطبان عسل سُبور مفتوح.",
   category: "الاستخدام",
   blocks: [
     {

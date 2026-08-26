@@ -26,7 +26,7 @@ export const article: Article = {
   readingMinutes: 5,
   icon: "/icons/ingrediant_08.webp",
   figureAlt:
-    "Two sealed jars of honey standing side by side on a wooden counter, close to identical from the outside.",
+    "A table set with a jar of SUBUR honey, bowls of nuts, a dish of honey and a cup of tea.",
   category: "Buying guide",
   blocks: [
     {

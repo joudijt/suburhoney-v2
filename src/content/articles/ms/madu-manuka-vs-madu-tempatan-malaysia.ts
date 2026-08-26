@@ -26,7 +26,7 @@ export const article: Article = {
   readingMinutes: 5,
   icon: "/icons/ingrediant_02.webp",
   figureAlt:
-    "Dua balang madu generik diletakkan bersebelahan tanpa label, menggambarkan perbandingan madu manuka vs madu tempatan malaysia.",
+    "Penyendok kayu mengangkat madu di atas balang kaca terbuka, dengan sarang madu di belakangnya.",
   category: "Perbandingan",
   blocks: [
     {

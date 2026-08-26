@@ -24,7 +24,7 @@ export const article: Article = {
   readingMinutes: 5,
   icon: "/icons/ingrediant_08.webp",
   figureAlt:
-    "Sebalang madu yang terbuka di atas kaunter dapur bertepi tingkap, dengan penutup kayunya diletak di sebelah.",
+    "Sebalang madu SUBUR berdiri sendiri di hadapan latar krim yang kosong.",
   category: "Label dan penyimpanan",
   blocks: [
     {

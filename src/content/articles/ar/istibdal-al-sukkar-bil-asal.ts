@@ -25,7 +25,7 @@ export const article: Article = {
   readingMinutes: 5,
   icon: "/icons/ingrediant_06.webp",
   figureAlt:
-    "مرطبان عسل مفتوح بقوام ثقيل نصفه متبلور على طاولة خشبية، وبجانبه عود خشبي.",
+    "ملعقة خشبية من العسل مرفوعة عن قرب فوق مرطبان عسل سُبور مفتوح.",
   category: "المطبخ",
   blocks: [
     {

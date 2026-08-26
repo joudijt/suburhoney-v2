@@ -18,7 +18,8 @@ export const article: Article = {
   updated: "2026-07-23",
   readingMinutes: 7,
   icon: "/icons/ingrediant_03.webp",
-  figureAlt: "A jar of Subur Honey surrounded by pieces of raw honeycomb.",
+  figureAlt:
+    "A wooden dipper lifting honey from an open jar, with honeycomb behind it.",
   category: "Buying guide",
   blocks: [
     {

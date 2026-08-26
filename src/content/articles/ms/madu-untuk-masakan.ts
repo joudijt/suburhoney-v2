@@ -23,7 +23,7 @@ export const article: Article = {
   readingMinutes: 5,
   icon: "/icons/ingrediant_06.webp",
   figureAlt:
-    "Madu bersarang dituang ke dalam mangkuk marinat di atas dapur, contoh guna madu untuk masakan harian.",
+    "Seorang lelaki mengangkat sudu kayu berisi madu di atas balang madu SUBUR yang terbuka.",
   category: "Penggunaan",
   blocks: [
     {

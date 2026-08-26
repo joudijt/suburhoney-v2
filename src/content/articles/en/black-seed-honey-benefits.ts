@@ -18,7 +18,8 @@ export const article: Article = {
   updated: "2026-07-23",
   readingMinutes: 6,
   icon: "/icons/ingrediant_07.webp",
-  figureAlt: "A jar of Subur Honey between black seeds and pieces of raw honeycomb.",
+  figureAlt:
+    "Black seeds in a wooden scoop beside a small corked bottle of dark oil.",
   category: "Ingredients",
   blocks: [
     {

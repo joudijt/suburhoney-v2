@@ -25,7 +25,7 @@ export const article: Article = {
   readingMinutes: 5,
   icon: "/icons/ingrediant_09.webp",
   figureAlt:
-    "A single sealed jar of honey on a counter with shop shelving blurred behind it, the jar a shopper is deciding whether to buy.",
+    "Star anise, saffron, ginger and coffee beans arranged around a jar of SUBUR honey.",
   category: "Buying guide",
   blocks: [
     {

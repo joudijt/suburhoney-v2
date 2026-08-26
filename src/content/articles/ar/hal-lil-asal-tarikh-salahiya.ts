@@ -25,7 +25,8 @@ export const article: Article = {
   updated: "2026-08-20",
   readingMinutes: 5,
   icon: "/icons/ingrediant_04.webp",
-  figureAlt: "مرطبان عسل خام بالشمع والمكسرات مقلوب في اليد لقراءة التاريخ المطبوع على ملصقه.",
+  figureAlt:
+    "مرطبان عسل سُبور وحده أمام خلفية كريمية سادة.",
   category: "الملصق والحفظ",
   blocks: [
     {

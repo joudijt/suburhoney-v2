@@ -24,7 +24,7 @@ export const article: Article = {
   readingMinutes: 5,
   icon: "/icons/ingrediant_05.webp",
   figureAlt:
-    "Sebalang madu berbuih dibuka perlahan di atas sinki, dengan lapisan buih putih naik ke leher balang.",
+    "Penyendok kayu mengangkat madu di atas balang kaca terbuka, dengan sarang madu di belakangnya.",
   category: "Panduan penjagaan",
   blocks: [
     {

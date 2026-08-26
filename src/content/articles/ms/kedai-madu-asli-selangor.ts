@@ -26,7 +26,7 @@ export const article: Article = {
   readingMinutes: 5,
   icon: "/icons/ingrediant_02.webp",
   figureAlt:
-    "Rak balang madu bersarang di kaunter sebuah kedai madu asli Selangor, sedia untuk diangkat dan diperiksa pembeli.",
+    "Sebalang madu SUBUR berdiri sendiri di hadapan latar krim yang kosong.",
   category: "Panduan pembeli",
   blocks: [
     {

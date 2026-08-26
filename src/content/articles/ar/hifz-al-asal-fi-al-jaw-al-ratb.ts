@@ -24,7 +24,8 @@ export const article: Article = {
   updated: "2026-08-20",
   readingMinutes: 5,
   icon: "/icons/ingrediant_01.webp",
-  figureAlt: "مرطبان عسل سُوبور مغلق على رفّ خزانة مطبخ، بعيداً عن الموقد وضوء الشمس.",
+  figureAlt:
+    "مرطبان عسل سُبور وحده أمام خلفية كريمية سادة.",
   category: "العناية بالمرطبان",
   blocks: [
     {

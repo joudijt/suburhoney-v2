@@ -18,7 +18,8 @@ export const article: Article = {
   updated: "2026-07-23",
   readingMinutes: 7,
   icon: "/icons/ingrediant_08.webp",
-  figureAlt: "Pasangan suami isteri Malaysia berpakaian pengantin Melayu memegang sebalang Subur Honey bersama-sama.",
+  figureAlt:
+    "Sepasang suami isteri memegang sebalang madu SUBUR bersama.",
   category: "Panduan pembeli",
   blocks: [
     {

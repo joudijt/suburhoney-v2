@@ -26,7 +26,7 @@ export const article: Article = {
   readingMinutes: 5,
   icon: "/icons/ingrediant_09.webp",
   figureAlt:
-    "مرطبان عسل مغلق على طاولة وخلفه رفوف متجر غير واضحة — المرطبان الذي يقف أمامه المشتري.",
+    "يانسون نجمي وزعفران وزنجبيل وحبوب بنّ موزّعة حول مرطبان عسل سُبور.",
   category: "قراءة الملصق",
   blocks: [
     {

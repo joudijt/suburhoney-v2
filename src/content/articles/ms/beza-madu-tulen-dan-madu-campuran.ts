@@ -23,7 +23,7 @@ export const article: Article = {
   readingMinutes: 5,
   icon: "/icons/ingrediant_07.webp",
   figureAlt:
-    "Sebalang madu campuran SUBUR bersebelahan sudu berisi sarang madu, kekacang dan rempah.",
+    "Sebalang madu SUBUR dikelilingi bahannya: bunga lawang, safron, halia, walnut, badam, sarang madu dan habbatus sauda.",
   category: "Panduan pembeli",
   blocks: [
     {

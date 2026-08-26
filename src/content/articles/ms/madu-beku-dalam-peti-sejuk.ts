@@ -24,7 +24,7 @@ export const article: Article = {
   readingMinutes: 5,
   icon: "/icons/ingrediant_09.webp",
   figureAlt:
-    "Sebalang madu berempah yang sebahagian bawahnya sudah berhablur selepas disimpan sejuk.",
+    "Meja yang dihidang dengan sebalang madu SUBUR, mangkuk kacang, sepinggan madu dan secawan teh.",
   category: "Penjagaan produk",
   blocks: [
     {

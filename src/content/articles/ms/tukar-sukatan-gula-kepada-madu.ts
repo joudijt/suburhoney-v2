@@ -25,7 +25,7 @@ export const article: Article = {
   readingMinutes: 5,
   icon: "/icons/ingrediant_06.webp",
   figureAlt:
-    "Sebalang madu pekat yang separuh berhablur terbuka di atas kaunter kayu, dengan sebatang kayu terletak di sebelahnya.",
+    "Sudu kayu berisi madu dipegang rapat di atas balang madu SUBUR yang terbuka.",
   category: "Panduan dapur",
   blocks: [
     {

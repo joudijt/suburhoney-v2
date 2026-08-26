@@ -25,7 +25,7 @@ export const article: Article = {
   readingMinutes: 5,
   icon: "/icons/ingrediant_08.webp",
   figureAlt:
-    "Two honey jars that look identical, side by side on a pale surface — appearance alone does not say what raw honey has been through.",
+    "An open glass jar of golden honey with a wooden dipper resting in it.",
   category: "Label words",
   blocks: [
     {

@@ -33,6 +33,8 @@ src/
     [lang]/blog/index.astro
 scripts/
   optimize-images.mjs     assets-src/ -> public/*.webp, run by `npm run build`
+  make-article-crops.mjs  cuts the 18 blog lead figures out of the site's own photos
+  assign-article-figures.mjs  assigns them and rewrites articleFigures.ts + every figureAlt
   ftp-deploy.py           FTPS upload + orphan cleanup + size verification
 public/                   generated .webp, .htaccess, robots.txt, sitemap.xml, llms*.txt
 ```
@@ -151,6 +153,28 @@ eagerly-loaded image to the hero costs far more here than its file size suggests
 Still on the table: putting Cloudflare (free tier) in front would serve static files from the
 edge and stop the origin being the bottleneck at all. Needs a DNS change, so it is the owner's
 call.
+
+## Article images — reuse only
+
+⛔ **Standing ruling, 2026-08-26: article lead images are cut from this site's own photographs and
+are never generated.** Rounds 1-4 shipped 50 generated frames; all 50 were deleted on 2026-08-26.
+
+```sh
+node scripts/make-article-crops.mjs      # 18 4:3 windows out of 10 photographs
+npm run optimize:images                  # -> public/images/figure-*.webp
+node scripts/assign-article-figures.mjs  # writes articleFigures.ts AND every figureAlt
+```
+
+The assignment script is the only writer of `src/config/articleFigures.ts` and of `figureAlt` in
+all three languages, so an alt cannot describe a frame that does not exist - which is exactly what
+shipped six times in round 4. It prints every frame that carries more than one article in the same
+language; there are 19 such shares, because the library is 18 frames against 48 article groups.
+The shortfall and the shots that would close it are in `docs/press/images/INVENTORY.md`.
+
+**Look at the pictures before shipping them.** `scripts/qa/image-audit.mjs` proves a figure loaded
+and renders at its own ratio; it cannot see an empty crop or a subject cropped away, and two of the
+first-pass windows were exactly that. `node scripts/qa/shoot-figures.mjs` writes `qa/figures/*.png`
+for a human to look at.
 
 ## Deploy
 

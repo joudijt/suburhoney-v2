@@ -26,7 +26,7 @@ export const article: Article = {
   readingMinutes: 5,
   icon: "/icons/ingrediant_05.webp",
   figureAlt:
-    "Sebalang madu yang dibuka di atas meja kayu bertepi tingkap, dengan bekas kaca kecil di sebelahnya.",
+    "Lavender, kamomil dan halia yang dihiris di atas permukaan krim yang hangat.",
   category: "Panduan keselamatan",
   blocks: [
     {

@@ -25,7 +25,7 @@ export const article: Article = {
   readingMinutes: 5,
   icon: "/icons/ingrediant_08.webp",
   figureAlt:
-    "Sebalang kaca madu oren yang sekata warnanya di atas meja kayu, dengan hanya kesan kabur pada permukaan kaca berhampiran bibir balang.",
+    "Balang kaca terbuka berisi madu keemasan dengan penyendok kayu di dalamnya.",
   category: "Panduan penjagaan",
   blocks: [
     {

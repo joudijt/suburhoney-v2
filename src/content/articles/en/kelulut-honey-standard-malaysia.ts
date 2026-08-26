@@ -26,7 +26,7 @@ export const article: Article = {
   readingMinutes: 5,
   icon: "/icons/ingrediant_08.webp",
   figureAlt:
-    "A single unlabelled jar of pale honey standing on a bare wooden table.",
+    "A wooden dipper lifting honey over an open glass jar, with honeycomb behind it.",
   category: "Regulation",
   blocks: [
     {

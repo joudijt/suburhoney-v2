@@ -23,7 +23,8 @@ export const article: Article = {
   updated: "2026-08-25",
   readingMinutes: 5,
   icon: "/icons/ingrediant_04.webp",
-  figureAlt: "مرطبان عسل سُوبور على منضدة مطبخ بإضاءة هادئة، دون أطفال أو رموز طبية في الإطار.",
+  figureAlt:
+    "مغرفة خشبية ترفع العسل فوق مرطبان زجاجي مفتوح، وخلفها قرص من شمع العسل.",
   category: "السلامة",
   blocks: [
     {

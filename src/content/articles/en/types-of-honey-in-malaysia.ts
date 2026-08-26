@@ -25,7 +25,7 @@ export const article: Article = {
   readingMinutes: 5,
   icon: "/icons/ingrediant_08.webp",
   figureAlt:
-    "Raw honeycomb beside a dark spiced honey blend, two of the types of honey in Malaysia sitting side by side.",
+    "A jar of SUBUR honey surrounded by its ingredients: star anise, saffron, ginger, walnut, almond, honeycomb and black seed.",
   category: "Buying guide",
   blocks: [
     {

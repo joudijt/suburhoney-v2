@@ -25,7 +25,7 @@ export const article: Article = {
   readingMinutes: 5,
   icon: "/icons/ingrediant_07.webp",
   figureAlt:
-    "Sebalang madu khalta yang dibuka, butiran rempah kelihatan di dalam madunya, dengan bunga lawang di sebelahnya.",
+    "Sebalang madu SUBUR dikelilingi bahannya: bunga lawang, safron, halia, walnut, badam, sarang madu dan habbatus sauda.",
   category: "Panduan pembeli",
   blocks: [
     {

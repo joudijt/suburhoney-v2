@@ -24,7 +24,7 @@ export const article: Article = {
   readingMinutes: 5,
   icon: "/icons/ingrediant_04.webp",
   figureAlt:
-    "مرطبان عسل زجاجي مفتوح بلا غطاء على سطح رمادي أمام خلفية رمادية.",
+    "مرطبان عسل سُبور وحول قاعدته شمع العسل والجوز والزنجبيل والخزامى.",
   category: "السفر",
   blocks: [
     {

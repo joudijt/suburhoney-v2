@@ -23,7 +23,8 @@ export const article: Article = {
   updated: "2026-08-20",
   readingMinutes: 5,
   icon: "/icons/ingrediant_08.webp",
-  figureAlt: "A spoon lifting raw honeycomb wax out of a jar of spiced honey blend.",
+  figureAlt:
+    "A glass cup of tea and a slab of honeycomb on a wooden board beside an open jar of SUBUR honey.",
   category: "How to use it",
   blocks: [
     {

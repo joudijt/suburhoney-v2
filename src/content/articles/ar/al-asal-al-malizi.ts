@@ -23,7 +23,8 @@ export const article: Article = {
   updated: "2026-08-20",
   readingMinutes: 5,
   icon: "/icons/ingrediant_10.webp",
-  figureAlt: "مرطبان خليط عسل بشمع النحل مع مكسرات وحبيبات توابل، يُباع في ماليزيا.",
+  figureAlt:
+    "مرطبان عسل سُبور تحيط به مكوّناته: اليانسون النجمي والزعفران والزنجبيل والجوز واللوز وشمع العسل وحبة البركة.",
   category: "دليل الشراء",
   blocks: [
     {

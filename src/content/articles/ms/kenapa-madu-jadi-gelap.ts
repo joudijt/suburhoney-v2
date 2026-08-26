@@ -25,7 +25,7 @@ export const article: Article = {
   readingMinutes: 5,
   icon: "/icons/ingrediant_02.webp",
   figureAlt:
-    "Dua balang madu di atas meja kayu: isi balang sebelah kiri kuning keemasan, isi balang sebelah kanan perang pekat.",
+    "Balang kaca terbuka berisi madu keemasan dengan penyendok kayu di dalamnya.",
   category: "Panduan penjagaan",
   blocks: [
     {

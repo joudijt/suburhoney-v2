@@ -12,7 +12,8 @@ export const article: Article = {
   updated: "2026-07-23",
   readingMinutes: 6,
   icon: "/icons/ingrediant_07.webp",
-  figureAlt: "برطمان عسل سُوبور بين حبة البركة وقطع من قرص العسل الخام.",
+  figureAlt:
+    "حبة البركة في مغرفة خشبية بجانب زجاجة صغيرة بسدادة فلّين فيها زيت داكن.",
   category: "المكونات",
   blocks: [
     {

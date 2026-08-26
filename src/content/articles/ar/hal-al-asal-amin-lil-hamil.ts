@@ -25,7 +25,7 @@ export const article: Article = {
   readingMinutes: 5,
   icon: "/icons/ingrediant_05.webp",
   figureAlt:
-    "مرطبان عسل مفتوح وإناء زجاجي صغير على طاولة خشبية بجانب نافذة.",
+    "خزامى وبابونج وشرائح زنجبيل على سطح كريمي دافئ.",
   category: "السلامة",
   blocks: [
     {

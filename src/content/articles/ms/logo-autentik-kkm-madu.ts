@@ -25,7 +25,7 @@ export const article: Article = {
   readingMinutes: 5,
   icon: "/icons/ingrediant_09.webp",
   figureAlt:
-    "Sebalang kaca kecil berisi madu amber jernih di atas meja kayu, tanpa sebarang label untuk disemak.",
+    "Sebalang madu SUBUR di sebelah sarang madu dan badam, dengan madu mengalir dari penyendok di atasnya.",
   category: "Panduan pembeli",
   blocks: [
     {

@@ -23,7 +23,8 @@ export const article: Article = {
   updated: "2026-08-20",
   readingMinutes: 5,
   icon: "/icons/ingrediant_06.webp",
-  figureAlt: "A jar of raw honey held up to the light at a shop counter in Kuala Lumpur.",
+  figureAlt:
+    "A jar of SUBUR honey standing alone against a plain cream background.",
   category: "Buying guide",
   blocks: [
     {

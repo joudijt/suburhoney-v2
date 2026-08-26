@@ -25,7 +25,7 @@ export const article: Article = {
   readingMinutes: 5,
   icon: "/icons/ingrediant_02.webp",
   figureAlt:
-    "Two sealed jars of honey side by side, the left one a lighter gold and the right one visibly darker brown.",
+    "An open glass jar of golden honey with a wooden dipper resting in it.",
   category: "Buying guide",
   blocks: [
     {

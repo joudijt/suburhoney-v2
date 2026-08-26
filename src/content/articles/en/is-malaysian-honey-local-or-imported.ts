@@ -24,7 +24,8 @@ export const article: Article = {
   updated: "2026-08-20",
   readingMinutes: 5,
   icon: "/icons/ingrediant_03.webp",
-  figureAlt: "A jar of Subur Honey on a shop counter beside pieces of raw honeycomb.",
+  figureAlt:
+    "Chamomile and lavender lying in warm light on a honey-coloured surface.",
   category: "Buying guide",
   blocks: [
     {

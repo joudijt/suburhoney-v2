@@ -25,7 +25,7 @@ export const article: Article = {
   readingMinutes: 5,
   icon: "/icons/ingrediant_08.webp",
   figureAlt:
-    "A jar of raw honey beside a block of dark gula melaka palm sugar on a plain kitchen counter.",
+    "A man lifting a wooden spoon of honey above an open jar of SUBUR honey.",
   category: "Comparison",
   blocks: [
     {

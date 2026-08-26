@@ -12,7 +12,8 @@ export const article: Article = {
   updated: "2026-07-23",
   readingMinutes: 7,
   icon: "/icons/ingrediant_03.webp",
-  figureAlt: "برطمان عسل سُوبور محاط بقطع من قرص العسل الخام.",
+  figureAlt:
+    "مغرفة خشبية ترفع العسل من مرطبان مفتوح، وخلفها شمع العسل.",
   category: "دليل الشراء",
   blocks: [
     {

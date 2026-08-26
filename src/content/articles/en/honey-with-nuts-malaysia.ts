@@ -26,7 +26,7 @@ export const article: Article = {
   readingMinutes: 4,
   icon: "/icons/ingrediant_04.webp",
   figureAlt:
-    "A jar of honey with nuts in Malaysia — walnuts and almonds blended into raw honeycomb honey — on a plain kitchen surface, with no whole nut halves visible.",
+    "Two glass bowls of nuts and a honey dipper on a wooden board, with a hand lifting a wooden spoon above them.",
   category: "Product guide",
   blocks: [
     {

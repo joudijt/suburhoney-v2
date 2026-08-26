@@ -24,7 +24,7 @@ export const article: Article = {
   readingMinutes: 5,
   icon: "/icons/ingrediant_06.webp",
   figureAlt:
-    "Madu berempah dititik ke atas semangkuk oat panas dan sekeping roti bakar di atas meja sarapan.",
+    "Sudu kayu berisi madu dipegang rapat di atas balang madu SUBUR yang terbuka.",
   category: "Panduan penggunaan",
   blocks: [
     {

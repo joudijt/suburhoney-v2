@@ -26,7 +26,7 @@ export const article: Article = {
   readingMinutes: 5,
   icon: "/icons/ingrediant_01.webp",
   figureAlt:
-    "A closed glass honey jar stored in a shaded Malaysian kitchen cupboard, away from the kettle.",
+    "A jar of SUBUR honey standing alone against a plain cream background.",
   category: "Care guide",
   blocks: [
     {

@@ -25,7 +25,7 @@ export const article: Article = {
   readingMinutes: 5,
   icon: "/icons/ingrediant_05.webp",
   figureAlt:
-    "An open, lidless jar of honey standing on a wooden table beside a piece of ginger root, by a window in soft daylight.",
+    "A wooden dipper lifting honey over an open glass jar, with honeycomb behind it.",
   category: "Safety guide",
   blocks: [
     {

@@ -24,7 +24,7 @@ export const article: Article = {
   readingMinutes: 5,
   icon: "/icons/ingrediant_02.webp",
   figureAlt:
-    "Jars of dark honey on the counter of an Arabic grocery in Selangor, the kind of shelf where Arabic honey is sold.",
+    "A jar of SUBUR honey with honeycomb, walnuts, ginger and lavender around its base.",
   category: "Buying guide",
   blocks: [
     {

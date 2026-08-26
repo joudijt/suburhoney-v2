@@ -26,7 +26,7 @@ export const article: Article = {
   readingMinutes: 5,
   icon: "/icons/ingrediant_08.webp",
   figureAlt:
-    "Five unlabelled jars of honey lined up on a shop shelf, all of them looking much the same from the outside.",
+    "A jar of SUBUR honey with honeycomb, walnuts and almonds at its base and honey pouring in.",
   category: "Fact check",
   blocks: [
     {

@@ -24,7 +24,7 @@ export const article: Article = {
   readingMinutes: 5,
   icon: "/icons/ingrediant_02.webp",
   figureAlt:
-    "Helai saffron kering berwarna merah tua di dalam pinggan kecil di atas meja kayu.",
+    "Bunga lawang, safron, halia dan biji kopi disusun mengelilingi sebalang madu SUBUR.",
   category: "Bahan",
   blocks: [
     {

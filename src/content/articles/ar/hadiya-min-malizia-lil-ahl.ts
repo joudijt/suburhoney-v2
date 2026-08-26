@@ -24,7 +24,7 @@ export const article: Article = {
   readingMinutes: 5,
   icon: "/icons/ingrediant_10.webp",
   figureAlt:
-    "مرطبان عسل داكن موضوع على حصيرة من الخوص وإلى جانبه نبتة خضراء وإناء فخاري.",
+    "مائدة عليها مرطبان عسل سُبور وأوعية مكسّرات وطبق عسل وكوب شاي.",
   category: "الهدايا",
   blocks: [
     {

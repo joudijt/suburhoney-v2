@@ -24,7 +24,7 @@ export const article: Article = {
   readingMinutes: 5,
   icon: "/icons/ingrediant_08.webp",
   figureAlt:
-    "An open glass jar of honey and a smaller glass jug of honey standing on a wooden table beside a window in soft daylight.",
+    "Lavender, chamomile and sliced ginger on a warm cream surface.",
   category: "Safety guide",
   blocks: [
     {

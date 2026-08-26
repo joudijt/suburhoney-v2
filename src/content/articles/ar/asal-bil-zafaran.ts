@@ -26,7 +26,7 @@ export const article: Article = {
   readingMinutes: 5,
   icon: "/icons/ingrediant_02.webp",
   figureAlt:
-    "ملعقة من عسل بالزعفران تُرفع من مرطبان فيه قرص عسل خام ومكسرات مطحونة وخيوط زعفران.",
+    "يانسون نجمي وزعفران وزنجبيل وحبوب بنّ موزّعة حول مرطبان عسل سُبور.",
   category: "الطعم والمكونات",
   blocks: [
     {

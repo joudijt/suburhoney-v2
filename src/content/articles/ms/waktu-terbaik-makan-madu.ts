@@ -24,7 +24,7 @@ export const article: Article = {
   readingMinutes: 5,
   icon: "/icons/ingrediant_03.webp",
   figureAlt:
-    "Sudu kecil madu berempah bersarang diangkat dari balang di atas meja pada waktu pagi sebelum sarapan.",
+    "Seorang lelaki mengangkat sudu kayu berisi madu di atas balang madu SUBUR yang terbuka.",
   category: "Cara penggunaan",
   blocks: [
     {

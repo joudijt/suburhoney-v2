@@ -25,7 +25,7 @@ export const article: Article = {
   readingMinutes: 5,
   icon: "/icons/ingrediant_04.webp",
   figureAlt:
-    "مرطبان عسل مغلق بإحكام على طاولة خشبية وبجانبه قطعة قماش، استعداداً لتغليفه قبل السفر.",
+    "مرطبان عسل سُبور وحده أمام خلفية كريمية سادة.",
   category: "السفر",
   blocks: [
     {

@@ -24,7 +24,7 @@ export const article: Article = {
   readingMinutes: 5,
   icon: "/icons/ingrediant_08.webp",
   figureAlt:
-    "Kepingan sarang madu mentah diangkat dengan sudu dari sebalang SUBUR Honey berempah.",
+    "Secawan teh dan seketul sarang madu di atas papan kayu, di sebelah balang madu SUBUR yang terbuka.",
   category: "Sarang madu",
   blocks: [
     {

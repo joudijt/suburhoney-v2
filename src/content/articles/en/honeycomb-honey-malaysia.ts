@@ -25,7 +25,7 @@ export const article: Article = {
   readingMinutes: 5,
   icon: "/icons/ingrediant_08.webp",
   figureAlt:
-    "A piece of capped raw honeycomb resting in a jar of honey, the wax cells still sealed.",
+    "A jar of SUBUR honey beside honeycomb and almonds, with honey drizzling from a dipper above.",
   category: "Buying guide",
   blocks: [
     {

@@ -25,7 +25,7 @@ export const article: Article = {
   readingMinutes: 5,
   icon: "/icons/ingrediant_08.webp",
   figureAlt:
-    "صندوق خلية نحل خشبي مفتوح الغطاء وسط مرج من الأزهار البرية — المرعى الذي يدور حوله سؤال العسل العضوي.",
+    "بابونج وخزامى في ضوء دافئ على سطح بلون العسل.",
   category: "الملصق والشهادات",
   blocks: [
     {

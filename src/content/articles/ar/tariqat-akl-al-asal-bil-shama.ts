@@ -24,7 +24,8 @@ export const article: Article = {
   updated: "2026-08-20",
   readingMinutes: 5,
   icon: "/icons/ingrediant_08.webp",
-  figureAlt: "ملعقة ترفع قطعة شمع عسل خام من مرطبان سُوبور، وحولها جوز ولوز مطحونان وحبيبات توابل.",
+  figureAlt:
+    "كوب شاي زجاجي وقطعة من شمع العسل على لوح خشبي بجانب مرطبان عسل سُبور مفتوح.",
   category: "الاستخدام",
   blocks: [
     {

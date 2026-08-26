@@ -25,7 +25,8 @@ export const article: Article = {
   updated: "2026-08-25",
   readingMinutes: 5,
   icon: "/icons/ingrediant_02.webp",
-  figureAlt: "مرطبانا عسل عامّان متجاوران على سطح محايد، بلا نص، يمثّلان مقارنة عسل مانوكا بعسل ماليزي.",
+  figureAlt:
+    "مغرفة خشبية ترفع العسل فوق مرطبان زجاجي مفتوح، وخلفها قرص من شمع العسل.",
   category: "مقارنة",
   blocks: [
     {

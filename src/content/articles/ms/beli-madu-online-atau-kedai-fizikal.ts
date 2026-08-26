@@ -24,7 +24,7 @@ export const article: Article = {
   readingMinutes: 5,
   icon: "/icons/ingrediant_08.webp",
   figureAlt:
-    "Sebalang madu SUBUR diletakkan di sebelah telefon pintar yang memaparkan ikon troli beli-belah generik, menggambarkan pilihan antara beli madu online dan beli di kedai fizikal.",
+    "Sebalang madu SUBUR berdiri sendiri di hadapan latar krim yang kosong.",
   category: "Panduan pembeli",
   blocks: [
     {

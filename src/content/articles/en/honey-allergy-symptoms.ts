@@ -25,7 +25,7 @@ export const article: Article = {
   readingMinutes: 5,
   icon: "/icons/ingrediant_04.webp",
   figureAlt:
-    "A honey jar on a plain kitchen counter beside a small dish of almonds and walnuts, no people or medical props in frame.",
+    "Two glass bowls of nuts and a honey dipper on a wooden board, with a hand lifting a wooden spoon above them.",
   category: "Safety guide",
   blocks: [
     {

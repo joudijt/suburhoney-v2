@@ -18,7 +18,8 @@ export const article: Article = {
   updated: "2026-07-23",
   readingMinutes: 6,
   icon: "/icons/ingrediant_07.webp",
-  figureAlt: "Sebalang Subur Honey antara habbatus sauda dan kepingan sarang madu mentah.",
+  figureAlt:
+    "Biji habbatus sauda dalam senduk kayu di sebelah botol kecil bertutup gabus berisi minyak gelap.",
   category: "Bahan",
   blocks: [
     {

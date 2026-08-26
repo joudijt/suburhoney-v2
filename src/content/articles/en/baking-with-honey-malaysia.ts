@@ -25,7 +25,7 @@ export const article: Article = {
   readingMinutes: 5,
   icon: "/icons/ingrediant_06.webp",
   figureAlt:
-    "An open jar of thick, part-crystallised honey on a wooden counter, a wooden stick lying beside it.",
+    "A wooden spoon of honey held close over an open jar of SUBUR honey.",
   category: "Kitchen guide",
   blocks: [
     {

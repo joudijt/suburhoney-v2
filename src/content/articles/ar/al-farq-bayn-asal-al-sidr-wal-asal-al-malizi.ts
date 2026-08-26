@@ -26,7 +26,7 @@ export const article: Article = {
   readingMinutes: 5,
   icon: "/icons/ingrediant_08.webp",
   figureAlt:
-    "مرطبانان مغلقان من العسل متجاوران على سطح خشبي، لا يكاد المظهر الخارجي يفرّق بينهما.",
+    "مائدة عليها مرطبان عسل سُبور وأوعية مكسّرات وطبق عسل وكوب شاي.",
   category: "مقارنة",
   blocks: [
     {

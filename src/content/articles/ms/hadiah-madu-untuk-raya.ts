@@ -24,7 +24,7 @@ export const article: Article = {
   readingMinutes: 5,
   icon: "/icons/ingrediant_02.webp",
   figureAlt:
-    "Balang madu sarang berempah disusun atas raga rotan dengan kain kecil, disediakan sebagai hadiah madu untuk raya.",
+    "Sepasang suami isteri masing-masing memegang sudu kayu di sebelah balang madu SUBUR yang terbuka.",
   category: "Panduan hadiah",
   blocks: [
     {

@@ -12,7 +12,8 @@ export const article: Article = {
   updated: "2026-07-23",
   readingMinutes: 7,
   icon: "/icons/ingrediant_08.webp",
-  figureAlt: "زوجان ماليزيان بزي الزفاف يحملان معًا برطمان عسل سُوبور.",
+  figureAlt:
+    "زوج وزوجة يمسكان معاً مرطبان عسل سُبور.",
   category: "دليل الشراء",
   blocks: [
     {

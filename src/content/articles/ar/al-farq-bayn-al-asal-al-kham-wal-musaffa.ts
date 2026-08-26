@@ -25,7 +25,7 @@ export const article: Article = {
   readingMinutes: 5,
   icon: "/icons/ingrediant_08.webp",
   figureAlt:
-    "مرطبانان متطابقان في المظهر من العسل متجاوران على سطح فاتح — المظهر وحده لا يقول أي مسار مرّ به كل منهما.",
+    "مرطبان زجاجي مفتوح مملوء بعسل ذهبي وفيه مغرفة خشبية.",
   category: "المعالجة",
   blocks: [
     {

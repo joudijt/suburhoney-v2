@@ -26,7 +26,7 @@ export const article: Article = {
   readingMinutes: 5,
   icon: "/icons/ingrediant_08.webp",
   figureAlt:
-    "Lima balang madu tanpa label berbaris di atas rak kedai, semuanya kelihatan hampir sama dari luar.",
+    "Sebalang madu SUBUR dengan sarang madu, walnut dan badam di tapaknya, dan madu sedang dituang masuk.",
   category: "Semakan fakta",
   blocks: [
     {

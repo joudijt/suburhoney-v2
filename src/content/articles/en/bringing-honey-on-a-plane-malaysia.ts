@@ -25,7 +25,7 @@ export const article: Article = {
   readingMinutes: 5,
   icon: "/icons/ingrediant_04.webp",
   figureAlt:
-    "A sealed glass honey jar on a wooden table beside a folded cloth, being wrapped before a flight out of Malaysia.",
+    "A jar of SUBUR honey standing alone against a plain cream background.",
   category: "Travel guide",
   blocks: [
     {

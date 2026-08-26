@@ -23,7 +23,8 @@ export const article: Article = {
   updated: "2026-08-25",
   readingMinutes: 5,
   icon: "/icons/ingrediant_02.webp",
-  figureAlt: "مرطبان عسل بشمع النحل مقدَّم بسيطاً على قماش فوق صينية، بلا تغليف أو زينة إضافية، كهدية عيد.",
+  figureAlt:
+    "زوجان يحمل كلٌّ منهما ملعقة خشبية بجانب مرطبان عسل سُبور مفتوح.",
   category: "الهدايا",
   blocks: [
     {
