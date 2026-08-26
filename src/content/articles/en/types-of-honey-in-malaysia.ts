@@ -216,5 +216,5 @@ export const article: Article = {
       a: "Read the label for the parts that are defined: net weight, packer details, batch and ingredient list. Then ask the seller the question that matches the jar — which tree and which state for a varietal, or what exactly is inside for a blend. Vagueness on either question is the answer.",
     },
   ],
-  related: ["manuka-honey-vs-local-honey", "what-is-sidr-honey"],
+  related: ["kelulut-honey-standard-malaysia", "what-is-sidr-honey"],
 };

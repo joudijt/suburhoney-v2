@@ -47,7 +47,7 @@ export const page: Article = {
         ["Asas", "Sarang madu tulen", "Sirap yang ditapis dan dirawat haba"],
         ["Senarai ramuan", "Kesemua sepuluh dinamakan pada label", "Selalunya campuran yang tidak didedahkan"],
         ["Bahan tambahan", "Tiada yang tiruan", "Kerap mengandungi perisa atau warna tiruan"],
-        ["Penghabluran", "Dijangka - tanda madu tulen", "Selalunya dielakkan melalui pemprosesan"],
+        ["Penghabluran", "Dijangka - kelakuan madu mentah", "Selalunya dielakkan melalui pemprosesan"],
       ],
     },
     {

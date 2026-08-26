@@ -19,7 +19,7 @@ export const article: Article = {
     "madu berlabel bahan",
   ],
   published: "2026-08-20",
-  updated: "2026-08-20",
+  updated: "2026-08-26",
   readingMinutes: 5,
   icon: "/icons/ingrediant_07.webp",
   figureAlt:
@@ -137,7 +137,7 @@ export const article: Article = {
     },
     {
       type: "paragraph",
-      text: "Ini bukan tuduhan terhadap sesiapa. Madu satu sumber produk yang baik dan patut dijual atas kekuatannya sendiri. Angka besar yang kerap dilontarkan tentang berapa banyak madu di pasaran ini palsu pula tidak dapat kami sahkan, jadi kami tidak mengulanginya.",
+      text: "Ini bukan tuduhan terhadap sesiapa. Madu satu sumber produk yang baik dan patut dijual atas kekuatannya sendiri. Angka besar yang kerap dilontarkan tentang berapa banyak madu di pasaran ini palsu pula datang daripada seorang penyelidik pada 2024, manakala pemantauan KKM sendiri memberi angka yang jauh berbeza — dua angka yang mengukur perkara berlainan. Kami huraikan kedua-duanya, dengan sumbernya, dalam <a href=\"/ms/blog/90-peratus-madu-palsu/\">artikel tentang dakwaan 90 peratus madu palsu</a>.",
     },
     {
       type: "heading",

@@ -200,5 +200,5 @@ export const article: Article = {
       a: "سيارة واقفة تحت الشمس في ماليزيا تصير أسخن بكثير من المطبخ، والحرارة الطويلة تسيّل العسل وتلين الشمع وتغيّر الطعم واللون. إن نسيت مرطباناً في الصندوق فلن يفسد بمعنى الفساد، لكن قوامه قد لا يعود كما كان. احمله معك بدل أن تتركه.",
     },
   ],
-  related: ["hifz-al-asal-fi-al-jaw-al-ratb", "al-asal-al-malizi"],
+  related: ["hifz-al-asal-fi-al-jaw-al-ratb", "istibdal-al-sukkar-bil-asal"],
 };

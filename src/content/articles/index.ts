@@ -82,9 +82,33 @@ import { article as arRawFiltered } from "./ar/al-farq-bayn-al-asal-al-kham-wal-
 import { article as arLabel } from "./ar/qiraat-mulsaq-al-asal-fi-malizia";
 import { article as arNutsRecipe } from "./ar/tariqat-amal-asal-bil-mukassarat";
 import { article as arGiftHome } from "./ar/hadiya-min-malizia-lil-ahl";
+
+// Round 4 (2026-08-26).
+import { article as enKelulutStandard } from "./en/kelulut-honey-standard-malaysia";
+import { article as enRawMeaning } from "./en/what-does-raw-honey-mean";
+import { article as enPlane } from "./en/bringing-honey-on-a-plane-malaysia";
+import { article as enArabicHoney } from "./en/what-is-arabic-honey";
+import { article as enBabies } from "./en/can-babies-have-honey";
+
+// Round 4 (2026-08-26).
+import { article as msNinetyPercent } from "./ms/90-peratus-madu-palsu";
+import { article as msAutentik } from "./ms/logo-autentik-kkm-madu";
+import { article as msSugarSwap } from "./ms/tukar-sukatan-gula-kepada-madu";
+import { article as msSeparation } from "./ms/madu-berasing-dua-lapisan";
+
+// Round 4 (2026-08-26).
+import { article as arPregnancy } from "./ar/hal-al-asal-amin-lil-hamil";
+import { article as arOrganic } from "./ar/al-asal-al-udwi-fi-malizia";
+import { article as arSugarSwap } from "./ar/istibdal-al-sukkar-bil-asal";
+import { article as arImport } from "./ar/idkhal-al-asal-ila-malizia";
 /** Newest first - this is the order the blog index renders. */
 export const ARTICLES: Record<Locale, Article[]> = {
   en: [
+    enKelulutStandard,
+    enRawMeaning,
+    enPlane,
+    enArabicHoney,
+    enBabies,
     enFakeHoney,
     enSidr,
     enHotDrinks,
@@ -109,6 +133,10 @@ export const ARTICLES: Record<Locale, Article[]> = {
     enPure,
   ],
   ms: [
+    msNinetyPercent,
+    msAutentik,
+    msSugarSwap,
+    msSeparation,
     msExpiry,
     msKelulutTualang,
     msKhalta,
@@ -133,6 +161,10 @@ export const ARTICLES: Record<Locale, Article[]> = {
     msPure,
   ],
   ar: [
+    arPregnancy,
+    arOrganic,
+    arSugarSwap,
+    arImport,
     arSidr,
     arFlight,
     arRawFiltered,
@@ -219,9 +251,14 @@ const PARTIAL_GROUPS = [
   { en: "what-is-sidr-honey", ar: "al-farq-bayn-asal-al-sidr-wal-asal-al-malizi" }, // G7
   { en: "why-is-honey-dark-or-light", ms: "kenapa-madu-jadi-gelap" }, // G8
   { ms: "tarikh-luput-madu", ar: "hal-lil-asal-tarikh-salahiya" }, // G9
-  { en: "is-honey-safe-during-pregnancy", ms: "madu-untuk-ibu-mengandung" }, // G10
+  { en: "is-honey-safe-during-pregnancy", ms: "madu-untuk-ibu-mengandung", ar: "hal-al-asal-amin-lil-hamil" }, // G10
   { ms: "madu-saffron", ar: "asal-bil-zafaran" }, // G11
   { en: "how-to-read-a-honey-label-malaysia", ar: "qiraat-mulsaq-al-asal-fi-malizia" }, // G12
+  { en: "what-does-raw-honey-mean", ar: "al-farq-bayn-al-asal-al-kham-wal-musaffa" }, // G13
+  { en: "bringing-honey-on-a-plane-malaysia", ar: "naql-al-asal-fi-al-taira" }, // G14
+  { en: "can-babies-have-honey", ar: "hal-al-asal-masmuh-lil-atfal-aqal-min-sana" }, // G15
+  { en: "baking-with-honey-malaysia", ms: "tukar-sukatan-gula-kepada-madu", ar: "istibdal-al-sukkar-bil-asal" }, // G16
+  { en: "is-honey-in-malaysia-fake", ms: "90-peratus-madu-palsu" }, // G17
 ] as Partial<Record<Locale, string>>[];
 
 const GROUPS = [...ARTICLE_GROUPS, ...PARTIAL_GROUPS] as Partial<Record<Locale, string>>[];

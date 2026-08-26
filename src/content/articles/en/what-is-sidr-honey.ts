@@ -201,5 +201,5 @@ export const article: Article = {
       a: "They are not on the same scale, so neither wins. A monofloral honey is bought for one flower, one place and one season, and is judged on provenance. A blend is bought for everything in the spoonful and is judged on disclosure — whether every ingredient is named, and whether the jar matches that list.",
     },
   ],
-  related: ["types-of-honey-in-malaysia", "manuka-honey-vs-local-honey"],
+  related: ["what-is-arabic-honey", "manuka-honey-vs-local-honey"],
 };

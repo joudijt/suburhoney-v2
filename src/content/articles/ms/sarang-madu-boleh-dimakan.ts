@@ -20,7 +20,7 @@ export const article: Article = {
     "sarang madu cetak mesin",
   ],
   published: "2026-08-20",
-  updated: "2026-08-20",
+  updated: "2026-08-26",
   readingMinutes: 5,
   icon: "/icons/ingrediant_08.webp",
   figureAlt:
@@ -132,9 +132,9 @@ export const article: Article = {
     },
     {
       type: "callout",
-      tone: "warning",
-      title: "Angka yang tidak kami ulang",
-      text: "Tulisan yang sama turut menyebut satu angka besar tentang berapa banyak madu di pasaran yang tiruan. Kami tidak mengulanginya, kerana sumbernya tidak dapat disahkan. Yang lebih berguna kepada pembeli ialah label yang menyenaraikan setiap bahan, dan penjual yang sanggup menjawab soalan tentang balang yang dia jual.",
+      tone: "note",
+      title: "Angka besar itu, dan jawapan kementerian di sebelahnya",
+      text: "Tulisan yang sama turut menyebut satu angka besar tentang berapa banyak madu di pasaran ini tiruan. Angka itu memang wujud: ia datang daripada penyelidik Universiti Sains Malaysia, Dr Zulkifli Mustafa, dalam sebuah laporan Berita Harian pada Februari 2024. Pemantauan Kementerian Kesihatan sendiri pula mengukur perkara yang berlainan, dan memberi angka yang jauh berbeza. Kami membentangkan kedua-duanya, dengan sumbernya, dalam <a href=\"/ms/blog/90-peratus-madu-palsu/\">artikel tentang dakwaan 90 peratus madu palsu</a>.",
     },
     {
       type: "heading",

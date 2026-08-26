@@ -5,7 +5,7 @@ export const article: Article = {
   title: "Is Honey Safe During Pregnancy? What Doctors Say",
   heading: "Is honey safe during pregnancy?",
   description:
-    "Is honey safe during pregnancy? Yes — the NHS, American Pregnancy Association and RCOG agree. Here's why the baby-botulism rule doesn't apply to adults.",
+    "Is honey safe during pregnancy? The NHS, American Pregnancy Association and RCOG don't list it among foods to avoid. The infant rule isn't about adults.",
   primaryKeyword: "is honey safe during pregnancy",
   keywords: [
     "is honey safe during pregnancy",
@@ -18,25 +18,24 @@ export const article: Article = {
     "honey vs raw egg pregnancy safety",
     "pasteurised vs raw honey pregnancy",
     "honey and gestational diabetes",
-    "why babies can't have honey but adults can",
   ],
   published: "2026-08-25",
   updated: "2026-08-25",
   readingMinutes: 5,
   icon: "/icons/ingrediant_08.webp",
   figureAlt:
-    "A closed honey jar and a wooden spoon on a plain kitchen counter, illustrating whether honey is safe during pregnancy.",
+    "An open glass jar of honey and a smaller glass jug of honey standing on a wooden table beside a window in soft daylight.",
   category: "Safety guide",
   blocks: [
     {
       type: "answer",
       question: "Is honey safe during pregnancy?",
       answer:
-        "Yes. Health authorities including the NHS, the American Pregnancy Association and the Royal College of Obstetricians and Gynaecologists (RCOG) all confirm that pregnant women can safely eat honey. The infant-botulism warning that rules out honey for babies under one does not apply to pregnant women or any other adult — an adult digestive system handles the spores involved.",
+        "The NHS, the American Pregnancy Association and the Royal College of Obstetricians and Gynaecologists do not place honey on the foods-to-avoid lists they publish for pregnancy. The infant-botulism warning that rules honey out for babies under one describes an infant gut, not an adult one. Your own clinician decides what suits your pregnancy.",
     },
     {
       type: "paragraph",
-      text: "Search this question and the reassurance is immediate and consistent — but it keeps coming up anyway, usually from someone half-remembering a different rule: \"no honey for babies under one.\" That warning is real, but it was never about pregnant women. It is about an infant's gut, not an adult's, and the two get mixed up often enough that it is worth answering plainly, in one place, before a jar goes in the trolley.",
+      text: "Search this question and the answer comes back fast and consistent — but it keeps coming up anyway, usually from someone half-remembering a different rule: \"no honey for babies under one.\" That warning is real, but it was never about pregnant women. It is about an infant's gut, not an adult's, and the two get mixed up often enough that it is worth answering plainly, in one place, before a jar goes in the trolley.",
     },
     {
       type: "heading",
@@ -45,14 +44,14 @@ export const article: Article = {
     },
     {
       type: "paragraph",
-      text: "Yes. The NHS, the American Pregnancy Association and the Royal College of Obstetricians and Gynaecologists each list honey as safe to eat throughout pregnancy. None of them place honey on a restricted-food list alongside unpasteurised soft cheese or raw fish. The advice is consistent across sources, not a single outlier opinion.",
+      text: "The bodies that publish pregnancy eating guidance do not put honey on a restricted list. The NHS, the American Pregnancy Association and the Royal College of Obstetricians and Gynaecologists each publish guidance on eating during pregnancy, and honey does not appear among the foods they tell readers to avoid or limit, the way unpasteurised soft cheese and raw fish do. That reading is consistent across the three, not a single outlier opinion — and it is a report of what they publish, not a judgement from us about your pregnancy.",
     },
     {
       type: "list",
       title: "Who says so",
       items: [
-        { term: "NHS (UK)", text: "Lists honey among foods that are safe to eat during pregnancy, with no special preparation needed." },
-        { term: "American Pregnancy Association", text: "Confirms honey is a safe food choice for pregnant women, distinct from the infant guidance." },
+        { term: "NHS (UK)", text: "Does not place honey among the foods it tells pregnant readers to avoid or limit, and asks for no special preparation." },
+        { term: "American Pregnancy Association", text: "Handles honey separately from the infant guidance and does not restrict it during pregnancy." },
         { term: "Royal College of Obstetricians and Gynaecologists (RCOG)", text: "Does not include honey among the foods it advises pregnant women to avoid or limit." },
       ],
     },
@@ -68,11 +67,11 @@ export const article: Article = {
     {
       type: "table",
       caption: "Who the infant-botulism rule for honey actually protects",
-      columns: ["Who", "Is honey safe for them?", "Why"],
+      columns: ["Who", "Is honey on a published avoid-list for them?", "Why"],
       rows: [
-        ["Pregnant woman", "Yes", "An adult digestive system handles the bacterial spores before they can produce toxin"],
-        ["Baby under 12 months", "No", "An infant gut and immune system are not yet developed enough to stop the spores from growing"],
-        ["Toddler over 12 months and older children", "Yes", "Past infancy, the same adult-level gut defences apply"],
+        ["Pregnant woman", "Not listed", "An adult digestive system handles the bacterial spores before they can produce toxin"],
+        ["Baby under 12 months", "Yes — kept out entirely", "An infant gut and immune system are not yet developed enough to stop the spores from growing"],
+        ["Toddler over 12 months and older children", "Not listed", "Past infancy, the same adult-level gut defences apply"],
       ],
     },
     {
@@ -95,7 +94,7 @@ export const article: Article = {
     },
     {
       type: "paragraph",
-      text: "Yes. None of the sourced guidance singles out a first, second or third trimester as different from the others where honey is concerned. The safety question comes down to adult digestion generally, not a stage of pregnancy, so there is no point at which honey moves from safe to unsafe.",
+      text: "None of the sourced guidance singles out a first, second or third trimester as different from the others where honey is concerned. What it describes turns on adult digestion generally rather than a stage of pregnancy, so nothing in the published advice shifts as the weeks go by.",
     },
     {
       type: "paragraph",
@@ -114,7 +113,7 @@ export const article: Article = {
     },
     {
       type: "paragraph",
-      text: "No. The guidance above applies to honey generally, and a raw honeycomb blend is still honey for this purpose. <a href=\"/en/blog/can-you-eat-honeycomb-wax/\">The comb itself is edible</a>, and nothing in the sourced pregnancy research treats a comb-and-nut blend as riskier than a plain jar of clear honey.",
+      text: "The guidance above is written about honey generally, and comb honey is honey still in its wax — <a href=\"/en/blog/can-you-eat-honeycomb-wax/\">the comb itself is edible</a>. What it does not do is speak to any particular jar. SUBUR is a ten-ingredient blend with ground walnut, almond and ginseng root in it, and that list, not this page, is what belongs in the conversation with your own clinician.",
     },
     {
       type: "callout",
@@ -137,15 +136,15 @@ export const article: Article = {
     },
     {
       type: "cta",
-      heading: "Honey stays on the table during pregnancy",
-      text: "The medical consensus is settled — this guide exists so the confusion with the infant rule doesn't have to repeat itself. See the ten named ingredients before you buy.",
+      heading: "Read the list, then ask your own clinician",
+      text: "This page reports what the published guidance says and stops there — it clears no jar for anyone's pregnancy. See the ten named ingredients, then take anything specific to your doctor or midwife.",
       label: "See the full ingredient list",
     },
   ],
   faqs: [
     {
       q: "Can pregnant women eat honey?",
-      a: "Yes. The NHS, the American Pregnancy Association and the Royal College of Obstetricians and Gynaecologists all list honey as safe to eat throughout pregnancy, with no special preparation required. It is not on the restricted-food lists that cover unpasteurised soft cheese or raw fish. The confusion usually comes from the separate under-one-year rule for babies, which does not extend to pregnant women.",
+      a: "Published guidance from the NHS, the American Pregnancy Association and the Royal College of Obstetricians and Gynaecologists does not place honey on the foods-to-avoid lists it sets out for pregnancy — the lists that cover unpasteurised soft cheese and raw fish. The confusion usually comes from the separate under-one-year rule for babies, which was never about pregnant women. Your own midwife or doctor answers the rest.",
     },
     {
       q: "Is raw honey safe during pregnancy, or should it be pasteurised?",
@@ -157,7 +156,7 @@ export const article: Article = {
     },
     {
       q: "Is honey safe in every trimester of pregnancy?",
-      a: "Yes. None of the medical sources reviewed distinguish between the first, second and third trimester on this question — the safety of honey comes down to adult digestion generally, not a stage of pregnancy. There is no point in a pregnancy where honey moves from safe to unsafe according to current guidance.",
+      a: "None of the medical sources reviewed distinguish between the first, second and third trimester on this question — what they describe turns on adult digestion generally, not a stage of pregnancy. Nothing in the published advice shifts as a due date approaches. What it does not settle is whether a particular food suits your own pregnancy; that is a question for your midwife.",
     },
     {
       q: "What about honey and gestational diabetes?",
@@ -169,7 +168,7 @@ export const article: Article = {
     },
     {
       q: "Can I eat honeycomb while pregnant?",
-      a: "Yes. The safety guidance above covers honey generally, and a raw honeycomb blend is still honey for this purpose — <a href=\"/en/blog/can-you-eat-honeycomb-wax/\">the comb itself is edible</a>. Nothing in the sourced pregnancy research treats a comb-and-nut blend as riskier than a plain jar of clear honey.",
+      a: "The published guidance covers honey generally, and comb honey is honey still in its wax — <a href=\"/en/blog/can-you-eat-honeycomb-wax/\">the comb itself is edible</a>. What this site cannot do is clear a particular jar for you: SUBUR is a ten-ingredient blend with ground walnut, almond and ginseng root in it. Take that list to your own clinician.",
     },
     {
       q: "Does eating honey during pregnancy benefit the baby?",

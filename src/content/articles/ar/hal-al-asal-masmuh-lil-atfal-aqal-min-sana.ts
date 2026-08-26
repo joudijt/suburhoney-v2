@@ -180,5 +180,5 @@ export const article: Article = {
       a: "القائمة الكاملة مكتوبة على ملصق المرطبان نفسه وعلى صفحة المكوّنات على الموقع: عشرة مكوّنات بأسمائها كاملة، بينها الجوز واللوز المطحونان اللذان يهمّان أي قارئ يبحث عن حساسية محتملة. لأي سؤال إضافي عن حساسية أو استخدام معيّن قبل الشراء، أفضل طريق هو التواصل المباشر مع المتجر عبر واتساب.",
     },
   ],
-  related: ["mukawwinat-khaltat-al-asal-bil-aashab", "tariqat-akl-al-asal-bil-shama"],
+  related: ["hal-al-asal-amin-lil-hamil", "tariqat-akl-al-asal-bil-shama"],
 };
