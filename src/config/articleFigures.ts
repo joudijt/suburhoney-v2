@@ -24,6 +24,36 @@ import type { PageFigure } from "./pageFigures";
  * renders at a ratio other than its own.
  */
 export const ARTICLE_FIGURES: Record<string, PageFigure> = {
+  "honey-vitamins-and-minerals": {
+    src: "/images/figure-ingredients-left.webp",
+    width: 1152,
+    height: 864,
+  },
+  "is-honey-halal": {
+    src: "/images/figure-jar-and-botanicals.webp",
+    width: 1124,
+    height: 843,
+  },
+  "honey-before-and-after-exercise": {
+    src: "/images/figure-lavender-and-ginger.webp",
+    width: 700,
+    height: 525,
+  },
+  "bulk-honey-gifts-for-events": {
+    src: "/images/figure-couple-at-table.webp",
+    width: 1365,
+    height: 1024,
+  },
+  "how-much-honey-for-a-toddler": {
+    src: "/images/figure-jar-and-walnuts.webp",
+    width: 800,
+    height: 600,
+  },
+  "is-honey-bad-for-your-teeth": {
+    src: "/images/figure-couple-sharing.webp",
+    width: 1365,
+    height: 1024,
+  },
   "honey-and-diabetes": {
     src: "/images/figure-honey-in-glass.webp",
     width: 940,
