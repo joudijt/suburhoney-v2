@@ -32,7 +32,7 @@ export const page: Article = {
     },
     {
       type: "paragraph",
-      text: "Rak-rak di Malaysia penuh dengan campuran madu yang menjanjikan banyak tetapi mendedahkan sedikit. <a href="/ms/blog/dakwaan-tenaga-batin-pada-produk/">Apa yang undang-undang benarkan sesuatu produk makanan kata</a> dan <a href="/ms/blog/cara-semak-produk-berdaftar-kkm/">cara menyemak produk berdaftar KKM</a> menerangkan had itu dengan lebih terperinci. Subur dibina dengan cara sebaliknya: kurangkan kata, tunjukkan lebih banyak. Setiap ramuan dinamakan, setiap dakwaan adalah sesuatu yang kami boleh pertahankan di bawah undang-undang makanan Malaysia, dan asasnya adalah sarang madu tulen dan bukan sirap tapisan yang hanya kelihatan seperti madu.",
+      text: "Rak-rak di Malaysia penuh dengan campuran madu yang menjanjikan banyak tetapi mendedahkan sedikit. <a href=\"/ms/blog/dakwaan-tenaga-batin-pada-produk/\">Apa yang undang-undang benarkan sesuatu produk makanan kata</a> dan <a href=\"/ms/blog/cara-semak-produk-berdaftar-kkm/\">cara menyemak produk berdaftar KKM</a> menerangkan had itu dengan lebih terperinci. Subur dibina dengan cara sebaliknya: kurangkan kata, tunjukkan lebih banyak. Setiap ramuan dinamakan, setiap dakwaan adalah sesuatu yang kami boleh pertahankan di bawah undang-undang makanan Malaysia, dan asasnya adalah sarang madu tulen dan bukan sirap tapisan yang hanya kelihatan seperti madu.",
     },
     {
       type: "heading",

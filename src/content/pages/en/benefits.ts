@@ -28,7 +28,7 @@ export const page: Article = {
       type: "answer",
       question: "What are the benefits of Subur Honey?",
       answer:
-        "Subur Honey blends raw honeycomb with nine other ingredients - black seed, saffron, ginseng, ginger, cinnamon, star anise, nutmeg, walnuts and almonds - each valued for fertility support, daily vitality and stamina. It is taken as a simple daily habit, one teaspoon on an empty stomach, rather than as a medicine. <a href="/en/blog/what-is-a-honey-blend/">What a honey blend is</a> explains how a mixed product differs from single-source honey, and why the ingredient list matters more on one.",
+        "Subur Honey blends raw honeycomb with nine other ingredients - black seed, saffron, ginseng, ginger, cinnamon, star anise, nutmeg, walnuts and almonds - each valued for fertility support, daily vitality and stamina. It is taken as a simple daily habit, one teaspoon on an empty stomach, rather than as a medicine, and the ingredient list is what makes it a blend rather than a single-source honey.",
     },
     {
       type: "paragraph",

@@ -28,7 +28,7 @@ export const page: Article = {
       type: "answer",
       question: "Apakah khasiat Madu Subur?",
       answer:
-        "Madu Subur mencampurkan sarang madu tulen dengan sembilan ramuan lain - habbatus sauda, saffron, ginseng, halia, kayu manis, bunga lawang, buah pala, walnut dan badam - setiap satu dihargai untuk sokongan kesuburan, vitaliti harian dan stamina. Ia diambil sebagai amalan harian yang mudah, satu sudu teh pada perut kosong, bukan sebagai ubat. <a href="/ms/blog/kandungan-produk-tenaga-batin/">Panduan kami tentang kandungan produk kategori ini</a> menerangkan cara membaca senarai ramuan pada mana-mana balang campuran.",
+        "Madu Subur mencampurkan sarang madu tulen dengan sembilan ramuan lain - habbatus sauda, saffron, ginseng, halia, kayu manis, bunga lawang, buah pala, walnut dan badam - setiap satu dihargai untuk sokongan kesuburan, vitaliti harian dan stamina. Ia diambil sebagai amalan harian yang mudah, satu sudu teh pada perut kosong, bukan sebagai ubat, dan senarai ramuan itulah yang menjadikannya campuran, bukan madu satu sumber.",
     },
     {
       type: "paragraph",
