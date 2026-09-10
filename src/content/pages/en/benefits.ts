@@ -28,7 +28,7 @@ export const page: Article = {
       type: "answer",
       question: "What are the benefits of Subur Honey?",
       answer:
-        "Subur Honey blends raw honeycomb with nine other ingredients - black seed, saffron, ginseng, ginger, cinnamon, star anise, nutmeg, walnuts and almonds - each valued for fertility support, daily vitality and stamina. It is taken as a simple daily habit, one teaspoon on an empty stomach, rather than as a medicine.",
+        "Subur Honey blends raw honeycomb with nine other ingredients - black seed, saffron, ginseng, ginger, cinnamon, star anise, nutmeg, walnuts and almonds - each valued for fertility support, daily vitality and stamina. It is taken as a simple daily habit, one teaspoon on an empty stomach, rather than as a medicine. <a href="/en/blog/what-is-a-honey-blend/">What a honey blend is</a> explains how a mixed product differs from single-source honey, and why the ingredient list matters more on one.",
     },
     {
       type: "paragraph",
@@ -44,7 +44,7 @@ export const page: Article = {
       items: [
         {
           term: "Fertility support, for him and her",
-          text: "Black seed (habbatus sauda), ginseng and saffron are three of the most-searched ingredients for reproductive wellness in Malaysia, and all three sit in every jar of Subur.",
+          text: "Black seed (habbatus sauda), ginseng and saffron are three ingredients Malaysian households already buy separately, and all three sit in every jar of Subur.",
         },
         {
           term: "Daily stamina and energy",
@@ -114,7 +114,7 @@ export const page: Article = {
     },
     {
       q: "Who sells Subur Honey in Malaysia?",
-      a: `Subur Honey is sold only through <a href="${BRAND_SELLER_URL}" target="_blank" rel="noopener noreferrer">${BRAND_SELLER}</a>, its exclusive retailer - its ${BRANCHES[0].area} and ${BRANCHES[1].area} branches in Selangor, its own Shopee storefront, its own TikTok Shop, or WhatsApp. Those are one shop reached several ways, not separate sellers, and Subur is not stocked in supermarkets or pharmacies. Volume orders are supplied through the same store.`,
+      a: `Subur Honey is sold only through <a href="${BRAND_SELLER_URL}" target="_blank" rel="noopener noreferrer">${BRAND_SELLER}</a>, its exclusive retailer - its ${BRANCHES[0].area} and ${BRANCHES[1].area} branches in Selangor, its own Shopee storefront, and its own TikTok Shop. Those are one shop reached four ways, not separate sellers, and Subur is not stocked in supermarkets or pharmacies. WhatsApp is a contact line for stock questions, not a fifth way to buy. Volume orders are supplied through the same store.`,
     },
   ],
   related: [],

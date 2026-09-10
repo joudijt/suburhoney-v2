@@ -192,5 +192,5 @@ export const article: Article = {
       a: "Because nothing has been separated out. Bottled honey is drained and filtered away from the comb; comb honey keeps the structure the bees built and sealed. That is why a spoonful is chewed rather than poured, and why the first taste arrives all at once instead of gradually.",
     },
   ],
-  related: ["honeycomb-honey-malaysia", "honey-with-nuts-malaysia"],
+  related: ["honeycomb-honey-malaysia", "honeycomb-vs-beeswax-and-other-bee-products"],
 };

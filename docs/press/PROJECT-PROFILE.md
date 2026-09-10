@@ -102,3 +102,69 @@ What Search Console did contribute is `sc-domain:madinah.com.my` — the same re
 Malaysian Malay/Arab/English audience, **222 honey-related queries** with real impression and
 position figures over 16 months. Captured in `docs/press/round-3/gsc-demand.md`. It is a labelled
 proxy for the audience, not evidence about the SUBUR catalogue, and the map treats it that way.
+
+---
+
+## Round 7 re-adoption (2026-09-10)
+
+Re-verified against the repo at `master` @ `e1c633e`, not from memory. Everything in the round-1
+table still holds. Deltas:
+
+| Item | Round 3 (2026-08-25) | Round 7 (2026-09-10) |
+|---|---|---|
+| Live articles | 48 | **115** (39 en / 38 ms / 38 ar) |
+| Sitemap locs | 66 | **133** |
+| Git | `master` @ `420b3e0` | `master` @ `e1c633e`, clean, in sync with `origin/master`. Round work on `press-round-gsc` |
+| `npm run check:ai` | green (after the CRLF fix) | **green**, exit 0, `AI-FACTS.yml in sync with src/config/site.ts` |
+| `node scripts/qa/banned-terms.mjs` | green | **green**, `no banned terms in src/` |
+| `SITE_URL` | `https://suburhoney.netlify.app` (open issue) | **resolved** — `src/config/site.ts:1` is now `https://suburhoney.com` |
+| Images | reuse-only ruling, 18 frames / 48 groups | **unchanged ruling.** 18 frames + 3 originals, 10 source photographs in `assets-src/images/`. Now **18 frames / 63 figure keys** after this round |
+| Keyword data | none — SERP/PAA inference only | **live Keyword Planner + GSC figures supplied by the owner this session**, not re-derived |
+
+### CLAUDE.md is stale in one place
+
+`CLAUDE.md` still says *"Nine guides — three topics × en/ms/ar"* and *"dist/ (57 files / 1.6 MB)"*.
+Six rounds later there are 115 articles. The architecture, routing, image and deploy sections were
+checked line by line against the code and are all still accurate; only those two counts have drifted.
+Not corrected in this round — a doc edit that is not part of the round's diff makes the rollback
+less clean.
+
+### Two capability findings that shape this round
+
+**1. `article.related` is never rendered on a money page.** All four standalone page routes —
+`src/pages/[lang]/{retail,benefits,why-us,contact}/index.astro` — import `Blocks.astro` and render
+`doc.blocks` and `doc.faqs`, and none of them reads `doc.related`. Every one of the twelve page
+modules in `src/content/pages/` carries `related: []`. So populating that field would have shipped a
+dead link set. This round therefore places inbound links as **inline anchors inside existing
+paragraph and FAQ copy**, which both surfaces already render as trusted HTML — `Blocks.astro` for
+paragraphs and list items, and `set:html` on the FAQ answer in `retail/index.astro`.
+
+**2. The blog hub is the only internal path to any article.** `src/pages/[lang]/index.astro`
+composes Hero → Benefits → Ritual → Ingredients → Wholesale → Faq → FinalCta and links to `/blog/`
+only through `Footer.astro`. With 133 URLs live and two impressions in ninety days, that single flat
+hub is the most likely mechanical cause, and it is what the Stage 5 linking plan is aimed at.
+
+### Capability probe (2026-09-10)
+
+| Dependency | Result |
+|---|---|
+| Git | `E:\suburhoney-v2`, `master` @ `e1c633e`, tree clean. `git worktree list` shows one worktree — no sibling holds production |
+| `npm run check:ai` | **exit 0**, green |
+| `node scripts/qa/banned-terms.mjs` | **exit 0**, green |
+| `bin/imgen.py --probe` | **not run, and not needed** — the round generates nothing. Reuse-only per the 2026-08-26 standing ruling |
+| Keyword tool | **supplied** — five keywords with Keyword Planner volume and competition, plus five verified-zero-demand negatives, pulled by the owner this session |
+| Search Console | **supplied** — 133 URLs live, two with any impression in 90 days; the site's only query is `honey comb for sale near me`; `/en/retail/` draws 15 impressions |
+| Deploy credentials | FTPS user + password known. **Not exercised — this round stops at Stage 6** |
+
+### Market and legal ceiling — unchanged, and load-bearing for two of the five clusters
+
+Market is Malaysia. The ceiling is unchanged: a food and its advertising may not claim to prevent,
+reduce, treat or cure any condition, and no statute number, sub-regulation or penalty figure is
+published in body copy.
+
+What is new is that two of this round's five keywords — `royal honey malaysia` and `tenaga batin` —
+sit directly on the demand that round 3 **refused** under D30. The owner has directed that they be
+targeted. The ceiling is not relaxed by that instruction: the keywords are written *around* the
+claim, on a regulatory- and label-literacy angle, which D39 already established is permitted because
+the ceiling forbids a **product** claim while explicitly allowing an article to report what a
+public-health body has published. See D61 in `DECISIONS.md`.

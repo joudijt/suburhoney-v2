@@ -28,7 +28,7 @@ export const page: Article = {
       type: "answer",
       question: "Apakah khasiat Madu Subur?",
       answer:
-        "Madu Subur mencampurkan sarang madu tulen dengan sembilan ramuan lain - habbatus sauda, saffron, ginseng, halia, kayu manis, bunga lawang, buah pala, walnut dan badam - setiap satu dihargai untuk sokongan kesuburan, vitaliti harian dan stamina. Ia diambil sebagai amalan harian yang mudah, satu sudu teh pada perut kosong, bukan sebagai ubat.",
+        "Madu Subur mencampurkan sarang madu tulen dengan sembilan ramuan lain - habbatus sauda, saffron, ginseng, halia, kayu manis, bunga lawang, buah pala, walnut dan badam - setiap satu dihargai untuk sokongan kesuburan, vitaliti harian dan stamina. Ia diambil sebagai amalan harian yang mudah, satu sudu teh pada perut kosong, bukan sebagai ubat. <a href="/ms/blog/kandungan-produk-tenaga-batin/">Panduan kami tentang kandungan produk kategori ini</a> menerangkan cara membaca senarai ramuan pada mana-mana balang campuran.",
     },
     {
       type: "paragraph",
@@ -44,7 +44,7 @@ export const page: Article = {
       items: [
         {
           term: "Sokongan kesuburan, untuk suami dan isteri",
-          text: "Habbatus sauda, ginseng dan saffron antara tiga ramuan paling banyak dicari di Malaysia untuk kesihatan reproduktif, dan ketiga-tiganya ada dalam setiap balang Subur.",
+          text: "Habbatus sauda, ginseng dan saffron ialah tiga ramuan yang sudah biasa dibeli berasingan oleh isi rumah di Malaysia, dan ketiga-tiganya ada dalam setiap balang Subur.",
         },
         {
           term: "Tenaga dan stamina harian",
@@ -114,7 +114,7 @@ export const page: Article = {
     },
     {
       q: "Siapa menjual Madu Subur di Malaysia?",
-      a: `Madu Subur dijual hanya melalui <a href="${BRAND_SELLER_URL}" target="_blank" rel="noopener noreferrer">${BRAND_SELLER}</a>, peruncit eksklusifnya - cawangan ${BRANCHES[0].area} dan ${BRANCHES[1].area} di Selangor, kedai Shopee miliknya, TikTok Shop miliknya, atau WhatsApp. Semuanya satu penjual yang dicapai dengan pelbagai cara, bukan penjual berasingan, dan Subur tidak dijual di pasar raya mahupun farmasi. Pesanan pukal turut dibekalkan melalui kedai yang sama.`,
+      a: `Madu Subur dijual hanya melalui <a href="${BRAND_SELLER_URL}" target="_blank" rel="noopener noreferrer">${BRAND_SELLER}</a>, peruncit eksklusifnya - cawangan ${BRANCHES[0].area} dan ${BRANCHES[1].area} di Selangor, kedai Shopee miliknya, dan TikTok Shop miliknya. Keempat-empatnya satu penjual yang dicapai dengan pelbagai cara, bukan penjual berasingan, dan Subur tidak dijual di pasar raya mahupun farmasi. WhatsApp ialah talian pertanyaan stok, bukan saluran belian kelima. Pesanan pukal turut dibekalkan melalui kedai yang sama.`,
     },
   ],
   related: [],

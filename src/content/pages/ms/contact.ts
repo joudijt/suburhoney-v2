@@ -77,7 +77,7 @@ export const page: Article = {
     },
     {
       q: "Adakah nombor telefon atau e-mel untuk Madu Subur?",
-      a: `<a href="${WHATSAPP_URL}" target="_blank" rel="noopener noreferrer">WhatsApp</a> ialah talian terus kepada kedai. Saluran telefon dan e-mel khusus sedang disediakan; sementara itu WhatsApp, chat Shopee, mesej TikTok Shop, borang borong, atau sekadar berkunjung ke mana-mana cawangan adalah cara terpantas untuk menghubungi kami.`,
+      a: `<a href="${WHATSAPP_URL}" target="_blank" rel="noopener noreferrer">WhatsApp</a> ialah talian terus kepada kedai. Tiada alamat e-mel berasingan. WhatsApp, chat Shopee, mesej TikTok Shop, borang borong, atau sekadar berkunjung ke mana-mana cawangan ialah cara untuk menghubungi kami.`,
     },
     {
       q: "Bagaimana saya bertanya tentang pesanan borong atau pukal?",

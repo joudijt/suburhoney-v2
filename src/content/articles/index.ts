@@ -149,9 +149,41 @@ import { article as arExercise } from "./ar/tanawul-al-asal-qabl-wa-baad-al-riya
 import { article as arBulkGifts } from "./ar/al-asal-bil-jumla-lihadaya-al-sharikat";
 import { article as arToddler } from "./ar/kam-min-al-asal-liltifl-al-sagheer";
 import { article as arTeeth } from "./ar/hal-yudirru-al-asal-bil-asnan";
+// Round 7 (2026-09-10). Demand-led from live Keyword Planner + GSC data; see
+// docs/press/ROUND-7-MAP.md. Fifteen single-language articles, 8 en + 7 ms and
+// no Arabic, because every keyword the data produced was English or Malay.
+// None of them is in an ARTICLE_GROUP: five could plausibly have been paired
+// en<->ms, but one keyword handed to two languages at once is exactly the
+// condition that produced round 4's translation-mirroring, and D14 already
+// settled that an ungrouped article ships with no hreflang and no x-default.
+import { article as enRoyalHoney } from "./en/royal-honey-in-malaysia-explained";
+import { article as enRoyalSafe } from "./en/is-royal-honey-safe";
+import { article as enCombMade } from "./en/how-is-honeycomb-made";
+import { article as enCombVsWax } from "./en/honeycomb-vs-beeswax-and-other-bee-products";
+import { article as enServeComb } from "./en/how-to-serve-honeycomb";
+import { article as enBuyingGuide } from "./en/buying-honey-in-malaysia-guide";
+import { article as enBrands } from "./en/honey-brands-in-malaysia";
+import { article as enBlend } from "./en/what-is-a-honey-blend";
+
+import { article as msRoyalHoney } from "./ms/royal-honey-vs-madu-biasa";
+import { article as msTenagaClaims } from "./ms/dakwaan-tenaga-batin-pada-produk";
+import { article as msSemakDaftar } from "./ms/cara-semak-produk-berdaftar-kkm";
+import { article as msKandungan } from "./ms/kandungan-produk-tenaga-batin";
+import { article as msMaduAsli } from "./ms/apa-itu-madu-asli";
+import { article as msImport } from "./ms/madu-asli-import-atau-tempatan";
+import { article as msKampung } from "./ms/madu-kampung-vs-madu-berjenama";
+
 /** Newest first - this is the order the blog index renders. */
 export const ARTICLES: Record<Locale, Article[]> = {
   en: [
+    enRoyalHoney,
+    enRoyalSafe,
+    enCombMade,
+    enCombVsWax,
+    enServeComb,
+    enBuyingGuide,
+    enBrands,
+    enBlend,
     enVitamins,
     enHalal,
     enExercise,
@@ -193,6 +225,13 @@ export const ARTICLES: Record<Locale, Article[]> = {
     enPure,
   ],
   ms: [
+    msRoyalHoney,
+    msTenagaClaims,
+    msSemakDaftar,
+    msKandungan,
+    msMaduAsli,
+    msImport,
+    msKampung,
     msVitamins,
     msHalal,
     msExercise,

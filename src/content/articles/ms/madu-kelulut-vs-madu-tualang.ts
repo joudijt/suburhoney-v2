@@ -230,5 +230,5 @@ export const article: Article = {
       a: "Bukan kedua-duanya. SUBUR ialah blend sarang madu mentah dengan sembilan bahan lain yang dinamakan pada label, jadi ia kelas produk yang berlainan daripada madu bersumber tunggal. Tiada sumber bunga, tiada nama lebah dan tiada nama pokok diterbitkan untuknya, kerana ia memang bukan produk jenis itu.",
     },
   ],
-  related: ["madu-manuka-vs-madu-tempatan-malaysia", "beza-madu-tulen-dan-madu-campuran"],
+  related: ["madu-manuka-vs-madu-tempatan-malaysia", "madu-asli-import-atau-tempatan"],
 };

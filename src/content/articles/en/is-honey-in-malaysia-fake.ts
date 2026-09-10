@@ -203,5 +203,5 @@ export const article: Article = {
       a: "Nothing published says so, in either direction. The Health Ministry has not named the brands in its monitoring programme, and this site publishes no laboratory result, no certification and no test status of its own. Any page claiming a product passed or failed that monitoring is claiming something the record does not contain.",
     },
   ],
-  related: ["how-to-identify-pure-honey", "is-malaysian-honey-local-or-imported"],
+  related: ["how-to-identify-pure-honey", "royal-honey-in-malaysia-explained"],
 };

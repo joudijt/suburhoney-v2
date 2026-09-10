@@ -50,7 +50,7 @@ export const page: Article = {
     },
     {
       type: "paragraph",
-      text: `Kedua-dua cawangan berada di Selangor, dalam Lembah Klang. Untuk menyemak stok sebelum anda bergerak ke sana, hubungi kedai melalui <a href="${WHATSAPP_URL}" target="_blank" rel="noopener noreferrer">WhatsApp</a>.`,
+      text: `Kedua-dua cawangan berada di Selangor, dalam Lembah Klang. Untuk menyemak stok sebelum anda bergerak ke sana, hubungi kedai melalui <a href="${WHATSAPP_URL}" target="_blank" rel="noopener noreferrer">WhatsApp</a>.` Jika anda membeli madu curah tanpa label, <a href="/ms/blog/madu-kampung-vs-madu-berjenama/">perbandingan madu kampung dengan madu berjenama</a> menerangkan apa yang hilang bersama label itu.,
     },
     {
       type: "heading",
@@ -83,15 +83,15 @@ export const page: Article = {
       type: "list",
       items: [
         { term: "250g", text: "Balang permulaan, sesuai untuk mencuba amalan harian sebelum memilih saiz lebih besar." },
-        { term: "400g", text: "Saiz paling popular untuk rutin camca harian seorang individu." },
-        { term: "500g", text: "Nilai terbaik setiap gram, sesuai untuk pasangan yang mengambilnya bersama atau isi rumah yang cepat menghabiskan sebalang." },
+        { term: "400g", text: "Bersaiz untuk rutin camca harian seorang individu." },
+        { term: "500g", text: "Sesuai untuk pasangan yang mengambilnya bersama, atau isi rumah yang cepat menghabiskan sebalang." },
       ],
     },
     {
       type: "callout",
       tone: "note",
       title: "Berat adalah ±5%",
-      text: "Seperti yang tercetak pada setiap label, berat balang boleh berbeza sehingga 5% - normal untuk produk madu tulen yang diisi secara manual dan bukan kesilapan pembungkusan.",
+      text: "Seperti yang tercetak pada setiap label, berat balang boleh berbeza sehingga 5% - normal untuk produk madu tulen dan bukan kesilapan pembungkusan.",
     },
     {
       type: "heading",
@@ -109,7 +109,7 @@ export const page: Article = {
     },
     {
       type: "paragraph",
-      text: "Buat masa ini, Madu Subur dihantar dalam Malaysia sahaja melalui saluran di atas. Jika anda berada di luar Malaysia, cara terpantas untuk menyemak pilihan penghantaran semasa adalah terus melalui <a href=\"" + SHOPEE_URL + "\" target=\"_blank\" rel=\"noopener noreferrer\">kedai Shopee</a> atau <a href=\"" + TIKTOK_SHOP_URL + "\" target=\"_blank\" rel=\"noopener noreferrer\">TikTok Shop</a> kedai tersebut, kerana zon penghantaran diuruskan oleh platform.",
+      text: "Buat masa ini, Madu Subur dihantar dalam Malaysia melalui saluran di atas. Jika anda berada di luar Malaysia, cara terpantas untuk menyemak pilihan penghantaran semasa adalah terus melalui <a href=\"" + SHOPEE_URL + "\" target=\"_blank\" rel=\"noopener noreferrer\">kedai Shopee</a> atau <a href=\"" + TIKTOK_SHOP_URL + "\" target=\"_blank\" rel=\"noopener noreferrer\">TikTok Shop</a> kedai tersebut, kerana zon penghantaran diuruskan oleh platform.",
     },
     {
       type: "cta",
@@ -145,7 +145,7 @@ export const page: Article = {
     },
     {
       q: "Bagaimana saya tahu penyenaraian Madu Subur adalah tulen?",
-      a: `Beli daripada ${BRAND_SELLER} sendiri - di mana-mana cawangan, di kedai Shopee atau TikTok Shop miliknya. Kami tidak dapat mengesahkan ketulenan balang yang ditawarkan oleh penyenaraian atau penjual lain.`,
+      a: `Beli daripada ${BRAND_SELLER} sendiri - di mana-mana cawangan, di kedai Shopee atau TikTok Shop miliknya. Kami tidak dapat mengesahkan ketulenan balang yang ditawarkan oleh penyenaraian atau penjual lain. Untuk maksud perkataan seperti \"asli\" dan \"tulen\" pada label madu, lihat <a href="/ms/blog/apa-itu-madu-asli/">apa itu madu asli</a>, dan <a href="/ms/blog/royal-honey-vs-madu-biasa/">royal honey berbanding madu biasa</a> menerangkan kategori sachet yang dijual bersebelahan madu.`,
     },
     {
       q: "Adakah Madu Subur dihantar ke luar Malaysia?",

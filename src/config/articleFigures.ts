@@ -24,6 +24,81 @@ import type { PageFigure } from "./pageFigures";
  * renders at a ratio other than its own.
  */
 export const ARTICLE_FIGURES: Record<string, PageFigure> = {
+  "royal-honey-in-malaysia-explained": {
+    src: "/images/figure-honey-in-glass.webp",
+    width: 940,
+    height: 705,
+  },
+  "is-royal-honey-safe": {
+    src: "/images/article-pure-honey.webp",
+    width: 1536,
+    height: 1152,
+  },
+  "royal-honey-vs-madu-biasa": {
+    src: "/images/figure-blossom-and-light.webp",
+    width: 1057,
+    height: 793,
+  },
+  "dakwaan-tenaga-batin-pada-produk": {
+    src: "/images/figure-lavender-and-ginger.webp",
+    width: 700,
+    height: 525,
+  },
+  "cara-semak-produk-berdaftar-kkm": {
+    src: "/images/figure-honey-dipper.webp",
+    width: 1536,
+    height: 1152,
+  },
+  "kandungan-produk-tenaga-batin": {
+    src: "/images/article-black-seed.webp",
+    width: 800,
+    height: 600,
+  },
+  "how-is-honeycomb-made": {
+    src: "/images/figure-jar-and-comb.webp",
+    width: 1057,
+    height: 793,
+  },
+  "honeycomb-vs-beeswax-and-other-bee-products": {
+    src: "/images/figure-tea-and-comb.webp",
+    width: 768,
+    height: 576,
+  },
+  "how-to-serve-honeycomb": {
+    src: "/images/figure-spoon-close.webp",
+    width: 1024,
+    height: 768,
+  },
+  "buying-honey-in-malaysia-guide": {
+    src: "/images/figure-jar-and-ingredients.webp",
+    width: 1152,
+    height: 864,
+  },
+  "honey-brands-in-malaysia": {
+    src: "/images/figure-jar-and-botanicals.webp",
+    width: 1124,
+    height: 843,
+  },
+  "what-is-a-honey-blend": {
+    src: "/images/figure-jar-and-walnuts.webp",
+    width: 800,
+    height: 600,
+  },
+  "apa-itu-madu-asli": {
+    src: "/images/figure-honey-in-glass.webp",
+    width: 940,
+    height: 705,
+  },
+  "madu-asli-import-atau-tempatan": {
+    src: "/images/figure-table-setting.webp",
+    width: 1024,
+    height: 768,
+  },
+  "madu-kampung-vs-madu-berjenama": {
+    src: "/images/figure-jar-alone.webp",
+    width: 1152,
+    height: 864,
+  },
   "honey-vitamins-and-minerals": {
     src: "/images/figure-ingredients-left.webp",
     width: 1152,
