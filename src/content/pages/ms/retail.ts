@@ -50,7 +50,7 @@ export const page: Article = {
     },
     {
       type: "paragraph",
-      text: `Kedua-dua cawangan berada di Selangor, dalam Lembah Klang. Untuk menyemak stok sebelum anda bergerak ke sana, hubungi kedai melalui <a href="${WHATSAPP_URL}" target="_blank" rel="noopener noreferrer">WhatsApp</a>.` Jika anda membeli madu curah tanpa label, <a href="/ms/blog/madu-kampung-vs-madu-berjenama/">perbandingan madu kampung dengan madu berjenama</a> menerangkan apa yang hilang bersama label itu.,
+      text: `Kedua-dua cawangan berada di Selangor, dalam Lembah Klang. Untuk menyemak stok sebelum anda bergerak ke sana, hubungi kedai melalui <a href="${WHATSAPP_URL}" target="_blank" rel="noopener noreferrer">WhatsApp</a>. Jika anda membeli madu curah tanpa label, <a href="/ms/blog/madu-kampung-vs-madu-berjenama/">perbandingan madu kampung dengan madu berjenama</a> menerangkan apa yang hilang bersama label itu.`,
     },
     {
       type: "heading",

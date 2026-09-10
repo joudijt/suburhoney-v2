@@ -50,7 +50,7 @@ export const page: Article = {
     },
     {
       type: "paragraph",
-      text: `Both branches are in Selangor, inside the Klang Valley. To check what is on the shelf before you travel, message the store on <a href="${WHATSAPP_URL}" target="_blank" rel="noopener noreferrer">WhatsApp</a>.` If you are buying comb honey for the first time, <a href="/en/blog/how-to-serve-honeycomb/">how to serve honeycomb</a> covers cutting and plating a slab without shattering it.,
+      text: `Both branches are in Selangor, inside the Klang Valley. To check what is on the shelf before you travel, message the store on <a href="${WHATSAPP_URL}" target="_blank" rel="noopener noreferrer">WhatsApp</a>. If you are buying comb honey for the first time, <a href="/en/blog/how-to-serve-honeycomb/">how to serve honeycomb</a> covers cutting and plating a slab without shattering it.`,
     },
     {
       type: "heading",
