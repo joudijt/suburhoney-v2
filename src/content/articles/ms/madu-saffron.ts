@@ -201,5 +201,5 @@ export const article: Article = {
       a: "Daripada Berkat Madinah Store sahaja, iaitu satu-satunya penjual balang ini: dua cawangan di Selangor, sebuah storefront Shopee, dan sebuah TikTok Shop — kesemuanya saluran penjual yang sama, bukan penjual yang berbeza. Ia tidak dijual di pasar raya atau farmasi. Halaman runcit di laman ini membawa lokasi kedua-dua cawangan.",
     },
   ],
-  related: ["habbatus-sauda-dan-madu", "beza-madu-tulen-dan-madu-campuran"],
+  related: ["madu-dan-bunga-lawang", "beza-madu-tulen-dan-madu-campuran"],
 };

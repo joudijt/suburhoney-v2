@@ -280,6 +280,16 @@ const ASSIGN = {
   "madu-dan-kayu-manis": "pure-honey", //       neutral, no branding (claim-adjacent topic)
   "honey-as-an-energy-source": "jar-and-walnuts",
   "honey-and-yogurt": "spoon-close",
+
+  // --- round 9 (2026-09-15): five more single-language articles. Garlic
+  // (both languages) carries real folk-health claims, so both take no-jar
+  // frames same as the round-7/8 convention; star anise and nutmeg are
+  // SUBUR's own ingredients so the branded jar is fine and preferred. -----
+  "madu-dan-bawang-putih": "black-seed", //     no branding (claim-adjacent)
+  "madu-dan-bunga-lawang": "ingredients-left", // literally shows star anise
+  "madu-dan-buah-pala": "board-and-nuts", //    no branding (safety-adjacent)
+  "honey-and-coffee": "spoonful",
+  "honey-and-garlic": "pure-honey", //          no branding (safety-adjacent, botulism note)
 };
 
 /** frame id -> the file it lives in. The three originals keep their names. */

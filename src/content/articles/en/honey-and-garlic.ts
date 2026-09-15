@@ -1,0 +1,155 @@
+import type { Article } from "../types";
+
+export const article: Article = {
+  slug: "honey-and-garlic",
+  title: "Honey and Garlic: How the Fermented Jar Actually Works",
+  heading: "Honey and Garlic: The Fermented Jar, Explained",
+  description: "How the honey and garlic ferment works step by step — what's normal, what's not, storage safety, and how to use the finished jar.",
+  primaryKeyword: "honey and garlic",
+  keywords: [
+    "honey and garlic benefits",
+    "fermented garlic honey",
+    "garlic in honey recipe",
+    "honey garlic ferment",
+    "garlic honey jar",
+    "raw honey garlic",
+    "how to ferment garlic in honey",
+    "garlic honey botulism"
+  ],
+  published: "2026-09-15",
+  updated: "2026-09-15",
+  readingMinutes: 4,
+  icon: "/icons/ingrediant_02.webp",
+  figureAlt:
+    "A wooden dipper lifting honey from an open jar, with honeycomb behind it.",
+  category: "Usage",
+  blocks: [
+    {
+      "type": "answer",
+      "question": "What is a honey and garlic ferment?",
+      "answer": "A honey and garlic ferment is peeled garlic cloves submerged in raw honey in a sealed jar, left at room temperature for one to several weeks. Moisture from the garlic thins the honey and starts a mild natural fermentation — the cloves mellow, and small bubbles often appear."
+    },
+    {
+      "type": "heading",
+      "text": "What Happens Inside the Jar",
+      "id": "what-happens-inside-the-jar"
+    },
+    {
+      "type": "paragraph",
+      "text": "Garlic cloves are mostly water, and honey is hygroscopic — it pulls moisture from anything porous sitting in it. Over the first few days the cloves release liquid, diluting the honey enough for wild yeasts on the skins to start working. That's fermentation, not spoilage: the mixture may fizz gently and the honey turns runnier. Colour can shift toward pale blue-green in some batches, a harmless reaction with trace copper or iron — cosmetic only."
+    },
+    {
+      "type": "heading",
+      "text": "How to Ferment Garlic in Honey",
+      "id": "how-to-ferment"
+    },
+    {
+      "type": "steps",
+      "title": "The basic process",
+      "steps": [
+        {
+          "title": "Peel the cloves",
+          "text": "Peel a whole bulb by hand, removing the papery skin. Leave cloves whole — crushing speeds the reaction and makes the ferment sourer faster."
+        },
+        {
+          "title": "Pack the jar",
+          "text": "Drop the cloves into a clean, dry glass jar and pour honey over them until submerged, leaving headspace for gas."
+        },
+        {
+          "title": "Seal loosely and burp it",
+          "text": "Open the lid briefly every day or two for the first week to release pressure and stop gas building up."
+        },
+        {
+          "title": "Wait and taste",
+          "text": "Store at room temperature out of direct sun for one to several weeks. Taste a clove after a week — mellow and tangy means it's ready."
+        }
+      ]
+    },
+    {
+      "type": "callout",
+      "tone": "warning",
+      "title": "Botulism risk: refrigerate it",
+      "text": "Garlic is a low-acid food, and honey creates a moist, low-oxygen environment — exactly what Clostridium botulinum needs. Food-safety guidance recommends refrigerating homemade garlic-in-honey mixtures rather than leaving them at room temperature indefinitely. Millions make this ferment safely; the guidance exists for a real reason. Refrigerate once it tastes ready, and discard it if you see unusual bubbling, an off smell beyond the normal mild fizz, or any mould."
+    },
+    {
+      "type": "heading",
+      "text": "Signs It's Fermenting Normally vs Signs to Toss It",
+      "id": "signs-normal-vs-toss"
+    },
+    {
+      "type": "list",
+      "title": "Normal vs not",
+      "items": [
+        {
+          "term": "Normal",
+          "text": "Small, slow bubbles, a faint sour-garlic tang, thinning cloudy honey, cloves that soften and turn slightly translucent or blue-green."
+        },
+        {
+          "term": "Toss it",
+          "text": "Rapid foaming, a rotten smell, visible mould, or a lid that bulges hard and won't release pressure — when in doubt, throw it out."
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "Which Honey to Use",
+      "id": "which-honey-to-use"
+    },
+    {
+      "type": "paragraph",
+      "text": "Raw, filtered honey is the more typical choice, since a thinner honey surrounds the cloves fully and ferments evenly. A chunkier blend such as SUBUR Honey — raw honeycomb combined with star anise, saffron, ginger, walnuts, nutmeg, cinnamon, black seed and almonds — can still be used, but the result reads more like a spiced condiment than a clean garlic-honey ferment."
+    },
+    {
+      "type": "heading",
+      "text": "How People Use the Finished Jar",
+      "id": "how-people-use-it"
+    },
+    {
+      "type": "paragraph",
+      "text": "A spoonful straight up is the simplest use — the honey has a mild garlic edge and the cloves have lost their sharpness. Drizzle the honey over toast, stir it into a marinade, or mince a clove into a stir-fry for a rounder, sweeter garlic flavour than raw cloves give."
+    },
+    {
+      "type": "heading",
+      "text": "A Note on Garlic's Reputation",
+      "id": "garlic-reputation"
+    },
+    {
+      "type": "paragraph",
+      "text": "Garlic carries a folk reputation for supporting immunity, and some make this ferment partly for that reason. The evidence for specific health effects is mixed, and neither ingredient should be treated as a treatment for any condition — this jar is best approached as a pantry ferment and flavour project first."
+    },
+    {
+      "type": "paragraph",
+      "text": "Start small — one bulb of garlic and enough honey to cover it — so you can watch it closely. Peel, submerge, burp the lid daily for the first week, and refrigerate once it tastes ready."
+    }
+  ],
+  faqs: [
+    {
+      "q": "How long does a honey and garlic ferment take?",
+      "a": "Most jars are ready in one to three weeks at room temperature, though flavour keeps developing for months after that. Taste a clove after the first week — mellow and tangy rather than sharply raw means it's ready to move to the fridge. Warmer kitchens ferment faster than cooler ones."
+    },
+    {
+      "q": "Is it safe to leave a jar of honey and garlic at room temperature?",
+      "a": "Not for long-term storage. Garlic is low-acid and honey holds moisture, together creating conditions Clostridium botulinum can grow in. Ferment at room temperature for the first one to few weeks, watching for normal mild bubbling, then refrigerate the finished jar rather than leaving it out indefinitely."
+    },
+    {
+      "q": "Why did the garlic turn blue or green in the honey?",
+      "a": "It's a harmless chemical reaction between sulphur compounds in the garlic and trace minerals like copper or iron, either in the garlic or the water used to rinse it. The colour doesn't affect safety or flavour — it's purely cosmetic and fades or stays depending on the batch."
+    },
+    {
+      "q": "Can I use SUBUR Honey for a garlic ferment?",
+      "a": "You can, though a plain raw filtered honey is the more typical choice since it surrounds the cloves evenly. SUBUR Honey is a chunkier blend of raw honeycomb with star anise, ginger, nutmeg, cinnamon and black seed, so a garlic ferment made with it turns into more of a mixed spiced condiment."
+    },
+    {
+      "q": "Why is my honey and garlic ferment bubbling?",
+      "a": "Gentle, slow bubbling is normal — wild yeast fermenting the extra moisture the garlic releases into the honey. Loosen the lid every day or two in the first week to let gas escape safely. Rapid, vigorous foaming, a rotten smell, or mould are different signs, and mean the batch should be discarded."
+    },
+    {
+      "q": "Does honey and garlic have proven health benefits?",
+      "a": "Garlic carries a folk reputation for supporting the immune system, but the scientific evidence on specific effects is mixed, and this ferment isn't a treatment for any condition. It's best approached as a pantry recipe and flavour project, with any wellness angle treated as a bonus, not the point."
+    }
+  ],
+  related: [
+    "black-seed-honey-benefits",
+    "honey-and-yogurt"
+  ],
+};
