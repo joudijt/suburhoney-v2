@@ -469,4 +469,29 @@ export const ARTICLE_FIGURES: Record<string, PageFigure> = {
     width: 1024,
     height: 768,
   },
+  "madu-dan-bawang-putih": {
+    src: "/images/article-black-seed.webp",
+    width: 800,
+    height: 600,
+  },
+  "madu-dan-bunga-lawang": {
+    src: "/images/figure-ingredients-left.webp",
+    width: 1152,
+    height: 864,
+  },
+  "madu-dan-buah-pala": {
+    src: "/images/figure-board-and-nuts.webp",
+    width: 620,
+    height: 465,
+  },
+  "honey-and-coffee": {
+    src: "/images/figure-spoonful.webp",
+    width: 952,
+    height: 714,
+  },
+  "honey-and-garlic": {
+    src: "/images/article-pure-honey.webp",
+    width: 1536,
+    height: 1152,
+  },
 };

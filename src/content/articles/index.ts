@@ -180,6 +180,13 @@ import { article as msLemon } from "./ms/madu-dan-lemon";
 import { article as msGinger } from "./ms/madu-dan-halia";
 import { article as msCinnamon } from "./ms/madu-dan-kayu-manis";
 
+// Round 9 (2026-09-15).
+import { article as enCoffee } from "./en/honey-and-coffee";
+import { article as enGarlic } from "./en/honey-and-garlic";
+import { article as msGarlic } from "./ms/madu-dan-bawang-putih";
+import { article as msStarAnise } from "./ms/madu-dan-bunga-lawang";
+import { article as msNutmeg } from "./ms/madu-dan-buah-pala";
+
 /** Newest first - this is the order the blog index renders. */
 export const ARTICLES: Record<Locale, Article[]> = {
   en: [
@@ -232,6 +239,8 @@ export const ARTICLES: Record<Locale, Article[]> = {
     enPure,
     enEnergy,
     enYogurt,
+    enCoffee,
+    enGarlic,
   ],
   ms: [
     msRoyalHoney,
@@ -282,6 +291,9 @@ export const ARTICLES: Record<Locale, Article[]> = {
     msLemon,
     msGinger,
     msCinnamon,
+    msGarlic,
+    msStarAnise,
+    msNutmeg,
   ],
   ar: [
     arVitamins,

@@ -198,5 +198,5 @@ export const article: Article = {
       a: "You can, but there is no reason to. A simmering pot is hotter than anything a kettle puts in a glass, so the honey thins out and its aroma goes into the kitchen rather than the drink. Take the pot off the heat, pour, wait for the steam to stop, then stir the honey in.",
     },
   ],
-  related: ["how-to-store-honey-malaysia", "can-you-eat-honeycomb-wax"],
+  related: ["how-to-store-honey-malaysia", "honey-and-coffee"],
 };
