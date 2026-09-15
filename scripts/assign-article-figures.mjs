@@ -267,6 +267,19 @@ const ASSIGN = {
   "bringing-honey-on-a-plane-malaysia": "jar-alone",
   "naql-al-asal-fi-al-taira": "jar-alone",
   "idkhal-al-asal-ila-malizia": "jar-and-botanicals",
+
+  // --- round 8 (2026-09-15): five single-language articles, GSC dry so
+  // Keyword Planner + "seed the dish" demand instead. madu-dan-halia takes
+  // the frame that is literally ginger, unbranded; madu-dan-kayu-manis and
+  // madu-untuk-batuk-dan-selesema (live) both carry the "no cure" ceiling so
+  // neither of the round's two most claim-adjacent MS pieces gets the
+  // branded jar; honey-as-an-energy-source gets the walnuts frame (walnuts
+  // are the site's own "linked to daily energy" ingredient copy). ---------
+  "madu-dan-lemon": "honey-in-glass", //        neutral, dipper+jar, no branding
+  "madu-dan-halia": "lavender-and-ginger", //   literally ginger, no branding
+  "madu-dan-kayu-manis": "pure-honey", //       neutral, no branding (claim-adjacent topic)
+  "honey-as-an-energy-source": "jar-and-walnuts",
+  "honey-and-yogurt": "spoon-close",
 };
 
 /** frame id -> the file it lives in. The three originals keep their names. */

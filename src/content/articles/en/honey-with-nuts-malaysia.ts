@@ -173,5 +173,5 @@ export const article: Article = {
       a: "Walnuts and almonds are two of ten ingredients. The rest of SUBUR's blend is raw honeycomb, black seed (habbatus sauda), saffron, ginseng root, fresh ginger, cinnamon, star anise and nutmeg, all worked into the same jar of honey rather than any one ingredient served on its own.",
     },
   ],
-  related: ["can-you-eat-honeycomb-wax", "honeycomb-honey-malaysia"],
+  related: ["honey-and-yogurt", "honeycomb-honey-malaysia"],
 };

@@ -173,6 +173,13 @@ import { article as msMaduAsli } from "./ms/apa-itu-madu-asli";
 import { article as msImport } from "./ms/madu-asli-import-atau-tempatan";
 import { article as msKampung } from "./ms/madu-kampung-vs-madu-berjenama";
 
+// Round 8 (2026-09-15).
+import { article as enEnergy } from "./en/honey-as-an-energy-source";
+import { article as enYogurt } from "./en/honey-and-yogurt";
+import { article as msLemon } from "./ms/madu-dan-lemon";
+import { article as msGinger } from "./ms/madu-dan-halia";
+import { article as msCinnamon } from "./ms/madu-dan-kayu-manis";
+
 /** Newest first - this is the order the blog index renders. */
 export const ARTICLES: Record<Locale, Article[]> = {
   en: [
@@ -223,6 +230,8 @@ export const ARTICLES: Record<Locale, Article[]> = {
     enCouples,
     enBlackSeed,
     enPure,
+    enEnergy,
+    enYogurt,
   ],
   ms: [
     msRoyalHoney,
@@ -270,6 +279,9 @@ export const ARTICLES: Record<Locale, Article[]> = {
     msCouples,
     msBlackSeed,
     msPure,
+    msLemon,
+    msGinger,
+    msCinnamon,
   ],
   ar: [
     arVitamins,

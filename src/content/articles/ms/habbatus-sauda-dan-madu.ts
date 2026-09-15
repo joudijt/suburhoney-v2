@@ -150,5 +150,5 @@ export const article: Article = {
       a: "Tiada makanan boleh dijual di Malaysia dengan dakwaan mencegah, merawat atau menyembuhkan sebarang keadaan — itu dilarang di bawah Peraturan-Peraturan Makanan 1985. Madu habbatus sauda ialah makanan harian, tidak lebih. Untuk sebarang kebimbangan perubatan, sila berjumpa doktor.",
     },
   ],
-  related: ["madu-saffron", "sarang-madu-boleh-dimakan"],
+  related: ["madu-dan-halia", "sarang-madu-boleh-dimakan"],
 };
