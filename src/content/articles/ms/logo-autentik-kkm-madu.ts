@@ -226,5 +226,5 @@ export const article: Article = {
       a: "SUBUR tidak berada dalam senarai itu, dan laman ini tidak menyiarkan sebarang pensijilan — bukan Autentik, dan bukan mana-mana skim lain. Untuk status pensijilan, tanya peruncit Berkat Madinah Store terus melalui halaman hubungi. Yang diterbitkan di sini ialah sepuluh bahan yang dinamakan pada label.",
     },
   ],
-  related: ["cara-kenal-madu-asli", "beli-madu-online-atau-kedai-fizikal"],
+  related: ["cara-kenal-madu-asli", "cara-semak-produk-berdaftar-kkm"],
 };

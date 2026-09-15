@@ -221,5 +221,5 @@ export const article: Article = {
       a: "Tidak. Peraturan makanan Malaysia tidak membenarkan produk makanan atau iklannya mendakwa boleh mencegah, mengurangkan, merawat atau menyembuhkan sebarang keadaan. Halaman yang membuat janji seperti itu sedang memberitahu anda sesuatu tentang penjualnya. Nilailah balang itu daripada senarai bahannya dan daripada sama ada penjualnya boleh dihubungi semula.",
     },
   ],
-  related: ["beza-madu-tulen-dan-madu-campuran", "cara-kenal-madu-asli"],
+  related: ["beza-madu-tulen-dan-madu-campuran", "kandungan-produk-tenaga-batin"],
 };

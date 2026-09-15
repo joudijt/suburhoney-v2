@@ -180,5 +180,5 @@ export const article: Article = {
       a: "Ask three plain questions: was it filtered, was it heated, and what exactly is in the jar. The third has a printed answer you can read on the spot, so start there. The first two rest on the seller's word either way, which is the point of this page — but a clear answer and an evasive one are easy to tell apart.",
     },
   ],
-  related: ["how-to-identify-pure-honey", "types-of-honey-in-malaysia"],
+  related: ["how-to-identify-pure-honey", "what-is-a-honey-blend"],
 };

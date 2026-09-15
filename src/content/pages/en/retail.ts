@@ -50,7 +50,7 @@ export const page: Article = {
     },
     {
       type: "paragraph",
-      text: `Both branches are in Selangor, inside the Klang Valley. To check what is on the shelf before you travel, message the store on <a href="${WHATSAPP_URL}" target="_blank" rel="noopener noreferrer">WhatsApp</a>.`,
+      text: `Both branches are in Selangor, inside the Klang Valley. To check what is on the shelf before you travel, message the store on <a href="${WHATSAPP_URL}" target="_blank" rel="noopener noreferrer">WhatsApp</a>. If you are buying comb honey for the first time, <a href="/en/blog/how-to-serve-honeycomb/">how to serve honeycomb</a> covers cutting and plating a slab without shattering it.`,
     },
     {
       type: "heading",
@@ -83,15 +83,15 @@ export const page: Article = {
       type: "list",
       items: [
         { term: "250g", text: "A starter jar, good for trying the daily habit before committing to a larger size." },
-        { term: "400g", text: "The most common size for a single person's daily teaspoon routine." },
-        { term: "500g", text: "Best value per gram, suited to couples taking it together or a household that goes through a jar quickly." },
+        { term: "400g", text: "Sized for one person's daily teaspoon routine." },
+        { term: "500g", text: "Suited to couples taking it together, or a household that goes through a jar quickly." },
       ],
     },
     {
       type: "callout",
       tone: "note",
       title: "Weights are ±5%",
-      text: "As printed on every label, jar weight can vary by up to 5% - normal for a raw, hand-filled honey product and not a packaging error.",
+      text: "As printed on every label, jar weight can vary by up to 5% - normal for a raw honey product and not a packaging error.",
     },
     {
       type: "heading",
@@ -145,7 +145,7 @@ export const page: Article = {
     },
     {
       q: "How do I know a Subur Honey listing is genuine?",
-      a: `Buy from ${BRAND_SELLER} itself - either branch, its Shopee storefront or its TikTok Shop. We cannot verify the authenticity of jars offered by any other listing or seller.`,
+      a: `Buy from ${BRAND_SELLER} itself - either branch, its Shopee storefront or its TikTok Shop. We cannot verify the authenticity of jars offered by any other listing or seller. For the wider market, <a href="/en/blog/buying-honey-in-malaysia-guide/">our guide to buying honey in Malaysia</a> sets out what a label must carry, and <a href="/en/blog/royal-honey-in-malaysia-explained/">what the royal honey sachet category actually is</a> covers a product type sold alongside honey but regulated differently. The <a href="/en/blog/is-royal-honey-safe/">safety record on those sachets</a> is a separate question again.`,
     },
     {
       q: "Does Subur Honey ship outside Malaysia?",

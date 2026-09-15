@@ -77,7 +77,7 @@ export const page: Article = {
     },
     {
       q: "Is there a phone number or email for Subur Honey?",
-      a: `<a href="${WHATSAPP_URL}" target="_blank" rel="noopener noreferrer">WhatsApp</a> is the direct line to the store. A dedicated phone and email channel is being set up; until then WhatsApp, Shopee chat, TikTok Shop messages, the wholesale form, or simply walking into either branch are the fastest ways to reach us.`,
+      a: `<a href="${WHATSAPP_URL}" target="_blank" rel="noopener noreferrer">WhatsApp</a> is the direct line to the store. There is no separate email address. WhatsApp, Shopee chat, TikTok Shop messages, the wholesale form, or simply walking into either branch are the ways to reach us.`,
     },
     {
       q: "How do I ask about a wholesale or bulk order?",

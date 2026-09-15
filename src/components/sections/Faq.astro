@@ -20,7 +20,14 @@ const { heading, items } = Astro.props;
             <span class="font-display text-lg text-brown transition-colors group-hover:text-honey-dark md:text-2xl">{item.q}</span>
             <span class="faq-icon flex-shrink-0 text-2xl text-gold transition-transform duration-300 group-open:rotate-45">+</span>
           </summary>
-          <p class="mt-4 max-w-2xl text-base leading-relaxed text-brown/70 md:text-lg">{item.a}</p>
+          {/* set:html so a homepage FAQ answer can carry an inline link, the
+              same way the standalone page routes already render theirs. The
+              copy comes from i18n/locales/{lang}/common.json - author-controlled,
+              never user input. */}
+          <p
+            class="mt-4 max-w-2xl text-base leading-relaxed text-brown/70 md:text-lg [&_a]:font-semibold [&_a]:text-honey-dark [&_a]:underline"
+            set:html={item.a}
+          />
         </details>
       ))}
     </div>

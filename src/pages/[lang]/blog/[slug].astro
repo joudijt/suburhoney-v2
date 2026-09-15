@@ -249,7 +249,16 @@ const dateFormat = new Intl.DateTimeFormat(lang === "ms" ? "ms-MY" : lang === "a
                       +
                     </span>
                   </summary>
-                  <p class="px-5 pb-5 leading-[1.75] text-brown/80 sm:px-6 sm:pb-6">{faq.a}</p>
+                  {/* set:html, exactly as the four standalone page routes already
+                      do it. Article FAQ answers carry inline <a href> links -
+                      40 live articles had 64 of them - and plain interpolation
+                      escaped every one, so readers saw the raw markup as text
+                      and the links pointed nowhere. Author-controlled content
+                      only, never user input, same as Blocks.astro. */}
+                  <p
+                    class="px-5 pb-5 leading-[1.75] text-brown/80 sm:px-6 sm:pb-6 [&_a]:font-semibold [&_a]:text-honey-dark [&_a]:underline"
+                    set:html={faq.a}
+                  />
                 </details>
               ))}
             </div>

@@ -32,7 +32,7 @@ export const page: Article = {
     },
     {
       type: "paragraph",
-      text: "Rak-rak di Malaysia penuh dengan campuran madu yang menjanjikan banyak tetapi mendedahkan sedikit. Subur dibina dengan cara sebaliknya: kurangkan kata, tunjukkan lebih banyak. Setiap ramuan dinamakan, setiap dakwaan adalah sesuatu yang kami boleh pertahankan di bawah undang-undang makanan Malaysia, dan asasnya adalah sarang madu tulen dan bukan sirap tapisan yang hanya kelihatan seperti madu.",
+      text: "Rak-rak di Malaysia penuh dengan campuran madu yang menjanjikan banyak tetapi mendedahkan sedikit. <a href=\"/ms/blog/dakwaan-tenaga-batin-pada-produk/\">Apa yang undang-undang benarkan sesuatu produk makanan kata</a> dan <a href=\"/ms/blog/cara-semak-produk-berdaftar-kkm/\">cara menyemak produk berdaftar KKM</a> menerangkan had itu dengan lebih terperinci. Subur dibina dengan cara sebaliknya: kurangkan kata, tunjukkan lebih banyak. Setiap ramuan dinamakan, setiap dakwaan adalah sesuatu yang kami boleh pertahankan di bawah undang-undang makanan Malaysia, dan asasnya adalah sarang madu tulen dan bukan sirap tapisan yang hanya kelihatan seperti madu.",
     },
     {
       type: "heading",
@@ -101,7 +101,7 @@ export const page: Article = {
     },
     {
       q: "Adakah Madu Subur jenama yang dikenali di Malaysia?",
-      a: `Ia terjual sebalang demi sebalang melalui kedai yang memang sudah dipercayai orang: ${BRAND_SELLER}, kedai barangan Arab yang menjadi tempat keluarga Lembah Klang kembali berbelanja. Setiap balang sampai kepada anda daripada satu penjual itu sahaja - cawangan ${BRANCHES[0].area}, cawangan ${BRANCHES[1].area}, kedai Shopee miliknya atau TikTok Shop miliknya.`,
+      a: `Ia dijual melalui satu peruncit sahaja: ${BRAND_SELLER}, kedai barangan Arab di Lembah Klang. Setiap balang sampai kepada anda daripada satu penjual itu sahaja - cawangan ${BRANCHES[0].area}, cawangan ${BRANCHES[1].area}, kedai Shopee miliknya atau TikTok Shop miliknya.`,
     },
     {
       q: "Kenapa Madu Subur berhablur dalam balang?",

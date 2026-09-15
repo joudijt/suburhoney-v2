@@ -194,5 +194,5 @@ export const article: Article = {
       a: "Treat the absence as the information. Those are two of the particulars a packaged food label is required to carry, so a jar missing both leaves you with nothing to check and nobody to go back to. Buy from a seller you can name, contact and return to instead.",
     },
   ],
-  related: ["how-to-identify-pure-honey", "honey-allergy-symptoms"],
+  related: ["how-to-identify-pure-honey", "honey-brands-in-malaysia"],
 };

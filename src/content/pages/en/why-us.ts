@@ -47,7 +47,7 @@ export const page: Article = {
         ["Base", "Raw honeycomb", "Filtered, heat-treated syrup"],
         ["Ingredient list", "All ten named on the label", "Usually an undisclosed blend"],
         ["Additives", "None artificial", "Frequently includes artificial flavour or colour"],
-        ["Crystallisation", "Expected - a sign of raw honey", "Often prevented by processing"],
+        ["Crystallisation", "Expected - what raw honey does, not proof of authenticity", "Often prevented by processing"],
       ],
     },
     {
@@ -93,7 +93,7 @@ export const page: Article = {
   faqs: [
     {
       q: "What makes Subur Honey different from other honey brands in Malaysia?",
-      a: "Subur names all ten ingredients on the label, uses raw honeycomb instead of processed syrup, adds no artificial colours or flavours, and tells you the whole blend rather than hiding it behind an undisclosed formula.",
+      a: "Subur names all ten ingredients on the label, uses raw honeycomb instead of processed syrup, adds no artificial colours or flavours, and tells you the whole blend rather than hiding it behind an undisclosed formula. <a href=\"/en/blog/honey-brands-in-malaysia/\">How to compare honey brands in Malaysia</a> sets out the four things on any jar that can actually be checked.",
     },
     {
       q: "Is Subur Honey vegan?",
@@ -101,7 +101,7 @@ export const page: Article = {
     },
     {
       q: "Is Subur Honey a well-known name in Malaysia?",
-      a: `It sells jar after jar through a shop people already trust: ${BRAND_SELLER}, the Arabic grocery Klang Valley families come back to. Every jar reaches you through that one seller - its ${BRANCHES[0].area} branch, its ${BRANCHES[1].area} branch, its own Shopee storefront or its own TikTok Shop.`,
+      a: `It is sold through one retailer, ${BRAND_SELLER}, an Arabic grocery in the Klang Valley. Every jar reaches you through that one seller - its ${BRANCHES[0].area} branch, its ${BRANCHES[1].area} branch, its own Shopee storefront or its own TikTok Shop.`,
     },
     {
       q: "Why does Subur Honey crystallise in the jar?",

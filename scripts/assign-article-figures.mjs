@@ -140,6 +140,36 @@ const ALT = {
  * ruling says an unfillable slot must do.
  */
 const ASSIGN = {
+  // --- round 7 (2026-09-10): fifteen single-language articles, 8 en + 7 ms.
+  //
+  // ⛔ The six royal-honey and tenaga-batin articles take a frame with NO
+  //    branded SUBUR jar and NO couple in it. Those two clusters are written
+  //    about a competitor category and about what Malaysian rules let a food
+  //    claim; putting the product jar or a couple beside that copy would make
+  //    visually exactly the claim the copy refuses to make. Same convention as
+  //    pregnancy/allergy/diabetes in earlier rounds, applied harder.
+  //    The seven frames with no branding and no people are: honey-dipper,
+  //    honey-in-glass, pure-honey, black-seed, blossom-and-light,
+  //    lavender-and-ginger, board-and-nuts.
+  //
+  // Assigned by subject, and spread so that no two articles IN THE SAME
+  // LANGUAGE from this round share a frame.
+  "royal-honey-in-malaysia-explained": "honey-in-glass", //      neutral
+  "is-royal-honey-safe": "pure-honey", //                        neutral
+  "royal-honey-vs-madu-biasa": "blossom-and-light", //           neutral
+  "dakwaan-tenaga-batin-pada-produk": "lavender-and-ginger", //  neutral
+  "cara-semak-produk-berdaftar-kkm": "honey-dipper", //          neutral
+  "kandungan-produk-tenaga-batin": "black-seed", //              neutral
+  "how-is-honeycomb-made": "jar-and-comb",
+  "honeycomb-vs-beeswax-and-other-bee-products": "tea-and-comb",
+  "how-to-serve-honeycomb": "spoon-close",
+  "buying-honey-in-malaysia-guide": "jar-and-ingredients",
+  "honey-brands-in-malaysia": "jar-and-botanicals",
+  "what-is-a-honey-blend": "jar-and-walnuts",
+  "apa-itu-madu-asli": "honey-in-glass",
+  "madu-asli-import-atau-tempatan": "table-setting",
+  "madu-kampung-vs-madu-berjenama": "jar-alone",
+
   // --- round 6 (2026-08-26): six more topics, spread onto the least-used
   // frames from rounds 4-5 rather than piling further onto jar-alone/
   // honey-dipper, which are already the heaviest. -----------------------

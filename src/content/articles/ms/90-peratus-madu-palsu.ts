@@ -222,5 +222,5 @@ export const article: Article = {
       a: "Kerana dakwaan lebih ringkas daripada pembetulannya. Satu ayat memuatkan \"90 peratus\", manakala jawapan kementerian memerlukan tiga angka, satu nombor peraturan dan satu tempoh lapan tahun. Sekurang-kurangnya satu penerbit berbahasa Melayu menerbitkan semula angka itu pada Januari 2025 sebagai latar kepada cerita lain, tanpa jawapan kementerian di sebelahnya.",
     },
   ],
-  related: ["cara-kenal-madu-asli", "beza-madu-tulen-dan-madu-campuran"],
+  related: ["cara-kenal-madu-asli", "royal-honey-vs-madu-biasa"],
 };
