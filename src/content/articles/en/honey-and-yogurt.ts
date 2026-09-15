@@ -1,0 +1,182 @@
+import type { Article } from "../types";
+
+export const article: Article = {
+  slug: "honey-and-yogurt",
+  title: "Honey and Yogurt: Simple Ways to Build a Better Bowl",
+  heading: "How do you eat honey and yogurt together?",
+  description: "How to pair honey and yogurt — why SUBUR's chunky blend works on a plain base, a simple honey yogurt bowl, and what to add alongside it.",
+  primaryKeyword: "honey and yogurt",
+  keywords: [
+    "honey and yogurt",
+    "honey yogurt",
+    "honey greek yogurt",
+    "honey yogurt bowl",
+    "honey yogurt parfait",
+    "honey with plain yogurt",
+    "natural honey yogurt topping",
+    "honey yogurt snack",
+    "honey yogurt dessert",
+    "greek yogurt with honey",
+    "honey and fruit yogurt bowl",
+    "plain yogurt and honey recipe"
+  ],
+  published: "2026-09-15",
+  updated: "2026-09-15",
+  readingMinutes: 5,
+  icon: "/icons/ingrediant_09.webp",
+  figureAlt:
+    "A wooden spoon of honey held close over an open jar of SUBUR honey.",
+  category: "Usage",
+  blocks: [
+    {
+      "type": "answer",
+      "question": "How do you eat honey and yogurt together?",
+      "answer": "Drizzle it over a bowl of plain yogurt, layer it with fruit and nuts for a parfait, or stir a spoonful straight through for a quick snack or dessert. SUBUR's chunky honey blend works well against a plain base, since the walnut and spice pieces stand out rather than getting lost in a yogurt that is already sweetened."
+    },
+    {
+      "type": "heading",
+      "text": "Why does SUBUR honey work well with plain yogurt?",
+      "id": "texture-with-yogurt"
+    },
+    {
+      "type": "paragraph",
+      "text": "SUBUR is a honey blend, not a clear honey — raw honeycomb carrying walnuts, almonds, ginger and whole spices such as saffron and cinnamon, so it is thicker and chunkier than a bottle of filtered honey. Drizzled over plain yogurt, it holds its shape on top rather than sinking in immediately, so the nut and spice pieces stay visible in the first spoonful. Plain yogurt is the better base for it: a flavoured or sweetened yogurt already carries its own taste and added sugar, and honey on top of that competes rather than adding anything."
+    },
+    {
+      "type": "heading",
+      "text": "How do you make a honey and yogurt bowl?",
+      "id": "honey-yogurt-bowl-recipe"
+    },
+    {
+      "type": "paragraph",
+      "text": "Spoon plain yogurt into a bowl or glass, layer in sliced fruit such as banana or berries, then drizzle SUBUR honey over the top so the walnut and spice pieces sit visibly on the surface. Stir it through just before eating, or leave it layered as a parfait and stir as you go."
+    },
+    {
+      "type": "steps",
+      "title": "Honey and yogurt bowl, step by step",
+      "steps": [
+        {
+          "title": "Spoon in the yogurt",
+          "text": "Start with a generous spoon of plain yogurt in a bowl or glass — Greek or regular both work, plain is what matters."
+        },
+        {
+          "title": "Layer in fruit",
+          "text": "Add sliced banana, berries or diced mango, either mixed through or in layers if you are building a parfait."
+        },
+        {
+          "title": "Drizzle the honey",
+          "text": "Spoon SUBUR honey over the top, making sure some of the walnut and spice pieces come with it, not just the liquid."
+        },
+        {
+          "title": "Add a few nuts",
+          "text": "A scatter of extra walnuts or almonds on top adds crunch alongside what the honey already carries through."
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "What else goes well in a honey yogurt bowl?",
+      "id": "yogurt-bowl-additions"
+    },
+    {
+      "type": "paragraph",
+      "text": "Fruit and a few extra nuts are the easiest additions, but the bowl takes well to other things — toasted oats for crunch, chopped dates, or a pinch of extra cinnamon. Keep the yogurt plain and let the honey do the sweetening."
+    },
+    {
+      "type": "list",
+      "title": "Pairings that work well with honey and yogurt",
+      "items": [
+        {
+          "term": "Banana or berries",
+          "text": "The most common pairing — soft fruit against the thick honey and cool yogurt."
+        },
+        {
+          "term": "Toasted oats",
+          "text": "A spoonful adds crunch without adding more sugar on top of the honey."
+        },
+        {
+          "term": "Chopped dates",
+          "text": "Sweet and chewy alongside the honey's own texture, good in a parfait layer."
+        },
+        {
+          "term": "A pinch of extra cinnamon",
+          "text": "Echoes the cinnamon already in SUBUR's blend without changing the jar itself."
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "Is honey and plain yogurt better than flavoured yogurt?",
+      "id": "plain-yogurt-vs-flavoured"
+    },
+    {
+      "type": "paragraph",
+      "text": "This is a straightforward kitchen comparison, not a health claim. A flavoured or sweetened yogurt already has sugar or syrup mixed through it before you open the tub; plain yogurt with honey on top means you control how much sweetness goes in, and can see it — the honey sits visibly rather than being hidden in the tub."
+    },
+    {
+      "type": "table",
+      "caption": "Plain yogurt with honey vs. flavoured yogurt",
+      "columns": [
+        "",
+        "Plain yogurt + SUBUR honey",
+        "Flavoured yogurt"
+      ],
+      "rows": [
+        [
+          "Sweetener",
+          "Added by you, at the table",
+          "Already mixed in before you open the tub"
+        ],
+        [
+          "What you taste",
+          "Yogurt, then honey, walnut and spice pieces on top",
+          "Whatever flavour was added at the factory"
+        ],
+        [
+          "How much you add",
+          "As much or as little as you drizzle on",
+          "Fixed, whatever the tub already contains"
+        ]
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "What should you try first?",
+      "id": "what-to-try-first"
+    },
+    {
+      "type": "paragraph",
+      "text": "Start simple: a bowl of plain yogurt, a spoonful of SUBUR honey drizzled on top, and whatever fruit is in the kitchen. One to two teaspoons is a normal serving. Both Berkat Madinah stores, in Ampang Jaya and Batu Caves, keep it in stock, plus Shopee and TikTok Shop for delivery."
+    }
+  ],
+  faqs: [
+    {
+      "q": "Does SUBUR honey mix well into yogurt, or does it stay on top?",
+      "a": "It mostly stays on top at first, since it is thicker than a filtered honey. Stir it through for an even mix, or leave it layered and work through spoonful by spoonful — both are normal."
+    },
+    {
+      "q": "Is plain yogurt with honey healthier than flavoured yogurt?",
+      "a": "This page keeps to a plain kitchen comparison, not a health claim. Flavoured yogurt has its sweetener mixed in before you open the tub; plain yogurt with honey lets you control how much you add."
+    },
+    {
+      "q": "Can I use Greek yogurt instead of regular yogurt?",
+      "a": "Yes — the recipe works with either. Greek yogurt is thicker, so it holds the honey and nut pieces on the surface longer. Regular yogurt is looser and the honey mixes through a little faster."
+    },
+    {
+      "q": "What fruit goes best with honey and yogurt?",
+      "a": "Banana and berries are the easiest, needing no preparation beyond slicing. Mango, apple or dates also work well, and dates echo the honey's sweetness rather than competing with it."
+    },
+    {
+      "q": "How much honey should I add to a bowl of yogurt?",
+      "a": "One to two teaspoons is a normal serving — enough to sweeten and carry the walnut and spice pieces without drowning the yogurt underneath."
+    },
+    {
+      "q": "Where can I buy SUBUR honey to keep for yogurt bowls?",
+      "a": "Both Berkat Madinah stores, Ampang Jaya and Batu Caves, keep it in stock, also sold online via Shopee and TikTok Shop, with WhatsApp for a wholesale order."
+    }
+  ],
+  related: [
+    "honey-with-nuts-malaysia",
+    "black-seed-honey-benefits"
+  ],
+};

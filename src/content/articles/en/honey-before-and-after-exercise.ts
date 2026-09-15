@@ -122,5 +122,5 @@ export const article: Article = {
       a: "The fat and protein from ground walnut and almond slow overall digestion, which suits post-workout pairing more than the fast pre-workout absorption plain honey provides. See <a href=\"/en/blog/honey-with-nuts-malaysia/\">honey with nuts in Malaysia</a> for the full breakdown.",
     },
   ],
-  related: ["how-much-honey-is-safe-per-day", "honey-with-nuts-malaysia", "honey-calories-and-sugar-content"],
+  related: ["how-much-honey-is-safe-per-day", "honey-with-nuts-malaysia", "honey-as-an-energy-source"],
 };

@@ -444,4 +444,29 @@ export const ARTICLE_FIGURES: Record<string, PageFigure> = {
     width: 1124,
     height: 843,
   },
+  "madu-dan-lemon": {
+    src: "/images/figure-honey-in-glass.webp",
+    width: 940,
+    height: 705,
+  },
+  "madu-dan-halia": {
+    src: "/images/figure-lavender-and-ginger.webp",
+    width: 700,
+    height: 525,
+  },
+  "madu-dan-kayu-manis": {
+    src: "/images/article-pure-honey.webp",
+    width: 1536,
+    height: 1152,
+  },
+  "honey-as-an-energy-source": {
+    src: "/images/figure-jar-and-walnuts.webp",
+    width: 800,
+    height: 600,
+  },
+  "honey-and-yogurt": {
+    src: "/images/figure-spoon-close.webp",
+    width: 1024,
+    height: 768,
+  },
 };
